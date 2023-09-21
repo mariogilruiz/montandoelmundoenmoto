@@ -1,0 +1,24 @@
+header {
+
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+
+}
+
+header #logo_h {
+
+    background-color: orange;
+}
+
+header #bttn_fuel {
+
+    background-color: greenyellow;
+}
+
+header #menu_plus {
+
+    background-color: blueviolet;
+}

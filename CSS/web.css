@@ -1,0 +1,17 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+#web {
+    display: grid;
+    grid-template-rows: 100px 990px 900px 768px 250px;
+    grid-template-columns: 100%;
+    background-color: var(--white-e9);
+
+}
