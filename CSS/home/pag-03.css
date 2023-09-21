@@ -1,0 +1,55 @@
+#pag_03_max {
+    display: grid;
+    background-color: rgb(31, 188, 202);
+    grid-template-columns: 80%;
+    grid-template-rows: 100%;
+    justify-content: center;
+}
+
+
+#pag_03_max #content_03 {
+
+    display: grid;
+    background-color: rgb(42, 34, 41);
+    max-width: 1200px !important;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "f f f f h h h h"
+        "f f f f b b b b"
+        "f f f f t t t t"
+        "f f f f t t t t"
+        "f f f f t t t t"
+        "f f f f t t t t";
+    padding: 5% 0%;
+
+}
+
+
+#pag_03_max #content_03 #card_03_01 {
+
+
+    background-color: aqua;
+    grid-area: f;
+}
+
+#pag_03_max #content_03 #h2_03 {
+
+    background-color: aquamarine;
+    grid-area: h;
+}
+
+#pag_03_max #content_03 #bttn_03 {
+
+    background-color: blue;
+    grid-area: b;
+}
+
+
+
+#pag_03_max #content_03 #text_03 {
+
+
+    background-color: brown;
+    grid-area: t;
+}

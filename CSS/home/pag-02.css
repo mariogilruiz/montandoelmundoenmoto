@@ -1,0 +1,58 @@
+#pag-02_max {
+
+    display: grid;
+    background-color: rgb(198, 195, 35);
+    grid-template-columns: 80%;
+    grid-template-rows: 100%;
+    justify-content: center;
+
+}
+
+#pag-02_max #content_02 {
+    position: relative;
+    display: grid;
+    background-color: rgb(229, 16, 208);
+    max-width: 1200px !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 40%;
+    place-content: center;
+
+}
+
+#pag-02_max #content_02 #card_02_01 {
+    background-color: black;
+
+
+
+}
+
+#pag-02_max #content_02 #card_02_02 {
+    background-color: rgb(255, 255, 255);
+
+
+
+}
+
+#pag-02_max #content_02 #card_02_03 {
+
+    background-color: black;
+
+}
+
+#pag-02_max #content_02 #card_02_04 {
+
+
+    background-color: rgb(255, 255, 255);
+}
+
+#pag-02_max #content_02 #card_02_05 {
+    background-color: black;
+
+
+}
+
+#pag-02_max #content_02 #card_02_06 {
+
+    background-color: rgb(255, 255, 255);
+
+}

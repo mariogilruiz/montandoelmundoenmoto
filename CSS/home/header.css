@@ -2,23 +2,32 @@ header {
 
     display: grid;
     background-color: aqua;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 300px 1fr 170px 100px;
     grid-template-rows: 100%;
-    justify-content: space-between;
+    grid-template-areas:
+        "logo .  bttn menu ";
+
+
+
 
 }
 
 header #logo_h {
 
     background-color: orange;
+    grid-area: logo;
 }
 
 header #bttn_fuel {
-
+    display: grid;
     background-color: greenyellow;
+    grid-area: bttn;
+
+
 }
 
 header #menu_plus {
 
     background-color: blueviolet;
+    grid-area: menu;
 }
