@@ -1,11 +1,13 @@
 header {
 
     display: grid;
-    background-color: aqua;
-    grid-template-columns: 300px 1fr 170px 100px;
+    /* background-color: aqua; */
+    grid-template-columns: 300px 1fr 190px 100px;
     grid-template-rows: 100%;
     grid-template-areas:
         "logo .  bttn menu ";
+    text-transform: uppercase;
+
 
 
 
@@ -13,15 +15,51 @@ header {
 }
 
 header #logo_h {
-
-    background-color: orange;
+    display: grid;
+    background-color: var(--blue-primary);
     grid-area: logo;
+    place-content: center;
+    border-radius: 0px 0px 5px 0px;
+
 }
 
-header #bttn_fuel {
+header #bttn_h {
     display: grid;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     grid-area: bttn;
+    align-items: center;
+
+}
+
+header #bttn_h #bttn_fuel {
+    display: flex;
+    float: left;
+    height: 60%;
+    width: 90%;
+    background-color: var(--green-primary-);
+    align-items: center;
+    color: var(--white);
+    justify-content: center;
+
+
+}
+
+header #bttn_h #bttn_fuel p {
+    font-family: var(--font-bttn-fuell);
+    font-size: 30px;
+    text-transform: uppercase;
+
+
+}
+
+
+header #bttn_h #bttn_fuel span {
+    font-family: var(--font-simbols);
+    font-size: 30px;
+    text-transform: uppercase;
+    justify-content: left !important;
+
+
 
 
 }

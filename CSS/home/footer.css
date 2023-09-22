@@ -1,0 +1,52 @@
+#footer_max {
+
+    display: grid;
+    background-color: blueviolet;
+    grid-template-columns: 80%;
+    grid-template-rows: 100%;
+    justify-content: center;
+
+}
+
+
+#footer_max #content_f {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "l l l h h h h h h m m m"
+        "l l l h h h h h h m m m"
+        "l l l h h h h h h m m m"
+        "l l l h h h h h h m m m"
+        "l l l c c c c c c m m m";
+
+}
+
+#footer_max #content_f #logo_f {
+
+
+    background-color: rgb(186, 0, 96);
+    grid-area: l;
+}
+
+#footer_max #content_f #h2_f {
+
+    background-color: rgb(84, 84, 84);
+    grid-area: h;
+
+}
+
+#footer_max #content_f #copy {
+
+    background-color: rgb(43, 226, 67);
+    grid-area: c;
+
+}
+
+#footer_max #content_f #menu_f {
+
+    background-color: rgb(255, 253, 127);
+    grid-area: m;
+
+}
