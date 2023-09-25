@@ -1,4 +1,5 @@
 #pag_03_max {
+
     display: grid;
     background-color: rgb(31, 188, 202);
     grid-template-columns: 80%;
@@ -26,30 +27,70 @@
 }
 
 
-#pag_03_max #content_03 #card_03_01 {
 
+#pag_03_max #content_03 #card_03_01 {
 
     background-color: aqua;
     grid-area: f;
+
 }
 
 #pag_03_max #content_03 #h2_03 {
-
-    background-color: aquamarine;
+    display: grid;
+    /* background-color: aquamarine; */
     grid-area: h;
+    font-family: var(--font-card);
+    font-size: 40px;
+    color: var(--white-e9);
+    text-transform: uppercase;
+    place-content: center;
+
 }
 
 #pag_03_max #content_03 #bttn_03 {
-
-    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 60%;
+    column-gap: 20px;
+    /* background-color: blue; */
     grid-area: b;
+    place-content: center;
+
 }
 
+#pag_03_max #content_03 .bttn_social {
+
+    border: 0px;
+    border-radius: 5px;
+    font-family: var(--font-social);
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+#pag_03_max #content_03 #bbtn_you {
+
+    background-color: var(--youtube-primary);
+
+}
+
+#pag_03_max #content_03 #bbtn_ing {
+
+    background-color: var(--ing-primary);
+
+}
+
+#pag_03_max #content_03 #bbtn_tktk {
+
+    background-color: var(--tktk-primary);
+
+}
 
 
 #pag_03_max #content_03 #text_03 {
 
-
     background-color: brown;
     grid-area: t;
+    padding: 10px 20px;
 }

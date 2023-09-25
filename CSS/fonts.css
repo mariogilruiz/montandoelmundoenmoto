@@ -17,3 +17,13 @@
     font-family: "hind-bold";
     src: url(/fonts/Hind-Bold.ttf);
 }
+
+@font-face {
+    font-family: "carter-one";
+    src: url(/fonts/CarterOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-thin";
+    src: url(/fonts/Montserrat-Thin.ttf);
+}

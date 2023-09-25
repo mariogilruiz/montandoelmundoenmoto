@@ -25,7 +25,7 @@
 
 #footer_max #content_f #logo_f {
 
-
+    display: grid;
     background-color: rgb(186, 0, 96);
     grid-area: l;
 }
@@ -45,8 +45,26 @@
 }
 
 #footer_max #content_f #menu_f {
-
+    display: grid;
     background-color: rgb(255, 253, 127);
     grid-area: m;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+
+
+}
+
+#footer_max #content_f #menu_f li {
+    justify-content: left;
+}
+
+#footer_max #content_f #menu_f img {
+    display: grid;
+    margin-bottom: 35px;
+    background-color: aqua;
+    width: 200px;
+    justify-content: center;
+
+
 
 }

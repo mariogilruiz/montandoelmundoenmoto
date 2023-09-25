@@ -2,14 +2,26 @@
     display: grid;
     background-color: brown;
     grid-template-columns: 80%;
-    height: 800px;
+    grid-template-areas: 100%;
     justify-content: center;
 }
 
 #initial_max #content_i {
-
+    display: grid;
     background-color: blue;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     max-width: 1200px;
+    align-items: center;
+    text-align: center;
+
+}
+
+#initial_max #content_i h1 {
+
+    font-family: var(--font-card);
+    font-size: 130px;
+    color: var(--white-e9);
+
+
 }
