@@ -4,7 +4,7 @@
     position: fixed;
     /* background-color: aqua; */
     grid-template-columns: 300px 1fr 190px 100px;
-    grid-template-rows: 100px;
+    grid-template-rows: 80px;
     width: 100%;
     grid-template-areas:
         "logo .  bttn menu ";
@@ -36,11 +36,11 @@ header #bttn_h #bttn_fuel {
 
     display: flex;
     float: left;
-    height: 60%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     border: 0px;
-    border-radius: 5px;
-    background-color: var(--green-primary-);
+    border-radius: 0px 0px 0px 5px;
+    background-color: var(--blue-primary);
     align-items: center;
     color: var(--white);
     justify-content: center;
@@ -51,7 +51,8 @@ header #bttn_h #bttn_fuel {
 header #bttn_h #bttn_fuel p {
 
     font-family: var(--font-bttn-fuell);
-    font-size: 35px;
+    font-size: 45px;
+    letter-spacing: -1.5px;
     text-transform: uppercase;
     margin-top: 6px;
 
@@ -136,7 +137,6 @@ header #menu_plus {
 
     display: grid;
     background-color: var(--blue-primary);
-    border-radius: 0px 0px 0px 5px;
     grid-area: menu;
     place-content: center;
     align-items: end;

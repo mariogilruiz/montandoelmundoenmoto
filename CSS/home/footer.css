@@ -1,19 +1,19 @@
 #footer_max {
 
     display: grid;
-    background-color: blueviolet;
-    grid-template-columns: 80%;
+    background-color: var(--blue-secondary);
+    grid-template-columns: 100%;
     grid-template-rows: 100%;
     justify-content: center;
 
 }
-
 
 #footer_max #content_f {
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    /* max-width: 1200px !important; */
     grid-template-areas:
         "l l l h h h h h h m m m"
         "l l l h h h h h h m m m"
@@ -21,50 +21,153 @@
         "l l l h h h h h h m m m"
         "l l l c c c c c c m m m";
 
+
+
 }
 
 #footer_max #content_f #logo_f {
 
-    display: grid;
-    background-color: rgb(186, 0, 96);
+    display: flex;
+    /* background-color: rgb(186, 0, 96); */
     grid-area: l;
+
+    align-items: center;
+    margin-left: 50px;
 }
+
+#footer_max #content_f #logo_f img {
+
+    height: 80%;
+
+}
+
+
 
 #footer_max #content_f #h2_f {
-
-    background-color: rgb(84, 84, 84);
+    display: flex;
+    /* background-color: rgb(84, 84, 84); */
     grid-area: h;
+    font-family: var(--font-primary);
+    color: var(--white);
+    font-size: 3vw;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+
 
 }
+
+#footer_max #content_f #h2_f #bttn_f {
+
+    display: flex;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 25px;
+    border: 0px;
+    font-family: var(--font-text);
+    background-color: var(--green-primary-);
+    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+#footer_max #content_f #h2_f #bttn_f:hover span {
+
+
+    animation: 500ms plus alternate infinite;
+    -webkit-animation: 500ms plus alternate infinite;
+    -moz-animation: 500ms plus alternate infinite;
+    ;
+    -o-animation: 500ms plus alternate infinite;
+
+
+}
+
+@keyframes plus {
+
+    from {
+        transform: scale(.8);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+@-webkit-keyframes plus {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+
 
 #footer_max #content_f #copy {
-
-    background-color: rgb(43, 226, 67);
+    display: flex;
+    /* background-color: rgb(43, 226, 67); */
     grid-area: c;
-
-}
-
-#footer_max #content_f #menu_f {
-    display: grid;
-    background-color: rgb(255, 253, 127);
-    grid-area: m;
-    grid-template-columns: 100%;
-    grid-template-rows: 60% 40%;
-
-
-}
-
-#footer_max #content_f #menu_f li {
-    justify-content: left;
-}
-
-#footer_max #content_f #menu_f img {
-    display: grid;
-    margin-bottom: 35px;
-    background-color: aqua;
-    width: 200px;
+    align-items: center;
     justify-content: center;
 
 
+}
+
+#footer_max #content_f #copy span {
+
+    font-family: var(--font-footer);
+    color: var(--white);
+
 
 }
+
+
+#footer_max #content_f #menu_f {
+
+    display: grid;
+    /* background-color: rgb(255, 253, 127); */
+    grid-area: m;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    border-left: 2px solid rgb(0, 0, 0, .5);
+    margin: 20px 50px 20px 20px;
+    padding-left: 20px;
+
+
+
+
+}
+
+#footer_max #content_f #menu_f li a {
+
+    justify-content: left;
+    line-height: 25px;
+    font-family: var(--font-footer);
+    color: var(--white);
+}
+
+#footer_max #content_f #menu_f li a:hover {
+
+    text-shadow: 0px 0px 2px rgb(0, 0, 0, 1);
+
+}
+
+#footer_max #content_f #menu_f img {
+
+    margin-bottom: 35px;
+    /* background-color: aqua; */
+    height: 90%;
+    align-items: right;
+}
+
+/* poner dos div, uno para el menu y otro para la foto y asi poder manejarlo con flex y moverlos a la derecha */

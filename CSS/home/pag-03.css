@@ -1,17 +1,17 @@
 #pag_03_max {
 
     display: grid;
-    background-color: rgb(31, 188, 202);
+    background-color: var(--grey-ccc);
     grid-template-columns: 80%;
     grid-template-rows: 100%;
     justify-content: center;
-}
 
+}
 
 #pag_03_max #content_03 {
 
     display: grid;
-    background-color: rgb(42, 34, 41);
+    /* background-color: rgb(42, 34, 41); */
     max-width: 1200px !important;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -23,34 +23,63 @@
         "f f f f t t t t"
         "f f f f t t t t";
     padding: 5% 0%;
+    margin: 50px;
+    column-gap: 50px;
+    place-content: center;
 
 }
 
-
-
 #pag_03_max #content_03 #card_03_01 {
 
-    background-color: aqua;
+    display: flex;
+    /* background-color: aqua; */
     grid-area: f;
+    overflow: hidden;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#pag_03_max #content_03 #card_03_01 img {
+
+    object-fit: cover;
+    height: 600px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    transform: scale(1);
+    transition: 1s ease-in-out all;
+    -webkit-transition: 1s ease-in-out all;
+    -moz-transition: 1s ease-in-out all;
+    -o-transition: 1s ease-in-out all;
+}
+
+#pag_03_max #content_03 #card_03_01:hover img {
+
+    transform: scale(1.1);
 
 }
 
 #pag_03_max #content_03 #h2_03 {
+
     display: grid;
     /* background-color: aquamarine; */
     grid-area: h;
-    font-family: var(--font-card);
-    font-size: 40px;
-    color: var(--white-e9);
+    font-family: var(--font-primary);
+    font-size: 55px;
+    color: var(--orange-primary);
     text-transform: uppercase;
     place-content: center;
 
 }
 
+
 #pag_03_max #content_03 #bttn_03 {
+
     display: grid;
     grid-template-columns: repeat(3, 25%);
-    grid-template-rows: 60%;
+    grid-template-rows: 50%;
     column-gap: 20px;
     /* background-color: blue; */
     grid-area: b;
@@ -64,9 +93,12 @@
     border-radius: 5px;
     font-family: var(--font-social);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 900;
     color: var(--white);
     cursor: pointer;
+    transition: .5s ease-in-out all;
+
 }
 
 #pag_03_max #content_03 #bbtn_you {
@@ -75,9 +107,60 @@
 
 }
 
+#pag_03_max #content_03 #bbtn_you:hover {
+
+    background-color: var(--youtube-secondary);
+    color: var(--black);
+    font-weight: 900;
+
+
+}
+
+#pag_03_max #content_03 #bbtn_you::after {
+
+    content: "youtube";
+    transition: 200ms ease-in-out all;
+    -webkit-transition: 200ms ease-in-out all;
+    -moz-transition: 200ms ease-in-out all;
+    -o-transition: 200ms ease-in-out all;
+
+}
+
+#pag_03_max #content_03 #bbtn_you:hover::after {
+
+    content: "suscribirme";
+
+
+}
+
 #pag_03_max #content_03 #bbtn_ing {
 
-    background-color: var(--ing-primary);
+    background: var(--ing-primary);
+
+
+}
+
+#pag_03_max #content_03 #bbtn_ing:hover {
+
+    background: var(--ing-secondary);
+
+
+}
+
+#pag_03_max #content_03 #bbtn_ing::after {
+
+    content: "instagram";
+    transition: 500ms ease-in-out all;
+    -webkit-transition: 500ms ease-in-out all;
+    -moz-transition: 500ms ease-in-out all;
+    -o-transition: 500ms ease-in-out all;
+
+}
+
+#pag_03_max #content_03 #bbtn_ing:hover::after {
+
+    content: "seguir";
+
 
 }
 
@@ -87,10 +170,45 @@
 
 }
 
+#pag_03_max #content_03 #bbtn_tktk:hover {
+
+    background: var(--tktk-secondary);
+
+
+}
+
+#pag_03_max #content_03 #bbtn_tktk::after {
+
+    content: "tiktok";
+    transition: 500ms ease-in-out all;
+    -webkit-transition: 500ms ease-in-out all;
+    -moz-transition: 500ms ease-in-out all;
+    -o-transition: 500ms ease-in-out all;
+
+
+}
+
+#pag_03_max #content_03 #bbtn_tktk:hover::after {
+
+    content: "seguir";
+
+
+}
+
 
 #pag_03_max #content_03 #text_03 {
 
-    background-color: brown;
+    /* background-color: brown; */
     grid-area: t;
-    padding: 10px 20px;
+    padding: 20px 30px 10px 30px;
+    text-align: center;
+
+}
+
+#pag_03_max #content_03 #text_03 p {
+
+    font-family: var(--font-text-italic);
+    font-size: 18px;
+    font-weight: 300;
+
 }
