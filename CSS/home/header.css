@@ -62,6 +62,10 @@ header #bttn_h #bttn_fuel:hover p {
 
     animation: 500ms fuell alternate infinite;
     -webkit-animation: 500ms fuell alternate infinite;
+    -moz-animation: 500ms fuell alternate infinite;
+    ;
+    -o-animation: 500ms fuell alternate infinite;
+
 
 }
 
@@ -146,6 +150,6 @@ header #menu_plus {
 
 header #menu_plus img {
 
-    width: 60px;
+    width: 70px;
 
 }

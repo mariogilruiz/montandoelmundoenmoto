@@ -10,8 +10,36 @@
 #web {
 
     display: grid;
-    grid-template-rows: 800px 768px 768px 250px;
+    grid-template-rows: 800px 80px 768px 100px 768px 100px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
+
+
+
+}
+
+#spacer_02 {
+
+    display: grid;
+    background-color: var(--grey-ccc);
+    height: 100px;
+    background-image: url(/images/separacion_top_aventuras_en_moto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#spacer_02 img {
+
+    height: 100px;
+    width: 100%;
+
+}
+
+#spacer_f {
+
+    display: grid;
+    background-color: var(--grey-ccc);
+    height: 100px;
 
 }

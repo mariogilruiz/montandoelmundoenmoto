@@ -1,7 +1,11 @@
 #footer_max {
 
     display: grid;
-    background-color: var(--blue-secondary);
+    background-color: rgb(2, 87, 106, 1);
+    /* background-image: url(/images/back_footer_por_el_campo_en_moto.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     justify-content: center;
@@ -13,6 +17,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    height: 250px;
     /* max-width: 1200px !important; */
     grid-template-areas:
         "l l l h h h h h h m m m"
