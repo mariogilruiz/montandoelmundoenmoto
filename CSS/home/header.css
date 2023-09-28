@@ -20,13 +20,20 @@ header #logo_h {
     grid-area: logo;
     place-content: center;
     border-radius: 0px 0px 5px 0px;
+    cursor: pointer;
 
+}
+
+header #logo_h a {
+
+    padding: 5px;
 }
 
 header #bttn_h {
 
     display: grid;
-    /* background-color: greenyellow; */
+    background-color: var(--blue-primary);
+    border-radius: 0px 0px 0px 5px;
     grid-area: bttn;
     align-items: center;
 
@@ -39,7 +46,7 @@ header #bttn_h #bttn_fuel {
     height: 100%;
     width: 100%;
     border: 0px;
-    border-radius: 0px 0px 0px 5px;
+    border-radius: 0px 0px 0px 8px;
     background-color: var(--blue-primary);
     align-items: center;
     color: var(--white);
@@ -151,5 +158,99 @@ header #menu_plus {
 header #menu_plus img {
 
     width: 70px;
+
+}
+
+.navbar {
+
+    background-color: var(--blue-primary);
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_intems {
+
+    position: absolute;
+    top: 75px;
+    background-color: var(--blue-primary);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 290px;
+    border-radius: 0px 0px 0px 5px;
+    transform: translateX(100%);
+
+
+}
+
+.nav_intems a {
+
+    color: var(--white);
+    font-family: var(--font-nav);
+    font-size: 20px;
+    margin: 15px;
+    padding-left: 30px;
+
+}
+
+.nav_intems a:first-child {
+
+    padding-top: 40px;
+    border-top: 2px solid white;
+
+}
+
+.nav_intems a:last-child {
+
+    margin-bottom: 40px;
+}
+
+
+.nav_toggle {
+
+    display: flex !important;
+    flex-direction: column;
+
+
+}
+
+
+.nav_toggle span {
+
+    width: 60px;
+    height: 9px;
+    background-color: var(--orange-primary);
+    margin-bottom: 10px;
+
+}
+
+.nav_toggle span:first-child {
+
+    margin-top: 6px;
+
+}
+
+.close span {
+
+    transform: rotate(45deg) translate(0px, 0px);
+
+}
+
+.close span:nth-child(2) {
+
+    display: none;
+
+}
+
+.close span:nth-child(3) {
+
+    transform: rotate(45deg) translate(-5px, 1px);
+
+}
+
+.open {
+
+    transform: translateX(0) !important;
 
 }

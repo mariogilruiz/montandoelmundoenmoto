@@ -46,11 +46,12 @@
     max-width: 1200px;
     width: 100%;
     align-items: end;
+    justify-items: center;
 
 
 }
 
-#initial_max #content_i h1 {
+#initial_max #content_i h2 {
 
     display: grid;
     font-family: var(--font-primary);

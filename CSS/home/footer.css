@@ -18,7 +18,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 250px;
-    /* max-width: 1200px !important; */
+    width: 100%;
     grid-template-areas:
         "l l l h h h h h h m m m"
         "l l l h h h h h h m m m"
@@ -35,7 +35,6 @@
     display: flex;
     /* background-color: rgb(186, 0, 96); */
     grid-area: l;
-
     align-items: center;
     margin-left: 50px;
 }
@@ -64,16 +63,15 @@
 
 #footer_max #content_f #h2_f #bttn_f {
 
-    display: flex;
+    display: grid;
     width: 3vw;
     height: 3vw;
-    border-radius: 25px;
+    border-radius: 999px;
     border: 0px;
     font-family: var(--font-text);
     background-color: var(--green-primary-);
     font-size: 3.5vw;
-    align-items: center;
-    justify-content: center;
+    place-content: center;
     color: var(--white);
     overflow: hidden;
     cursor: pointer;
@@ -86,7 +84,6 @@
     animation: 500ms plus alternate infinite;
     -webkit-animation: 500ms plus alternate infinite;
     -moz-animation: 500ms plus alternate infinite;
-    ;
     -o-animation: 500ms plus alternate infinite;
 
 
@@ -145,7 +142,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 60% 40%;
     border-left: 2px solid rgb(0, 0, 0, .5);
-    margin: 20px 50px 20px 20px;
+    margin: 20px 20px 20px 20px;
     padding-left: 20px;
 
 
@@ -153,7 +150,7 @@
 
 }
 
-#footer_max #content_f #menu_f li a {
+#footer_max #content_f #menu_f #faqs_f li a {
 
     justify-content: left;
     line-height: 25px;
@@ -167,12 +164,24 @@
 
 }
 
-#footer_max #content_f #menu_f img {
+#footer_max #content_f #menu_f #pay_f {
+    background-color: aqua;
 
-    margin-bottom: 35px;
+    display: grid;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#footer_max #content_f #menu_f #pay_f img {
+
+
     /* background-color: aqua; */
-    height: 90%;
-    align-items: right;
+    height: 100px;
+
+
 }
 
 /* poner dos div, uno para el menu y otro para la foto y asi poder manejarlo con flex y moverlos a la derecha */

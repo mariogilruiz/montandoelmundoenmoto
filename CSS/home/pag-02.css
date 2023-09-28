@@ -8,7 +8,7 @@
     background-image: url(/images/africa_europa_en_moto.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 110%;
+    background-size: cover;
     justify-items: center;
 
 }
@@ -49,6 +49,18 @@
     -o-transition: 1s ease-in-out all;
     border: 1px solid rgb(188, 99, 23, 0.4);
 
+}
+
+#pag-02_max #content_02 a {
+
+    color: var(--white);
+    padding: 16%;
+    display: inline-block;
+    line-height: 100px;
+    /* width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center; */
 }
 
 #pag-02_max #content_02 #card_02_01 {
