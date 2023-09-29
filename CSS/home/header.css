@@ -151,7 +151,7 @@ header #menu_plus {
     grid-area: menu;
     place-content: center;
     align-items: end;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 }
 
@@ -161,15 +161,8 @@ header #menu_plus img {
 
 }
 
-.navbar {
 
-    background-color: var(--blue-primary);
-    display: flex;
-    align-items: center;
-
-}
-
-.nav_intems {
+header #menu_plus nav {
 
     position: absolute;
     top: 75px;
@@ -178,59 +171,88 @@ header #menu_plus img {
     flex-direction: column;
     text-align: start;
     width: 290px;
+    right: 0px;
     border-radius: 0px 0px 0px 5px;
-    transform: translateX(100%);
+    transform: translateX(0);
 
 
 }
 
-.nav_intems a {
+header #bttn_p_x {
+
+
+    height: 30px;
+    width: 290px;
+    border: 0px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: var(--blue-primary);
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: var(--font-bttn-fuell);
+    color: var(--white);
+    font-size: 20px;
+}
+
+header #menu_plus nav a {
 
     color: var(--white);
     font-family: var(--font-nav);
     font-size: 20px;
-    margin: 15px;
+    line-height: 50px;
+
     padding-left: 30px;
 
 }
 
-.nav_intems a:first-child {
+header #menu_plus nav li:nth-child(2) {
 
-    padding-top: 40px;
-    border-top: 2px solid white;
+    padding-top: 30px;
+
 
 }
 
-.nav_intems a:last-child {
+header #menu_plus nav li:last-child {
 
     margin-bottom: 40px;
 }
 
+header #bttn_p {
 
-.nav_toggle {
-
+    height: 80px;
+    width: 100px;
+    background-color: var(--blue-primary);
+    border: 0px;
     display: flex !important;
     flex-direction: column;
-
-
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-
-.nav_toggle span {
+header #bttn_p span {
 
     width: 60px;
     height: 9px;
     background-color: var(--orange-primary);
     margin-bottom: 10px;
 
+
 }
 
-.nav_toggle span:first-child {
+header #bttn_p span:first-child {
 
     margin-top: 6px;
 
 }
 
+.open {
+
+    transform: translateX(0) !important;
+
+}
+
+/* 
 .close span {
 
     transform: rotate(45deg) translate(0px, 0px);
@@ -247,10 +269,4 @@ header #menu_plus img {
 
     transform: rotate(45deg) translate(-5px, 1px);
 
-}
-
-.open {
-
-    transform: translateX(0) !important;
-
-}
+} */
