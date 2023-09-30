@@ -10,7 +10,7 @@
 #web {
 
     display: grid;
-    grid-template-rows: 800px 80px 768px 100px 768px 100px 250px;
+    grid-template-rows: 800px 80px 768px 100px 768px 100px 50px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 
@@ -18,20 +18,31 @@
 
 }
 
+#spacer_01 {
+
+    height: 100%;
+    width: 100%;
+
+}
+
 #spacer_02 {
 
     display: grid;
     background-color: var(--grey-ccc);
-    height: 100px;
+    height: 100%;
+    width: 100%;
     background-image: url(/images/separacion_top_aventuras_en_moto.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: bottom bottom;
+    background-size: cover;
+
 
 }
 
-#spacer_02 img {
+#spacer_03 {
 
-    height: 100px;
+    background-color: var(--grey-ccc);
+    height: 100%;
     width: 100%;
 
 }
@@ -40,6 +51,11 @@
 
     display: grid;
     background-color: var(--grey-ccc);
-    height: 100px;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/recurso_diseño_top_footer_aventuras_en_moto_por_el_mundo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 
 }

@@ -147,74 +147,10 @@ header #bttn_h #bttn_fuel:hover img {
 header #menu_plus {
 
     display: grid;
-    background-color: var(--blue-primary);
+    /* background-color: var(--blue-primary); */
     grid-area: menu;
     place-content: center;
-    align-items: end;
-    /* cursor: pointer; */
 
-}
-
-header #menu_plus img {
-
-    width: 70px;
-
-}
-
-
-header #menu_plus nav {
-
-    position: absolute;
-    top: 75px;
-    background-color: var(--blue-primary);
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    width: 290px;
-    right: 0px;
-    border-radius: 0px 0px 0px 5px;
-    transform: translateX(0);
-
-
-}
-
-header #bttn_p_x {
-
-
-    height: 30px;
-    width: 290px;
-    border: 0px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    background-color: var(--blue-primary);
-    margin-top: 20px;
-    cursor: pointer;
-    font-family: var(--font-bttn-fuell);
-    color: var(--white);
-    font-size: 20px;
-}
-
-header #menu_plus nav a {
-
-    color: var(--white);
-    font-family: var(--font-nav);
-    font-size: 20px;
-    line-height: 50px;
-
-    padding-left: 30px;
-
-}
-
-header #menu_plus nav li:nth-child(2) {
-
-    padding-top: 30px;
-
-
-}
-
-header #menu_plus nav li:last-child {
-
-    margin-bottom: 40px;
 }
 
 header #bttn_p {
@@ -237,7 +173,6 @@ header #bttn_p span {
     background-color: var(--orange-primary);
     margin-bottom: 10px;
 
-
 }
 
 header #bttn_p span:first-child {
@@ -246,16 +181,98 @@ header #bttn_p span:first-child {
 
 }
 
-.open {
+header #menu_plus nav {
 
-    transform: translateX(0) !important;
+    position: absolute;
+    top: 75px;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    font-family: var(--font-nav);
+    font-size: 20px;
+    width: 290px;
+    height: 500px;
+    right: 0px;
+    border-radius: 0px 0px 0px 5px;
+    transform: translateX(100%);
 
 }
 
-/* 
-.close span {
 
-    transform: rotate(45deg) translate(0px, 0px);
+header #menu_plus nav ul {
+
+    height: 290px;
+    width: 500px;
+
+
+}
+
+header #menu_plus nav ul li {
+
+    line-height: 45px;
+    padding-left: 30px;
+    /* height: 100%; para ocupar todo el espacio de pantalla en diseño responsive del movil
+    width: 100%; */
+
+}
+
+header #menu_plus nav ul li:hover {
+
+    background-color: rgb(2, 87, 106, .2);
+    list-style: disc;
+    color: var(--orange-primary);
+
+}
+
+header #menu_plus nav ul li a {
+
+
+    color: var(--white);
+}
+
+header #menu_plus nav ul li:nth-child(2) {
+
+    margin-top: 20px;
+
+}
+
+
+header #bttn_p_x {
+
+    height: 30px;
+    width: 290px;
+    border: 0px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: var(--blue-primary);
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: var(--font-bttn-fuell);
+    color: var(--white);
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .open {
+
+    transform: translateX(0) !important;
+
+} */
+
+
+/* .close span {
+
+    transform: rotate(45deg) translate(16px, 0px);
 
 }
 
@@ -267,6 +284,6 @@ header #bttn_p span:first-child {
 
 .close span:nth-child(3) {
 
-    transform: rotate(45deg) translate(-5px, 1px);
+    transform: rotate(-45deg) translate(12px, 1px);
 
 } */

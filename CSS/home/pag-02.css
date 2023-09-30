@@ -10,6 +10,11 @@
     background-position: center center;
     background-size: cover;
     justify-items: center;
+    backdrop-filter: opacity(50%);
+    -webkit-backdrop-filter: opacity(50%);
+    -moz-backdrop-filter: opacity(50%);
+    -o-backdrop-filter: opacity(50%);
+
 
 }
 
@@ -44,7 +49,7 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: 1s ease-in-out all;
-    -webkit-transition: 1s ease-in-out all;
+    -webkit-transition: 500ms ease-in-out all;
     -moz-transition: 1s ease-in-out all;
     -o-transition: 1s ease-in-out all;
     border: 1px solid rgb(188, 99, 23, 0.4);

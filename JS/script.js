@@ -1,8 +1,8 @@
 
 // menu nav effect--------------
 
-menu_plus.oneclick = () => {
+bttn_p.oneclick = () => {
 
-    _items.classlist.toggle("open")
+    nav_plus.classlist.toggle("open")
 
 }  
