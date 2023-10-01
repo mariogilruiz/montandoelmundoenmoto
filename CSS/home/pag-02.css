@@ -10,10 +10,7 @@
     background-position: center center;
     background-size: cover;
     justify-items: center;
-    backdrop-filter: opacity(50%);
-    -webkit-backdrop-filter: opacity(50%);
-    -moz-backdrop-filter: opacity(50%);
-    -o-backdrop-filter: opacity(50%);
+
 
 
 }
@@ -25,7 +22,6 @@
     max-width: 1200px;
     row-gap: 20px;
     column-gap: 20px;
-
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 35% 35%;
     height: 768px;

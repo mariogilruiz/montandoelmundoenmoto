@@ -1,0 +1,246 @@
+#web_videos {
+
+    display: grid;
+    grid-template-rows: 600px 4000px 100px 200px 50px 250px;
+    grid-template-columns: 100%;
+    background-color: var(--white-e9);
+
+}
+
+
+#inital_max_videos {
+
+    display: grid;
+    /* background-color: blue; */
+    justify-items: center;
+    height: 600px;
+    width: 100%;
+    grid-template-columns: 100%;
+    place-content: center;
+    overflow: hidden;
+
+}
+
+
+
+#inital_max_videos video {
+
+    min-width: 105%;
+    min-height: 100%;
+    object-fit: cover;
+
+}
+
+#inital_max_videos img {
+    position: absolute;
+    left: 0px;
+    top: 520px;
+    height: 100px;
+    width: 100%;
+
+
+}
+
+#pag-02_max_videos {
+
+    display: grid;
+    background-color: var(--grey-ccc);
+    justify-items: center;
+    height: 4000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 3600px;
+
+
+}
+
+#content_i_videos {
+
+    height: 600px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+
+#h2_02_videos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    /* background-color: aqua; */
+
+}
+
+#h2_02_videos h2 {
+
+    display: grid;
+    font-family: var(--font-primary);
+    font-size: 5vw;
+    color: var(--white);
+    /* text-shadow: 0px 4px 1px rgb(0, 0, 0, .5); */
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+#h2_02_videos h3 {
+
+    display: grid;
+    font-family: var(--font-primary);
+    font-size: 2vw;
+    color: var(--white);
+    margin-bottom: 20px;
+
+
+}
+
+#h2_02_videos p {
+
+    font-family: var(--font-text-italic);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0px 20px 0px 20px;
+}
+
+#p_02_videos {
+
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    text-align: center;
+}
+
+
+#content_02_videos {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 280px);
+    max-width: 1200px;
+    height: 4000px !important;
+    width: 100%;
+    /* background-color: aqua; */
+    justify-items: center;
+    margin-top: 100px;
+    text-align: start;
+
+
+}
+
+
+#content_02_videos .card_videos {
+
+    display: grid;
+    border-radius: 5px;
+    height: 250px;
+    width: 90%;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    font-family: var(--font-primary);
+    font-size: 40px;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    /* border: 1px solid rgb(188, 99, 23, 0.4); */
+    overflow: hidden;
+
+
+}
+
+
+#content_02_videos .card_video_youtube {
+
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    padding-bottom: 2px;
+
+    opacity: .8;
+    transition: 1s ease-in-out all;
+    -webkit-transition: 500ms ease-in-out all;
+    -moz-transition: 1s ease-in-out all;
+    -o-transition: 1s ease-in-out all;
+
+}
+
+
+#content_02_videos .card_video_youtube:hover {
+
+    opacity: 1;
+}
+
+#content_02_videos .card_ncap_youtube {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(43, 226, 128); */
+    border-top: 4px solid var(--grey-ccc);
+}
+
+
+.card_video_youtube iframe {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.card_video_youtube:hover iframe {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+#content_02_videos .card_ncap_youtube {
+
+    background-color: rgb(0, 0, 0, .3);
+
+
+}
+
+
+#spacer_02_videos {
+
+    display: grid;
+    background-color: var(--grey-ccc);
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/separacion_top_aventuras_en_moto.png);
+    background-repeat: no-repeat;
+    background-position: bottom bottom;
+    background-size: cover;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+
+
+}
+
+
+#web_videos #spacer_f {
+
+    background-color: var(--white-e9);
+}
+
+
+#social_videos {
+
+    /* background-color: blueviolet; */
+    height: 150px;
+    width: 100%;
+}

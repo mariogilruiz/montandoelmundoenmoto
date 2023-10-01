@@ -140,9 +140,7 @@ header #bttn_h #bttn_fuel:hover img {
     to {
         transform: rotateZ(360deg);
     }
-
 }
-
 
 header #menu_plus {
 
@@ -197,12 +195,10 @@ header #menu_plus nav {
 
 }
 
-
 header #menu_plus nav ul {
 
     height: 290px;
     width: 500px;
-
 
 }
 
@@ -225,7 +221,6 @@ header #menu_plus nav ul li:hover {
 
 header #menu_plus nav ul li a {
 
-
     color: var(--white);
 }
 
@@ -234,7 +229,6 @@ header #menu_plus nav ul li:nth-child(2) {
     margin-top: 20px;
 
 }
-
 
 header #bttn_p_x {
 

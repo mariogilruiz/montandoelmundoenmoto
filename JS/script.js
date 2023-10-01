@@ -1,8 +1,17 @@
 
-// menu nav effect--------------
+// header load
 
-bttn_p.oneclick = () => {
+$(function () {
 
-    nav_plus.classlist.toggle("open")
+    $("#header_max").load("header.html");
 
-}  
+});
+
+//footer load
+
+$(function () {
+
+    $("#footer_max").load("footer.html");
+
+});
+
