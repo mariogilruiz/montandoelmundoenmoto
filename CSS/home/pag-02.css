@@ -5,10 +5,11 @@
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     height: 768px;
+
     background-image: url(/images/africa_europa_en_moto.png);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-position: top center;
+    background-size: 100%;
     justify-items: center;
 
 

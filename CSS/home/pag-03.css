@@ -25,7 +25,7 @@
         "f f f f t t t t"
         "f f f f t t t t"
         "f f f f t t t t";
-    margin: 20px 10px 20px 10px;
+    margin: 80px 10px 20px 10px;
     column-gap: 70px;
     place-content: center;
 
@@ -92,7 +92,7 @@
 
 }
 
-#pag_03_max #content_03 .bttn_social {
+.bttn_social {
 
     border: 0px;
     border-radius: 5px;
@@ -109,13 +109,13 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_you {
+.bbtn_you {
 
     background-color: var(--youtube-primary);
 
 }
 
-#pag_03_max #content_03 #bbtn_you:hover {
+.bbtn_you:hover {
 
     background-color: var(--youtube-secondary);
     color: var(--black);
@@ -125,7 +125,7 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_you::after {
+.bbtn_you::after {
 
     content: "youtube";
     transition: 200ms ease-in-out all;
@@ -135,21 +135,21 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_you:hover::after {
+.bbtn_you:hover::after {
 
     content: "suscribirme";
 
 
 }
 
-#pag_03_max #content_03 #bbtn_ing {
+.bbtn_ing {
 
     background: var(--ing-primary);
 
 
 }
 
-#pag_03_max #content_03 #bbtn_ing:hover {
+.bbtn_ing:hover {
 
     background: var(--ing-secondary);
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
@@ -157,7 +157,7 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_ing::after {
+.bbtn_ing::after {
 
     content: "instagram";
     transition: 500ms ease-in-out all;
@@ -167,20 +167,20 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_ing:hover::after {
+.bbtn_ing:hover::after {
 
     content: "seguir";
 
 
 }
 
-#pag_03_max #content_03 #bbtn_tktk {
+.bbtn_tktk {
 
     background-color: var(--tktk-primary);
 
 }
 
-#pag_03_max #content_03 #bbtn_tktk:hover {
+.bbtn_tktk:hover {
 
     background: var(--tktk-secondary);
     box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
@@ -188,7 +188,7 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_tktk::after {
+.bbtn_tktk::after {
 
     content: "tiktok";
     transition: 500ms ease-in-out all;
@@ -199,7 +199,7 @@
 
 }
 
-#pag_03_max #content_03 #bbtn_tktk:hover::after {
+.bbtn_tktk:hover::after {
 
     content: "seguir";
 
