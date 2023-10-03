@@ -106,6 +106,7 @@
     -webkit-transition: 500ms ease-in-out all;
     -moz-transition: 500ms ease-in-out all;
     -o-transition: 500ms ease-in-out all;
+    overflow: hidden;
 
 }
 

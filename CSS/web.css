@@ -14,8 +14,6 @@
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 
-
-
 }
 
 #spacer_01 {
@@ -23,9 +21,7 @@
     height: 50px;
     width: 100%;
 
-
 }
-
 
 #banner_home {
 
@@ -45,7 +41,6 @@
     background-repeat: no-repeat;
     background-position: bottom bottom;
     background-size: cover;
-
 
 }
 
@@ -76,7 +71,6 @@
 #spacer_f {
 
     display: grid;
-
     height: 100%;
     width: 100%;
     background-image: url(/images/recurso_diseño_top_footer_aventuras_en_moto_por_el_mundo.png);

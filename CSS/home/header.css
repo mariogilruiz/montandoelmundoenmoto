@@ -27,6 +27,7 @@ header #logo_h {
 header #logo_h a {
 
     padding: 5px;
+
 }
 
 header #bttn_h {
@@ -36,6 +37,174 @@ header #bttn_h {
     border-radius: 0px 0px 0px 5px;
     grid-area: bttn;
     align-items: center;
+
+}
+
+header #bttn_h nav {
+
+    position: absolute;
+    top: 75px;
+    background-color: #BD2D0D;
+    color: var(--white);
+    font-family: var(--font-nav);
+    font-size: 20px;
+    width: 290px;
+    height: 500px;
+    right: 0px;
+    border-radius: 0px 0px 0px 5px;
+    transform: translateX(0);
+    box-sizing: border-box;
+    border: 4px solid black;
+    cursor: default;
+
+}
+
+header #bttn_h nav ul {
+
+    display: flex;
+    flex-direction: column;
+    height: 145px;
+    width: 290px;
+    margin-left: 38px;
+    margin-top: 40px;
+
+}
+
+header #bttn_h nav ul li {
+
+    line-height: 45px;
+    background-color: white;
+    width: 200px;
+    /* height: 100%; para ocupar todo el espacio de pantalla en diseño responsive del movil
+    width: 100%; */
+
+}
+
+header #bttn_h nav ul li:nth-child(2) {
+
+    border-left: 4px solid var(--grey-ccc);
+    border-right: 4px solid var(--grey-ccc);
+
+}
+
+header #bttn_h nav ul li:last-child {
+
+    border-radius: 0px 0px 4px 4px;
+    border-bottom: 4px solid var(--grey-ccc);
+    border-left: 4px solid var(--grey-ccc);
+    border-right: 4px solid var(--grey-ccc);
+
+}
+
+header #bttn_h nav ul li:first-child {
+
+    border-radius: 4px 4px 0px 0px;
+    border-top: 4px solid var(--grey-ccc);
+    border-left: 4px solid var(--grey-ccc);
+    border-right: 4px solid var(--grey-ccc);
+
+}
+
+header #bttn_h #nav_chek span {
+
+    font-size: 50px;
+    color: rgb(33, 33, 33);
+    font-family: var(--font-digital_b);
+    /* font-weight: 900; */
+
+}
+
+header #bttn_h nav #press_fuell {
+
+    display: grid;
+    height: 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 20% 20%;
+    place-content: center;
+    justify-items: center;
+
+}
+
+header #bttn_h nav input {
+
+    font-family: var(--font-digital_b);
+    font-size: 35px;
+    border: 4px solid black;
+    border-radius: 4px;
+    background-color: var(--grey-ccc);
+    cursor: pointer;
+
+}
+
+header #bttn_h nav #check_total {
+
+    display: flex;
+    margin-top: 20px;
+    height: 60px;
+    width: 240px;
+    justify-content: space-between;
+
+}
+
+header #bttn_h nav #press_fuell #litro_p_f {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header #bttn_h nav #sumar {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: var(--white);
+    font-size: 31px;
+    font-family: var(--font-bttn-fuell);
+
+}
+
+header #bttn_h nav #restar {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: var(--white);
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    padding-right: 3px;
+    font-family: var(--font-bttn-fuell);
+
+}
+
+header #bttn_h nav #litro {
+
+    height: 60px;
+    width: 30px;
+    background-color: var(--white);
+    font-size: 52px;
+    margin: 0px 10px;
+    cursor: default;
+    border: 4px solid var(--grey-ccc);
+
+}
+
+header #bttn_h nav #total {
+
+    background-color: var(--white);
+    height: 60px;
+    width: 60px;
+    cursor: default;
+    border: 4px solid var(--grey-ccc);
+
+}
+
+header #bttn_h nav #repostar {
+
+    height: 60px;
+    width: 170px;
 
 }
 
@@ -70,9 +239,7 @@ header #bttn_h #bttn_fuel:hover p {
     animation: 500ms fuell alternate infinite;
     -webkit-animation: 500ms fuell alternate infinite;
     -moz-animation: 500ms fuell alternate infinite;
-    ;
     -o-animation: 500ms fuell alternate infinite;
-
 
 }
 
@@ -121,6 +288,7 @@ header #bttn_h #bttn_fuel:hover img {
 }
 
 @keyframes wheel {
+
     from {
         transform: rotateY(0deg);
     }
@@ -140,6 +308,7 @@ header #bttn_h #bttn_fuel:hover img {
     to {
         transform: rotateZ(360deg);
     }
+
 }
 
 header #menu_plus {
@@ -162,6 +331,7 @@ header #bttn_p {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
 }
 
 header #bttn_p span {
@@ -197,8 +367,8 @@ header #menu_plus nav {
 
 header #menu_plus nav ul {
 
-    height: 290px;
-    width: 500px;
+    height: 500px;
+    width: 290px;
 
 }
 
@@ -245,6 +415,8 @@ header #bttn_p_x {
     font-size: 20px;
 
 }
+
+
 
 
 
