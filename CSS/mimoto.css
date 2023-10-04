@@ -1,16 +1,21 @@
-#web_videos {
+#web_moto {
 
     display: grid;
-    grid-template-rows: 600px 4000px 200px 50px 50px 250px;
+    grid-template-rows: 600px 2000px 50px 50px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 
+
 }
 
-#inital_max_videos {
+#inital_max_moto {
 
     display: grid;
-    /* background-color: blue; */
+    /* background-image: url(/images/back_mi_moto_free_live_free_ride.webp);
+    background-size: cover;
+    background-image: top center;
+    background-repeat: no-repeat; */
+
     justify-items: center;
     height: 600px;
     width: 100%;
@@ -20,15 +25,7 @@
 
 }
 
-#inital_max_videos video {
-
-    min-width: 105%;
-    min-height: 100%;
-    object-fit: cover;
-
-}
-
-#inital_max_videos img {
+#inital_max_moto img {
 
     position: absolute;
     left: 0px;
@@ -38,69 +35,18 @@
 
 }
 
-#pag-02_max_videos {
+#pag-02_max_moto {
 
     display: grid;
     background-color: var(--grey-ccc);
     justify-items: center;
-    height: 4000px;
+    height: 2000px;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 3600px;
+    grid-template-rows: 400px 1600px;
 
 }
 
-#content_i_videos {
-
-    height: 600px;
-    width: 100%;
-    max-width: 1200px;
-
-}
-
-#h2_02_videos {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 100%;
-    max-width: 1200px;
-    flex-direction: column;
-    /* background-color: aqua; */
-
-}
-
-#h2_02_videos h2 {
-
-    display: grid;
-    font-family: var(--font-primary);
-    font-size: 5vw;
-    color: var(--white);
-    /* text-shadow: 0px 4px 1px rgb(0, 0, 0, .5); */
-    text-transform: uppercase;
-    margin-top: 20px;
-
-}
-
-#h2_02_videos h3 {
-
-    display: grid;
-    font-family: var(--font-primary);
-    font-size: 2vw;
-    color: var(--white);
-    margin-bottom: 20px;
-
-}
-
-#h2_02_videos p {
-
-    font-family: var(--font-text-italic);
-    font-size: 18px;
-    font-weight: 300;
-    padding: 0px 20px 0px 20px;
-}
-
-#p_02_videos {
+#p_02_moto {
 
     height: 100%;
     width: 100%;
@@ -111,231 +57,76 @@
 
 }
 
-#max_content_02_videos {
+
+
+#h2_02_moto {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    background-color: var(--grey-ccc);
+
+
+}
+
+#h2_02_moto h2 {
 
     display: grid;
-    height: 4000px !important;
+    font-family: var(--font-primary);
+    font-size: 5vw;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+#h2_02_moto h3 {
+
+    display: grid;
+    font-family: var(--font-primary);
+    font-size: 2vw;
+    color: var(--white);
+    margin-bottom: 20px;
+
+}
+
+#h2_02_moto p {
+
+    font-family: var(--font-text-italic);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+#max_content_02_moto {
+
+    display: grid;
+    height: 200px;
     width: 100%;
-    /* background-color: aqua; */
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 100%;
-    justify-items: center;
     border-top: 2px solid var(--white);
 
 }
 
-#content_02_videos {
+#content_02_moto {
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, 280px);
     max-width: 1200px;
-    row-gap: 40px;
-    height: 4000px !important;
+
+    height: 2000px !important;
     width: 100%;
-    /* background-color: aqua; */
     justify-items: center;
     margin-top: 100px;
     text-align: start;
 
 }
 
-
-#content_02_videos .card_videos {
-
-    display: grid;
-    border-radius: 5px;
-    height: 250px;
-    width: 90%;
-    grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
-    font-family: var(--font-primary);
-    font-size: 40px;
-    color: var(--white);
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    /* border: 1px solid rgb(188, 99, 23, 0.4); */
-    overflow: hidden;
-
-}
-
-
-#content_02_videos .card_video_youtube {
-
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    overflow: hidden;
-    padding-bottom: 2px;
-    opacity: .8;
-    transition: 1s ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 1s ease-in-out all;
-    -o-transition: 1s ease-in-out all;
-
-}
-
-#content_02_videos .card_video_youtube:hover {
-
-    opacity: 1;
-
-}
-
-#content_02_videos .card_ncap_youtube {
-
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    /* background-color: rgb(43, 226, 128); */
-    border-top: 4px solid var(--grey-ccc);
-
-}
-
-.card_video_youtube iframe {
-
-    position: relative;
-    height: 100%;
-    width: 100%;
-
-}
-
-.card_video_youtube:hover iframe {
-
-    position: relative;
-    height: 100%;
-    width: 100%;
-
-}
-
-#content_02_videos .card_ncap_youtube {
-
-    background-color: rgb(0, 0, 0, .3);
-
-}
-
-#web_videos #social_videos_max {
-
-    display: grid;
-    width: 100%;
-    height: 200px;
-    justify-items: center;
-    background-color: var(--white-e9);
-    border-top: 2px solid var(--white);
-
-}
-
-#web_videos #social_videos_content {
-
-    display: grid;
-    background-color: var(--white-e9);
-    height: 200px;
-    width: 100%;
-    max-width: 1200px;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 100%;
-    place-content: center;
-
-}
-
-#web_videos #social_videos_content #banner_videos {
-
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    height: 100%;
-    width: 100%;
-    /* background-color: aqua; */
-    align-items: center;
-
-}
-
-#web_videos #social_videos_max #span_baner_v {
-
-    box-sizing: border-box;
-    display: grid;
-    height: 150px;
-    width: 90%;
-
-    border-radius: 5px;
-    -webkit-animation: linear .5s infinite alternate fluor;
-    animation: linear .5s infinite alternate fluor;
-    -moz-animation: linear .5s infinite alternate fluor;
-    -o-animation: linear .5s infinite alternate fluor;
-    place-content: center;
-    overflow: hidden;
-
-}
-
-@keyframes fluor {
-
-    0% {
-        border: 3px solid #ffff51;
-        box-shadow: 0px 0px 10px #ffff51;
-
-    }
-
-    100% {
-        border: 0px solid #ffff51;
-        box-shadow: 0px 0px 0px #ffff51;
-    }
-
-}
-
-#web_videos #social_videos_max #span_baner_v span {
-
-    font-family: var(--font-bttn-fuell);
-    font-size: 8rem;
-    text-transform: uppercase;
-    width: 6000px;
-    color: rgb(26, 26, 26);
-    letter-spacing: -5px;
-    transform: translateX(60%);
-    -webkit-animation: 15s linear infinite banner;
-    animation: 15s linaer infinite banner;
-    margin-top: 20px
-}
-
-@keyframes banner {
-
-    0% {
-        transform: translateX(60%);
-        opacity: 0;
-
-    }
-
-    15% {
-        opacity: 1;
-    }
-
-    85% {
-        opacity: 1;
-    }
-
-    100% {
-
-        transform: translateX(-59%);
-        opacity: 0;
-    }
-
-}
-
-#web_videos #social_videos_content #social_v_bttn {
-
-    display: grid;
-    grid-template-columns: 75%;
-    grid-template-rows: 30% 30%;
-    /* background-color: aqua; */
-    place-content: center;
-    row-gap: 20px;
-
-}
-
-#web_videos #spacer_02_videos {
+#web_moto #spacer_02_moto {
 
     display: grid;
     height: 50px;
@@ -348,10 +139,11 @@
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+    background-color: aqua;
 
 }
 
-#web_videos #spacer_f_videos {
+#web_moto #spacer_f_moto {
 
     display: grid;
     height: 50px;
@@ -360,5 +152,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-color: aqua;
 
 }
