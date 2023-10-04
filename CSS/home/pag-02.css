@@ -1,15 +1,15 @@
 #pag-02_max {
+
     position: relative;
     display: grid;
     /* background-color: rgb(198, 195, 35); */
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     height: 768px;
-
     background-image: url(/images/africa_europa_en_moto.png);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100%;
+    background-size: cover;
     justify-items: center;
 
 
@@ -17,78 +17,117 @@
 }
 
 #pag-02_max #content_02 {
+
+
     position: relative;
     display: grid;
     /* background-color: rgb(229, 16, 208); */
     max-width: 1200px;
     row-gap: 20px;
     column-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 35% 35%;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 280px 280px;
     height: 768px;
     width: 100%;
     place-content: center;
 
 
 
+
 }
+
+
 
 #pag-02_max #content_02 .card_02 {
 
-    display: flex;
+    position: relative;
+    display: grid;
     border-radius: 5px;
     background-color: rgb(0, 0, 0, .3);
     font-family: var(--font-primary);
+    overflow: hidden !important;
     font-size: 40px;
+    height: 100%;
+    width: 100%;
     color: var(--white);
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 1s ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 1s ease-in-out all;
-    -o-transition: 1s ease-in-out all;
+    transition: 300ms ease-in-out all;
+    -webkit-transition: 300ms ease-in-out all;
+    -moz-transition: 300ms ease-in-out all;
+    -o-transition: 300ms ease-in-out all;
     border: 1px solid rgb(188, 99, 23, 0.4);
 
 }
 
-#pag-02_max #content_02 a {
 
-    color: var(--white);
-    padding: 16%;
-    display: inline-block;
-    line-height: 100px;
-    /* width: 100%;
-    height: 100%;
-    text-align: center;
-    align-items: center; */
+
+#pag-02_max #content_02 .card_02:hover {
+
+    box-shadow: 0px 0px 5px black;
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid rgb(188, 99, 23, 1);
 }
 
+#pag-02_max #content_02 p {
+
+    position: absolute;
+    color: var(--white);
+    transition: 1s all ease;
+    -webkit-transition: 500ms all ease;
+    -moz-transition: 500ms all ease;
+    -o-transition: 500ms all ease;
+
+}
+
+
+
+
+#pag-02_max #content_02 img {
+
+    position: relative;
+    transition: 500ms all ease;
+    -webkit-transition: 500ms all ease;
+    -moz-transition: 500ms all ease;
+    -o-transition: 500ms all ease;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#content_02 .card_02_img {}
+
+
+
+
 #pag-02_max #content_02 #card_02_01 {
+
+    /* background-color: rgb(255, 255, 255); */
+}
+
+#pag-02_max #content_02 #card_02_01:hover {}
+
+#pag-02_max #content_02 #card_02_01:hover p {
+
+
+    transform: translateX(-170%);
+}
+
+#pag-02_max #content_02 #card_02_02 {
 
     /* background-color: black; */
 
 }
 
-#pag-02_max #content_02 #card_02_01:hover {
+#pag-02_max #content_02 #card_02_02:hover {}
 
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
-    font-size: 30px;
+#pag-02_max #content_02 #card_02_02:hover p {
 
-}
 
-#pag-02_max #content_02 #card_02_02 {
-    /* background-color: rgb(255, 255, 255); */
-
-}
-
-#pag-02_max #content_02 #card_02_02:hover {
-
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
-    font-size: 30px;
+    transform: translateY(-390%);
 
 }
 
@@ -98,25 +137,45 @@
 
 }
 
-#pag-02_max #content_02 #card_02_03:hover {
+#pag-02_max #content_02 #card_02_03:hover {}
 
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
-    font-size: 30px;
+#pag-02_max #content_02 #card_02_03:hover p {
+
+
+    transform: translateX(170%);
 
 }
 
 #pag-02_max #content_02 #card_02_04 {
 
+    display: grid;
 
-    /* background-color: rgb(255, 255, 255); */
+
 }
 
-#pag-02_max #content_02 #card_02_04:hover {
+#pag-02_max #content_02 #card_02_04:hover {}
 
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
-    font-size: 30px;
+#pag-02_max #content_02 #card_02_04:hover p {
+
+    transform: translateX(-190%);
+
+}
+
+#pag-02_max #content_02 #card_02_04 img {
+
+    transform: translateX(200%);
+    opacity: 0;
+
+
+}
+
+
+#pag-02_max #content_02 #card_02_04:hover img {
+
+    opacity: .9;
+    transform: translateX(0);
+
+
 
 }
 
@@ -126,11 +185,12 @@
 
 }
 
-#pag-02_max #content_02 #card_02_05:hover {
+#pag-02_max #content_02 #card_02_05:hover {}
 
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
-    font-size: 30px;
+#pag-02_max #content_02 #card_02_05:hover p {
+
+
+    transform: translateY(300%);
 
 }
 
@@ -140,10 +200,11 @@
 
 }
 
-#pag-02_max #content_02 #card_02_06:hover {
+#pag-02_max #content_02 #card_02_06:hover {}
 
-    background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
-    font-size: 30px;
+#pag-02_max #content_02 #card_02_06:hover p {
+
+
+    transform: translateX(170%);
 
 }
