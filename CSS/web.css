@@ -5,29 +5,27 @@
     text-decoration: none;
     list-style: none;
 
+
 }
 
 #web {
 
     display: grid;
-    grid-template-rows: 800px 50px 768px 100px 768px 100px 50px 50px 250px;
+    grid-template-rows: 800px 768px 20px 850px 300px 50px 50px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 
+
+
 }
+
 
 #spacer_01 {
 
-    height: 50px;
+    display: grid;
+    height: 18px;
     width: 100%;
-
-}
-
-#banner_home {
-
-    background-color: var(--white-e9);
-    height: 300px;
-    width: 100%;
+    border-bottom: 2px solid white;
 
 }
 
@@ -44,11 +42,36 @@
 
 }
 
-#spacer_03 {
+#phrase_home {
 
-    background-color: var(--grey-ccc);
-    height: 100%;
+    display: grid;
+    justify-items: center;
+    height: 300px;
     width: 100%;
+    border-top: 2px solid white;
+    background-color: var(--white-e9);
+
+}
+
+#phrase_home #content_ph {
+
+    display: flex;
+    width: 1200px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+
+}
+
+#phrase_home p {
+
+    font-size: 4.5rem;
+    font-family: var(--font-Windsong);
+    color: rgba(43, 39, 39, 0.821);
+    font-weight: 500;
+    line-height: 90px;
+    padding-top: 70px;
+
 
 }
 
@@ -57,7 +80,7 @@
     display: grid;
     height: 50px;
     width: 100%;
-    background-image: url(/images/separacion_CC_top_footer_aventuras_en_moto_por_el_mundo.png);
+    background-image: url(/images/La_serie/separacion_e9_top_footer_aventuras_en_moto_por_el_mundo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -65,6 +88,7 @@
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+    /* background-color: aqua; */
 
 }
 

@@ -6,11 +6,14 @@
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     height: 768px;
-    background-image: url(/images/africa_europa_en_moto.png);
+    background-image: url(/images/back_home_initial_montando_el_munod_en_moto.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     justify-items: center;
+
+
+
 
 
 
@@ -30,7 +33,6 @@
     height: 768px;
     width: 100%;
     place-content: center;
-
 
 
 
@@ -114,6 +116,24 @@
 
 
     transform: translateX(-170%);
+}
+
+#pag-02_max #content_02 #card_02_01 img {
+
+    transform: translateX(200%);
+    opacity: 0;
+
+
+}
+
+
+#pag-02_max #content_02 #card_02_01:hover img {
+
+    opacity: .8;
+    transform: translateX(0);
+
+
+
 }
 
 #pag-02_max #content_02 #card_02_02 {

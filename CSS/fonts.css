@@ -56,3 +56,13 @@
     font-family: "digiti_b";
     src: url(/fonts/DS-DIGIB.TTF);
 }
+
+@font-face {
+    font-family: "japan";
+    src: url(/fonts/JAPAB___.TTF);
+}
+
+@font-face {
+    font-family: "Windsong";
+    src: url(/fonts/Windsong.ttf);
+}

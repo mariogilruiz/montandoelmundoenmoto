@@ -1,21 +1,19 @@
-#web_moto {
+#web_material {
 
     display: grid;
     grid-template-rows: 600px 2000px 50px 50px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 
-
 }
 
-#inital_max_moto {
+#inital_max_material {
 
     display: grid;
     /* background-image: url(/images/back_mi_moto_free_live_free_ride.webp);
     background-size: cover;
     background-image: top center;
     background-repeat: no-repeat; */
-
     justify-items: center;
     height: 600px;
     width: 100%;
@@ -25,7 +23,7 @@
 
 }
 
-#inital_max_moto img {
+#inital_max_material img {
 
     position: absolute;
     left: 0px;
@@ -35,7 +33,7 @@
 
 }
 
-#pag-02_max_moto {
+#pag-02_max_material {
 
     display: grid;
     background-color: var(--grey-ccc);
@@ -46,65 +44,62 @@
 
 }
 
-#p_02_moto {
+#description_02_material {
 
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 2px solid var(--white);
-    text-align: center;
-
-}
-
-
-
-#h2_02_moto {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     height: 400px;
     width: 100%;
     max-width: 1200px;
-    flex-direction: column;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 80px 200px;
     background-color: var(--grey-ccc);
 
-
 }
 
-#h2_02_moto h2 {
+#h2_descript_material {
 
-    display: grid;
+    display: flex;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
     font-family: var(--font-primary);
-    font-size: 5vw;
+    font-size: 3.5rem;
     color: var(--white);
     text-transform: uppercase;
-    margin-top: 20px;
 
 }
 
-#h2_02_moto h3 {
+#h3_descript_material {
 
-    display: grid;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     font-family: var(--font-primary);
-    font-size: 2vw;
+    font-size: 1.5rem;
     color: var(--white);
     margin-bottom: 20px;
 
 }
 
-#h2_02_moto p {
+#p_descript_material {
 
+    display: flex;
+    height: 200px;
+    width: 100%;
+    border-top: 2px solid var(--white);
+    text-align: center;
+    justify-content: center;
     font-family: var(--font-text-italic);
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 300;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
+
 }
 
-
-
-#max_content_02_moto {
+#max_content_02_material {
 
     display: grid;
     height: 200px;
@@ -113,11 +108,10 @@
 
 }
 
-#content_02_moto {
+#content_02_material {
 
     display: grid;
     max-width: 1200px;
-
     height: 2000px !important;
     width: 100%;
     justify-items: center;
@@ -126,7 +120,7 @@
 
 }
 
-#web_moto #spacer_02_moto {
+#web_material #spacer_02_material {
 
     display: grid;
     height: 50px;
@@ -143,7 +137,7 @@
 
 }
 
-#web_moto #spacer_f_moto {
+#web_material #spacer_f_material {
 
     display: grid;
     height: 50px;

@@ -3,11 +3,11 @@
     display: grid;
     position: fixed;
     /* background-color: aqua; */
-    grid-template-columns: 300px 1fr 190px 100px;
+    grid-template-columns: 300px 80px 1fr 190px 100px;
     grid-template-rows: 80px;
     width: 100%;
     grid-template-areas:
-        "logo .  bttn menu ";
+        "logo home .  bttn menu ";
     text-transform: uppercase;
     z-index: 100;
 
@@ -27,6 +27,35 @@ header #logo_h {
 header #logo_h a {
 
     padding: 5px;
+
+}
+
+header #bttn_home {
+
+    display: grid;
+    height: 76px;
+    width: 80px;
+    outline: 4px solid var(--blue-primary);
+    grid-area: home;
+    background-color: var(--blue-primary);
+    border-radius: 0px 0px 5px 0px;
+    place-content: center;
+
+
+
+
+}
+
+header #bttn_home #bttn_h_h {
+
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+
+
+
 
 }
 
