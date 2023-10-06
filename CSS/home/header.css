@@ -2,7 +2,7 @@
 
     display: grid;
     position: fixed;
-    /* background-color: aqua; */
+
     grid-template-columns: 300px 80px 1fr 190px 100px;
     grid-template-rows: 80px;
     width: 100%;
@@ -17,6 +17,7 @@ header #logo_h {
 
     display: grid;
     background-color: var(--blue-primary);
+    /* background-color: rgb(4, 156, 189, .9); */
     grid-area: logo;
     place-content: center;
     border-radius: 0px 0px 5px 0px;
@@ -41,9 +42,6 @@ header #bttn_home {
     border-radius: 0px 0px 5px 0px;
     place-content: center;
 
-
-
-
 }
 
 header #bttn_home #bttn_h_h {
@@ -53,11 +51,10 @@ header #bttn_home #bttn_h_h {
     height: 70px;
     width: 70px;
     cursor: pointer;
-
-
-
+    background-color: var(--blue-primary);
 
 }
+
 
 header #bttn_h {
 

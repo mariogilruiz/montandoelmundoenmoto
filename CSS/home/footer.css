@@ -1,15 +1,19 @@
 #footer_max {
 
     display: grid;
-    background-color: rgb(2, 87, 106, 1);
-    background-image: url(/images/back_footer_montaña_moto_campo.webp);
+    position: fixed;
+    bottom: 0;
+    background-image: url(/images/back_footer.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
+    height: 250px;
+    width: 100%;
     justify-content: center;
     backdrop-filter: blur(10px);
+    border-top: 1px solid var(--white);
     /* -webkit-backdrop-filter: opacity(50%);
     -moz-backdrop-filter: opacity(50%);
     -o-backdrop-filter: opacity(50%); */
@@ -19,6 +23,7 @@
 #footer_max #content_f {
 
     display: grid;
+    position: absolute;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 250px;

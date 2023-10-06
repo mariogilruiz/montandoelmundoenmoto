@@ -1,9 +1,13 @@
-* {
+*,
+body {
 
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    overflow-x: clip;
+
+
 
 
 }
@@ -11,9 +15,15 @@
 #web {
 
     display: grid;
-    grid-template-rows: 800px 768px 20px 850px 300px 50px 50px 250px;
+    grid-template-rows: 800px 768px 20px 850px 250px 60px 60px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center center;
+
 
 
 
@@ -22,84 +32,96 @@
 
 #spacer_01 {
 
+    position: relative;
     display: grid;
-    height: 18px;
+    height: 19px;
     width: 100%;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
+    z-index: 90;
+    background-color: var(--white-e9);
 
 }
 
-#spacer_02 {
-
-    display: grid;
-    /* background-color: var(--grey-ccc); */
-    height: 50px;
-    width: 100%;
-    background-image: url(/images/separacion_CC_top_footer_aventuras_en_moto_por_el_mundo.png);
-    background-repeat: no-repeat;
-    background-position: bottom bottom;
-    background-size: cover;
-
-}
 
 #phrase_home {
 
     display: grid;
+    position: relative;
     justify-items: center;
-    height: 300px;
+    height: 250px;
     width: 100%;
-    border-top: 2px solid white;
+    border-top: 1px solid white;
     background-color: var(--white-e9);
+    background-image: url(/images/back_phrase.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 90;
+    border-bottom: 1px solid var(--white);
 
 }
 
 #phrase_home #content_ph {
 
     display: flex;
-    width: 1200px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
+    max-width: 1200px !important;
     align-items: center;
     text-align: center;
 
 }
 
+
 #phrase_home p {
 
-    font-size: 4.5rem;
+    font-size: 4.4rem;
     font-family: var(--font-Windsong);
-    color: rgba(43, 39, 39, 0.821);
+    /* color: rgba(43, 39, 39, 0.821); */
+    color: var(--white);
     font-weight: 500;
-    line-height: 90px;
+    line-height: 80px;
     padding-top: 70px;
+    z-index: 2;
+    padding-left: 20px;
+    padding-right: 20px;
 
 
 }
 
 #spacer_04 {
 
+    position: relative;
     display: grid;
-    height: 50px;
+    height: 60px;
     width: 100%;
-    background-image: url(/images/La_serie/separacion_e9_top_footer_aventuras_en_moto_por_el_mundo.png);
+
+    /* background-image: url(/images/separador_footer_home.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+    -o-transform: rotate(180deg); */
+
     /* background-color: aqua; */
 
 }
 
 #spacer_f {
 
+    position: fixed;
+    bottom: 250px;
     display: grid;
     height: 100%;
+    height: 60px;
     width: 100%;
-    background-image: url(/images/recurso_diseño_top_footer_aventuras_en_moto_por_el_mundo.png);
+    /* background-image: url(/images/separador_footer_home.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
+
+
 
 }
