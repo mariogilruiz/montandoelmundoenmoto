@@ -12,11 +12,9 @@
     height: 250px;
     width: 100%;
     justify-content: center;
-    backdrop-filter: blur(10px);
     border-top: 1px solid var(--white);
-    /* -webkit-backdrop-filter: opacity(50%);
-    -moz-backdrop-filter: opacity(50%);
-    -o-backdrop-filter: opacity(50%); */
+    z-index: 80;
+
 
 }
 
@@ -55,6 +53,7 @@
 }
 
 #footer_max #content_f #h2_f {
+
     display: flex;
     /* background-color: rgb(84, 84, 84); */
     grid-area: h;
@@ -65,7 +64,6 @@
     justify-content: center;
     align-items: center;
     border-right: 2px solid rgb(0, 0, 0, .5);
-
     margin-top: 20px;
 
 

@@ -1,4 +1,4 @@
-#web_material {
+#web_imagenes {
 
     display: grid;
     grid-template-rows: 600px 2000px 200px 120px 250px;
@@ -10,7 +10,7 @@
 
 }
 
-#inital_max_material {
+#inital_max_imagenes {
     position: relative;
     display: grid;
     /* background-image: url(/images/back_mi_moto_free_live_free_ride.webp);
@@ -27,7 +27,7 @@
 
 }
 
-#inital_max_material img {
+#inital_max_imagenes img {
 
     position: absolute;
     left: 0px;
@@ -37,7 +37,7 @@
 
 }
 
-#pag-02_max_material {
+#pag-02_max_imagenes {
     position: relative;
     display: grid;
     background-color: var(--grey-ccc);
@@ -50,7 +50,7 @@
 
 }
 
-#description_02_material {
+#description_02_imagenes {
 
     display: grid;
     place-content: center;
@@ -63,7 +63,7 @@
 
 }
 
-#h2_descript_material {
+#h2_descript_imagenes {
 
     display: flex;
     height: 120px;
@@ -76,7 +76,7 @@
 
 }
 
-#h3_descript_material {
+#h3_descript_imagenes {
 
     display: flex;
     height: 80px;
@@ -90,7 +90,7 @@
 
 }
 
-#p_descript_material {
+#p_descript_imagenes {
 
     display: flex;
     height: 200px;
@@ -108,7 +108,7 @@
 
 
 
-#max_content_02_material {
+#max_content_02_imagenes {
 
     display: grid;
     height: 1600px;
@@ -123,7 +123,7 @@
 
 }
 
-#content_02_material {
+#content_02_imagenes {
 
     display: grid;
     max-width: 1200px;
@@ -135,7 +135,7 @@
 
 }
 
-#social_material_max {
+#social_imagenes_max {
 
     display: grid;
     position: relative;
@@ -151,7 +151,7 @@
 }
 
 
-#web_material #spacer_f_material {
+#web_imagenes #spacer_f_imagenes {
 
     display: grid;
     height: 120px;

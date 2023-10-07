@@ -111,7 +111,6 @@ header #bttn_h nav ul {
 
 }
 
-
 header #bttn_h nav ul li {
 
     line-height: 45px;
@@ -436,6 +435,7 @@ header #menu_plus nav ul li:hover {
 header #menu_plus nav ul li a {
 
     color: var(--white);
+
 }
 
 header #menu_plus nav ul li:nth-child(2) {

@@ -30,8 +30,6 @@
     width: 100%;
     place-content: center;
 
-
-
 }
 
 #pag-02_max #content_02 .card_02 {
@@ -90,15 +88,7 @@
 
 }
 
-#pag-02_max #content_02 #card_02_01 {
-
-    /* background-color: rgb(255, 255, 255); */
-}
-
-#pag-02_max #content_02 #card_02_01:hover {}
-
 #pag-02_max #content_02 #card_02_01:hover p {
-
 
     transform: translateX(-170%);
 }
@@ -108,41 +98,36 @@
     transform: translateX(200%);
     opacity: 0;
 
-
 }
-
 
 #pag-02_max #content_02 #card_02_01:hover img {
 
     opacity: .8;
     transform: translateX(0);
 
-
-
 }
 
-#pag-02_max #content_02 #card_02_02 {
-
-    /* background-color: black; */
-
-}
-
-#pag-02_max #content_02 #card_02_02:hover {}
 
 #pag-02_max #content_02 #card_02_02:hover p {
-
 
     transform: translateY(-390%);
 
 }
 
-#pag-02_max #content_02 #card_02_03 {
+#pag-02_max #content_02 #card_02_02 img {
 
-    /* background-color: black; */
+    transform: translateY(200%);
+    opacity: 0;
+    width: 110%;
 
 }
 
-#pag-02_max #content_02 #card_02_03:hover {}
+#pag-02_max #content_02 #card_02_02:hover img {
+
+    opacity: .8;
+    transform: translateX(0);
+
+}
 
 #pag-02_max #content_02 #card_02_03:hover p {
 
@@ -151,14 +136,19 @@
 
 }
 
-#pag-02_max #content_02 #card_02_04 {
+#pag-02_max #content_02 #card_02_03 img {
 
-    display: grid;
-
+    transform: translateX(-200%);
+    opacity: 0;
 
 }
 
-#pag-02_max #content_02 #card_02_04:hover {}
+#pag-02_max #content_02 #card_02_03:hover img {
+
+    opacity: .9;
+    transform: translateX(0);
+
+}
 
 #pag-02_max #content_02 #card_02_04:hover p {
 
@@ -171,46 +161,51 @@
     transform: translateX(200%);
     opacity: 0;
 
-
 }
-
 
 #pag-02_max #content_02 #card_02_04:hover img {
 
     opacity: .9;
     transform: translateX(0);
 
-
-
-
 }
-
-#pag-02_max #content_02 #card_02_05 {
-    /* background-color: black; */
-
-
-}
-
-#pag-02_max #content_02 #card_02_05:hover {}
 
 #pag-02_max #content_02 #card_02_05:hover p {
-
 
     transform: translateY(300%);
 
 }
 
-#pag-02_max #content_02 #card_02_06 {
+#pag-02_max #content_02 #card_02_05 img {
 
-    /* background-color: rgb(255, 255, 255); */
+    transform: translateY(-200%);
+    opacity: 0;
 
 }
 
-#pag-02_max #content_02 #card_02_06:hover {}
+#pag-02_max #content_02 #card_02_05:hover img {
+
+    opacity: .8;
+    transform: translateX(0);
+
+}
 
 #pag-02_max #content_02 #card_02_06:hover p {
 
-
     transform: translateX(170%);
+
+}
+
+#pag-02_max #content_02 #card_02_06 img {
+
+    transform: translateX(-200%);
+    opacity: 0;
+
+}
+
+#pag-02_max #content_02 #card_02_06:hover img {
+
+    opacity: .8;
+    transform: translateX(0);
 
 }

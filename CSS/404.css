@@ -1,0 +1,56 @@
+#web_404 {
+
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100%;
+
+}
+
+#inital_max_404 {
+
+    position: relative;
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    place-content: center;
+    overflow: hidden;
+    background-color: blue;
+
+}
+
+#initial_content_404 {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    height: 80vh;
+    max-width: 1200px;
+    overflow: hidden;
+    background-color: aquamarine;
+
+}
+
+#initial_content_404 span {
+
+    font-family: var(--font-primary);
+    font-size: 25vw;
+    color: var(--white);
+    margin: 0px 10px;
+
+}
+
+#initial_content_404 img {
+
+    width: 20vw;
+    margin-left: 10px;
+    -webkit-animation: 7s wheel linear infinite;
+    animation: 7s wheel linear infinite;
+
+}

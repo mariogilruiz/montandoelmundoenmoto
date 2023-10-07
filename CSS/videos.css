@@ -1,9 +1,9 @@
 #web_videos {
 
     display: grid;
-    grid-template-rows: 600px 4000px 200px 60px 60px 250px;
+    grid-template-rows: 600px 4000px 200px 120px 250px;
     grid-template-columns: 100%;
-    background-color: var(--white-e9);
+    width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -18,7 +18,6 @@
     display: grid;
     position: relative;
     z-index: 90;
-    /* background-color: blue; */
     justify-items: center;
     height: 600px;
     width: 100%;
@@ -33,9 +32,6 @@
     position: relative;
     min-width: 100%;
     min-height: 100%;
-
-
-
 
 }
 
@@ -240,8 +236,7 @@
     width: 100%;
     height: 200px;
     justify-items: center;
-    background-color: var(--white-e9);
-    border-top: 2px solid var(--white);
+    border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
 
 
@@ -278,7 +273,6 @@
     display: grid;
     height: 150px;
     width: 90%;
-
     border-radius: 5px;
     -webkit-animation: linear .5s infinite alternate fluor;
     animation: linear .5s infinite alternate fluor;
@@ -343,8 +337,8 @@
 }
 
 #web_videos #social_videos_content #social_v_bttn {
-    position: relative;
 
+    position: relative;
     background-color: var(--white-e9);
     display: grid;
     grid-template-columns: 75%;
@@ -353,22 +347,14 @@
     place-content: center;
     row-gap: 20px;
 
-
 }
 
 #web_videos #spacer_02_videos {
+
     position: relative;
     display: grid;
     height: 60px;
     width: 100%;
-    /* background-image: url(/images/La_serie/separacion_e9_top_footer_aventuras_en_moto_por_el_mundo.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg); */
     z-index: 90;
 
 }

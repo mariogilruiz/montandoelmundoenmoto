@@ -7,15 +7,12 @@ body {
     list-style: none;
     overflow-x: clip;
 
-
-
-
 }
 
 #web {
 
     display: grid;
-    grid-template-rows: 800px 768px 20px 850px 250px 60px 60px 250px;
+    grid-template-rows: 800px 768px 20px 850px 250px 120px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -23,12 +20,9 @@ body {
     background-attachment: fixed;
     background-size: 100%;
     background-position: center center;
-
-
-
+    overflow: hidden;
 
 }
-
 
 #spacer_01 {
 
@@ -82,46 +76,15 @@ body {
     font-weight: 500;
     line-height: 80px;
     padding-top: 70px;
-    z-index: 2;
     padding-left: 20px;
     padding-right: 20px;
-
-
-}
-
-#spacer_04 {
-
-    position: relative;
-    display: grid;
-    height: 60px;
-    width: 100%;
-
-    /* background-image: url(/images/separador_footer_home.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg); */
-
-    /* background-color: aqua; */
 
 }
 
 #spacer_f {
 
-    position: fixed;
-    bottom: 250px;
     display: grid;
-    height: 100%;
-    height: 60px;
+    height: 120px;
     width: 100%;
-    /* background-image: url(/images/separador_footer_home.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; */
-
-
 
 }
