@@ -24,7 +24,7 @@
     max-width: 1200px;
     height: 850px;
     width: 100%;
-    grid-template-columns: repeat(8, 6%);
+    grid-template-columns: repeat(8, 12%);
     grid-template-rows: repeat(6, 100px);
     grid-template-areas:
         "f f f f h h h h"
@@ -34,7 +34,9 @@
         "f f f f t t t t"
         "f f f f t t t t";
     place-content: center;
-    column-gap: 80px;
+    justify-content: space-between;
+
+
 
 }
 
@@ -46,6 +48,7 @@
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    margin-right: 40px;
 
 }
 
@@ -53,6 +56,7 @@
 
     object-fit: cover;
     height: 700px;
+    width: 100%;
     transform: scale(1);
     transition: 1s ease-in-out all;
     -webkit-transition: 1s ease-in-out all;
@@ -85,9 +89,10 @@
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 55px;
-    column-gap: 20px;
+    height: 55px;
+    width: 100%;
     grid-area: b;
-    place-content: center;
+    justify-content: space-between;
     margin-top: 20px;
 
 }
@@ -132,10 +137,6 @@
 .bbtn_you::after {
 
     content: "youtube";
-    /* transition: 500ms ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 500ms ease-in-out all;
-    -o-transition: 500ms ease-in-out all; */
 
 }
 
@@ -158,10 +159,6 @@
 .bbtn_ing::after {
 
     content: "instagram";
-    /* transition: 500ms ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 500ms ease-in-out all;
-    -o-transition: 500ms ease-in-out all; */
 
 }
 
@@ -185,10 +182,6 @@
 .bbtn_tktk::after {
 
     content: "tiktok";
-    /* transition: 500ms ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 500ms ease-in-out all;
-    -o-transition: 500ms ease-in-out all; */
 
 }
 
@@ -200,7 +193,6 @@
 
 #pag_03_max #content_03 #text_03 {
 
-    /* background-color: brown; */
     grid-area: t;
     padding: 20px 30px 10px 30px;
     text-align: center;

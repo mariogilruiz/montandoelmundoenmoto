@@ -1,5 +1,5 @@
 #footer_max {
-
+    position: relative;
     display: grid;
     position: fixed;
     bottom: 0;
@@ -13,7 +13,7 @@
     width: 100%;
     justify-content: center;
     border-top: 1px solid var(--white);
-    z-index: 80;
+    z-index: 89;
 
 
 }
@@ -37,49 +37,47 @@
 
 #footer_max #content_f #logo_f {
 
+    position: relative;
     display: flex;
     /* background-color: rgb(186, 0, 96); */
     grid-area: l;
     align-items: center;
     margin-left: 50px;
 
-
 }
 
 #footer_max #content_f #logo_f img {
 
-    height: 80%;
-
+    height: 200px
 }
 
 #footer_max #content_f #h2_f {
 
+    position: relative;
     display: flex;
-    /* background-color: rgb(84, 84, 84); */
     grid-area: h;
     font-family: var(--font-primary);
     color: var(--white);
-    font-size: 3vw;
+    font-size: 2.5rem;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
     border-right: 2px solid rgb(0, 0, 0, .5);
     margin-top: 20px;
 
-
 }
 
 #footer_max #content_f #h2_f #bttn_f {
 
     display: grid;
-    width: 3vw;
-    height: 3vw;
+    width: 3rem;
+    height: 3rem;
     border-radius: 999px;
     border: 0px;
     font-family: var(--font-text);
     background-color: var(--green-primary-);
-    font-size: 3.5vw;
-    place-content: center;
+    font-size: 3rem;
+    line-height: 3rem;
     color: var(--white);
     overflow: hidden;
     cursor: pointer;
@@ -93,7 +91,6 @@
     -webkit-animation: 500ms plus alternate infinite;
     -moz-animation: 500ms plus alternate infinite;
     -o-animation: 500ms plus alternate infinite;
-
 
 }
 
@@ -186,7 +183,10 @@
 
 
     /* background-color: aqua; */
-    height: 100px;
+    height: 100%;
+    width: 100%;
+    max-width: 280px;
+
 
 
 }
