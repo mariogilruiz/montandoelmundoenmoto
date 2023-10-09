@@ -12,7 +12,7 @@ body {
 #web {
 
     display: grid;
-    grid-template-rows: 800px 768px 20px 850px 250px 120px 250px;
+    grid-template-rows: 30px 800px 768px 20px 850px 250px 120px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -21,6 +21,7 @@ body {
     background-size: 100%;
     background-position: center center;
     overflow: hidden;
+
 
 }
 
@@ -36,6 +37,56 @@ body {
 
 }
 
+#banner_home {
+
+    position: fixed;
+    display: grid;
+    height: 30px;
+    width: 100%;
+    z-index: 90;
+    box-sizing: border-box;
+    background-color: #EBA55E;
+    background-attachment: fixed;
+    justify-items: center;
+    font-family: var(--font-footer);
+    font-weight: bolder;
+    color: rgb(43, 43, 43);
+    align-items: end;
+    padding-bottom: 5px;
+
+}
+
+#banner_home span {
+
+    transform: translateX(120%);
+    -webkit-animation: 25s linear infinite banner_h;
+    animation: 25s linaer infinite banner_h;
+
+}
+
+
+@keyframes banner_h {
+
+    0% {
+        transform: translateX(120%);
+
+
+    }
+
+    100% {
+
+        transform: translateX(-110%);
+
+    }
+
+}
+
+#banner_home #content_b_h p {
+
+    font-family: var(--font-social);
+
+
+}
 
 #phrase_home {
 
@@ -65,7 +116,6 @@ body {
     text-align: center;
 
 }
-
 
 #phrase_home p {
 

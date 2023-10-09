@@ -21,7 +21,6 @@
     height: 100vh;
     place-content: center;
     overflow: hidden;
-    /* background-color: blue; */
 
 }
 
@@ -30,21 +29,18 @@
     position: relative;
     display: grid;
     justify-content: center;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 30vh 40vh;
     grid-template-areas:
         "p h2"
         "p h3"
     ;
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
     max-width: 1200px;
+    height: 60vh;
     overflow: hidden;
-    /* background-color: aqua; */
 
 }
-
-#content_404 {}
 
 #initial_content_404 #h2_404 {
 
@@ -52,8 +48,7 @@
     grid-area: h2;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background-color: blue;
+
 }
 
 #initial_content_404 span {
@@ -61,12 +56,12 @@
     font-family: var(--font-bttn-fuell);
     font-size: 30vh;
     color: rgb(110, 104, 104);
+
 }
 
 #initial_content_404 span img {
 
     width: 21vh;
-    margin: 0px 0px;
     -webkit-animation: 7s wheel linear infinite;
     animation: 7s wheel linear infinite;
 
@@ -76,21 +71,32 @@
 
     display: flex;
     align-items: center;
+    justify-content: start;
     grid-area: h3;
     flex-direction: column;
-    background-color: blueviolet;
-
 
 }
 
 #initial_content_404 h3 {
 
     font-family: var(--font-social);
-    font-size: 6vh;
+    font-size: 4.2vh;
     color: rgb(110, 104, 104);
-    margin-bottom: 40px;
 
 }
+
+#initial_content_404 h3:first-child {
+
+    margin-bottom: 5px;
+
+}
+
+#initial_content_404 h3:nth-child(2) {
+
+    margin-bottom: 10px;
+
+}
+
 
 #initial_content_404 p {
 
@@ -102,29 +108,28 @@
 
 #initial_content_404 a {
 
-
     font-size: 3vh;
     font-weight: 900;
     font-family: var(--font-bttn-fuell);
-
+    text-decoration: underline;
 
 }
-
 
 #initial_content_404 #prada {
 
     display: flex;
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: end;
     grid-area: p;
-    background-color: aqua;
 
 }
 
 
 #initial_content_404 #prada img {
 
-    height: 48vh;
+    height: 47vh;
 
 
 }

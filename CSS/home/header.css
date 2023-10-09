@@ -2,7 +2,6 @@
 
     display: grid;
     position: fixed;
-
     grid-template-columns: 300px 80px 1fr 190px 100px;
     grid-template-rows: 80px;
     width: 100%;
@@ -43,6 +42,8 @@ header #bttn_home {
     place-content: center;
 
 }
+
+
 
 header #bttn_home #bttn_h_h {
 
