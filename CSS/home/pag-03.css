@@ -97,6 +97,18 @@
 
 }
 
+#pag_03_max #content_03 #bttn_03 button:first-child {
+
+    margin-left: 2px;
+}
+
+#pag_03_max #content_03 #bttn_03 button:last-child {
+
+    margin-right: 2px;
+}
+
+
+
 .bttn_social {
 
     border: 0px;
@@ -117,7 +129,7 @@
 
 .bttn_social:hover {
 
-    box-shadow: 0px 0px 4px black;
+    box-shadow: inset 0px 0px 4px black;
 }
 
 .bbtn_you {

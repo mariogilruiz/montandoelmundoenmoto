@@ -43,26 +43,41 @@
 }
 
 @font-face {
+
     font-family: "roboto";
     src: url(/fonts/Roboto-Thin.ttf);
+
 }
 
 @font-face {
+
     font-family: "digiti";
     src: url(/fonts/DS-DIGI.TTF);
+
 }
 
 @font-face {
+
     font-family: "digiti_b";
     src: url(/fonts/DS-DIGIB.TTF);
+
 }
 
 @font-face {
+
     font-family: "japan";
     src: url(/fonts/JAPAB___.TTF);
+
 }
 
 @font-face {
+
     font-family: "Windsong";
     src: url(/fonts/Windsong.ttf);
+
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url(/fonts/Roboto-Light.ttf);
 }

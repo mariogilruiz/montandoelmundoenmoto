@@ -1,0 +1,93 @@
+#web_session {
+
+    position: relative;
+    display: grid;
+    grid-template-rows: 1000px 250px;
+    grid-template-columns: 100%;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+#inital_max_session {
+
+    position: relative;
+    display: grid;
+    /* background-image: url(/images/back_mi_moto_free_live_free_ride.webp);
+    background-size: cover;
+    background-image: top center;
+    background-repeat: no-repeat; */
+    justify-items: center;
+    height: 1000px;
+    width: 100%;
+    grid-template-columns: 100%;
+    place-content: center;
+    overflow: hidden;
+
+}
+
+#content_i_session {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 450px 30px;
+    height: 600px;
+    width: 100%;
+    max-width: 1200px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#content_i_session h2 {
+
+    font-family: var(--font-bttn-fuell);
+    font-size: 4rem;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--black-secondary);
+
+}
+
+#content_i_session #login {
+
+    display: grid;
+    height: 450px;
+    width: 60%;
+
+}
+
+#content_i_session #h2_c__i_s a {
+
+    color: var(--green-seconday);
+}
+
+#content_i_session form {
+
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-login);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+#content_i_session form label {
+
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#content_i_session form input {
+
+    height: 40px;
+    width: 600px;
+    border-radius: 3px;
+    border: 1px solid var(--black-secondary);
+
+}

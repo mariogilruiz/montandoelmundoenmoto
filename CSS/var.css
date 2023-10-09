@@ -14,6 +14,7 @@
     --font-digital_b: "digiti_b";
     --font-japab: "japan";
     --font-Windsong: "Windsong";
+    --font-login: "roboto-bold";
 
 
 
@@ -26,14 +27,17 @@
     --grey-ccc: #ccc;
     --blue-primary: rgb(4, 156, 189);
     --blue-secondary: #02576a;
-    /* #049CBD */
     --green-primary-: #86BD2A;
+    --green-seconday: #6b795f;
     --orange-primary: #bc6317;
+    --orage-secondary: #8f4b11;
+    --orange_banner: #EBA55E;
     --youtube-primary: rgb(191, 8, 17);
     --youtube-secondary: rgb(234, 234, 234);
     --tktk-secondary: rgb(254, 44, 85);
     --tktk-primary: rgb(1, 1, 1);
     --ing-primary: radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%);
     --ing-secondary: rgb(40, 90, 235);
+    --black-secondary: rgb(43, 43, 43);
 
 }

@@ -2,11 +2,11 @@
 
     display: grid;
     position: fixed;
-    grid-template-columns: 300px 80px 1fr 190px 100px;
+    grid-template-columns: 300px 80px 80px 1fr 190px 100px;
     grid-template-rows: 80px;
     width: 100%;
     grid-template-areas:
-        "logo home .  bttn menu ";
+        "logo home session . bttn  menu ";
     text-transform: uppercase;
     z-index: 100;
 
@@ -40,10 +40,9 @@ header #bttn_home {
     background-color: var(--blue-primary);
     border-radius: 0px 0px 5px 0px;
     place-content: center;
+    transition: 500ms ease;
 
 }
-
-
 
 header #bttn_home #bttn_h_h {
 
@@ -53,19 +52,98 @@ header #bttn_home #bttn_h_h {
     width: 70px;
     cursor: pointer;
     background-color: var(--blue-primary);
+    transition: 500ms all ease;
 
 }
 
+header #bttn_home #bttn_h_h:hover {
+
+    box-shadow: inset 0px 0px 4px black;
+}
+
+header #bttn_sesion {
+
+    display: grid;
+    height: 76px;
+    width: 80px;
+    outline: 4px solid var(--blue-primary);
+    grid-area: session;
+    background-color: var(--blue-primary);
+    border-radius: 0px 0px 5px 0px;
+    place-content: center;
+
+
+}
+
+header #bttn_sesion #bttn_sesion_buttom:hover {
+
+    box-shadow: inset 0px 0px 4px black;
+
+}
+
+
+.header_home {
+
+    transform: translateX(-80px);
+    transition: 500ms all ease;
+
+}
+
+header #bttn_sesion #bttn_sesion_buttom {
+
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    background-color: var(--blue-primary);
+    transition: 500ms all ease;
+
+}
+
+header #bttn_sesion #bttn_sesion_buttom img {
+
+    height: 50px;
+
+}
 
 header #bttn_h {
 
     display: grid;
     background-color: var(--blue-primary);
     border-radius: 0px 0px 0px 5px;
+    height: 80px;
+    width: 100%;
     grid-area: bttn;
     align-items: center;
+    justify-items: center;
+    padding-left: 4px;
 
 }
+
+header #bttn_h #bttn_fuel {
+
+    display: flex;
+    float: left;
+    height: 70px;
+    width: 180px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-color: var(--blue-primary);
+    align-items: center;
+    color: var(--white);
+    justify-content: center;
+    cursor: pointer;
+    transition: 500ms all ease;
+
+}
+
+header #bttn_h #bttn_fuel:hover {
+
+    box-shadow: inset 0px 0px 4px black;
+
+}
+
 
 header #bttn_h nav {
 
@@ -156,6 +234,7 @@ header #bttn_h #nav_chek span {
 
 }
 
+
 header #bttn_h nav #press_fuell {
 
     display: grid;
@@ -206,7 +285,6 @@ header #bttn_h nav #sumar {
     font-size: 32px;
     font-family: var(--font-bttn-fuell);
 
-
 }
 
 header #bttn_h nav #restar {
@@ -249,22 +327,6 @@ header #bttn_h nav #repostar {
 
     height: 60px;
     width: 170px;
-
-}
-
-header #bttn_h #bttn_fuel {
-
-    display: flex;
-    float: left;
-    height: 100%;
-    width: 100%;
-    border: 0px;
-    border-radius: 0px 0px 0px 8px;
-    background-color: var(--blue-primary);
-    align-items: center;
-    color: var(--white);
-    justify-content: center;
-    cursor: pointer;
 
 }
 
@@ -384,8 +446,51 @@ header #bttn_p span {
     height: 9px;
     background-color: var(--orange-primary);
     margin-bottom: 10px;
+    transition: 500ms ease;
 
 }
+
+header #bttn_p:hover span {
+
+    transform: translateY(60%);
+}
+
+header #bttn_p:hover span:nth-child(2) {
+
+    /* -webkit-animation: 300ms giro linear 1;
+    animation: 300ms giro linear 1; */
+    transform: translateX(140%);
+
+}
+
+header #bttn_p:hover span:nth-child(3) {
+
+    transform: translateY(-60%);
+}
+
+/* @keyframes giro {
+
+    from {
+        transform: scale(.2);
+    }
+
+    to {
+        transform: scale(1);
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes giro {
+
+    from {
+        transform: scale(.2);
+    }
+
+    to {
+        transform: scale(1);
+        transform: rotate(180deg);
+    }
+} */
 
 header #bttn_p span:first-child {
 
