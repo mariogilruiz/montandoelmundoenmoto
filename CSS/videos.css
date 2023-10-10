@@ -349,6 +349,12 @@
 
 }
 
+#web_videos #social_videos_content button:active {
+
+    box-shadow: inset 0px 0px 4px black;
+
+}
+
 #web_videos #spacer_02_videos {
 
     position: relative;

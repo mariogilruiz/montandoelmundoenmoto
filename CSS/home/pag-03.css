@@ -107,7 +107,10 @@
     margin-right: 2px;
 }
 
+#content_03 button:active {
+    box-shadow: inset 0px 0px 4px black;
 
+}
 
 .bttn_social {
 
@@ -119,17 +122,20 @@
     font-weight: 900;
     color: var(--white);
     cursor: pointer;
-    transition: 500ms ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 500ms ease-in-out all;
-    -o-transition: 500ms ease-in-out all;
+    transition: 300ms ease-in-out all;
+    -webkit-transition: 300ms ease-in-out all;
+    -moz-transition: 300ms ease-in-out all;
+    -o-transition: 300ms ease-in-out all;
     overflow: hidden;
+    box-sizing: border-box;
 
 }
 
+
+
 .bttn_social:hover {
 
-    box-shadow: inset 0px 0px 4px black;
+    box-shadow: 0px 0px 2px black;
 }
 
 .bbtn_you {
