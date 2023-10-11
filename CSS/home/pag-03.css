@@ -95,6 +95,7 @@
     justify-content: space-between;
     margin-top: 20px;
 
+
 }
 
 #pag_03_max #content_03 #bttn_03 button:first-child {
@@ -108,7 +109,9 @@
 }
 
 #content_03 button:active {
+
     box-shadow: inset 0px 0px 4px black;
+    transform: scale(0.95);
 
 }
 
@@ -122,21 +125,14 @@
     font-weight: 900;
     color: var(--white);
     cursor: pointer;
-    transition: 300ms ease-in-out all;
-    -webkit-transition: 300ms ease-in-out all;
-    -moz-transition: 300ms ease-in-out all;
-    -o-transition: 300ms ease-in-out all;
     overflow: hidden;
     box-sizing: border-box;
+    height: 100%;
+    width: 98%;
+
 
 }
 
-
-
-.bttn_social:hover {
-
-    box-shadow: 0px 0px 2px black;
-}
 
 .bbtn_you {
 

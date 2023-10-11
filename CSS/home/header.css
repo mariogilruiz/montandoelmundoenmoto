@@ -2,7 +2,7 @@
 
     display: grid;
     position: fixed;
-    grid-template-columns: 300px 80px 80px 1fr 190px 100px;
+    grid-template-columns: 300px 80px 80px 1fr 80px 100px;
     grid-template-rows: 80px;
     width: 100%;
     grid-template-areas:
@@ -22,6 +22,7 @@ header #logo_h {
     border-radius: 0px 0px 5px 0px;
     cursor: pointer;
 
+
 }
 
 header #logo_h a {
@@ -29,8 +30,6 @@ header #logo_h a {
     padding: 5px;
 
 }
-
-
 
 header #bttn_home {
 
@@ -54,13 +53,19 @@ header #bttn_home #bttn_h_h {
     width: 70px;
     cursor: pointer;
     background-color: var(--blue-primary);
-    transition: 500ms all ease;
+
 
 }
 
-header #bttn_home #bttn_h_h:hover {
+
+header #bttn_h_h:active,
+#bttn_sesion_buttom:active,
+#bttn_fuel:active {
 
     box-shadow: inset 0px 0px 4px black;
+    transform: scale(0.95);
+    transition: 0ms ease;
+
 }
 
 header #bttn_sesion {
@@ -74,13 +79,6 @@ header #bttn_sesion {
     border-radius: 0px 0px 5px 0px;
     place-content: center;
 
-
-}
-
-header #bttn_sesion #bttn_sesion_buttom:hover {
-
-    box-shadow: inset 0px 0px 4px black;
-
 }
 
 
@@ -91,6 +89,7 @@ header #bttn_sesion #bttn_sesion_buttom:hover {
 
 }
 
+
 header #bttn_sesion #bttn_sesion_buttom {
 
     border: 1px solid white;
@@ -99,7 +98,6 @@ header #bttn_sesion #bttn_sesion_buttom {
     width: 70px;
     cursor: pointer;
     background-color: var(--blue-primary);
-    transition: 500ms all ease;
 
 }
 
@@ -126,9 +124,8 @@ header #bttn_h {
 header #bttn_h #bttn_fuel {
 
     display: flex;
-    float: left;
     height: 70px;
-    width: 180px;
+    width: 70px;
     border: 1px solid var(--white);
     border-radius: 5px;
     background-color: var(--blue-primary);
@@ -136,36 +133,104 @@ header #bttn_h #bttn_fuel {
     color: var(--white);
     justify-content: center;
     cursor: pointer;
-    transition: 500ms all ease;
+
 
 }
 
-header #bttn_h #bttn_fuel:hover {
+header #bttn_h #icon_fuel {
 
-    box-shadow: inset 0px 0px 4px black;
+    height: 55px;
+    /* margin-right: 30px;
+    transform: translateX(-100%); */
+    transition: 500ms ease;
+    transition-delay: 300ms;
+    margin-left: -61px;
 
 }
 
+header #bttn_h:hover #icon_fuel {
+
+    transform: translateX(112%);
+
+}
+
+header #bttn_h:hover span {
+
+
+    transform: translateX(140%);
+
+}
+
+header #bttn_h span {
+
+    transition: 500ms ease;
+    transition-delay: 300ms;
+    line-height: 10px;
+
+}
+
+
+header #bttn_h #bttn_fuel span img {
+
+    width: 55px;
+    -webkit-animation: 7s wheel linear infinite;
+    animation: 7s wheel linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    margin-left: 5px;
+
+}
+
+header #bttn_h #bttn_fuel:hover span img {
+
+    -webkit-animation: 1s wheel linear infinite;
+    animation: 1s wheel linear infinite;
+
+}
+
+@keyframes wheel {
+
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+@-webkit-keyframes wheel {
+
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
 
 header #bttn_h nav {
 
     display: grid;
     position: absolute;
     box-sizing: border-box;
-    top: 75px;
+    top: 82px;
     background-color: #bab5b4;
     color: var(--white);
     width: 288px;
     height: 500px;
     right: 1px;
-    border-radius: 0px 0px 5px 5px;
-    transform: translateX(0);
+    border-radius: 5px 0px 0px 5px;
     box-sizing: border-box;
     border: 2px solid var(--grey-ccc);
     outline: 1px solid black;
     cursor: default;
     justify-content: center;
-    transform: translateX(110%);
+    transform: translateX(120%);
+    transition: 600ms ease;
 
 }
 
@@ -180,12 +245,14 @@ header #bttn_h nav #info_fuell {
     justify-content: center;
     margin-left: 13px;
 
+
 }
 
 header #bttn_h nav ul {
 
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     height: 145px;
     width: 200px;
@@ -275,6 +342,9 @@ header #bttn_h nav #press_fuell #litro_p_f {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 2px;
+    padding-right: 2px;
+
 
 }
 
@@ -286,7 +356,16 @@ header #bttn_h nav #sumar {
     background-color: var(--white);
     font-size: 32px;
     font-family: var(--font-bttn-fuell);
+    cursor: pointer;
 
+}
+
+header #bttn_h nav #sumar:active,
+header #bttn_h nav #restar:active,
+header #bttn_h nav #repostar:active {
+
+    box-shadow: 0px 0px 5px black;
+    transform: scale(0.97);
 }
 
 header #bttn_h nav #restar {
@@ -309,7 +388,7 @@ header #bttn_h nav #litro {
     width: 30px;
     background-color: var(--white);
     font-size: 52px;
-    margin: 0px 10px;
+    margin: 0px 15px;
     cursor: default;
     border: 4px solid var(--grey-ccc);
 
@@ -322,6 +401,7 @@ header #bttn_h nav #total {
     width: 60px;
     cursor: default;
     border: 4px solid var(--grey-ccc);
+    margin-left: 2px;
 
 }
 
@@ -329,95 +409,11 @@ header #bttn_h nav #repostar {
 
     height: 60px;
     width: 170px;
+    margin-right: 2px;
 
 }
 
-header #bttn_h #bttn_fuel p {
 
-    font-family: var(--font-bttn-fuell);
-    font-size: 45px;
-    letter-spacing: -1.5px;
-    text-transform: uppercase;
-    margin-top: 6px;
-
-}
-
-header #bttn_h #bttn_fuel:hover p {
-
-    animation: 500ms fuell alternate infinite;
-    -webkit-animation: 500ms fuell alternate infinite;
-    -moz-animation: 500ms fuell alternate infinite;
-    -o-animation: 500ms fuell alternate infinite;
-
-}
-
-@keyframes fuell {
-
-    from {
-        transform: scale(.9);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
-
-}
-
-@-webkit-keyframes fuell {
-
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.2);
-    }
-
-}
-
-header #bttn_h #bttn_fuel img {
-
-    width: 45px;
-    margin-right: 8px;
-    margin-top: 3px;
-    -webkit-animation: 7s wheel linear infinite;
-    animation: 7s wheel linear infinite;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    /* background-color: aqua; */
-
-}
-
-header #bttn_h #bttn_fuel:hover img {
-
-    -webkit-animation: 1s wheel linear infinite;
-    animation: 1s wheel linear infinite;
-
-}
-
-@keyframes wheel {
-
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateZ(360deg);
-    }
-
-}
-
-@-webkit-keyframes wheel {
-
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateZ(360deg);
-    }
-
-}
 
 header #menu_plus {
 
@@ -509,16 +505,17 @@ header #menu_plus nav {
     font-family: var(--font-nav);
     font-size: 20px;
     width: 290px;
-    height: 500px;
+    height: 450px;
     right: 0px;
     border-radius: 0px 0px 0px 5px;
-    transform: translateX(100%);
+    transform: translateY(-150%);
+    transition: 300ms ease;
 
 }
 
 header #menu_plus nav ul {
 
-    height: 500px;
+    height: 450px;
     width: 290px;
 
 }
@@ -546,35 +543,11 @@ header #menu_plus nav ul li a {
 
 }
 
-header #menu_plus nav ul li:nth-child(2) {
+header #menu_plus nav ul li:first-child {
 
     margin-top: 20px;
 
 }
-
-header #bttn_p_x {
-
-    height: 30px;
-    width: 290px;
-    border: 0px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    background-color: var(--blue-primary);
-    margin-top: 20px;
-    cursor: pointer;
-    font-family: var(--font-bttn-fuell);
-    color: var(--white);
-    font-size: 20px;
-
-}
-
-
-
-
-
-
-
-
 
 
 

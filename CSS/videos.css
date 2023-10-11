@@ -341,7 +341,7 @@
     position: relative;
     background-color: var(--white-e9);
     display: grid;
-    grid-template-columns: 75%;
+    grid-template-columns: 78%;
     grid-template-rows: 55px 55px;
     /* background-color: aqua; */
     place-content: center;
@@ -349,9 +349,22 @@
 
 }
 
+#web_videos #social_videos_content a {
+
+    padding-left: 5px;
+
+}
+
+#web_videos #social_videos_content #bbtn_you:hover {
+
+    border: 1px solid black;
+    color: black;
+}
+
 #web_videos #social_videos_content button:active {
 
     box-shadow: inset 0px 0px 4px black;
+    transform: scale(0.95);
 
 }
 

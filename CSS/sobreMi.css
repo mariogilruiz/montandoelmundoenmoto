@@ -11,6 +11,7 @@
 }
 
 #inital_max_about {
+
     display: grid;
     position: relative;
     background-image: url(/images/back_about_me_free_live_free_ride.webp);
@@ -101,9 +102,6 @@
     padding: 20px 20px 0px 20px;
 
 }
-
-
-
 
 #max_content_02_about {
 

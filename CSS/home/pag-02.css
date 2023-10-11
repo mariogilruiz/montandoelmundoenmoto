@@ -30,6 +30,7 @@
     width: 100%;
     place-content: center;
 
+
 }
 
 #pag-02_max #content_02 .card_02 {
@@ -39,30 +40,31 @@
     border-radius: 5px;
     background-color: rgb(0, 0, 0, .3);
     font-family: var(--font-primary);
-    overflow: hidden !important;
     font-size: 40px;
-    height: 99%;
-    width: 98%;
+    height: 98%;
+    width: 95%;
     color: var(--white);
     justify-items: center;
     align-items: center;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 300ms ease-in-out all;
-    -webkit-transition: 300ms ease-in-out all;
-    -moz-transition: 300ms ease-in-out all;
-    -o-transition: 300ms ease-in-out all;
-    border: 1px solid rgb(188, 99, 23, 0.4);
     box-sizing: border-box;
-    margin: 2px;
+    margin-left: 9px;
 
+}
+
+#pag-02_max #content_02 a:active {
+
+    transform: scale(0.95);
 }
 
 #pag-02_max #content_02 .card_02:hover {
 
-    box-shadow: 0px 0px 4px black;
+
     background-color: rgb(0, 0, 0, 0);
-    border: 1px solid rgb(188, 99, 23, 1);
+
+    transform: scale(105%);
+
 }
 
 #pag-02_max #content_02 p {
@@ -70,19 +72,19 @@
     position: absolute;
     color: var(--white);
     transition: 1s all ease;
-    -webkit-transition: 500ms all ease;
-    -moz-transition: 500ms all ease;
-    -o-transition: 500ms all ease;
+    -webkit-transition: 300ms all ease;
+    -moz-transition: 300ms all ease;
+    -o-transition: 300ms all ease;
 
 }
 
 #pag-02_max #content_02 img {
 
     position: relative;
-    transition: 500ms all ease;
-    -webkit-transition: 500ms all ease;
-    -moz-transition: 500ms all ease;
-    -o-transition: 500ms all ease;
+    transition: 300ms all ease;
+    -webkit-transition: 300ms all ease;
+    -moz-transition: 300ms all ease;
+    -o-transition: 300ms all ease;
     height: 100%;
     width: 100%;
 
@@ -91,6 +93,7 @@
 #pag-02_max #content_02 #card_02_01:hover p {
 
     transform: translateX(-170%);
+    opacity: 1;
 }
 
 #pag-02_max #content_02 #card_02_01 img {

@@ -142,7 +142,9 @@ input[type="checkbox"] {
 }
 
 #content_i_session button:active {
+
     box-shadow: inset 0px 0px 4px black;
+    transform: scale(0.95);
 
 }
 
