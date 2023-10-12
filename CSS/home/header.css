@@ -466,30 +466,6 @@ header #bttn_p:hover span:nth-child(3) {
     transform: translateY(-60%);
 }
 
-/* @keyframes giro {
-
-    from {
-        transform: scale(.2);
-    }
-
-    to {
-        transform: scale(1);
-        transform: rotate(180deg);
-    }
-}
-
-@-webkit-keyframes giro {
-
-    from {
-        transform: scale(.2);
-    }
-
-    to {
-        transform: scale(1);
-        transform: rotate(180deg);
-    }
-} */
-
 header #bttn_p span:first-child {
 
     margin-top: 6px;

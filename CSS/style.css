@@ -13,4 +13,6 @@
 @import url(/CSS/rutas.css);
 @import url(/CSS/imagenes.css);
 @import url(/CSS/404.css);
-@import url(/CSS/session.css);
+@import url(/CSS/session/session.css);
+@import url(/CSS/session/recover.css);
+@import url(/CSS/session/register.css);

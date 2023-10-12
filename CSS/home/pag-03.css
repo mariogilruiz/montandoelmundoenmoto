@@ -57,11 +57,10 @@
     object-fit: cover;
     height: 700px;
     width: 100%;
-    transform: scale(1);
-    transition: 1s ease-in-out all;
-    -webkit-transition: 1s ease-in-out all;
-    -moz-transition: 1s ease-in-out all;
-    -o-transition: 1s ease-in-out all;
+    transition: 300ms ease-in-out all;
+    -webkit-transition: 300ms ease-in-out all;
+    -moz-transition: 300ms ease-in-out all;
+    -o-transition: 300ms ease-in-out all;
 
 }
 
@@ -137,6 +136,7 @@
 .bbtn_you {
 
     background-color: var(--youtube-primary);
+    box-sizing: border-box;
 
 }
 
@@ -145,6 +145,7 @@
     background-color: var(--youtube-secondary);
     color: var(--black);
     font-weight: 900;
+    border: 1px solid black;
 
 }
 
