@@ -81,3 +81,13 @@
     font-family: "roboto-bold";
     src: url(/fonts/Roboto-Light.ttf);
 }
+
+@font-face {
+    font-family: "greatVibes";
+    src: url(/fonts/GreatVibes-Regular.otf);
+}
+
+@font-face {
+    font-family: "alexBrush";
+    src: url(/fonts/AlexBrush-Regular.ttf);
+}

@@ -5,7 +5,14 @@ body {
     background-position: center center;
     background-size: 100%;
     background-attachment: fixed;
+}
 
+
+#web_session #footer_max,
+#web_recover #footer_max,
+#web_register #footer_max {
+
+    margin-left: -5px;
 }
 
 #web_session {
@@ -14,14 +21,11 @@ body {
     display: grid;
     width: 100vw;
     height: 100vh;
+    min-height: 900px;
     justify-items: center;
 
 }
 
-#web_session #header_max {
-
-    margin-left: -5px;
-}
 
 #inital_max_session {
 
@@ -32,8 +36,14 @@ body {
     min-height: 500px;
     width: 100%;
     grid-template-columns: 100%;
-    margin-top: 100px;
+    padding-top: 80px;
     overflow: hidden;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: 99;
 
 }
 
@@ -43,8 +53,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 100px 250 100px;
     height: 450px;
-    width: 100%;
-    max-width: 1200px;
+    width: 100vw;
     justify-items: center;
     align-items: center;
     font-family: var(--font-login);
@@ -165,7 +174,7 @@ input[type="password"]:focus {
 #content_i_session button:active {
 
     box-shadow: inset 0px 0px 4px black;
-    transform: scale(0.95);
+    transform: scale(0.99);
 
 }
 
@@ -221,8 +230,4 @@ input[type="password"]:focus {
 
 }
 
-#web_session #footer_max {
-
-    position: relative;
-
-}
+#web_session #footer_max {}

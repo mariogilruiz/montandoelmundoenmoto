@@ -5,8 +5,9 @@ body {
     background-position: center center;
     background-size: 100%;
     background-attachment: fixed;
-
 }
+
+
 
 #web_recover {
 
@@ -14,14 +15,12 @@ body {
     display: grid;
     width: 100vw;
     height: 100vh;
+    min-height: 900px;
     justify-items: center;
 
+
 }
 
-#web_recover #header_max {
-
-    margin-left: -5px;
-}
 
 #inital_max_recover {
 
@@ -32,8 +31,14 @@ body {
     min-height: 500px;
     width: 100%;
     grid-template-columns: 100%;
-    margin-top: 100px;
+    padding-top: 80px;
     overflow: hidden;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    z-index: 99;
 
 }
 
@@ -43,8 +48,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 100px 250 100px;
     height: 450px;
-    width: 100%;
-    max-width: 1200px;
+    width: 100vw;
     justify-items: center;
     align-items: center;
     font-family: var(--font-login);
@@ -156,11 +160,5 @@ input[type="email"]:focus {
     height: 35px;
     width: 500px;
     background-color: var(--orange-primary);
-
-}
-
-#web_recover #footer_max {
-
-    position: relative;
 
 }
