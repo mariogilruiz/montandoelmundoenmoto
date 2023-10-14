@@ -1,7 +1,7 @@
 #web_material {
 
     display: grid;
-    grid-template-rows: 600px 2000px 200px 120px 250px;
+    grid-template-rows: 50vh 2000px 200px 120px 250px;
     grid-template-columns: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
@@ -18,7 +18,7 @@
     background-image: top center;
     background-repeat: no-repeat; */
     justify-items: center;
-    height: 600px;
+    height: 50vh;
     width: 100%;
     grid-template-columns: 100%;
     place-content: center;
@@ -30,8 +30,7 @@
 #inital_max_material img {
 
     position: absolute;
-    left: 0px;
-    top: 480px;
+    bottom: -2px;
     height: 120px;
     width: 100%;
 

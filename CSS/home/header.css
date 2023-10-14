@@ -23,11 +23,13 @@ header #logo_h {
     cursor: pointer;
 
 
+
 }
 
 header #logo_h a {
 
     padding: 5px;
+    z-index: 100;
 
 }
 
@@ -42,6 +44,7 @@ header #bttn_home {
     border-radius: 0px 0px 5px 0px;
     place-content: center;
     transition: 500ms ease;
+    z-index: 100;
 
 }
 
@@ -54,9 +57,7 @@ header #bttn_home #bttn_h_h {
     cursor: pointer;
     background-color: var(--blue-primary);
 
-
 }
-
 
 header #bttn_h_h:active,
 #bttn_sesion_buttom:active,
@@ -78,6 +79,7 @@ header #bttn_sesion {
     background-color: var(--blue-primary);
     border-radius: 0px 0px 5px 0px;
     place-content: center;
+    z-index: 100;
 
 }
 
@@ -217,20 +219,22 @@ header #bttn_h nav {
     display: grid;
     position: absolute;
     box-sizing: border-box;
-    top: 82px;
+    top: 0px;
     background-color: #bab5b4;
     color: var(--white);
     width: 288px;
     height: 500px;
     right: 1px;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 0px 0px 0px 5px;
     box-sizing: border-box;
     border: 2px solid var(--grey-ccc);
-    outline: 1px solid black;
+    outline: 2px solid #bab5b4;
     cursor: default;
     justify-content: center;
-    transform: translateX(120%);
+    /*-----------------------menu fuel  se expande------------------*/
+    transform: translateX(110%);
     transition: 600ms ease;
+    z-index: 90;
 
 }
 
@@ -239,7 +243,7 @@ header #bttn_h nav #info_fuell {
     display: grid;
     height: 178px;
     width: 210px;
-    margin-top: 40px;
+    margin-top: 100px;
     border: 1px solid black;
     border-radius: 5px;
     justify-content: center;
@@ -261,7 +265,7 @@ header #bttn_h nav ul {
 
 header #bttn_h nav ul li {
 
-    line-height: 45px;
+    line-height: 51.5px;
     background-color: white;
     width: 200px;
     /* height: 100%; para ocupar todo el espacio de pantalla en diseño responsive del movil
@@ -278,6 +282,7 @@ header #bttn_h nav ul li:nth-child(2) {
 
 header #bttn_h nav ul li:last-child {
 
+
     border-radius: 0px 0px 4px 4px;
     border-bottom: 4px solid var(--grey-ccc);
     border-left: 4px solid var(--grey-ccc);
@@ -289,6 +294,7 @@ header #bttn_h nav ul li:first-child {
 
     border-radius: 4px 4px 0px 0px;
     border-top: 4px solid var(--grey-ccc);
+    padding-top: 15px;
     border-left: 4px solid var(--grey-ccc);
     border-right: 4px solid var(--grey-ccc);
 
@@ -397,18 +403,21 @@ header #bttn_h nav #litro {
 header #bttn_h nav #total {
 
     background-color: var(--white);
-    height: 60px;
+
     width: 60px;
     cursor: default;
     border: 4px solid var(--grey-ccc);
     margin-left: 2px;
+    margin-right: 5px;
+    text-align: center;
+
 
 }
 
 header #bttn_h nav #repostar {
 
     height: 60px;
-    width: 170px;
+    width: 190px;
     margin-right: 2px;
 
 }
@@ -439,12 +448,13 @@ header #bttn_p {
 }
 
 header #bttn_p span {
-
+    position: relative;
     width: 60px;
     height: 9px;
     background-color: var(--orange-primary);
     margin-bottom: 10px;
     transition: 500ms ease;
+    z-index: 100;
 
 }
 
@@ -475,17 +485,21 @@ header #bttn_p span:first-child {
 header #menu_plus nav {
 
     position: absolute;
-    top: 75px;
+    top: 0px;
+    margin-right: 0px;
     background-color: var(--blue-primary);
     color: var(--white);
     font-family: var(--font-nav);
     font-size: 20px;
     width: 290px;
-    height: 450px;
+    height: 500px;
     right: 0px;
     border-radius: 0px 0px 0px 5px;
-    transform: translateY(-150%);
+    /*-----------------------menu navegacion  se expande------------------*/
+    transform: translateY(-120%);
     transition: 300ms ease;
+    z-index: 0;
+
 
 }
 
@@ -521,13 +535,9 @@ header #menu_plus nav ul li a {
 
 header #menu_plus nav ul li:first-child {
 
-    margin-top: 20px;
+    margin-top: 80px;
 
 }
-
-
-
-
 
 
 /* .open {

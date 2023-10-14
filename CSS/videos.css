@@ -1,7 +1,7 @@
 #web_videos {
 
     display: grid;
-    grid-template-rows: 600px 4000px 200px 120px 250px;
+    grid-template-rows: 50vh 4000px 200px 120px 250px;
     grid-template-columns: 100%;
     width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -19,7 +19,7 @@
     position: relative;
     z-index: 90;
     justify-items: center;
-    height: 600px;
+    height: 50vh;
     width: 100%;
     grid-template-columns: 100%;
     place-content: center;
@@ -38,8 +38,7 @@
 #inital_max_videos img {
 
     position: absolute;
-    left: 0px;
-    top: 480px;
+    bottom: -2px;
     height: 120px;
     width: 100%;
 

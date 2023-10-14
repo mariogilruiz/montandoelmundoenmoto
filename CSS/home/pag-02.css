@@ -9,7 +9,7 @@
     width: 100%;
     background-image: url(/images/back_home_initial_montando_el_munod_en_moto.png);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top left;
     background-size: cover;
     justify-items: center;
     z-index: 99;
@@ -22,12 +22,12 @@
     position: relative;
     display: grid;
     max-width: 1200px;
-    row-gap: 20px;
-    column-gap: 20px;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 280px 280px;
     height: 768px;
     width: 100%;
+    /* row-gap: 5px;
+    column-gap: 5px; */
     place-content: center;
 
 
@@ -41,8 +41,8 @@
     background-color: rgb(0, 0, 0, .3);
     font-family: var(--font-primary);
     font-size: 40px;
-    height: 98%;
-    width: 95%;
+    height: 92%;
+    width: 92%;
     color: var(--white);
     justify-items: center;
     align-items: center;
@@ -66,7 +66,6 @@
 
 
     background-color: rgb(0, 0, 0, 0);
-
     transform: scale(105%);
 
 }
@@ -91,6 +90,7 @@
     -o-transition: 300ms all ease;
     height: 100%;
     width: 100%;
+    object-fit: cover;
 
 }
 

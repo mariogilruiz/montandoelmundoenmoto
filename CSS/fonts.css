@@ -91,3 +91,8 @@
     font-family: "alexBrush";
     src: url(/fonts/AlexBrush-Regular.ttf);
 }
+
+@font-face {
+    font-family: "icons";
+    src: url(/fonts/typeecon.otf);
+}
