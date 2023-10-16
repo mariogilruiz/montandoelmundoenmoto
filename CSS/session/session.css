@@ -7,70 +7,50 @@ body {
     background-attachment: fixed;
 }
 
-
-#web_session #footer_max,
-#web_recover #footer_max,
-#web_register #footer_max {
-
-    margin-left: -5px;
-}
-
 #web_session {
 
     position: relative;
     display: grid;
     width: 100vw;
-    height: 100vh;
-    min-height: 900px;
+    height: calc(63vh - 250px);
+    padding-top: 120px;
     justify-items: center;
 
 }
-
 
 #inital_max_session {
 
     position: relative;
     display: grid;
     justify-items: center;
-    height: calc(100vh - 350px);
-    min-height: 500px;
-    width: 100%;
-    grid-template-columns: 100%;
-    padding-top: 80px;
-    overflow: hidden;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 100%;
-    background-attachment: fixed;
-    z-index: 99;
-
-}
-
-#content_i_session {
-
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 250 100px;
-    height: 450px;
+    height: calc(100vh - 250px);
+    min-height: 650px;
+    max-height: 650px;
+    margin-bottom: 100px;
     width: 100vw;
+    overflow: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 50% 20%;
     justify-items: center;
     align-items: center;
     font-family: var(--font-login);
 
+
 }
 
-#content_i_session #h2_c__i_s {
+#inital_max_session #h2_c__i_s {
 
     display: flex;
     margin-bottom: 30px;
     height: 50px;
     width: 100%;
     justify-content: center;
+    align-items: start;
+
 
 }
 
-#content_i_session h2 {
+#inital_max_session h2 {
 
     font-family: var(--font-bttn-fuell);
     font-size: 4rem;
@@ -79,20 +59,20 @@ body {
 
 }
 
-#content_i_session a {
+#inital_max_session a {
 
     color: var(--green-seconday);
     transition: 300ms ease;
 
 }
 
-#content_i_session a:hover {
+#inital_max_session a:hover {
 
     color: var(--black-secondary);
 
 }
 
-#content_i_session #login {
+#inital_max_session #login {
 
     display: grid;
     height: 250px;
@@ -102,7 +82,7 @@ body {
 
 }
 
-#content_i_session form {
+#inital_max_session form {
 
     display: flex;
     flex-direction: column;
@@ -171,45 +151,55 @@ input[type="password"]:focus {
     background-position: 0 0;
 }
 
-#content_i_session button:active {
+#inital_max_session button:active {
 
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.99);
 
 }
 
-#content_i_session #login p:last-child {
+#inital_max_session #login p:last-child {
 
     margin-top: 30px;
 
 }
 
-#content_i_session #login form p {
+#inital_max_session #login form p {
 
     line-height: 40px;
 
 }
 
-#content_i_session #remmenber {
+#inital_max_session #remmenber {
 
     display: flex;
     flex-direction: column;
     height: 100px;
     width: 501px;
     align-items: center;
-    justify-content: space-between;
+
 
 }
 
-#content_i_session #remmenber input,
-#content_i_session #remmenber label,
-#content_i_session #remmenber a {
+#inital_max_session #remmenber #remmenber_content {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#inital_max_session #remmenber input,
+#inital_max_session #remmenber label,
+#inital_max_session #remmenber a {
 
     vertical-align: middle;
 
 }
 
-#content_i_session #login p button {
+#inital_max_session #login p button {
 
     height: 35px;
     width: 500px;
@@ -217,17 +207,15 @@ input[type="password"]:focus {
 
 }
 
-#content_i_session #remmenber p {
+#inital_max_session #remmenber p {
 
     margin-top: 15px;
 
 }
 
-#content_i_session #login p a {
+#inital_max_session #login p a {
 
     font-weight: bold;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 
 }
-
-#web_session #footer_max {}

@@ -24,7 +24,7 @@
 
     #footer_max #content_f #logo_f {
 
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     #footer_max #content_f #menu_f {
@@ -49,12 +49,9 @@
 
     #pag_03_max #content_03 #text_03 {
 
-
         padding: 20px 10px 10px 10px;
 
-
     }
-
 
 }
 
@@ -95,6 +92,11 @@
         padding-left: 10px;
     }
 
+    #inital_max_session h2 {
+
+        font-size: 3rem;
+    }
+
 }
 
 @media (max-width:873px) {
@@ -110,7 +112,7 @@
         line-height: 50px;
     }
 
-    .bttn_social {
+    #web .bttn_social {
 
         font-family: var(--font-icons);
         font-size: 2.2rem;
@@ -274,7 +276,6 @@
 
 }
 
-
 @media (max-width:748px) {
 
     #web #content_ph p {
@@ -343,6 +344,7 @@
     #footer_max #content_f #copy {
 
         margin-bottom: 10px;
+        padding: 0px 20px;
     }
 }
 
@@ -350,6 +352,19 @@
 
     #web #initial_max #content_i h2 {
         font-size: 4rem;
+    }
+
+}
+
+@media (max-width:698px) {
+
+    #inital_max_session h2 {
+        font-size: 2.1rem;
+
+    }
+
+    #inital_max_session #h2_c__i_s {
+        margin-bottom: 0px;
     }
 
 }
@@ -380,6 +395,7 @@
         transform: translateX(0px);
 
     }
+
 }
 
 @media (max-width:584px) {
@@ -393,10 +409,11 @@
 @media (max-width:569px) {
 
     #web #content_ph p {
-        font-size: 1.7rem;
+        font-size: 2rem;
         line-height: 40px;
         padding: 30px;
     }
+
 }
 
 @media (max-width:520px) {
@@ -436,7 +453,6 @@
         padding-left: 4px;
         margin-top: 3px;
 
-
     }
 
     header #bttn_h #bttn_fuel {
@@ -462,9 +478,37 @@
 
     }
 
+    #inital_max_session #login {
+
+        width: 90vw;
+
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+
+        width: 85vw;
+
+    }
+
+    #inital_max_session #remmenber {
+
+        width: 90vw;
+
+
+    }
+
+    #inital_max_session #login p button {
+
+        width: 85vw;
+        margin-left: 0px;
+    }
+
 }
 
 @media (max-width:515px) {
+
     #footer_max #content_f #h2_f {
         margin-top: 0px;
     }
@@ -485,12 +529,9 @@
         font-size: 24vw;
         line-height: 10.5vw;
     }
-
 }
 
-
 @media (max-width:480px) {
-
 
     #pag-02_max #content_02 {
 
@@ -532,7 +573,29 @@
 
     }
 
+    #inital_max_session {
 
+        min-height: 750px;
+        max-height: 750px;
+
+        grid-template-rows: 100px 50% 20%;
+
+    }
+
+    #inital_max_session #h2_c__i_s {
+
+        margin-bottom: 0px;
+        height: 140px;
+        align-items: end;
+        text-align: center;
+
+    }
+
+    #inital_max_session #h2_c__i_s h2 {
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 
 }
@@ -545,7 +608,7 @@
 
     #footer_max #content_f #copy span {
 
-        font-size: .8rem;
+        font-size: 3vw;
     }
 }
 
@@ -564,7 +627,6 @@
         column-gap: 20px;
         align-items: start;
         margin-top: 10px;
-
     }
 
 }
@@ -578,11 +640,6 @@
 }
 
 @media (max-width:312px) {
-
-    #footer_max #content_f #copy span {
-
-        font-size: 4vw;
-    }
 
     #footer_max #content_f #menu_f #faqs_f li a {
 

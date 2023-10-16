@@ -2,7 +2,7 @@
 
     display: grid;
     position: fixed;
-    grid-template-columns: 300px 80px 80px 1fr 80px 100px;
+    grid-template-columns: 250px 80px 80px 1fr 80px 100px;
     grid-template-rows: 80px;
     width: 100vw;
     grid-template-areas:
@@ -24,6 +24,12 @@ header #logo_h {
 
 
 
+}
+
+header #logo_h img {
+
+    height: 40px;
+    margin-top: 10px;
 }
 
 header #logo_h a {
