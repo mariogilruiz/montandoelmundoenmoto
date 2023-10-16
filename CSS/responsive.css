@@ -92,11 +92,17 @@
         padding-left: 10px;
     }
 
-    #inital_max_session h2 {
+    #inital_max_session h2,
+    #inital_max_register h2,
+    #inital_max_recover h2 {
 
         font-size: 3rem;
     }
 
+    #inital_max_recover #h2_c__i_s {
+        margin-bottom: 0px;
+
+    }
 }
 
 @media (max-width:873px) {
@@ -224,7 +230,6 @@
 
     #pag_03_max #content_03 {
 
-
         grid-template-columns: repeat(8, 12%);
         grid-template-rows: repeat(6, 120px);
         grid-template-areas:
@@ -240,7 +245,6 @@
 
     }
 
-
     #pag_03_max #content_03 #bttn_03 {
 
         grid-template-columns: repeat(3, 120px);
@@ -249,7 +253,6 @@
         column-gap: 20px;
         align-items: start;
         margin-top: 10px;
-
 
     }
 
@@ -260,10 +263,8 @@
 
     #pag_03_max #content_03 #card_03_01 img {
 
-
         height: 300px;
         width: 100vw;
-
 
     }
 
@@ -305,6 +306,7 @@
     }
 
     #footer_max #content_f #menu_f #pay_f img {
+
         height: 40px;
         width: 100px;
         margin-bottom: 10px;
@@ -358,12 +360,14 @@
 
 @media (max-width:698px) {
 
-    #inital_max_session h2 {
+    #inital_max_session h2,
+    #inital_max_register h2 {
         font-size: 2.1rem;
 
     }
 
-    #inital_max_session #h2_c__i_s {
+    #inital_max_session #h2_c__i_s,
+    #inital_max_register #h2_c__i_s {
         margin-bottom: 0px;
     }
 
@@ -404,6 +408,13 @@
 
         font-size: 3rem;
     }
+
+    #inital_max_recover #h2_c__i_s h2 {
+
+        font-size: 2.5rem;
+    }
+
+
 }
 
 @media (max-width:569px) {
@@ -478,7 +489,26 @@
 
     }
 
-    #inital_max_session #login {
+    #inital_max_recover #h2_c__i_s {
+
+        text-align: center;
+        margin-bottom: 0px;
+        padding-top: 40px;
+
+    }
+
+    #inital_max_recover #h2_c__i_s h2 {
+
+        padding: 0px 17px;
+        font-size: 2rem;
+
+    }
+
+    #inital_max_session #login,
+    #inital_max_register #login,
+    #inital_max_recover #login,
+    #inital_max_recover #login p,
+    #inital_max_recover form {
 
         width: 90vw;
 
@@ -492,17 +522,32 @@
 
     }
 
-    #inital_max_session #remmenber {
+    #inital_max_session #remmenber,
+    #inital_max_register #remmenber,
+    #inital_max_recover #remmenber {
 
         width: 90vw;
 
 
     }
 
-    #inital_max_session #login p button {
+    #inital_max_session #login p button,
+    #inital_max_register #login button,
+    #inital_max_recover button {
 
         width: 85vw;
         margin-left: 0px;
+
+    }
+
+    #inital_max_recover form {
+
+        margin-left: 8px;
+    }
+
+    #inital_max_recover #login p {
+
+        font-size: 1.3rem;
     }
 
 }
@@ -529,6 +574,7 @@
         font-size: 24vw;
         line-height: 10.5vw;
     }
+
 }
 
 @media (max-width:480px) {
@@ -577,12 +623,12 @@
 
         min-height: 750px;
         max-height: 750px;
-
         grid-template-rows: 100px 50% 20%;
 
     }
 
-    #inital_max_session #h2_c__i_s {
+    #inital_max_session #h2_c__i_s,
+    #inital_max_register #h2_c__i_s {
 
         margin-bottom: 0px;
         height: 140px;
@@ -591,12 +637,25 @@
 
     }
 
-    #inital_max_session #h2_c__i_s h2 {
+    #inital_max_session #h2_c__i_s h2,
+    #inital_max_register #h2_c__i_s h2 {
 
         padding-left: 10px;
         padding-right: 10px;
     }
 
+    #inital_max_register #h2_c__i_s {
+
+        margin-top: 35px;
+
+
+    }
+
+    #inital_max_register #login {
+
+        margin-top: 120px;
+
+    }
 
 }
 
@@ -609,6 +668,16 @@
     #footer_max #content_f #copy span {
 
         font-size: 3vw;
+    }
+}
+
+@media (max-width:420px) {
+
+    #inital_max_recover #h2_c__i_s {
+
+        padding-top: 0px;
+        margin-bottom: 30px;
+
     }
 }
 
@@ -637,6 +706,13 @@
 
         height: 8vw;
     }
+
+    #inital_max_register #remmenber p label {
+
+        font-size: 1rem;
+    }
+
+
 }
 
 @media (max-width:312px) {
@@ -644,6 +720,11 @@
     #footer_max #content_f #menu_f #faqs_f li a {
 
         line-height: 20px;
+
+        font-size: .8rem;
+    }
+
+    #inital_max_register #remmenber p label {
 
         font-size: .8rem;
     }

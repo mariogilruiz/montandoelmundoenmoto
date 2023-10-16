@@ -18,6 +18,14 @@ body {
 
 }
 
+#web_session #footer_max,
+#web_recover #footer_max,
+#web_register #footer_max {
+    margin-left: -5px;
+
+}
+
+
 #inital_max_session {
 
     position: relative;
@@ -127,6 +135,7 @@ input[type="password"]:focus {
 }
 
 .mycheck {
+
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -216,6 +225,5 @@ input[type="password"]:focus {
 #inital_max_session #login p a {
 
     font-weight: bold;
-    /* margin-left: 20px; */
 
 }
