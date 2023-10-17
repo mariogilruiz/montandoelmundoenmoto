@@ -15,6 +15,21 @@
     }
 }
 
+@media (max-width:1169px) {
+
+    #content_02_videos {
+
+
+        grid-template-columns: repeat(2, 395px);
+        grid-template-rows: repeat(15, 280px);
+        row-gap: 40px;
+        height: 4000px !important;
+        justify-items: center;
+
+    }
+
+}
+
 @media (max-width:1039px) {
 
     #web #content_ph p {
@@ -118,7 +133,7 @@
         line-height: 50px;
     }
 
-    #web .bttn_social {
+    .bttn_social {
 
         font-family: var(--font-icons);
         font-size: 2.2rem;
@@ -193,6 +208,33 @@
 
     }
 
+}
+
+@media (max-width:787px) {
+
+    #content_02_videos {
+
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(15, 120px);
+        row-gap: 2.5%;
+        height: 4000px !important;
+        justify-items: center;
+        font-size: 2rem;
+
+    }
+
+    #content_02_videos .card_videos {
+
+        height: 180px;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+
+    }
+
+    #content_02_videos .card_ncap_youtube {
+        font-size: 30px;
+
+    }
 
 }
 
@@ -273,6 +315,13 @@
         padding: 20px 0px;
         font-size: 1.2rem;
 
+    }
+
+    #h2_descript_video {
+
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 30px;
     }
 
 }
@@ -528,7 +577,6 @@
 
         width: 90vw;
 
-
     }
 
     #inital_max_session #login p button,
@@ -548,6 +596,41 @@
     #inital_max_recover #login p {
 
         font-size: 1.3rem;
+    }
+
+    #h2_descript_video {
+
+        font-size: 2rem;
+        margin-top: 30px;
+        line-height: 70px;
+
+
+    }
+
+    #h3_descript_video {
+
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    #content_02_videos {
+
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(30, 140px);
+        row-gap: 2.5%;
+        height: 4000px !important;
+
+    }
+
+    #content_02_videos .card_videos {
+
+        height: 200px;
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+
     }
 
 }
@@ -700,6 +783,18 @@
 
 }
 
+@media (max-width:381px) {
+
+    #h2_descript_video {
+        font-size: 1.8rem;
+    }
+
+    #h3_descript_video {
+
+        font-size: 1rem;
+    }
+}
+
 @media (max-width:350px) {
 
     header #logo_h img {
@@ -711,7 +806,6 @@
 
         font-size: 1rem;
     }
-
 
 }
 

@@ -1,7 +1,7 @@
 #web_about {
 
     display: grid;
-    grid-template-rows: 50vh 2000px 200px 120px 250px;
+    grid-template-rows: 75vh 2000px 200px 120px 250px;
     grid-template-columns: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
@@ -19,7 +19,7 @@
     background-image: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     z-index: 90;
 
