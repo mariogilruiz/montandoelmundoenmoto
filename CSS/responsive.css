@@ -5,6 +5,17 @@
         font-size: 3rem;
     }
 
+    #p_descript_video,
+    #p_descript_about,
+    #p_descript_material,
+    #p_descript_proyecto,
+    #p_descript_rutas,
+    #p_descript_imagenes {
+
+        width: 94vw;
+
+    }
+
 }
 
 @media (max-width:1090px) {
@@ -27,7 +38,6 @@
         justify-items: center;
 
     }
-
 }
 
 @media (max-width:1039px) {
@@ -67,7 +77,6 @@
         padding: 20px 10px 10px 10px;
 
     }
-
 }
 
 @media (max-width:931px) {
@@ -210,6 +219,13 @@
 
 }
 
+@media (max-width:809px) {
+
+    #pag-02_max #content_02 .card_02 {
+        font-size: 30px;
+    }
+}
+
 @media (max-width:787px) {
 
     #content_02_videos {
@@ -235,8 +251,8 @@
         font-size: 30px;
 
     }
-
 }
+
 
 @media (max-width:768px) {
 
@@ -252,11 +268,6 @@
         /* row-gap: 5px;
         column-gap: 5px; */
         place-content: center;
-
-    }
-
-    #pag-02_max #content_02 .card_02 {
-        font-size: 30px;
     }
 
     #pag-02_max #content_02 #card_02_01:hover p,
@@ -284,7 +295,6 @@
         place-content: center;
         justify-content: space-between;
         margin-top: -10px;
-
     }
 
     #pag_03_max #content_03 #bttn_03 {
@@ -295,7 +305,6 @@
         column-gap: 20px;
         align-items: start;
         margin-top: 10px;
-
     }
 
     #pag_03_max #content_03 #card_03_01 {
@@ -307,14 +316,12 @@
 
         height: 300px;
         width: 100vw;
-
     }
 
     #pag_03_max #content_03 #text_03 p {
 
         padding: 20px 0px;
         font-size: 1.2rem;
-
     }
 
     #h2_descript_video {
@@ -420,6 +427,10 @@
         margin-bottom: 0px;
     }
 
+    #h3_descript_proyecto {
+        font-size: 3.3vw;
+    }
+
 }
 
 @media (max-width:644px) {
@@ -462,8 +473,6 @@
 
         font-size: 2.5rem;
     }
-
-
 }
 
 @media (max-width:569px) {
@@ -473,7 +482,6 @@
         line-height: 40px;
         padding: 30px;
     }
-
 }
 
 @media (max-width:520px) {
@@ -486,14 +494,12 @@
         grid-template-areas:
             "logo home session bttn menu ";
         text-transform: uppercase;
-
     }
 
     header #logo_h {
 
         border-radius: 0px 0px 0px 0px;
         justify-content: start;
-
     }
 
     header #bttn_home #bttn_h_h,
@@ -512,14 +518,12 @@
         width: 60px;
         padding-left: 4px;
         margin-top: 3px;
-
     }
 
     header #bttn_h #bttn_fuel {
 
         height: 60px;
         width: 60px;
-
     }
 
     header #bttn_h #icon_fuel {
@@ -528,14 +532,12 @@
         transition: 500ms ease;
         transition-delay: 300ms;
         margin-left: -50px;
-
     }
 
     header #bttn_h #bttn_fuel span img {
 
         width: 45px;
         margin-left: 5px;
-
     }
 
     #inital_max_recover #h2_c__i_s {
@@ -543,14 +545,12 @@
         text-align: center;
         margin-bottom: 0px;
         padding-top: 40px;
-
     }
 
     #inital_max_recover #h2_c__i_s h2 {
 
         padding: 0px 17px;
         font-size: 2rem;
-
     }
 
     #inital_max_session #login,
@@ -560,7 +560,6 @@
     #inital_max_recover form {
 
         width: 90vw;
-
     }
 
     input[type="text"],
@@ -568,7 +567,6 @@
     input[type="password"] {
 
         width: 85vw;
-
     }
 
     #inital_max_session #remmenber,
@@ -576,7 +574,6 @@
     #inital_max_recover #remmenber {
 
         width: 90vw;
-
     }
 
     #inital_max_session #login p button,
@@ -585,7 +582,6 @@
 
         width: 85vw;
         margin-left: 0px;
-
     }
 
     #inital_max_recover form {
@@ -603,8 +599,6 @@
         font-size: 2rem;
         margin-top: 30px;
         line-height: 70px;
-
-
     }
 
     #h3_descript_video {
@@ -622,7 +616,6 @@
         grid-template-rows: repeat(30, 140px);
         row-gap: 2.5%;
         height: 4000px !important;
-
     }
 
     #content_02_videos .card_videos {
@@ -630,7 +623,6 @@
         height: 200px;
         grid-template-columns: 100%;
         grid-template-rows: 80% 20%;
-
     }
 
 }
@@ -662,22 +654,56 @@
 
 @media (max-width:480px) {
 
+    #web {
+
+        grid-template-rows: 30px 80vh 768px 20px 850px 250px 250px;
+    }
+
+    #initial_max,
+    #initial_max #content_i {
+
+        height: 80vh;
+    }
+
+    #web_about,
+    #web_imagenes,
+    #web_material,
+    #web_proyecto,
+    #web_rutas {
+
+        grid-template-rows: 62vh 2000px 200px 120px 250px;
+    }
+
+    #web_videos {
+
+        grid-template-rows: 62vh 4000px 200px 120px 250px;
+    }
+
+    #inital_max_about,
+    #inital_max_imagenes,
+    #inital_max_material,
+    #inital_max_proyecto,
+    #inital_max_rutas,
+    #inital_max_videos {
+
+        height: 62vh;
+    }
+
     #pag-02_max #content_02 {
 
         grid-template-columns: 90%;
         grid-template-rows: repeat(6, 90px);
         row-gap: 10px;
-
     }
 
     #pag-02_max #content_02 .card_02 {
+
         font-size: 30px;
     }
 
     #pag-02_max #content_02 .card_02:hover {
 
         background-color: rgb(0, 0, 0, .3);
-
     }
 
     #pag-02_max #content_02 #card_02_01:hover p,
@@ -688,7 +714,6 @@
     #pag-02_max #content_02 #card_02_06:hover p {
 
         transform: translateY(0%);
-
     }
 
     #pag-02_max #content_02 img {
@@ -699,7 +724,6 @@
     #pag_03_max #content_03 {
 
         margin-top: -90px;
-
     }
 
     #inital_max_session {
@@ -707,7 +731,6 @@
         min-height: 750px;
         max-height: 750px;
         grid-template-rows: 100px 50% 20%;
-
     }
 
     #inital_max_session #h2_c__i_s,
@@ -717,7 +740,6 @@
         height: 140px;
         align-items: end;
         text-align: center;
-
     }
 
     #inital_max_session #h2_c__i_s h2,
@@ -730,21 +752,25 @@
     #inital_max_register #h2_c__i_s {
 
         margin-top: 35px;
-
-
     }
 
     #inital_max_register #login {
 
         margin-top: 120px;
-
     }
+
+    #h2_descript_proyecto {
+        margin-top: 10px;
+        font-size: 11.5vw;
+    }
+
 
 }
 
 @media (max-width:454px) {
 
     #footer_max #content_f #logo_f {
+
         margin-left: 0px;
     }
 
@@ -760,7 +786,6 @@
 
         padding-top: 0px;
         margin-bottom: 30px;
-
     }
 }
 
@@ -786,6 +811,7 @@
 @media (max-width:381px) {
 
     #h2_descript_video {
+
         font-size: 1.8rem;
     }
 
@@ -814,7 +840,6 @@
     #footer_max #content_f #menu_f #faqs_f li a {
 
         line-height: 20px;
-
         font-size: .8rem;
     }
 

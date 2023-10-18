@@ -7,16 +7,11 @@
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;
-
 }
 
 #inital_max_proyecto {
     position: relative;
     display: grid;
-    /* background-image: url(/images/back_mi_moto_free_live_free_ride.webp);
-    background-size: cover;
-    background-image: top center;
-    background-repeat: no-repeat; */
     justify-items: center;
     height: 50vh;
     width: 100%;
@@ -24,7 +19,6 @@
     place-content: center;
     overflow: hidden;
     z-index: 90;
-
 }
 
 #inital_max_proyecto img {
@@ -33,7 +27,6 @@
     bottom: -2px;
     height: 120px;
     width: 100%;
-
 }
 
 #pag-02_max_proyecto {
@@ -46,20 +39,19 @@
     grid-template-columns: 100%;
     grid-template-rows: 400px 1600px;
     z-index: 90;
-
 }
 
 #description_02_proyecto {
 
     display: grid;
     place-content: center;
+    justify-items: center;
     height: 400px;
     width: 100%;
     max-width: 1200px;
     grid-template-columns: 100%;
     grid-template-rows: 120px 80px 200px;
     background-color: var(--grey-ccc);
-
 }
 
 #h2_descript_proyecto {
@@ -72,7 +64,11 @@
     font-size: 3.5rem;
     color: var(--white);
     text-transform: uppercase;
+}
 
+#h2_descript_proyecto h2 {
+
+    padding-right: 5px;
 }
 
 #h3_descript_proyecto {
@@ -86,7 +82,12 @@
     font-size: 1.5rem;
     color: var(--white);
     margin-bottom: 20px;
+}
 
+#h3_descript_proyecto h3 {
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #p_descript_proyecto {
@@ -100,8 +101,7 @@
     font-family: var(--font-text-italic);
     font-size: 1.2rem;
     font-weight: 300;
-    padding: 20px 20px 0px 20px;
-
+    padding-top: 20px;
 }
 
 
@@ -119,7 +119,6 @@
     justify-items: center;
     border-top: 2px solid var(--white);
     overflow: hidden;
-
 }
 
 #content_02_proyecto {
@@ -131,7 +130,6 @@
     justify-items: center;
     margin-top: 100px;
     text-align: start;
-
 }
 
 #social_proyecto_max {
@@ -146,7 +144,6 @@
     background-color: var(--white-e9);
     border-top: 2px solid var(--white);
     border-bottom: 1px solid var(--white);
-
 }
 
 
@@ -155,5 +152,4 @@
     display: grid;
     height: 120px;
     width: 100%;
-
 }
