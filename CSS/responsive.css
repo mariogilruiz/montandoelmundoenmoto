@@ -671,12 +671,12 @@
     #web_proyecto,
     #web_rutas {
 
-        grid-template-rows: 62vh 2000px 200px 120px 250px;
+        grid-template-rows: 60vh 2000px 200px 120px 250px;
     }
 
     #web_videos {
 
-        grid-template-rows: 62vh 4000px 200px 120px 250px;
+        grid-template-rows: 60vh 4000px 200px 120px 250px;
     }
 
     #inital_max_about,
@@ -686,7 +686,7 @@
     #inital_max_rutas,
     #inital_max_videos {
 
-        height: 62vh;
+        height: 60vh;
     }
 
     #pag-02_max #content_02 {
@@ -760,11 +760,10 @@
     }
 
     #h2_descript_proyecto {
+
         margin-top: 10px;
         font-size: 11.5vw;
     }
-
-
 }
 
 @media (max-width:454px) {
@@ -818,6 +817,11 @@
     #h3_descript_video {
 
         font-size: 1rem;
+    }
+
+    #h3_descript_proyecto {
+
+        font-size: 3vw;
     }
 }
 

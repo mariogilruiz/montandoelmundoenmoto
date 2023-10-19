@@ -1,11 +1,13 @@
 #web_about {
 
     display: grid;
-    grid-template-rows: 75vh 2000px 200px 120px 250px;
+    grid-template-rows: calc(100vh - 420px) 2000px 200px 120px 250px;
     grid-template-columns: 100%;
+    width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
     background-position: center center;
+    background-attachment: fixed;
     background-size: 100%;
 
 }
@@ -14,12 +16,14 @@
 
     display: grid;
     position: relative;
+    justify-items: center;
+    place-content: center;
     background-image: url(/images/back_about_me_free_live_free_ride.webp);
     background-size: cover;
     background-image: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 75vh;
+    height: calc(100vh - 420px);
     width: 100%;
     z-index: 90;
 
@@ -35,6 +39,7 @@
 }
 
 #pag-02_max_about {
+
     position: relative;
     display: grid;
     background-color: var(--grey-ccc);
@@ -45,18 +50,22 @@
     grid-template-rows: 400px 1600px;
     z-index: 90;
 
+
+
 }
 
 #description_02_about {
 
     display: grid;
     place-content: center;
+    justify-items: center;
     height: 400px;
     width: 100%;
     max-width: 1200px;
     grid-template-columns: 100%;
     grid-template-rows: 120px 80px 200px;
     background-color: var(--grey-ccc);
+
 
 }
 
@@ -98,7 +107,7 @@
     font-family: var(--font-text-italic);
     font-size: 1.2rem;
     font-weight: 300;
-    padding: 20px 20px 0px 20px;
+    padding-top: 20px;
 
 }
 
@@ -108,6 +117,7 @@
     height: 1600px;
     width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-attachment: fixed;
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;

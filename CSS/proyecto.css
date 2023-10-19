@@ -1,9 +1,10 @@
 #web_proyecto {
 
     display: grid;
-    grid-template-rows: 50vh 2000px 200px 120px 250px;
+    grid-template-rows: calc(100vh - 420px) 2000px 200px 120px 250px;
     grid-template-columns: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-attachment: fixed;
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;
@@ -13,7 +14,7 @@
     position: relative;
     display: grid;
     justify-items: center;
-    height: 50vh;
+    height: calc(100vh - 420px);
     width: 100%;
     grid-template-columns: 100%;
     place-content: center;
@@ -104,9 +105,6 @@
     padding-top: 20px;
 }
 
-
-
-
 #max_content_02_proyecto {
 
     display: grid;
@@ -115,6 +113,7 @@
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
     background-position: center center;
+    background-attachment: fixed;
     background-size: 100%;
     justify-items: center;
     border-top: 2px solid var(--white);
