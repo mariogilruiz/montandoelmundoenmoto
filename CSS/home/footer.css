@@ -92,8 +92,6 @@
     transform: scale(0.98);
 }
 
-
-
 #footer_max #content_f #h2_f #bttn_f:hover span {
 
     animation: 500ms plus linear infinite;
