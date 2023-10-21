@@ -30,7 +30,6 @@
 
     #content_02_videos {
 
-
         grid-template-columns: repeat(2, 395px);
         grid-template-rows: repeat(15, 280px);
         row-gap: 40px;
