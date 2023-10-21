@@ -3,27 +3,104 @@
     display: grid;
     position: fixed;
     grid-template-columns: 250px 80px 80px 1fr 80px 100px;
-    grid-template-rows: 80px;
+    grid-template-rows: 30px 80px;
     width: 100vw;
     grid-template-areas:
+        "bn bn bn bn bn bn "
         "logo home session . bttn  menu ";
     text-transform: uppercase;
     z-index: 100;
+    transition: 200ms ease;
+
 
 }
+
+.superpuesto {
+    transition: 200ms ease;
+}
+
+.header_top {
+
+    transform: translateY(-30px);
+    transition: 200ms ease;
+
+
+}
+
+.header_blue {
+    background-color: var(--blue-primary);
+    transition: 200ms ease;
+
+
+}
+
+.header_opacity {
+
+    /* background-color: rgb(4, 156, 189, .9); */
+    background-color: rgb(2, 87, 106, .9);
+    transition: 200ms ease;
+
+}
+
+#banner_home {
+
+    position: fixed;
+    display: grid;
+    height: 30px;
+    width: 105%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: var(--orange_banner);
+    justify-items: center;
+    font-family: var(--font-footer);
+    font-weight: bolder;
+    color: var(--black-secondary);
+    align-items: end;
+    padding-bottom: 5px;
+    grid-area: bn;
+}
+
+
+#banner_home span {
+
+    -webkit-animation: 25s linear infinite banner_h;
+    animation: 25s linaer infinite banner_h;
+    -moz-animation: 25s linaer infinite banner_h;
+    -o-animation: 25s linaer infinite banner_h;
+    font-size: 1rem;
+    width: 1450px;
+    text-transform: none;
+}
+
+@keyframes banner_h {
+
+    0% {
+        transform: translateX(100vw);
+
+
+    }
+
+    100% {
+
+        transform: translateX(-100vw);
+
+    }
+
+}
+
+#banner_home #content_b_h p {
+
+    font-family: var(--font-social);
+
+}
+
 
 header #logo_h {
 
     display: grid;
-    background-color: var(--blue-primary);
-    /* background-color: rgb(4, 156, 189, .9); */
     grid-area: logo;
     place-content: center;
-    border-radius: 0px 0px 5px 0px;
     cursor: pointer;
-
-
-
 }
 
 header #logo_h img {
@@ -36,22 +113,23 @@ header #logo_h a {
 
     padding: 5px;
     z-index: 100;
-
 }
 
 header #bttn_home {
 
     display: grid;
-    height: 76px;
+    height: 80px;
     width: 80px;
-    outline: 4px solid var(--blue-primary);
     grid-area: home;
-    background-color: var(--blue-primary);
-    border-radius: 0px 0px 5px 0px;
+
     place-content: center;
     transition: 500ms ease;
     z-index: 100;
+}
 
+header #bttn_home a {
+
+    padding-right: 5px;
 }
 
 header #bttn_home #bttn_h_h {
@@ -61,7 +139,7 @@ header #bttn_home #bttn_h_h {
     height: 70px;
     width: 70px;
     cursor: pointer;
-    background-color: var(--blue-primary);
+    background-color: rgb(0, 0, 0, 0);
 
 }
 
@@ -72,31 +150,29 @@ header #bttn_h_h:active,
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.95);
     transition: 0ms ease;
-
 }
 
 header #bttn_sesion {
 
     display: grid;
-    height: 76px;
+    height: 80px;
     width: 80px;
-    outline: 4px solid var(--blue-primary);
     grid-area: session;
-    background-color: var(--blue-primary);
     border-radius: 0px 0px 5px 0px;
     place-content: center;
     z-index: 100;
-
 }
 
+header #bttn_sesion a {
 
-.header_home {
+    padding-right: 5px;
+}
+
+/* .header_home {
 
     transform: translateX(-80px);
     transition: 500ms all ease;
-
-}
-
+} */
 
 header #bttn_sesion #bttn_sesion_buttom {
 
@@ -105,28 +181,25 @@ header #bttn_sesion #bttn_sesion_buttom {
     height: 70px;
     width: 70px;
     cursor: pointer;
-    background-color: var(--blue-primary);
-
+    background-color: rgb(0, 0, 0, 0);
 }
 
 header #bttn_sesion #bttn_sesion_buttom img {
 
     height: 50px;
-
 }
 
 header #bttn_h {
 
     display: grid;
-    background-color: var(--blue-primary);
+
     border-radius: 0px 0px 0px 5px;
     height: 80px;
-    width: 100%;
+
     grid-area: bttn;
     align-items: center;
     justify-items: center;
     padding-left: 4px;
-
 }
 
 header #bttn_h #bttn_fuel {
@@ -136,12 +209,11 @@ header #bttn_h #bttn_fuel {
     width: 70px;
     border: 1px solid var(--white);
     border-radius: 5px;
-    background-color: var(--blue-primary);
+    background-color: rgb(0, 0, 0, 0);
     align-items: center;
     color: var(--white);
     justify-content: center;
     cursor: pointer;
-
 
 }
 
@@ -153,20 +225,16 @@ header #bttn_h #icon_fuel {
     transition: 500ms ease;
     transition-delay: 300ms;
     margin-left: -61px;
-
 }
 
 header #bttn_h:hover #icon_fuel {
 
     transform: translateX(112%);
-
 }
 
 header #bttn_h:hover span {
 
-
     transform: translateX(140%);
-
 }
 
 header #bttn_h span {
@@ -174,7 +242,6 @@ header #bttn_h span {
     transition: 500ms ease;
     transition-delay: 300ms;
     line-height: 10px;
-
 }
 
 
@@ -186,14 +253,12 @@ header #bttn_h #bttn_fuel span img {
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     margin-left: 5px;
-
 }
 
 header #bttn_h #bttn_fuel:hover span img {
 
     -webkit-animation: 1s wheel linear infinite;
     animation: 1s wheel linear infinite;
-
 }
 
 @keyframes wheel {
@@ -205,7 +270,6 @@ header #bttn_h #bttn_fuel:hover span img {
     to {
         transform: rotateZ(360deg);
     }
-
 }
 
 @-webkit-keyframes wheel {
@@ -217,7 +281,6 @@ header #bttn_h #bttn_fuel:hover span img {
     to {
         transform: rotateZ(360deg);
     }
-
 }
 
 header #bttn_h nav {
@@ -241,7 +304,6 @@ header #bttn_h nav {
     transform: translateX(110%);
     transition: 600ms ease;
     z-index: 90;
-
 }
 
 header #bttn_h nav #info_fuell {
@@ -254,8 +316,6 @@ header #bttn_h nav #info_fuell {
     border-radius: 5px;
     justify-content: center;
     margin-left: 13px;
-
-
 }
 
 header #bttn_h nav ul {
@@ -266,7 +326,6 @@ header #bttn_h nav ul {
     align-items: center;
     height: 145px;
     width: 200px;
-
 }
 
 header #bttn_h nav ul li {
@@ -276,14 +335,12 @@ header #bttn_h nav ul li {
     width: 200px;
     /* height: 100%; para ocupar todo el espacio de pantalla en diseño responsive del movil
     width: 100%; */
-
 }
 
 header #bttn_h nav ul li:nth-child(2) {
 
     border-left: 4px solid var(--grey-ccc);
     border-right: 4px solid var(--grey-ccc);
-
 }
 
 header #bttn_h nav ul li:last-child {
@@ -293,7 +350,6 @@ header #bttn_h nav ul li:last-child {
     border-bottom: 4px solid var(--grey-ccc);
     border-left: 4px solid var(--grey-ccc);
     border-right: 4px solid var(--grey-ccc);
-
 }
 
 header #bttn_h nav ul li:first-child {
@@ -303,7 +359,6 @@ header #bttn_h nav ul li:first-child {
     padding-top: 15px;
     border-left: 4px solid var(--grey-ccc);
     border-right: 4px solid var(--grey-ccc);
-
 }
 
 header #bttn_h #nav_chek span {
@@ -312,7 +367,6 @@ header #bttn_h #nav_chek span {
     color: rgb(33, 33, 33);
     font-family: var(--font-digital_b);
     /* font-weight: 900; */
-
 }
 
 
@@ -324,7 +378,6 @@ header #bttn_h nav #press_fuell {
     grid-template-rows: 30% 20% 20%;
     margin-top: 10px;
     justify-items: center;
-
 }
 
 header #bttn_h nav input {
@@ -336,7 +389,6 @@ header #bttn_h nav input {
     border-radius: 4px;
     background-color: var(--grey-ccc);
     cursor: pointer;
-
 }
 
 header #bttn_h nav #check_total {
@@ -346,7 +398,6 @@ header #bttn_h nav #check_total {
     height: 60px;
     width: 240px;
     justify-content: space-between;
-
 }
 
 header #bttn_h nav #press_fuell #litro_p_f {
@@ -433,7 +484,7 @@ header #bttn_h nav #repostar {
 header #menu_plus {
 
     display: grid;
-    /* background-color: var(--blue-primary); */
+    background-color: rgb(0, 0, 0, 0);
     grid-area: menu;
     place-content: center;
 
@@ -443,7 +494,8 @@ header #bttn_p {
 
     height: 80px;
     width: 100px;
-    background-color: var(--blue-primary);
+
+    padding-right: 10px;
     border: 0px;
     display: flex !important;
     flex-direction: column;

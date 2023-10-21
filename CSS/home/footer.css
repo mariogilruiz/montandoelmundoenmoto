@@ -132,7 +132,6 @@
     grid-area: c;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid rgb(0, 0, 0, .5);
     margin-bottom: 20px;
 
 }

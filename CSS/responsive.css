@@ -20,7 +20,7 @@
 
 @media (max-width:1090px) {
 
-    #web #initial_max #content_i h2 {
+    #web #initial_max #hideOnScroll h2 {
 
         font-size: 6rem;
     }
@@ -130,7 +130,7 @@
 
 @media (max-width:873px) {
 
-    #web #initial_max #content_i h2 {
+    #web #initial_max #hideOnScroll h2 {
 
         font-size: 5rem;
     }
@@ -407,7 +407,7 @@
 
 @media (max-width:727px) {
 
-    #web #initial_max #content_i h2 {
+    #web #initial_max #hideOnScroll h2 {
         font-size: 4rem;
     }
 
@@ -436,9 +436,10 @@
 
     #header_max {
         background-color: var(--blue-primary);
-        grid-template-rows: 80px;
+        grid-template-rows: 30 80px;
         grid-template-columns: 1fr 80px 80px 80px 100px;
         grid-template-areas:
+            "bn bn bn bn bn "
             "logo home session bttn menu ";
         text-transform: uppercase;
     }
@@ -463,7 +464,7 @@
 
 @media (max-width:584px) {
 
-    #web #initial_max #content_i h2 {
+    #web #initial_max #hideOnScroll h2 {
 
         font-size: 3rem;
     }
@@ -488,9 +489,11 @@
     #header_max {
 
         background-color: var(--blue-primary);
-        grid-template-rows: 80px;
+        grid-template-rows: 30px 80px;
         grid-template-columns: 1fr 0px 0px 60px 100px;
         grid-template-areas:
+            "bn bn bn bn bn "
+
             "logo home session bttn menu ";
         text-transform: uppercase;
     }
@@ -632,8 +635,8 @@
         margin-top: 0px;
     }
 
-    #web #initial_max #content_i h2 {
-        font-size: 10vw;
+    #web #initial_max #hideOnScroll h2 {
+        font-size: 9.7vw;
     }
 
     #footer_max #content_f #h2_f p {
@@ -655,13 +658,13 @@
 
     #web {
 
-        grid-template-rows: 30px 80vh 768px 20px 850px 250px 250px;
+        grid-template-rows: 85vh 768px 20px 850px 250px 250px;
     }
 
     #initial_max,
-    #initial_max #content_i {
+    #initial_max #hideOnScroll {
 
-        height: 80vh;
+        height: 85vh;
     }
 
     #web_about,

@@ -3,7 +3,7 @@
 
 $(function () {
 
-    $("#header_max").load("header.html");
+    $("#header_max").load("../pages/header.html");
 
 });
 
@@ -11,7 +11,7 @@ $(function () {
 
 $(function () {
 
-    $("#footer_max").load("footer.html");
+    $("#footer_max").load("../pages/footer.html");
 
 });
 
@@ -33,16 +33,112 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//scrollY position
+
+window.onscroll = function () {
+    var y = window.scrollY;
+    console.log(y);
+};
+
 //h2 hidden
 
 document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("hideOnScroll");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 700) {
+        if (window.scrollY > 400) {
             elementToHide.classList.add("hidden");
         } else {
             elementToHide.classList.remove("hidden");
         }
     });
 });
+
+// div effect
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDiv = document.getElementById("content_02");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 120) {
+            hiddenDiv.classList.add("appear");
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDiv03 = document.getElementById("content_03");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 920) {
+            hiddenDiv03.classList.add("appear");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDivph = document.getElementById("content_ph");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 2137) {
+            hiddenDivph.classList.add("apper_ph");
+        }
+    });
+});
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const hiddenheader = document.getElementById("header_max");
+
+//     window.addEventListener("scroll", function () {
+//         if (window.scrollY > 0) {
+//             hiddenheader.classList.add("header_0px");
+//         } if (window.scrollY > 5) {
+//             hiddenheader.classList.remove("header_30px");
+//         }
+//     });
+// });
+
+
+//header&banner_home effect
+
+window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    const superpuesto = document.querySelector(".superpuesto");
+    const logo_h = document.getElementById("logo_h");
+    const bttn_home = document.getElementById("bttn_home");
+    const bttn_sesion = document.getElementById("bttn_sesion");
+    const bttn_h = document.getElementById("bttn_h");
+    const bttn_p = document.getElementById("bttn_p");
+
+
+
+
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > header.offsetHeight) {
+        superpuesto.style.opacity = "0";
+        header.classList.add("header_top");
+        logo_h.classList.add("header_opacity");
+        bttn_home.classList.add("header_opacity");
+        bttn_sesion.classList.add("header_opacity");
+        bttn_h.classList.add("header_opacity");
+        bttn_p.classList.add("header_opacity");
+
+    } else {
+        superpuesto.style.opacity = "1";
+        header.classList.remove("header_top");
+        logo_h.classList.remove("header_opacity");
+        bttn_home.classList.remove("header_opacity");
+        bttn_sesion.classList.remove("header_opacity");
+        bttn_h.classList.remove("header_opacity");
+        bttn_p.classList.remove("header_opacity");
+    }
+});
+
+
+

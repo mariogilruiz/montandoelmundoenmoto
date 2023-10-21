@@ -12,7 +12,7 @@ body {
 #web {
 
     display: grid;
-    grid-template-rows: 30px 100vh 768px 20px 850px 250px 250px;
+    grid-template-rows: 100vh 768px 20px 850px 250px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -36,62 +36,13 @@ body {
 
 }
 
-#banner_home {
-
-    position: fixed;
-    display: grid;
-    height: 30px;
-    width: 105%;
-    overflow: hidden;
-    box-sizing: border-box;
-    background-color: var(--orange_banner);
-    justify-items: center;
-    font-family: var(--font-footer);
-    font-weight: bolder;
-    color: var(--black-secondary);
-    align-items: end;
-    padding-bottom: 5px;
-
-}
-
-#banner_home span {
-
-    -webkit-animation: 20s linear infinite banner_h;
-    animation: 20s linaer infinite banner_h;
-    -moz-animation: 20s linaer infinite banner_h;
-    -o-animation: 20s linaer infinite banner_h;
-    font-size: 1rem;
-    width: 1200px;
-
-}
-
-@keyframes banner_h {
-
-    0% {
-        transform: translateX(70vw);
-
-
-    }
-
-    100% {
-
-        transform: translateX(-70vw);
-
-    }
-
-}
-
-#banner_home #content_b_h p {
-
-    font-family: var(--font-social);
-
-}
 
 #phrase_home {
 
     display: grid;
     position: relative;
     justify-items: center;
+    overflow: hidden;
     height: 250px;
     width: 100%;
     border-top: 1px solid var(--green-seconday);
@@ -115,6 +66,7 @@ body {
     text-align: center;
     justify-content: center;
 
+
 }
 
 #phrase_home p {
@@ -128,4 +80,56 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 
+
+}
+
+.hidden_02 {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+
+}
+
+.appear {
+    opacity: 1;
+    visibility: visible;
+    animation-name: con1;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 200ms;
+
+}
+
+@keyframes con1 {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.apper_ph {
+
+    opacity: 1;
+    visibility: visible;
+    animation-name: con2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+
+}
+
+@keyframes con2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
