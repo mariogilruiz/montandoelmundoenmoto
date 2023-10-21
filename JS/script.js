@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(rotateText, 5000);
 });
 
-
 //scrollY position
 
 window.onscroll = function () {
@@ -46,17 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("hideOnScroll");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 400) {
+        if (window.scrollY > 340) {
             elementToHide.classList.add("hidden");
+            elementToHide.classList.remove("hidden_back");
+
         } else {
             elementToHide.classList.remove("hidden");
+            elementToHide.classList.add("hidden_back");
         }
     });
 });
 
 // div effect
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("content_02");
@@ -89,21 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const hiddenheader = document.getElementById("header_max");
-
-//     window.addEventListener("scroll", function () {
-//         if (window.scrollY > 0) {
-//             hiddenheader.classList.add("header_0px");
-//         } if (window.scrollY > 5) {
-//             hiddenheader.classList.remove("header_30px");
-//         }
-//     });
-// });
-
-
 //header&banner_home effect
 
 window.addEventListener("scroll", function () {
@@ -114,8 +99,6 @@ window.addEventListener("scroll", function () {
     const bttn_sesion = document.getElementById("bttn_sesion");
     const bttn_h = document.getElementById("bttn_h");
     const bttn_p = document.getElementById("bttn_p");
-
-
 
 
     const scrollPosition = window.scrollY;
@@ -141,4 +124,5 @@ window.addEventListener("scroll", function () {
 });
 
 
+//animation onclick menu plus
 

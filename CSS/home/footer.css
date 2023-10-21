@@ -19,7 +19,6 @@
 }
 
 #footer_max #content_f {
-
     display: grid;
     position: absolute;
     grid-template-columns: repeat(12, 1fr);
