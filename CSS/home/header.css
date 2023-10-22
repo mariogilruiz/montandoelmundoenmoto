@@ -208,7 +208,7 @@ header #bttn_h:hover #icon_fuel {
     transform: translateX(112%);
 }
 
-header #bttn_h:hover span {
+header #bttn_h:hover .wheel {
 
     transform: translateX(140%);
 }
@@ -266,12 +266,12 @@ header #bttn_h nav {
     display: grid;
     position: absolute;
     box-sizing: border-box;
-    top: 30px;
+    top: 32px;
     background-color: #bab5b4;
     color: var(--white);
     width: 288px;
     height: 500px;
-    right: 1px;
+    right: 0vw;
     border-radius: 0px 0px 0px 5px;
     box-sizing: border-box;
     border: 2px solid var(--grey-ccc);
@@ -291,6 +291,7 @@ header #bttn_h nav #info_fuell {
     border: 1px solid black;
     border-radius: 5px;
     justify-content: center;
+    place-content: center;
     margin-left: 13px;
 }
 
@@ -300,8 +301,8 @@ header #bttn_h nav ul {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 145px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
 }
 
 header #bttn_h nav ul li {
@@ -309,6 +310,7 @@ header #bttn_h nav ul li {
     line-height: 51.5px;
     background-color: white;
     width: 200px;
+
 }
 
 header #bttn_h nav ul li:nth-child(2) {
@@ -323,7 +325,9 @@ header #bttn_h nav ul li:last-child {
     border-bottom: 4px solid var(--grey-ccc);
     border-left: 4px solid var(--grey-ccc);
     border-right: 4px solid var(--grey-ccc);
+
 }
+
 
 header #bttn_h nav ul li:first-child {
 
@@ -339,6 +343,7 @@ header #bttn_h #nav_chek span {
     font-size: 50px;
     color: rgb(33, 33, 33);
     font-family: var(--font-digital_b);
+
 }
 
 header #bttn_h nav #press_fuell {
@@ -393,7 +398,8 @@ header #bttn_h nav #sumar {
 
 header #bttn_h nav #sumar:active,
 header #bttn_h nav #restar:active,
-header #bttn_h nav #repostar:active {
+header #bttn_h nav #repostar:active,
+header #span_bttn_fuel:active {
 
     box-shadow: 0px 0px 5px black;
     transform: scale(0.97);
@@ -463,18 +469,6 @@ header #bttn_p {
     z-index: 100;
 }
 
-header #span_bttn_fuel {
-
-    position: absolute;
-    height: 80px;
-    width: 100px;
-    background-color: aqua;
-    z-index: 201;
-    border: 0px;
-
-
-}
-
 header #bttn_p span {
 
     display: block;
@@ -507,6 +501,61 @@ header #bttn_p span:first-child {
 
     margin-top: 6px;
 }
+
+
+header #span_bttn_fuel {
+
+    position: absolute;
+    display: flex !important;
+    height: 60px;
+    width: 60px;
+    margin-left: 202px;
+    margin-top: 15px;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid var(--grey-ccc);
+    outline: 1px solid black;
+    border-radius: 4px;
+    background-color: var(--grey-ccc);
+}
+
+header #span_bttn_fuel span {
+
+    position: relative;
+    display: grid;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    place-content: center;
+
+}
+
+header #span_bttn_fuel span p {
+
+    font-size: 4rem;
+    color: rgb(33, 33, 33);
+
+}
+
+
+/* header #span_bttn_fuel:hover span {
+
+    transform: translateY(60%);
+}
+
+header #span_bttn_fuel:hover span:nth-child(2) {
+
+    transform: translateX(200%);
+}
+
+header #span_bttn_fuel:hover span:nth-child(3) {
+
+    transform: translateY(-60%); 
+}*/
+
 
 /*-----------------------menu navegacion------------------*/
 
@@ -571,7 +620,6 @@ header #menu_plus nav ul li:last-child {
 .hidden_bttn_fuel {
 
     transform: translateY(-300%);
-
 }
 
 .close span {
@@ -602,4 +650,19 @@ header #menu_plus nav ul li:last-child {
 .opacity_plus {
 
     background-color: rgb(0, 0, 0, 0);
+}
+
+.header_grey {
+
+    background-color: #bab5b4;
+    border-bottom: 4px solid var(--grey-ccc);
+    box-sizing: border-box;
+
+}
+
+.header_grey_2 {
+
+    background-color: #bab5b4;
+
+
 }
