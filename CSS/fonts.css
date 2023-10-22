@@ -96,3 +96,8 @@
     font-family: "icons";
     src: url(/fonts/typeecon.otf);
 }
+
+@font-face {
+    font-family: "true";
+    src: url(/fonts/true-crimes.ttf);
+}

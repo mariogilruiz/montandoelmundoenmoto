@@ -77,11 +77,11 @@
 
     display: grid;
     grid-area: h;
-    font-family: var(--font-primary);
+    font-family: var(--font-true);
     font-size: 55px;
     color: var(--orange-primary);
     text-transform: uppercase;
-    align-items: end;
+    align-items: center;
     justify-content: center;
 
 }

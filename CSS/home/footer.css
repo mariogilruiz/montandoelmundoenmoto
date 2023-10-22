@@ -56,9 +56,9 @@
     width: 100%;
     height: 100%;
     grid-area: h;
-    font-family: var(--font-primary);
+    font-family: var(--font-true);
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;

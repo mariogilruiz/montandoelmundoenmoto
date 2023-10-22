@@ -10,28 +10,26 @@
         "logo home session . bttn  menu ";
     text-transform: uppercase;
     z-index: 100;
-    transition: 200ms ease;
+    transition: 500ms ease all;
 }
 
 .superpuesto {
-    transition: 200ms ease;
+    transition: 500ms ease all;
 }
 
 .header_top {
-
-    transform: translateY(-30px);
-    transition: 200ms ease;
+    transition: 500ms ease all;
+    top: -30px;
 }
 
 .header_blue {
 
     background-color: var(--blue-primary);
-    transition: 200ms ease;
+    transition: 500ms ease all;
 }
 
 .header_opacity {
 
-    /* background-color: rgb(4, 156, 189, .9); */
     background-color: rgb(2, 87, 106, .9);
     transition: 200ms ease;
 }
@@ -113,7 +111,6 @@ header #bttn_home {
     width: 80px;
     grid-area: home;
     place-content: center;
-    transition: 500ms ease;
     z-index: 100;
 }
 
@@ -195,6 +192,7 @@ header #bttn_h #bttn_fuel {
     color: var(--white);
     justify-content: center;
     cursor: pointer;
+
 }
 
 header #bttn_h #icon_fuel {
@@ -261,12 +259,14 @@ header #bttn_h #bttn_fuel:hover span img {
     }
 }
 
+/*-----------------------menu fuel------------------*/
+
 header #bttn_h nav {
 
     display: grid;
     position: absolute;
     box-sizing: border-box;
-    top: 0px;
+    top: 30px;
     background-color: #bab5b4;
     color: var(--white);
     width: 288px;
@@ -278,10 +278,8 @@ header #bttn_h nav {
     outline: 2px solid #bab5b4;
     cursor: default;
     justify-content: center;
-    /*-----------------------menu fuel  se expande------------------*/
-    transform: translateX(110%);
     transition: 600ms ease;
-    z-index: 90;
+    z-index: 199;
 }
 
 header #bttn_h nav #info_fuell {
@@ -311,8 +309,6 @@ header #bttn_h nav ul li {
     line-height: 51.5px;
     background-color: white;
     width: 200px;
-    /* height: 100%; para ocupar todo el espacio de pantalla en diseño responsive del movil
-    width: 100%; */
 }
 
 header #bttn_h nav ul li:nth-child(2) {
@@ -344,7 +340,6 @@ header #bttn_h #nav_chek span {
     color: rgb(33, 33, 33);
     font-family: var(--font-digital_b);
 }
-
 
 header #bttn_h nav #press_fuell {
 
@@ -446,8 +441,6 @@ header #bttn_h nav #repostar {
     margin-right: 2px;
 }
 
-
-
 header #menu_plus {
 
     display: grid;
@@ -458,23 +451,38 @@ header #menu_plus {
 
 header #bttn_p {
 
+    display: flex !important;
     height: 80px;
     width: 100px;
     padding-right: 10px;
     border: 0px;
-    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 100;
+}
+
+header #span_bttn_fuel {
+
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    background-color: aqua;
+    z-index: 201;
+    border: 0px;
+
+
 }
 
 header #bttn_p span {
 
+    display: block;
     position: relative;
     width: 60px;
     height: 9px;
     background-color: var(--orange-primary);
+    border-radius: 9px;
     margin-bottom: 10px;
     transition: 500ms ease;
     z-index: 100;
@@ -487,10 +495,7 @@ header #bttn_p:hover span {
 
 header #bttn_p:hover span:nth-child(2) {
 
-    /* -webkit-animation: 300ms giro linear 1;
-    animation: 300ms giro linear 1; */
-    transform: translateX(140%);
-
+    transform: translateX(200%);
 }
 
 header #bttn_p:hover span:nth-child(3) {
@@ -501,88 +506,100 @@ header #bttn_p:hover span:nth-child(3) {
 header #bttn_p span:first-child {
 
     margin-top: 6px;
-
 }
+
+/*-----------------------menu navegacion------------------*/
 
 header #menu_plus nav {
 
     position: absolute;
-    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 30px;
     margin-right: 0px;
-    background-color: var(--blue-primary);
     color: var(--white);
     font-family: var(--font-nav);
-    font-size: 20px;
-    width: 290px;
-    height: 500px;
+    background-color: rgb(2, 87, 106, .9);
+    font-size: clamp(.6rem, 4vh, 2rem);
+    line-height: 7vh;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
     right: 0px;
     border-radius: 0px 0px 0px 5px;
-    /*-----------------------menu navegacion  se expande------------------*/
-    transform: translateY(-120%);
     transition: 300ms ease;
     z-index: 0;
-
-
-}
-
-header #menu_plus nav ul {
-
-    height: 450px;
-    width: 290px;
-
-}
-
-header #menu_plus nav ul li {
-
-    line-height: 45px;
-    padding-left: 30px;
-    /* height: 100%; para ocupar todo el espacio de pantalla en diseño responsive del movil
-    width: 100%; */
-
 }
 
 header #menu_plus nav ul li:hover {
 
-    background-color: rgb(2, 87, 106, .2);
-    list-style: disc;
-    color: var(--orange-primary);
+    animation: 500ms giro_li ease 1;
+}
 
+@keyframes giro_li {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
 }
 
 header #menu_plus nav ul li a {
 
     color: var(--white);
-
+    display: block;
 }
 
 header #menu_plus nav ul li:first-child {
 
-    margin-top: 80px;
+    margin-top: 85px;
+}
+
+header #menu_plus nav ul li:last-child {
+
+    margin-bottom: 50px;
+}
+
+.hidden_nav_plus {
+
+    transform: translateY(-120%);
+}
+
+.hidden_bttn_fuel {
+
+    transform: translateY(-300%);
 
 }
 
+.close span {
 
-/* .open {
-
-    transform: translateX(0) !important;
-
-} */
-
-
-/* .close span {
-
-    transform: rotate(45deg) translate(16px, 0px);
-
+    transform: rotate(45deg) translate(23px, 24px);
 }
 
 .close span:nth-child(2) {
 
-    display: none;
-
+    transform: translateX(200%);
 }
 
 .close span:nth-child(3) {
 
-    transform: rotate(-45deg) translate(12px, 1px);
+    transform: rotate(-45deg) translate(3px, -4px);
+}
 
-} */
+.hidden_bttn_h {
+
+    transform: translateX(300%);
+}
+
+.hidden_bttn_header {
+
+    transform: translateX(-800%);
+}
+
+.opacity_plus {
+
+    background-color: rgb(0, 0, 0, 0);
+}

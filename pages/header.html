@@ -42,14 +42,14 @@
                 </button>
             </a>
         </div>
-        <div id="bttn_h" class="button header_blue">
-            <button type="button" id="bttn_fuel">
+        <div id="bttn_h" class="button header_blue ">
+            <button type="button" id="bttn_fuel" onclick="bttn_fuel_hidden()">
                 <img id="icon_fuel" src="/images/icon_gasolinera_montando_el_mundo_en_moto.png">
                 <span class="wheel">
                     <img src="/images/rueda_de_moto.png" alt="rueda moto">
                 </span>
             </button>
-            <nav id="nav_chek">
+            <nav id="nav_chek" class="hidden_bttn_fuel">
                 <div id="info_fuell">
                     <ul>
                         <li>
@@ -66,7 +66,7 @@
                 <div id="press_fuell">
                     <div id="litro_p_f">
                         <input type="button" name="circle" value="--" id="restar">
-                        <input type="number" name="litro" value="1" id="litro">
+                        <input type="button" name="litro" value="1" id="litro">
                         <input type="button" name="circle" value="+" id="sumar">
                     </div>
                     <div id="check_total">
@@ -78,7 +78,7 @@
 
         </div>
         <div id="menu_plus">
-            <nav id="nav_plus">
+            <nav id="nav_plus" class="hidden_nav_plus">
                 <ul>
                     <li><a href="/index.html">home</a></li>
                     <li><a href="/pages/session.html">iniciar sesión</a></li>
@@ -91,7 +91,12 @@
                     <li><a href="#">contacto</a></li>
                 </ul>
             </nav>
-            <button type="button" id="bttn_p" class="bttn_p header_blue">
+            <button type="button" id="bttn_p" onclick="nav_plus_hidden()" class="bttn_p header_blue">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button type="button" id="span_bttn_fuel" onclick="bttn_fuel_span()" class="">
                 <span></span>
                 <span></span>
                 <span></span>
