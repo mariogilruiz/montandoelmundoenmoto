@@ -101,3 +101,13 @@
     font-family: "true";
     src: url(/fonts/true-crimes.ttf);
 }
+
+@font-face {
+    font-family: "marker";
+    src: url(/fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: "banks20";
+    src: url(/fonts/banksb26.ttf);
+}

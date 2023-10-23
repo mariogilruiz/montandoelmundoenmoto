@@ -30,12 +30,13 @@
 
 }
 
-#inital_max_about img {
+#pag-02_max_about img {
 
     position: absolute;
-    bottom: -2px;
+    top: -68px;
     height: 120px;
-    width: 100%;
+    width: 70vw;
+
 
 }
 
@@ -43,7 +44,7 @@
 
     position: relative;
     display: grid;
-    background-color: var(--grey-ccc);
+    background-color: var(--white-e9);
     justify-items: center;
     height: 2000px;
     width: 100%;
@@ -62,18 +63,19 @@
     width: 100%;
     max-width: 1200px;
     grid-template-columns: 100%;
-    grid-template-rows: 120px 80px 200px;
-    background-color: var(--grey-ccc);
+    grid-template-rows: 160px 200px;
+    background-color: var(--white-e9);
 
 }
 
 #h2_descript_about {
-
+    position: absolute;
     display: flex;
+    top: -35px;
     height: 120px;
     width: 100%;
     justify-content: center;
-    font-family: var(--font-primary);
+    font-family: var(--font-true);
     font-size: 3.5rem;
     color: var(--white);
     text-transform: uppercase;
@@ -85,11 +87,12 @@
     display: flex;
     height: 80px;
     width: 100%;
+    margin-top: 70px;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-primary);
+    font-family: var(--font-text);
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--black-secondary);
     margin-bottom: 20px;
 
 }

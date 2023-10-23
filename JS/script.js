@@ -144,8 +144,6 @@ function nav_plus_hidden() {
     document.getElementById("bttn_home").classList.toggle("hidden_bttn_header");
     document.getElementById("bttn_sesion").classList.toggle("hidden_bttn_header");
 
-
-
 }
 
 //animation onclick boton fuell open
@@ -160,10 +158,8 @@ function bttn_fuel_hidden() {
     document.getElementById("bttn_sesion").classList.toggle("header_grey");
     document.getElementById("logo_h").classList.toggle("header_grey");
     document.getElementById("bttn_p").classList.toggle("header_grey");
-    document.getElementById("bttn_h").classList.toggle("header_grey_2");
-
-
-
+    document.getElementById("bttn_h").classList.toggle("opacity_plus");
+    document.getElementById("bttn_p").classList.toggle("hidden_bttn_h");
 
 
 
@@ -181,7 +177,8 @@ function bttn_fuel_span() {
     document.getElementById("bttn_sesion").classList.toggle("header_grey");
     document.getElementById("logo_h").classList.toggle("header_grey");
     document.getElementById("bttn_p").classList.toggle("header_grey");
-    document.getElementById("bttn_h").classList.toggle("header_grey_2");
+    document.getElementById("bttn_h").classList.toggle("opacity_plus");
+    document.getElementById("bttn_p").classList.toggle("hidden_bttn_h");
 
 
 

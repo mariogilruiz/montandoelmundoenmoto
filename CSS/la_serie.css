@@ -1,0 +1,212 @@
+#web_la_serie {
+
+    display: grid;
+    grid-template-rows: calc(100vh - 200px) 1200px 252px;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%; */
+
+}
+
+#inital_max_la_serie {
+
+    display: grid;
+    position: relative;
+    justify-items: center;
+    place-content: center;
+    /* background-image: url(/images/back_la_serie_me_free_live_free_ride.webp);
+    background-size: cover;
+    background-image: center center;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    height: 1200px;
+    width: 100%;
+    z-index: 90;
+
+
+}
+
+#pag-02_max_la_serie img {
+
+    position: absolute;
+    top: -68px;
+    height: 120px;
+    width: 70vw;
+    z-index: 99;
+}
+
+#pag-02_max_la_serie #logo_back_text {
+
+    position: absolute;
+    top: -42px;
+    height: 70px;
+    width: 400px;
+}
+
+#pag-02_max_la_serie {
+
+    position: relative;
+    display: grid;
+    background-color: var(--white-e9);
+    justify-items: center;
+    height: 1200px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 800px;
+    z-index: 90;
+
+}
+
+#description_02_la_serie {
+
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 200px;
+    background-color: var(--white-e9);
+    z-index: 90;
+
+}
+
+#h2_descript_la_serie {
+    position: absolute;
+    display: flex;
+    top: -35px;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    font-family: var(--font-true);
+    font-size: 3.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+
+#h3_descript_la_serie {
+
+    display: flex;
+    height: 80px;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    color: var(--black-secondary);
+    margin-bottom: 20px;
+
+}
+
+#p_descript_la_serie {
+
+    display: flex;
+    height: 200px;
+    width: 100%;
+    border-top: 1px solid grey;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-text-italic);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 20px;
+
+}
+
+#max_content_02_la_serie {
+    position: relative;
+    display: grid;
+    margin-left: 2px;
+    height: 800px;
+    width: 100vw;
+    background-image: url(/images/Sin\ título-3\ \(1\).jpeg);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    justify-items: center;
+    border-top: 1px solid grey;
+    overflow: hidden;
+    z-index: 50;
+}
+
+#content_02_la_serie {
+    position: relative;
+    display: grid;
+    max-width: 1200px;
+    height: 800px;
+    width: 100%;
+    justify-items: center;
+    text-align: start;
+
+
+}
+
+#content_02_la_serie a {
+
+    cursor: pointer;
+}
+
+#max_content_02_la_serie #temporada_01 {
+
+    position: absolute;
+    top: 240px;
+    right: 35vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 50;
+    width: 190px;
+    height: 100px;
+    color: var(--black-secondary);
+}
+
+#max_content_02_la_serie #temporada_01 span {
+
+    font-size: 3rem;
+}
+
+#max_content_02_la_serie #temporada_01:hover span {
+
+    font-size: 3rem;
+    animation: jumping 100ms ease-in-out 1;
+    transform: scale(1.2);
+}
+
+@keyframes jumping {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+
+        transform: translateY(-20%);
+    }
+
+}
+
+
+#max_content_02_la_serie #temporada_01:hover h3 {
+    transform: translateY(0%) scale(1.1);
+
+}
+
+#max_content_02_la_serie #temporada_01 h3 {
+
+    font-family: var(--font-banks20);
+    font-size: 1.5rem;
+    transform: translateY(100%) scale(0);
+    transition: 200ms ease-in-out;
+
+}

@@ -90,6 +90,7 @@ header #logo_h {
     grid-area: logo;
     place-content: center;
     cursor: pointer;
+    z-index: 90;
 }
 
 header #logo_h img {
@@ -278,7 +279,7 @@ header #bttn_h nav {
     outline: 2px solid #bab5b4;
     cursor: default;
     justify-content: center;
-    transition: 600ms ease;
+    transition: 300ms ease;
     z-index: 199;
 }
 
@@ -506,11 +507,11 @@ header #bttn_p span:first-child {
 header #span_bttn_fuel {
 
     position: absolute;
-    display: flex !important;
-    height: 60px;
-    width: 60px;
-    margin-left: 202px;
-    margin-top: 15px;
+    display: flex;
+    height: 50px;
+    width: 35px;
+    right: 25px;
+    margin-top: 25px;
     border: 0px;
     justify-content: center;
     align-items: center;
@@ -530,32 +531,13 @@ header #span_bttn_fuel span {
     height: 60px;
     font-size: 60px;
     place-content: center;
-
 }
 
 header #span_bttn_fuel span p {
 
-    font-size: 4rem;
+    font-size: 40px;
     color: rgb(33, 33, 33);
-
 }
-
-
-/* header #span_bttn_fuel:hover span {
-
-    transform: translateY(60%);
-}
-
-header #span_bttn_fuel:hover span:nth-child(2) {
-
-    transform: translateX(200%);
-}
-
-header #span_bttn_fuel:hover span:nth-child(3) {
-
-    transform: translateY(-60%); 
-}*/
-
 
 /*-----------------------menu navegacion------------------*/
 
