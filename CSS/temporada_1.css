@@ -25,14 +25,6 @@
 
 }
 
-#inital_max_videos video {
-
-    position: relative;
-    min-width: 100%;
-    min-height: 90vh;
-
-}
-
 #inital_max_videos img {
 
     position: absolute;

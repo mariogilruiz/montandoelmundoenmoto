@@ -33,7 +33,6 @@ body {
     border-bottom: 1px solid var(--grey-ccc);
     z-index: 90;
     background-color: var(--white-e9);
-
 }
 
 
@@ -73,14 +72,11 @@ body {
 
     font-size: 3.6rem;
     font-family: var(--font-alexBrush);
-    /* color: rgba(43, 39, 39, 0.821); */
     color: var(--white);
     font-weight: normal;
     line-height: 80px;
     padding-left: 20px;
     padding-right: 20px;
-
-
 }
 
 .hidden_02 {
@@ -98,6 +94,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
     animation-delay: 100ms;
+    animation-timing-function: ease;
 
 }
 

@@ -6,12 +6,6 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    /* background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: 100%; */
-
 }
 
 #inital_max_la_serie {
@@ -20,17 +14,22 @@
     position: relative;
     justify-items: center;
     place-content: center;
-    /* background-image: url(/images/back_la_serie_me_free_live_free_ride.webp);
-    background-size: cover;
-    background-image: center center;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
     height: 1200px;
     width: 100%;
     z-index: 90;
+}
 
+#inital_max_la_serie video {
 
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
 }
 
 #pag-02_max_la_serie #spacer_page {
@@ -63,7 +62,6 @@
     grid-template-columns: 100%;
     grid-template-rows: 400px 800px;
     z-index: 90;
-
 }
 
 #description_02_la_serie {
@@ -78,10 +76,10 @@
     grid-template-rows: 160px 200px;
     background-color: var(--white-e9);
     z-index: 90;
-
 }
 
 #h2_descript_la_serie {
+
     position: absolute;
     display: flex;
     top: -35px;
@@ -92,8 +90,6 @@
     font-size: 3.5rem;
     color: var(--white);
     text-transform: uppercase;
-
-
 }
 
 #h3_descript_la_serie {
@@ -108,7 +104,6 @@
     font-size: 1.5rem;
     color: var(--black-secondary);
     margin-bottom: 20px;
-
 }
 
 #p_descript_la_serie {
@@ -123,7 +118,6 @@
     font-size: 1.2rem;
     font-weight: 300;
     padding-top: 20px;
-
 }
 
 #max_content_02_la_serie {
@@ -133,13 +127,13 @@
     height: 800px;
     width: 102vw;
     background-image: url(/images/back_la_serie_Web_free_live_free_ride.jpeg);
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     justify-items: center;
     place-content: center;
-    border-top: 1px solid grey;
+    border-top: .5px solid grey;
+    border-bottom: .5px solid grey;
     overflow: hidden;
     z-index: 50;
 }
@@ -148,13 +142,11 @@
 
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     height: 800px;
     width: 100vw;
     max-width: 1500px;
-    place-content: center;
-    justify-items: center;
-    align-items: center;
+    place-content: center start;
 }
 
 #map_map {
@@ -163,81 +155,107 @@
     width: 100%;
 }
 
-
-
 #map_map #europe_svg {
 
     width: 1000px;
-    cursor: pointer;
     padding-right: 80px;
+    padding-left: 80px;
+    transition: 200ms ease;
 }
 
 #map #map_selection {
 
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    height: 200px;
+    width: 250px;
     display: flex;
     flex-direction: column;
-    place-content: center;
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid var(--white-e9);
-
 }
 
-#map #map_selection span img {
+#map #map_selection img {
+    position: absolute;
+    height: 40px;
+    margin-right: 10px;
+    left: 10px;
 
-    height: 70px;
-    width: 70px;
-    position: relative;
-    cursor: pointer;
 }
 
 .session_selection {
 
     display: flex;
-    float: left;
-    width: 300px;
-    vertical-align: middle;
-    padding-left: 30px;
+    width: 250px;
     margin-bottom: 30px;
-    align-items: center;
-    height: 100px;
+    height: 70px;
 }
 
-.session_selection #tienda,
+.session_selection a {
+
+    height: 100%;
+    width: 100%;
+}
+
+.session_selection #tienda_02,
 .session_selection #tienda_01 {
 
-    background-image: url(/images/icon_campaña.png);
-    background-size: cover;
-    background-position: center center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 999px;
-    height: 80px;
-    width: 80px;
-    border: 0px;
-    cursor: pointer;
-}
-
-
-
-
-.session_selection span:nth-child(2) {
-
     display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    text-align: start;
-    place-content: center;
-    height: 70px;
-    width: 200px;
-
-    /* background-color: aquamarine; */
-}
-
-.session_selection span p {
-
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: hsl(208, 100%, 97%, 0);
+    border: .5px solid var(--black-secondary);
+    border-radius: 5px;
     font-family: var(--font-text);
     font-size: 1.5rem;
     color: var(--black-secondary);
     font-weight: bold;
+    padding-left: 70px;
+    transition: 200ms ease;
+}
 
+.session_selection #tienda_01::after {
+
+    content: "Temporada 1";
+    transition: 200ms ease;
+}
+
+.session_selection #tienda_01:hover::after {
+
+    content: "El comienzo";
+    transition: 200ms ease;
+}
+
+.session_selection #tienda_02::after {
+
+    content: "Temporada 2";
+}
+
+.session_selection #tienda_02:hover::after {
+
+    content: "Poximamente...";
+}
+
+.session_selection #_01_ramdon,
+.session_selection #_02_ramdon {
+
+    background-color: #ECECEC;
+    position: absolute;
+    height: 40px;
+    margin-right: 10px;
+    left: 10px;
+    width: 40px;
+    transition: 300ms ease;
+}
+
+.session_selection #tienda_01:hover #_01_ramdon {
+
+    background-color: #bc6317;
+}
+
+.session_selection #tienda_02:hover #_02_ramdon {
+
+    background-color: #17BD20;
 }

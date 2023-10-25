@@ -103,18 +103,19 @@ window.addEventListener("scroll", function () {
     const nav_plus = document.getElementById("nav_plus");
 
 
+
     const scrollPosition = window.scrollY;
 
     if (scrollPosition > 30) {
         superpuesto.style.opacity = "0";
         header.classList.add("header_top");
-        // nav_plus.classList.add("header_top");
         logo_h.classList.add("header_opacity");
         bttn_home.classList.add("header_opacity");
         bttn_sesion.classList.add("header_opacity");
         bttn_h.classList.add("header_opacity");
         bttn_p.classList.add("header_opacity");
-        // nav_plus.classList.add("header_opacity");
+
+
 
     } else {
         superpuesto.style.opacity = "1";
