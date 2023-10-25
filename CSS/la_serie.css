@@ -118,6 +118,7 @@
     font-size: 1.2rem;
     font-weight: 300;
     padding-top: 20px;
+    overflow: hidden;
 }
 
 #max_content_02_la_serie {
@@ -168,19 +169,31 @@
     position: absolute;
     top: 150px;
     right: 150px;
-    height: 200px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: column;
+
 }
 
 #map #map_selection img {
     position: absolute;
     height: 40px;
-    margin-right: 10px;
-    left: 10px;
+    left: 15px;
+    transform: rotate(-20deg);
 
 }
+
+#map #map_selection #position_today {}
+
+#map #map_selection #position_today p {
+
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-text-italic);
+    color: var(--black-secondary);
+}
+
 
 .session_selection {
 
@@ -258,4 +271,48 @@
 .session_selection #tienda_02:hover #_02_ramdon {
 
     background-color: #17BD20;
+}
+
+.appear_map {
+    opacity: 1;
+    visibility: visible;
+    animation-name: con_map;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+    animation-timing-function: ease;
+
+}
+
+@keyframes con_map {
+    0% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.appear_map_selecction {
+    opacity: 1;
+    visibility: visible;
+    animation-name: con_map_selecction;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+    animation-timing-function: ease;
+
+}
+
+@keyframes con_map_selecction {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }

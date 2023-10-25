@@ -39,7 +39,7 @@ window.onscroll = function () {
     console.log(y);
 };
 
-//h2 hidden
+//h2 hidden 
 
 document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("hideOnScroll");
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// div effect
+// div effect --- HOME
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("content_02");

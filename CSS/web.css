@@ -98,16 +98,6 @@ body {
 
 }
 
-/* @keyframes con1 {
-    0% {
-        scale: 0;
-    }
-
-    100% {
-        scale: 1;
-    }
-} */
-
 @keyframes con1 {
     0% {
         transform: translateY(100%);
@@ -139,4 +129,9 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#AL {
+
+    cursor: pointer;
 }
