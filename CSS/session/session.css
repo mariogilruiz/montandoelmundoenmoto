@@ -11,6 +11,7 @@ body {
 
     position: relative;
     display: grid;
+
     width: 100vw;
     height: calc(63vh - 250px);
     padding-top: 120px;
@@ -188,6 +189,7 @@ input[type="password"]:focus {
     align-items: center;
 
 
+
 }
 
 #inital_max_session #remmenber #remmenber_content {
@@ -218,7 +220,7 @@ input[type="password"]:focus {
 
 #inital_max_session #remmenber p {
 
-    margin-top: 15px;
+    margin-top: 40px;
 
 }
 
@@ -226,4 +228,8 @@ input[type="password"]:focus {
 
     font-weight: bold;
 
+}
+
+#web_session #footer_max {
+    display: none;
 }

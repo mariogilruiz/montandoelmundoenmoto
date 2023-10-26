@@ -28,7 +28,7 @@
 
 @media (max-width:1169px) {
 
-    #content_02_videos {
+    #content_02_temporada_01 {
 
         grid-template-columns: repeat(2, 395px);
         grid-template-rows: repeat(15, 280px);
@@ -227,7 +227,7 @@
 
 @media (max-width:787px) {
 
-    #content_02_videos {
+    #content_02_temporada_01 {
 
         grid-template-columns: repeat(2, 280px);
         grid-template-rows: repeat(15, 120px);
@@ -238,7 +238,7 @@
 
     }
 
-    #content_02_videos .card_videos {
+    #content_02_temporada_01 .card_temporada_01 {
 
         height: 180px;
         grid-template-columns: 100%;
@@ -246,7 +246,7 @@
 
     }
 
-    #content_02_videos .card_ncap_youtube {
+    #content_02_temporada_01 .card_ncap_youtube {
         font-size: 30px;
 
     }
@@ -612,7 +612,7 @@
 
 @media (max-width:500px) {
 
-    #content_02_videos {
+    #content_02_temporada_01 {
 
         grid-template-columns: repeat(1, 300px);
         grid-template-rows: repeat(30, 140px);
@@ -620,7 +620,7 @@
         height: 4000px !important;
     }
 
-    #content_02_videos .card_videos {
+    #content_02_temporada_01 .card_temporada_01 {
 
         height: 200px;
         grid-template-columns: 100%;
@@ -676,7 +676,7 @@
         grid-template-rows: 60vh 2000px 200px 120px 250px;
     }
 
-    #web_videos {
+    #web_temporada_01 {
 
         grid-template-rows: 60vh 4000px 200px 120px 250px;
     }
@@ -686,7 +686,7 @@
     #inital_max_material,
     #inital_max_proyecto,
     #inital_max_rutas,
-    #inital_max_videos {
+    #inital_max_temporada_01 {
 
         height: 60vh;
     }

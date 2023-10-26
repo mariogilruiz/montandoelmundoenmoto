@@ -1,4 +1,4 @@
-#web_videos {
+#web_temporada_01 {
 
     display: grid;
     grid-template-rows: calc(100vh - 200px) 4000px 200px 120px 252px;
@@ -11,7 +11,7 @@
     background-position: center center;
 }
 
-#inital_max_videos {
+#inital_max_temporada_01 {
 
     display: grid;
     position: relative;
@@ -27,7 +27,7 @@
     place-content: center;
 }
 
-#pag-02_max_videos {
+#pag-02_max_temporada_01 {
 
     display: grid;
     position: relative;
@@ -40,7 +40,7 @@
     grid-template-rows: 400px 3600px;
 }
 
-#max_content_02_videos {
+#max_content_02_temporada_01 {
 
     display: grid;
     height: 3600px !important;
@@ -56,7 +56,7 @@
     overflow: hidden;
 }
 
-#content_02_videos {
+#content_02_temporada_01 {
 
     display: grid;
     grid-template-columns: repeat(3, 395px);
@@ -71,7 +71,7 @@
     overflow: hidden;
 }
 
-#content_02_videos .card_videos {
+#content_02_temporada_01 .card_temporada_01 {
 
     display: grid;
     border-radius: 5px;
@@ -88,7 +88,7 @@
     overflow: hidden;
 }
 
-#content_02_videos .card_video_youtube {
+#content_02_temporada_01 .card_video_youtube {
 
     height: 100%;
     width: 100%;
@@ -103,12 +103,12 @@
     background-color: var(--black-secondary);
 }
 
-#content_02_videos .card_video_youtube:hover {
+#content_02_temporada_01 .card_video_youtube:hover {
 
     opacity: 1;
 }
 
-#content_02_videos .card_ncap_youtube {
+#content_02_temporada_01 .card_ncap_youtube {
 
     display: flex;
     height: 100%;
@@ -134,12 +134,12 @@
 
 }
 
-#content_02_videos .card_ncap_youtube {
+#content_02_temporada_01 .card_ncap_youtube {
 
     background-color: rgb(0, 0, 0, .3);
 }
 
-#web_videos #social_videos_max {
+#web_temporada_01 #social_temporada_01_max {
 
     display: grid;
     position: relative;
@@ -152,7 +152,7 @@
     border-bottom: .5px solid var(--grey-ccc);
 }
 
-#web_videos #social_videos_content {
+#web_temporada_01 #social_temporada_01_content {
 
     display: grid;
     background-color: var(--white-e9);
@@ -164,7 +164,7 @@
     place-content: center;
 }
 
-#web_videos #social_videos_content #banner_videos {
+#web_temporada_01 #social_temporada_01_content #banner_temporada_01 {
 
     display: grid;
     grid-template-columns: 100%;
@@ -175,7 +175,7 @@
     padding-left: 20px;
 }
 
-#web_videos #social_videos_max #span_baner_v {
+#web_temporada_01 #social_temporada_01_max #span_baner_v {
 
     box-sizing: border-box;
     display: grid;
@@ -204,7 +204,7 @@
     }
 }
 
-#web_videos #social_videos_max #span_baner_v span {
+#web_temporada_01 #social_temporada_01_max #span_baner_v span {
 
     font-family: var(--font-bttn-fuell);
     font-size: 8rem;
@@ -241,7 +241,7 @@
     }
 }
 
-#web_videos #social_videos_content #social_v_bttn {
+#web_temporada_01 #social_temporada_01_content #social_v_bttn {
 
     position: relative;
     background-color: var(--white-e9);
@@ -252,24 +252,24 @@
     row-gap: 20px;
 }
 
-#web_videos #social_videos_content a {
+#web_temporada_01 #social_temporada_01_content a {
 
     padding-left: 5px;
 }
 
-#web_videos #social_videos_content #bbtn_you:hover {
+#web_temporada_01 #social_temporada_01_content #bbtn_you:hover {
 
     border: 1px solid black;
     color: black;
 }
 
-#web_videos #social_videos_content button:active {
+#web_temporada_01 #social_temporada_01_content button:active {
 
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.95);
 }
 
-#web_videos #spacer_02_videos {
+#web_temporada_01 #spacer_02_temporada_01 {
 
     position: relative;
     display: grid;
