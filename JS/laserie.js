@@ -63,12 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 1) {
-            hiddenDivph.classList.add("apper_ph");
+            hiddenDivph.classList.add("apper_text_pages");
         }
     });
 });
-
-
 
 
 

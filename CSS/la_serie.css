@@ -32,25 +32,6 @@
     transform: translate(-50%, -50%); */
 }
 
-#pag-02_max_la_serie #spacer_page {
-
-    position: absolute;
-    top: -68px;
-    height: 120px;
-    width: 70vw;
-    z-index: 99;
-}
-
-#pag-02_max_la_serie #logo_back_text {
-
-    position: absolute;
-    top: -42px;
-    height: 70px;
-    width: 400px;
-    animation: 500ms giro_li 300ms ease 1;
-    z-index: 100;
-}
-
 #pag-02_max_la_serie {
 
     position: relative;
@@ -64,64 +45,9 @@
     z-index: 90;
 }
 
-#description_02_la_serie {
-
-    display: grid;
-    place-content: center;
-    justify-items: center;
-    height: 400px;
-    width: 100%;
-    max-width: 1200px;
-    grid-template-columns: 100%;
-    grid-template-rows: 160px 200px;
-    background-color: var(--white-e9);
-    z-index: 90;
-}
-
-#h2_descript_la_serie {
-
-    position: absolute;
-    display: flex;
-    top: -35px;
-    height: 120px;
-    width: 100%;
-    justify-content: center;
-    font-family: var(--font-true);
-    font-size: 3.5rem;
-    color: var(--white);
-    text-transform: uppercase;
-}
-
-#h3_descript_la_serie {
-
-    display: flex;
-    height: 80px;
-    width: 100%;
-    margin-top: 70px;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-text);
-    font-size: 1.5rem;
-    color: var(--black-secondary);
-    margin-bottom: 20px;
-}
-
-#p_descript_la_serie {
-
-    display: flex;
-    height: 200px;
-    width: 100%;
-    border-top: 1px solid grey;
-    text-align: center;
-    justify-content: center;
-    font-family: var(--font-text-italic);
-    font-size: 1.2rem;
-    font-weight: 300;
-    padding-top: 20px;
-    overflow: hidden;
-}
 
 #max_content_02_la_serie {
+
     position: relative;
     display: grid;
     margin-left: 2px;
@@ -173,18 +99,15 @@
     width: 250px;
     display: flex;
     flex-direction: column;
-
 }
 
 #map #map_selection img {
+
     position: absolute;
     height: 40px;
     left: 15px;
     transform: rotate(-20deg);
-
 }
-
-#map #map_selection #position_today {}
 
 #map #map_selection #position_today p {
 
@@ -193,7 +116,6 @@
     font-family: var(--font-text-italic);
     color: var(--black-secondary);
 }
-
 
 .session_selection {
 
@@ -274,6 +196,7 @@
 }
 
 .appear_map {
+
     opacity: 1;
     visibility: visible;
     animation-name: con_map;
@@ -282,7 +205,6 @@
     animation-fill-mode: backwards;
     animation-delay: 100ms;
     animation-timing-function: ease;
-
 }
 
 @keyframes con_map {
@@ -296,6 +218,7 @@
 }
 
 .appear_map_selecction {
+
     opacity: 1;
     visibility: visible;
     animation-name: con_map_selecction;
@@ -304,7 +227,6 @@
     animation-fill-mode: backwards;
     animation-delay: 100ms;
     animation-timing-function: ease;
-
 }
 
 @keyframes con_map_selecction {

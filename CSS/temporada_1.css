@@ -1,7 +1,7 @@
 #web_videos {
 
     display: grid;
-    grid-template-rows: calc(100vh - 220px) 4000px 200px 120px 250px;
+    grid-template-rows: calc(100vh - 200px) 4000px 200px 120px 250px;
     grid-template-columns: 100%;
     width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -18,20 +18,10 @@
     position: relative;
     z-index: 90;
     justify-items: center;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 200px);
     width: 100%;
     grid-template-columns: 100%;
     place-content: center;
-
-}
-
-#inital_max_videos img {
-
-    position: absolute;
-    bottom: -2px;
-    height: 120px;
-    width: 100%;
-
 }
 
 #pag-02_max_videos {
@@ -39,77 +29,12 @@
     display: grid;
     position: relative;
     z-index: 90;
-    background-color: var(--grey-ccc);
+    background-color: var(--white-e9);
     justify-items: center;
     background-attachment: fixed;
     height: 4000px;
     grid-template-columns: 100%;
     grid-template-rows: 400px 3600px;
-
-}
-
-#description_02_video {
-
-    display: grid;
-    place-content: center;
-    justify-items: center;
-    height: 400px;
-    width: 100%;
-    max-width: 1200px;
-    grid-template-columns: 100%;
-    grid-template-rows: 120px 80px 200px;
-    background-color: var(--grey-ccc);
-
-}
-
-#h2_descript_video {
-
-    display: flex;
-    height: 120px;
-    width: 100%;
-    justify-content: center;
-    font-family: var(--font-primary);
-    font-size: 3.5rem;
-    color: var(--white);
-    text-transform: uppercase;
-
-}
-
-#h3_descript_video {
-
-    display: flex;
-    height: 80px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-primary);
-    font-size: 1.5rem;
-    color: var(--white);
-    margin-bottom: 20px;
-
-}
-
-#p_descript_video {
-
-    display: flex;
-    height: 200px;
-    width: 100%;
-    border-top: 1px solid grey;
-    text-align: center;
-    justify-content: center;
-    font-family: var(--font-text-italic);
-    font-size: 1.2rem;
-    font-weight: 300;
-    padding-top: 20px;
-
-
-}
-
-#p_descript_video p {
-
-    padding-left: 20px;
-    padding-right: 20px;
-
 }
 
 #max_content_02_videos {
@@ -126,7 +51,6 @@
     justify-content: center;
     border-top: 1px solid grey;
     overflow: hidden;
-
 }
 
 #content_02_videos {

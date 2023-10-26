@@ -6,7 +6,6 @@ body {
     text-decoration: none;
     list-style: none;
     overflow-x: clip;
-
 }
 
 #web {
@@ -21,7 +20,6 @@ body {
     background-size: 100%;
     background-position: center center;
     overflow: hidden;
-
 }
 
 #spacer_01 {
@@ -52,7 +50,6 @@ body {
     background-size: cover;
     z-index: 90;
     border-bottom: 1px solid var(--green-seconday);
-
 }
 
 #phrase_home #content_ph {
@@ -64,8 +61,6 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-
-
 }
 
 #phrase_home p {
@@ -80,13 +75,14 @@ body {
 }
 
 .hidden_02 {
+
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
-
 }
 
 .appear {
+
     opacity: 1;
     visibility: visible;
     animation-name: con1;
@@ -95,7 +91,6 @@ body {
     animation-fill-mode: backwards;
     animation-delay: 100ms;
     animation-timing-function: ease;
-
 }
 
 @keyframes con1 {
@@ -115,8 +110,6 @@ body {
     animation-name: con2;
     animation-duration: 2s;
     animation-iteration-count: 1;
-
-
 }
 
 @keyframes con2 {
@@ -134,4 +127,102 @@ body {
 #AL {
 
     cursor: pointer;
+}
+
+.apper_text_pages {
+
+    opacity: 1;
+    visibility: visible;
+    animation-name: con2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+/* clases comunes de las paginas  */
+
+.spacer_page {
+
+    position: absolute;
+    top: -68px;
+    height: 120px;
+    width: 70vw;
+    z-index: 80;
+}
+
+.description_02_page {
+
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: 100%;
+    grid-template-rows: 160px 200px;
+    background-color: var(--white-e9);
+
+}
+
+.h2_descript_page {
+
+    position: absolute;
+    display: flex;
+    top: -35px;
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+}
+
+.h2_pages {
+
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    animation: 500ms giro_li 300ms ease 1;
+    text-align: center;
+    font-family: var(--font-true);
+    font-size: 5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.h2_logo_pages {
+
+    position: absolute;
+    top: -42px;
+    height: 70px;
+    width: 400px;
+    animation: 500ms giro_li 300ms ease 1;
+    z-index: 100;
+}
+
+.h3_descript_page {
+
+    display: flex;
+    height: 80px;
+    width: 100%;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    color: var(--black-secondary);
+    margin-bottom: 20px;
+}
+
+.p_descript_page {
+
+    display: flex;
+    height: 200px;
+    width: 100%;
+    border-top: 1px solid grey;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-text-italic);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 20px;
+    overflow: hidden;
 }
