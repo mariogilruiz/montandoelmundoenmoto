@@ -16,6 +16,10 @@
 
     display: grid;
     position: relative;
+    background-image: url(../images/IMG_0848.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     z-index: 90;
     justify-items: center;
     height: calc(100vh - 200px);
@@ -23,6 +27,18 @@
     grid-template-columns: 100%;
     place-content: center;
 }
+
+/* #inital_max_videos img {
+
+    position: fixed;
+    object-fit: cover;
+    bottom: 0px;
+    left: 0;
+    height: 80vh;
+    top: 0px;
+    width: 100vw;
+
+} */
 
 #pag-02_max_videos {
 
@@ -49,7 +65,7 @@
     background-size: 100%;
     justify-items: center;
     justify-content: center;
-    border-top: 1px solid grey;
+    border-top: .5px solid grey;
     overflow: hidden;
 }
 
