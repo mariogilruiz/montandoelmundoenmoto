@@ -229,7 +229,7 @@
 
     #content_02_videos {
 
-        grid-template-columns: repeat(2, 250px);
+        grid-template-columns: repeat(2, 280px);
         grid-template-rows: repeat(15, 120px);
         row-gap: 2.5%;
         height: 4000px !important;

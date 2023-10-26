@@ -1,7 +1,7 @@
 #web_videos {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 4000px 200px 120px 250px;
+    grid-template-rows: calc(100vh - 200px) 4000px 200px 120px 252px;
     grid-template-columns: 100%;
     width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -9,7 +9,6 @@
     background-attachment: fixed;
     background-size: 100%;
     background-position: center center;
-
 }
 
 #inital_max_videos {
@@ -27,18 +26,6 @@
     grid-template-columns: 100%;
     place-content: center;
 }
-
-/* #inital_max_videos img {
-
-    position: fixed;
-    object-fit: cover;
-    bottom: 0px;
-    left: 0;
-    height: 80vh;
-    top: 0px;
-    width: 100vw;
-
-} */
 
 #pag-02_max_videos {
 
@@ -76,13 +63,12 @@
     grid-template-rows: repeat(10, 280px);
     max-width: 1200px;
     row-gap: 40px;
-    height: 4000px !important;
+    height: 3600px;
     width: 100%;
     justify-items: center;
-    margin-top: 100px;
+    padding-top: 200px;
     text-align: start;
     overflow: hidden;
-
 }
 
 #content_02_videos .card_videos {
@@ -100,7 +86,6 @@
     align-items: center;
     text-transform: uppercase;
     overflow: hidden;
-
 }
 
 #content_02_videos .card_video_youtube {
@@ -115,13 +100,12 @@
     -webkit-transition: 500ms ease-in-out all;
     -moz-transition: 1s ease-in-out all;
     -o-transition: 1s ease-in-out all;
-
+    background-color: var(--black-secondary);
 }
 
 #content_02_videos .card_video_youtube:hover {
 
     opacity: 1;
-
 }
 
 #content_02_videos .card_ncap_youtube {
@@ -131,9 +115,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(43, 226, 128); */
     border-top: 4px solid var(--grey-ccc);
-
 }
 
 .card_video_youtube iframe {
@@ -155,7 +137,6 @@
 #content_02_videos .card_ncap_youtube {
 
     background-color: rgb(0, 0, 0, .3);
-
 }
 
 #web_videos #social_videos_max {
@@ -169,7 +150,6 @@
     justify-items: center;
     border-top: .5px solid var(--grey-ccc);
     border-bottom: .5px solid var(--grey-ccc);
-
 }
 
 #web_videos #social_videos_content {
@@ -182,7 +162,6 @@
     grid-template-columns: 80% 20%;
     grid-template-rows: 100%;
     place-content: center;
-
 }
 
 #web_videos #social_videos_content #banner_videos {
@@ -192,7 +171,6 @@
     grid-template-rows: 100%;
     height: 100%;
     width: 100%;
-    /* background-color: aqua; */
     align-items: center;
     padding-left: 20px;
 }
@@ -210,7 +188,6 @@
     -o-animation: linear .5s infinite alternate fluor;
     place-content: center;
     overflow: hidden;
-
 }
 
 @keyframes fluor {
@@ -225,7 +202,6 @@
         border: 0px solid #ffff51;
         box-shadow: 0px 0px 0px #ffff51;
     }
-
 }
 
 #web_videos #social_videos_max #span_baner_v span {
@@ -263,7 +239,6 @@
         transform: translateX(-59%);
         opacity: 0;
     }
-
 }
 
 #web_videos #social_videos_content #social_v_bttn {
@@ -273,30 +248,25 @@
     display: grid;
     grid-template-columns: 78%;
     grid-template-rows: 55px 55px;
-    /* background-color: aqua; */
     place-content: center;
     row-gap: 20px;
-
 }
 
 #web_videos #social_videos_content a {
 
     padding-left: 5px;
-
 }
 
 #web_videos #social_videos_content #bbtn_you:hover {
 
     border: 1px solid black;
     color: black;
-
 }
 
 #web_videos #social_videos_content button:active {
 
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.95);
-
 }
 
 #web_videos #spacer_02_videos {
@@ -306,5 +276,16 @@
     height: 60px;
     width: 100%;
     z-index: 90;
+}
 
+.appear_div_temp {
+
+    opacity: 1;
+    visibility: visible;
+    animation-name: con1;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+    animation-timing-function: ease;
 }
