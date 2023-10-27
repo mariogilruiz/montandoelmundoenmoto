@@ -1,50 +1,24 @@
-body {
-
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-
-#web_register {
-
-    position: relative;
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    min-height: 900px;
-    justify-items: center;
-
-}
-
 #inital_max_register {
 
     position: relative;
     display: grid;
     justify-items: center;
-    align-items: center;
-    height: calc(100vh - 250px);
-    grid-template-rows: 10% 50% 20%;
+    align-items: start;
+    height: 100vh;
+    grid-template-rows: 150px 20% 50% 20%;
     grid-template-columns: 100%;
-    min-height: 650px;
-    max-height: 650px;
-    width: 100vw;
+    min-height: 750px;
+    width: 100%;
     font-family: var(--font-login);
-    padding-top: 120px;
-
 }
 
 #inital_max_register #h2_c__i_s {
 
     display: flex;
-    height: 50px;
+    height: 100%;
     width: 100%;
     justify-content: center;
     margin-bottom: 30px;
-
-
 }
 
 #inital_max_register h2 {
@@ -53,20 +27,17 @@ body {
     font-size: 4rem;
     text-transform: uppercase;
     color: var(--black-secondary);
-
 }
 
 #inital_max_register a {
 
     color: var(--green-seconday);
     transition: 300ms ease;
-
 }
 
 #inital_max_register a:hover {
 
     color: var(--black-secondary);
-
 }
 
 #inital_max_register #login {
@@ -75,7 +46,6 @@ body {
     height: 250px;
     width: 502px;
     font-size: 1.2rem;
-
 }
 
 #inital_max_register form {
@@ -83,7 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-
 }
 
 input[type="text"],
@@ -102,7 +71,6 @@ input[type="password"] {
     font-size: 1.3rem;
     padding-left: 10px;
     color: var(--black-secondary);
-
 }
 
 input[type="text"]:focus,
@@ -119,22 +87,18 @@ input[type="password"]:focus {
     outline: none;
     border: 0px;
     outline: 2px solid var(--green-seconday);
-
 }
 
 #inital_max_register #login p:last-child {
 
     margin-top: 30px;
-
 }
 
 #inital_max_register button:active {
 
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.99);
-
 }
-
 
 #inital_max_register #login form p {
 
@@ -149,20 +113,17 @@ input[type="password"]:focus {
     width: 501px;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #inital_max_register #remmenber input,
 #inital_max_register #remmenber label {
 
     vertical-align: middle;
-
 }
 
 #inital_max_register #remmenber p {
 
     margin-top: 15px;
-
 }
 
 #inital_max_register #register input {
@@ -175,5 +136,4 @@ input[type="password"]:focus {
     height: 35px;
     width: 500px;
     background-color: var(--orange-primary);
-
 }

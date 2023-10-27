@@ -1,6 +1,5 @@
 #footer_max {
 
-    position: relative;
     display: grid;
     position: fixed;
     bottom: 0;
@@ -15,10 +14,10 @@
     justify-content: center;
     border-top: 1px solid var(--green-seconday);
     z-index: 89;
-
 }
 
 #footer_max #content_f {
+
     display: grid;
     position: absolute;
     grid-template-columns: repeat(12, 1fr);
@@ -41,7 +40,6 @@
     grid-area: l;
     align-items: center;
     margin-left: 50px;
-
 }
 
 #footer_max #content_f #logo_f img {
@@ -49,25 +47,28 @@
     height: 200px
 }
 
-#footer_max #content_f #h2_f {
+#h2_f {
 
-    position: relative;
-    display: flex;
     width: 100%;
     height: 100%;
     grid-area: h;
+    margin-top: 20px;
+    border-right: 2px solid rgb(0, 0, 0, .5);
+}
+
+.h2_f {
+
+    position: relative;
+    display: flex;
     font-family: var(--font-true);
     color: var(--white);
     font-size: 3rem;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid rgb(0, 0, 0, .5);
-    margin-top: 20px;
-
 }
 
-#footer_max #content_f #h2_f #bttn_f {
+.bttn_f {
 
     display: grid;
     width: 3rem;
@@ -81,23 +82,20 @@
     color: var(--white);
     overflow: hidden;
     cursor: pointer;
-
 }
 
-
-#footer_max #content_f #h2_f #bttn_f:active {
+.bttn_f:active {
 
     box-shadow: inset 0px 0px 2px black;
     transform: scale(0.98);
 }
 
-#footer_max #content_f #h2_f #bttn_f:hover span {
+.bttn_f:hover span {
 
     animation: 500ms plus linear infinite;
     -webkit-animation: 500ms plus linear infinite;
     -moz-animation: 500ms plus linear infinite;
     -o-animation: 500ms plus linear infinite;
-
 }
 
 @keyframes plus {
@@ -109,7 +107,6 @@
     to {
         transform: rotate(180deg);
     }
-
 }
 
 @-webkit-keyframes plus {
@@ -121,9 +118,7 @@
     to {
         transform: rotate(180deg);
     }
-
 }
-
 
 #footer_max #content_f #copy {
 
@@ -132,16 +127,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-
 }
 
 #footer_max #content_f #copy span {
 
     font-family: var(--font-footer);
     color: var(--white);
-
 }
-
 
 #footer_max #content_f #menu_f {
 
@@ -151,7 +143,6 @@
     grid-template-rows: 60% 40%;
     margin: 20px 20px 20px 20px;
     padding-left: 20px;
-
 }
 
 #footer_max #content_f #menu_f #faqs_f {
@@ -172,7 +163,6 @@
 #footer_max #content_f #menu_f li a:hover {
 
     text-shadow: 0px 0px 2px rgb(0, 0, 0, 1);
-
 }
 
 #footer_max #content_f #menu_f #pay_f {
@@ -182,14 +172,11 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-
 }
-
 
 #footer_max #content_f #menu_f #pay_f img {
 
     height: 100%;
     width: 100%;
     max-width: 280px;
-
 }

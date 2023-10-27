@@ -1,48 +1,24 @@
-body {
-
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-
-#web_recover {
-
-    position: relative;
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    min-height: 900px;
-    justify-items: center;
-
-}
-
-
 #inital_max_recover {
 
     position: relative;
     display: grid;
     justify-items: center;
-    height: calc(100vh - 250px);
-    min-height: 400px;
-    max-height: 400px;
-    width: 100vw;
+    height: 100vh;
+    min-height: 750px;
+    width: 100%;
     grid-template-columns: 100%;
-    padding-top: 100px;
-    align-items: center;
+    grid-template-rows: 150px 20% 50%;
+    align-items: start;
     font-family: var(--font-login);
-
 }
 
 #inital_max_recover #h2_c__i_s {
 
     display: flex;
-    height: 50px;
+    height: 100%;
     width: 100%;
     justify-content: center;
-    margin-bottom: 50px;
-
+    margin-bottom: 40px;
 }
 
 #inital_max_recover h2 {
@@ -51,7 +27,6 @@ body {
     font-size: 4rem;
     text-transform: uppercase;
     color: var(--black-secondary);
-
 }
 
 #inital_max_recover #login {
@@ -60,7 +35,6 @@ body {
     height: 250px;
     width: 502px;
     font-size: 1.2rem;
-
 }
 
 #inital_max_recover form {
@@ -68,7 +42,6 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-
 }
 
 input[type="email"] {
@@ -85,7 +58,6 @@ input[type="email"] {
     font-size: 1.3rem;
     padding-left: 10px;
     color: var(--black-secondary);
-
 }
 
 input[type="email"]:focus {
@@ -100,21 +72,18 @@ input[type="email"]:focus {
     outline: none;
     border: 0px;
     outline: 2px solid var(--green-seconday);
-
 }
 
 #inital_max_recover button:active {
 
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.99);
-
 }
 
 #inital_max_recover #login p:last-child {
 
     margin-top: 30px;
-    margin-bottom: 20px;
-
+    margin-bottom: 10px;
 }
 
 #inital_max_recover #login form p:first-child {
@@ -134,7 +103,6 @@ input[type="email"]:focus {
     width: 501px;
     align-items: center;
     justify-content: center;
-
 }
 
 #inital_max_recover button {
@@ -142,5 +110,4 @@ input[type="email"]:focus {
     height: 35px;
     width: 500px;
     background-color: var(--orange-primary);
-
 }

@@ -4,7 +4,6 @@
 $(function () {
 
     $("#header_max").load("../pages/header.html");
-
 });
 
 //footer load
@@ -12,7 +11,13 @@ $(function () {
 $(function () {
 
     $("#footer_max").load("../pages/footer.html");
+});
 
+//footer_XS load
+
+$(function () {
+
+    $("#footer_XS").load("../pages/footerXS.html");
 });
 
 // text ramdon
@@ -39,7 +44,6 @@ window.onscroll = function () {
     console.log(y);
 };
 
-
 //header&banner_home effect
 
 window.addEventListener("scroll", function () {
@@ -52,8 +56,6 @@ window.addEventListener("scroll", function () {
     const bttn_p = document.getElementById("bttn_p");
     const nav_plus = document.getElementById("nav_plus");
 
-
-
     const scrollPosition = window.scrollY;
 
     if (scrollPosition > 30) {
@@ -65,9 +67,8 @@ window.addEventListener("scroll", function () {
         bttn_h.classList.add("header_opacity");
         bttn_p.classList.add("header_opacity");
 
-
-
     } else {
+
         superpuesto.style.opacity = "1";
         header.classList.remove("header_top");
         // nav_plus.classList.remove("header_top");
@@ -79,7 +80,6 @@ window.addEventListener("scroll", function () {
         // nav_plus.classList.remove("header_opacity");
     }
 });
-
 
 //animation onclick menu plus
 
@@ -94,11 +94,9 @@ function nav_plus_hidden() {
     document.getElementById("logo_h").classList.toggle("opacity_plus");
     document.getElementById("bttn_home").classList.toggle("hidden_bttn_header");
     document.getElementById("bttn_sesion").classList.toggle("hidden_bttn_header");
-
 }
 
 //animation onclick boton fuell open
-
 
 document.getElementById("nav_chek").onclick = function () { bttn_fuel_hidden() };
 
@@ -111,13 +109,9 @@ function bttn_fuel_hidden() {
     document.getElementById("bttn_p").classList.toggle("header_grey");
     document.getElementById("bttn_h").classList.toggle("opacity_plus");
     document.getElementById("bttn_p").classList.toggle("hidden_bttn_h");
-
-
-
 }
 
 //animation onclick boton span close
-
 
 document.getElementById("nav_chek").onclick = function () { bttn_fuel_span() };
 
@@ -130,8 +124,5 @@ function bttn_fuel_span() {
     document.getElementById("bttn_p").classList.toggle("header_grey");
     document.getElementById("bttn_h").classList.toggle("opacity_plus");
     document.getElementById("bttn_p").classList.toggle("hidden_bttn_h");
-
-
-
 }
 

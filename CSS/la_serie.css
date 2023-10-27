@@ -1,7 +1,7 @@
 #web_la_serie {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 1200px 252px;
+    grid-template-rows: calc(100vh - 200px) 1200px 102px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -149,6 +149,12 @@
     font-weight: bold;
     padding-left: 70px;
     transition: 200ms ease;
+}
+
+.session_selection #tienda_02:active span,
+.session_selection #tienda_01:active span {
+
+    transform: scale(.7);
 }
 
 .session_selection #tienda_01::after {
