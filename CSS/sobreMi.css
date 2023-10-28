@@ -1,15 +1,9 @@
 #web_about {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 2000px 200px 120px 250px;
+    grid-template-rows: calc(100vh - 200px) 1780px 101px;
     grid-template-columns: 100%;
     width: 100%;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: 100%;
-
 }
 
 #inital_max_about {
@@ -35,51 +29,52 @@
     display: grid;
     background-color: var(--white-e9);
     justify-items: center;
-    height: 2000px;
+    height: 1780px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 1600px;
+    grid-template-rows: 180px 1600px;
     z-index: 90;
 }
 
 #max_content_02_about {
 
     display: grid;
-    height: 1600px;
+    height: 100%;
     width: 100%;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 100%;
     justify-items: center;
-    border-top: .5px solid grey;
     overflow: hidden;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-attachment: local;
+    background-size: 100%;
+    background-position: center center;
+    border-top: 1px solid grey;
 }
 
 #content_02_about {
 
     display: grid;
     max-width: 1200px;
-    height: 1600px !important;
+    height: 87.5%;
     width: 100%;
     justify-items: center;
     margin-top: 100px;
     text-align: start;
-
+    background-image: url(../images/back_sobre_mi_el_mundo_en_moto_mario.jpeg);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 5px;
+    font-family: var(--font-tiza);
+    color: var(--white-e9);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 40px;
+    padding: 40px;
 }
 
-#social_about_max {
+#content_02_about_01 {
 
-    display: grid;
-    position: relative;
-    z-index: 90;
-    background-color: var(--white-e9);
-    width: 100%;
-    height: 200px;
-    justify-items: center;
-    background-color: var(--white-e9);
-    border-top: 2px solid var(--white);
-    border-bottom: 1px solid var(--white);
-
+    background-attachment: fixed;
 }

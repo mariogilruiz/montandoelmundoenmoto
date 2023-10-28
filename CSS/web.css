@@ -1,8 +1,22 @@
-*,
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+}
+
 body {
 
     margin: 0;
     padding: 0;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center center;
+    overflow: hidden;
     text-decoration: none;
     list-style: none;
     overflow-x: clip;
@@ -13,13 +27,6 @@ body {
     display: grid;
     grid-template-rows: 100vh 768px 20px 850px 250px 250px;
     grid-template-columns: 100%;
-    background-color: var(--white-e9);
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-position: center center;
-    overflow: hidden;
 }
 
 #spacer_01 {
@@ -32,7 +39,6 @@ body {
     z-index: 90;
     background-color: var(--white-e9);
 }
-
 
 #phrase_home {
 
@@ -137,7 +143,6 @@ body {
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
-
 
 /* clases comunes de las paginas  */
 

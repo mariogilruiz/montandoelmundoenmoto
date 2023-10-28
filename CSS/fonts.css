@@ -111,3 +111,8 @@
     font-family: "banks20";
     src: url(/fonts/banksb26.ttf);
 }
+
+@font-face {
+    font-family: "blacboard";
+    src: url(/fonts/DK\ Crayon\ Crumble.ttf);
+}

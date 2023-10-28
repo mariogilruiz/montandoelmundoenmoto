@@ -136,7 +136,7 @@ input[type="password"]:focus {
 }
 
 .mycheck:checked {
-    background-color: var(--green-primary-);
+    background-color: var(--green-seconday);
     color: var(--green-primary-);
     background-position: 0 0;
 }
