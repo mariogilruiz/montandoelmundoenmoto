@@ -57,24 +57,43 @@
     max-width: 1200px;
     height: 87.5%;
     width: 100%;
-    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 30% 30%;
     margin-top: 100px;
-    text-align: start;
-    background-image: url(../images/back_sobre_mi_el_mundo_en_moto_mario.jpeg);
+    /* background-image: url(../images/back_sobre_mi_el_mundo_en_moto_mario.jpeg);
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-size: 100%;
-    background-position: center center;
+    background-position: center center; */
+    backdrop-filter: blur(10px);
     border-radius: 5px;
-    font-family: var(--font-tiza);
-    color: var(--white-e9);
+    font-family: var(--font-text-light);
+    color: var(--black-secondary);
     font-size: 2rem;
     font-weight: 100;
     line-height: 40px;
     padding: 40px;
+    background-color: var(--white-e9);
 }
 
 #content_02_about_01 {
 
-    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+#content_02_about_02 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    float: left;
+    place-content: center;
+    /* background-color: aqua; */
+}
+
+#content_02_about_02 img {
+
+    height: 400px;
 }

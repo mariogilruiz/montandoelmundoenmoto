@@ -116,3 +116,8 @@
     font-family: "blacboard";
     src: url(/fonts/DK\ Crayon\ Crumble.ttf);
 }
+
+@font-face {
+    font-family: "nunito-light";
+    src: url(/fonts/NunitoSans_7pt_Condensed-Light.ttf);
+}
