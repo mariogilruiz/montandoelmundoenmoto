@@ -6,7 +6,7 @@
     }
 
     #p_descript_video,
-    #p_descript_about,
+    #p_descript_proyecto,
     #p_descript_material,
     #p_descript_proyecto,
     #p_descript_rutas,
@@ -667,7 +667,7 @@
         height: 85vh;
     }
 
-    #web_about,
+    #web_proyecto,
     #web_imagenes,
     #web_material,
     #web_proyecto,
@@ -681,7 +681,7 @@
         grid-template-rows: 60vh 4000px 200px 120px 250px;
     }
 
-    #inital_max_about,
+    #inital_max_proyecto,
     #inital_max_imagenes,
     #inital_max_material,
     #inital_max_proyecto,
