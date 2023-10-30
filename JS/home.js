@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv03 = document.getElementById("content_03");
 
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDivph = document.getElementById("content_ph");

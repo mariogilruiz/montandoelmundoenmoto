@@ -1,7 +1,7 @@
 #web_la_serie {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 1200px 102px;
+    grid-template-rows: calc(100vh - 200px) 1200px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -45,7 +45,6 @@
     z-index: 90;
 }
 
-
 #max_content_02_la_serie {
 
     position: relative;
@@ -59,8 +58,8 @@
     background-size: cover;
     justify-items: center;
     place-content: center;
-    border-top: .5px solid grey;
-    border-bottom: .5px solid grey;
+    /* border-top: .5px solid grey; */
+    /* border-bottom: .5px solid grey; */
     overflow: hidden;
     z-index: 50;
 }
@@ -131,8 +130,7 @@
     width: 100%;
 }
 
-.session_selection #tienda_02,
-.session_selection #tienda_01 {
+.session_selection_session {
 
     display: flex;
     align-items: center;
@@ -141,8 +139,10 @@
     width: 100%;
     cursor: pointer;
     background-color: hsl(208, 100%, 97%, 0);
-    border: .5px solid var(--black-secondary);
+    /* border: .5px solid var(--black-secondary); */
+    border: 0px;
     border-radius: 5px;
+    background-color: var(--white-e9);
     font-family: var(--font-text);
     font-size: 1.5rem;
     color: var(--black-secondary);
@@ -183,6 +183,8 @@
 .session_selection #_02_ramdon {
 
     background-color: #ECECEC;
+    border: .5px solid var(--black-secondary);
+    border-radius: 50px;
     position: absolute;
     height: 40px;
     margin-right: 10px;

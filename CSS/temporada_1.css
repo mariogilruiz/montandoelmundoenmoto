@@ -1,7 +1,7 @@
 #web_temporada_01 {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 4000px 200px 120px 252px;
+    grid-template-rows: calc(100vh - 200px) 3800px 200px 102px;
     grid-template-columns: 100%;
     width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -37,13 +37,13 @@
     background-attachment: fixed;
     height: 4000px;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 3600px;
+    grid-template-rows: 400px 3400px;
 }
 
 #max_content_02_temporada_01 {
 
     display: grid;
-    height: 3600px !important;
+    height: 3400px !important;
     width: 100%;
     background-attachment: fixed;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -52,7 +52,8 @@
     background-size: 100%;
     justify-items: center;
     justify-content: center;
-    border-top: .5px solid grey;
+    place-content: center;
+    /* border-top: .5px solid grey; */
     overflow: hidden;
 }
 
@@ -63,12 +64,14 @@
     grid-template-rows: repeat(10, 280px);
     max-width: 1200px;
     row-gap: 40px;
-    height: 3600px;
+    height: 3200px;
     width: 100%;
     justify-items: center;
-    padding-top: 200px;
-    text-align: start;
+    place-content: center;
+    /* padding-top: 200px; */
+    /* text-align: start; */
     overflow: hidden;
+    border-radius: 5px;
 }
 
 #content_02_temporada_01 .card_temporada_01 {

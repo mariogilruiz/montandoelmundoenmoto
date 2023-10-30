@@ -21,6 +21,10 @@
     height: calc(100vh - 200px);
     width: 100%;
     z-index: 90;
+    background-image: url(../images/back_proyecto_mario_free_live_free_ride_y_montando_mi_mundo_en_moto.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 #pag-02_max_proyecto {
@@ -36,11 +40,11 @@
     justify-items: center;
 }
 
-#h3_descript_page {
+/* #h3_descript_page {
 
     border-bottom: 1px solid grey;
     padding-bottom: 9px;
-}
+} */
 
 #max_content_02_proyecto {
 
@@ -81,6 +85,8 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    border-top: 20px solid var(--black-secondary);
+
 }
 
 #content_02_proyecto_01 h4 {

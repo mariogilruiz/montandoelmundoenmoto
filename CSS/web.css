@@ -235,12 +235,19 @@ body {
     display: flex;
     height: 200px;
     width: 100%;
-    border-top: 1px solid grey;
+    border-top: 20px solid var(--black-secondary);
+    border-radius: 5px 5px 0px 0px;
+    align-items: center;
     text-align: center;
     justify-content: center;
     font-family: var(--font-text-italic);
     font-size: 1.2rem;
     font-weight: 300;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     overflow: hidden;
+}
+
+.p_descript_page p {
+
+    max-width: 1100px;
 }

@@ -36,11 +36,11 @@
     justify-items: center;
 }
 
-#h3_descript_page {
+/* #h3_descript_page {
 
     border-bottom: 1px solid grey;
     padding-bottom: 9px;
-}
+} */
 
 #max_content_02_about {
 
@@ -81,6 +81,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    border-top: 20px solid var(--black-secondary);
 }
 
 #content_02_about_01 h4 {
