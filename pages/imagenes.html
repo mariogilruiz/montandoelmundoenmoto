@@ -21,11 +21,11 @@
                 <div id="spacer_galery_header"></div>
                 <div id="selector_galery">
                     <div id="selector_galery_place">
-                        <button id="selector_galery_ES" class="bttn_galery"> <span><img src="../images/espana.png"
-                                    alt=""></span>España
+                        <button id="selector_galery_ES" class="bttn_galery" onclick="card_galery_ES()"> <span><img
+                                    src="../images/espana.png" alt=""></span>España
                         </button>
-                        <button id="selector_galery_02_FR" class="bttn_galery"><span><img src="../images/francia.png"
-                                    alt=""></span>Francia</button>
+                        <button id="selector_galery_02_FR" class="bttn_galery" onclick="card_galery_FR()"><span><img
+                                    src="../images/francia.png" alt=""></span>Francia</button>
                         <button id="selector_galery_03_alpes" class="bttn_galery"><span><img src="../images/alpes.png"
                                     alt=""></span>Alpes</button>
                         <button id="selector_galery_04_SLV" class="bttn_galery"><span><img src="../images/eslovenia.png"
@@ -37,8 +37,12 @@
                         <button id="selector_galery_06_IT" class="bttn_galery"><span><img src="../images/italia.png"
                                     alt=""></span>Italia</button>
                     </div>
+
                     <div id="selector_galery_galery">
-                        <div id="content_images_01_ES" class="content_images_galery">
+                        <div id="content_images_static" class="content_images_galery">fijo
+
+                        </div>
+                        <div id="content_images_01_ES" class="content_images_galery hidden_galery">España
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -46,7 +50,7 @@
                                 <div id="info_photo" class="info_photo"></div>
                             </div>
                         </div>
-                        <div id="content_images_02_FR" class="content_images_galery">
+                        <div id="content_images_02_FR" class="content_images_galery hidden_02">
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -54,7 +58,7 @@
                                 <div id="info_photo" class="info_photo"></div>
                             </div>
                         </div>
-                        <div id="content_images_03_alpes" class="content_images_galery">
+                        <div id="content_images_03_alpes" class="content_images_galery hidden_02">
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -62,7 +66,7 @@
                                 <div id="info_photo" class="info_photo"></div>
                             </div>
                         </div>
-                        <div id="content_images_04_SLV" class="content_images_galery">
+                        <div id="content_images_04_SLV" class="content_images_galery hidden_02">
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -70,7 +74,7 @@
                                 <div id="info_photo" class="info_photo"></div>
                             </div>
                         </div>
-                        <div id="content_images_05_CRC" class="content_images_galery">
+                        <div id="content_images_05_CRC" class="content_images_galery hidden_02">
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -78,7 +82,7 @@
                                 <div id="info_photo" class="info_photo"></div>
                             </div>
                         </div>
-                        <div id="content_images_05_ALB" class="content_images_galery">
+                        <div id="content_images_05_ALB" class="content_images_galery hidden_02">
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -86,7 +90,7 @@
                                 <div id="info_photo" class="info_photo"></div>
                             </div>
                         </div>
-                        <div id="content_images_06_IT" class="content_images_galery">
+                        <div id="content_images_06_IT" class="content_images_galery hidden_02">
                             <div>
                                 <div id="_img_card_galery" class="_img_card_galery">
                                     <img src="" alt="">
@@ -102,6 +106,8 @@
         <footer id="footer_XS">
         </footer>
         <script src="/JS/headerfoot.js"></script>
+        <script src="/JS/geleria.js"></script>
+
     </div>
 </body>
 

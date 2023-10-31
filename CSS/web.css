@@ -87,6 +87,28 @@ body {
     transition: opacity 0.5s, visibility 0.5s;
 }
 
+.hidden_galery {
+
+    opacity: 0;
+    animation-name: hidden_galery;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 100ms;
+    animation-timing-function: ease;
+    transition: 1s ease 100ms;
+}
+
+@keyframes hidden_galery {
+
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
 .appear {
 
     opacity: 1;
@@ -110,7 +132,6 @@ body {
 }
 
 .appear_slow {
-
 
     opacity: 1;
     visibility: visible;
