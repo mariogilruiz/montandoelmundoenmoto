@@ -1,5 +1,5 @@
 #inital_max_register {
-
+    display: flex;
     position: relative;
     display: grid;
     justify-items: center;
@@ -109,7 +109,7 @@ input[type="password"]:focus {
 
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 130px;
     width: 501px;
     align-items: center;
     justify-content: space-between;
@@ -136,4 +136,5 @@ input[type="password"]:focus {
     height: 35px;
     width: 500px;
     background-color: var(--orange-primary);
+    margin-top: 30px;
 }

@@ -180,3 +180,8 @@
     width: 100%;
     max-width: 280px;
 }
+
+#h2_f a {
+
+    color: var(--white);
+}

@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <header id="header_max">
         <div id="banner_home" class="superpuesto">
             <span> Te gustaria ser potrocinador o exponsor de mi
@@ -57,26 +55,20 @@
                 </button>
                 <div id="info_fuell">
                     <ul>
-                        <li>
-                            <span>super 95</span>
-                        </li>
-                        <li>
-                            <span>litro</span>
-                        </li>
-                        <li>
-                            <span>1,85</span>
-                        </li>
+                        <li> super 95 </li>
+                        <li> liter </li>
+                        <li> 1.85 </li>
                     </ul>
                 </div>
                 <div id="press_fuell">
                     <div id="litro_p_f">
-                        <input type="button" name="circle" value="--" id="restar">
-                        <input type="button" name="litro" value="1" id="litro">
-                        <input type="button" name="circle" value="+" id="sumar">
+                        <button id="restar" onclick="restarUno()">--</button>
+                        <span id="litro">1</span>
+                        <button id="sumar" onclick="sumarUno()">+</button>
                     </div>
                     <div id="check_total">
-                        <input type="button" name="total" value="0,00" id="total">
-                        <input type="button" name="checkout" value="pagar" id="repostar">
+                        <span id="total">0.00</span>
+                        <button id="repostar">refuel</button>
                     </div>
                 </div>
             </nav>
@@ -103,6 +95,33 @@
             </button>
         </div>
     </header>
+
+    <!-- funcion sumar y resta un litro al total del repostaje se añade aqui para evitar el error NaN, 
+                ya que al estar en archivos enlazados y no poner enlazar en el mismo HTML de header porque al usar 
+                la funcion de JQUERY da error. -->
+    <script>
+
+        let total = 0;
+
+        function sumarUno() {
+            total = Number(total) + 1.85;
+            actualizarTotal();
+        }
+
+        function restarUno() {
+            if (total > 2) {
+                total = Number(total) - 1.85;
+                actualizarTotal();
+            }
+        }
+
+        function actualizarTotal() {
+            const totalElement = document.getElementById("total");
+            totalElement.textContent = total;
+            totalElement.textContent = total.toFixed(2);
+        }
+
+    </script>
 </body>
 
 </html>

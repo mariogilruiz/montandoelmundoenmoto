@@ -53,7 +53,9 @@
     height: 100px;
     width: 70%;
     margin-left: 60px;
+}
 
+#footer_XS #content_f_XS #h2_f_XS a {
 
-
+    color: var(--white);
 }

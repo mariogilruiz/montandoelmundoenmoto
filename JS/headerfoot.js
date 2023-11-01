@@ -127,9 +127,13 @@ function bttn_fuel_span() {
 }
 
 
-// funcion sumar y resta un litro al total del repostaje
+// funcion sumar y resta un litro al total del repostaje se añade aqui para evitar el error NaN, 
+// ya que al estar en archivos enlazados y no poner enlazar en el mismo HTML de header porque al usar 
+// la funcion de JQUERY da error.
 
-document.querySelector('#sumar').addEventListener('click', sumarUno);
-document.querySelector('#restar').addEventListener('click', restarUno);
+
+
+
+
 
 
