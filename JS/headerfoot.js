@@ -126,3 +126,10 @@ function bttn_fuel_span() {
     document.getElementById("bttn_p").classList.toggle("hidden_bttn_h");
 }
 
+
+// funcion sumar y resta un litro al total del repostaje
+
+document.querySelector('#sumar').addEventListener('click', sumarUno);
+document.querySelector('#restar').addEventListener('click', restarUno);
+
+
