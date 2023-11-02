@@ -4,6 +4,7 @@
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;
+    min-height: 750px;
     background-attachment: fixed;
 }
 
@@ -14,7 +15,6 @@
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
-
 }
 
 #inital_max_session {
@@ -23,7 +23,6 @@
     display: grid;
     justify-items: center;
     height: 100vh;
-    min-height: 750px;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 150px 20% 50% 20%;
@@ -113,7 +112,6 @@ input[type="password"]:focus {
     outline: none;
     border: 0px;
     outline: 2px solid var(--green-seconday);
-
 }
 
 .mycheck {
@@ -199,5 +197,6 @@ input[type="password"]:focus {
 }
 
 #web_session #footer_max {
+
     display: none;
 }

@@ -6,6 +6,7 @@
     height: 100v;
     min-height: 961px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 #inital_max_imagenes {
@@ -153,43 +154,94 @@
     border-right: 10px solid var(--orange-primary);
 }
 
-#bttn_back_card {
+/* referente al slider */
 
-    position: absolute;
-    display: flex;
-    cursor: pointer;
-    height: 44px;
-    width: 50px;
-    top: 250px;
-    left: 0px;
-    justify-content: end;
-    align-items: center;
-    border: 0px;
-    /* border-radius: 0px 5px 5px 0px;
-    background-color: var(--black-secondary); */
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 80;
+.slider {
+
+    font-family: var(--font-text);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
 }
 
-#bttn_next_card {
+.slider__item {
 
     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100vw;
     display: flex;
-    cursor: pointer;
-    justify-content: start;
-    align-items: center;
-    height: 44px;
-    width: 50px;
-    right: 0px;
-    top: 250px;
-    border: 0px;
-    /* border-radius: 5px 0px 0px 5px;
-    background-color: var(--white-e9); */
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 80;
+    justify-content: center;
+    align-items: start;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0px 5px 5px 0px;
 }
 
-#bttn_back_card img,
-#bttn_next_card img {
-    height: 40px;
+.slider__item:nth-child(1) {
+
+    background-image: url(../images/foto-subida-paso-estelvio-en-moto.webp);
+}
+
+.slider__item:nth-child(2) {
+
+    background-image: url(../images/foto-subida-paso-estelvio-en-moto.webp);
+}
+
+.slider__item:nth-child(3) {
+
+    background-image: url(../images/foto-subida-paso-estelvio-en-moto.webp);
+}
+
+.slider__text {
+
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.slider__text p:first-child {
+
+    font-size: 6rem;
+}
+
+.slider__text p {
+
+    line-height: 5rem;
+}
+
+.slider__arrows {
+
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__arrows--left,
+.slider__arrows--right {
+
+    color: var(--orange-primary);
+    text-shadow: 1px 1px #666;
+    font-size: 3.5rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    transition: transform .5s, opacity .5s;
+}
+
+.slider__arrows--left:hover {
+
+    opacity: .6;
+    transform: translateX(-5px);
+}
+
+.slider__arrows--right:hover {
+
+    opacity: .6;
+    transform: translateX(5px);
 }

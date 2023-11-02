@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/x-icon" href="/images/logo_icono_montando_el_mundo_en_moto.ico" />
     <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
     <title>Montando el Mundo en Moto</title>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
         </script>
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
@@ -56,66 +58,48 @@
                     </div>
                     <div id="selector_galery_galery">
                         <div id="content_images_01_ES" class="content_images_galery hidden_galery">
-                            <button id="bttn_back_card">
-                                <img id="img_back_card" src="../images/icon_back_card.png" alt="">
-                            </button>
-                            <button id="bttn_next_card">
-                                <img id="img_next_card" src="../images/icon_next_card.png" alt="">
-                            </button>
-                            <div id="card_galery_ES" class="card_galery">
-                                <div id="_img_card_galery_ES" class="_img_card_galery ">
-                                    <img src="" alt="">
+                            <div class="slider">
+                                <div class="slider__item">
+                                    <div class="slider__text">
+                                        <p>grande</p>
+
+                                    </div>
                                 </div>
-                                <div id="info_photo_ES" class="info_photo"></div>
+                                <div class="slider__item">
+                                    <div class="slider__text">
+                                        <p>grande</p>
+
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__text">
+                                        <p>grande</p>
+
+                                    </div>
+                                </div>
+                                <div class="slider__arrows">
+                                    <div class="slider__arrows--left"><img src="../images/icon_back_card.png"></div>
+                                    <div class="slider__arrows--right"><img src="../images/icon_next_card.png"></div>
+                                </div>
                             </div>
                         </div>
                         <div id="content_images_02_FR" class="content_images_galery hidden_galery">FR
-                            <div>
-                                <div id="_img_card_galery" class="_img_card_galery">
-                                    <img src="" alt="">
-                                </div>
-                                <div id="info_photo" class="info_photo"></div>
-                            </div>
+
                         </div>
                         <div id="content_images_03_alpes" class="content_images_galery hidden_galery">ALPES
-                            <div>
-                                <div id="_img_card_galery" class="_img_card_galery">
-                                    <img src="" alt="">
-                                </div>
-                                <div id="info_photo" class="info_photo"></div>
-                            </div>
+
                         </div>
                         <div id="content_images_04_SLV" class="content_images_galery hidden_galery">SLV
-                            <div>
-                                <div id="_img_card_galery" class="_img_card_galery">
-                                    <img src="" alt="">
-                                </div>
-                                <div id="info_photo" class="info_photo"></div>
-                            </div>
+
                         </div>
                         <div id="content_images_05_CRC" class="content_images_galery hidden_galery">CRC
-                            <div>
-                                <div id="_img_card_galery" class="_img_card_galery">
-                                    <img src="" alt="">
-                                </div>
-                                <div id="info_photo" class="info_photo"></div>
-                            </div>
+
                         </div>
                         <div id="content_images_06_ALB" class="content_images_galery hidden_galery">ALB
-                            <div>
-                                <div id="_img_card_galery" class="_img_card_galery">
-                                    <img src="" alt="">
-                                </div>
-                                <div id="info_photo" class="info_photo"></div>
-                            </div>
+
                         </div>
                         <div id="content_images_07_IT" class="content_images_galery hidden_galery">It
-                            <div>
-                                <div id="_img_card_galery" class="_img_card_galery">
-                                    <img src="" alt="">
-                                </div>
-                                <div id="info_photo" class="info_photo"></div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -125,6 +109,8 @@
         </footer>
         <script src="/JS/headerfoot.js"></script>
         <script src="/JS/geleria.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+        <script src="/JS/slider.js"></script>
     </div>
 </body>
 

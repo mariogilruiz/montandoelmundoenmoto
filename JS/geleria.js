@@ -148,4 +148,3 @@ function card_galery_IT() {
     document.getElementById('selector_galery_05_ALB').classList.remove("border_static");
     document.getElementById('selector_galery_06_IT').classList.toggle("border_static");
 }
-

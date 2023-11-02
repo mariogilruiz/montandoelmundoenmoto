@@ -436,6 +436,7 @@ header #bttn_h nav #repostar {
     background-color: var(--grey-ccc);
     border-radius: 5px;
     box-shadow: 0px 0px 3px black;
+    cursor: pointer;
 
 }
 
