@@ -148,3 +148,23 @@ function card_galery_IT() {
     document.getElementById('selector_galery_05_ALB').classList.remove("border_static");
     document.getElementById('selector_galery_06_IT').classList.toggle("border_static");
 }
+
+//ampliar imagen
+
+const image = document.querySelector('.slider__item img');
+let ampliado = false;
+
+image.addEventListener('click', () => {
+    if (ampliado) {
+        image.classList.remove('ampliado');
+        image.classList.add('img_galery');
+    } else {
+        image.classList.remove('img_galery');
+        image.classList.add('ampliado');
+    }
+
+    ampliado = !ampliado;
+});
+
+
+

@@ -1,9 +1,12 @@
+//------------SLIDER ESPAÑA ----------------
+
 // Selectors
 const sliderItems = document.querySelectorAll('.slider__item');
+
 const btnNext = document.querySelector('.slider__arrows--right');
 const btnPrev = document.querySelector('.slider__arrows--left');
 
-// Slider
+
 const Slider = {
     currentItem: 0,
 
@@ -16,7 +19,7 @@ const Slider = {
         const texts = item.querySelectorAll('p')
         const timeline = new TimelineMax();
 
-        TweenMax.set(item, { scale: .9 });
+        TweenMax.set(item, { scale: .99 });
         TweenMax.set(item, { left: '-100vw' });
 
         timeline
@@ -31,7 +34,7 @@ const Slider = {
         const timeline = new TimelineMax();
         timeline
             .staggerTo(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeIn }, '-0.5')
-            .to(item, .2, { scale: .9 })
+            .to(item, .2, { scale: .99 })
             .to(item, .2, { left: '100vw' })
             .call(Slider.in, [nextIndex], this, '-=.3')
             .set(texts, { clearProps: 'all' })
@@ -55,3 +58,6 @@ btnNext.addEventListener('click', Slider.next);
 btnPrev.addEventListener('click', Slider.prev);
 
 Slider.init();
+
+
+

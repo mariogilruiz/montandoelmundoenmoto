@@ -53,7 +53,6 @@
     justify-items: center;
     justify-content: center;
     place-content: center;
-    /* border-top: .5px solid grey; */
     overflow: hidden;
 }
 
@@ -68,8 +67,6 @@
     width: 100%;
     justify-items: center;
     place-content: center;
-    /* padding-top: 200px; */
-    /* text-align: start; */
     overflow: hidden;
     border-radius: 5px;
 }
@@ -86,6 +83,7 @@
     font-size: 40px;
     color: var(--white);
     justify-content: center;
+    place-content: center;
     align-items: center;
     text-transform: uppercase;
     overflow: hidden;
@@ -97,18 +95,8 @@
     width: 100%;
     cursor: pointer;
     overflow: hidden;
-    padding-bottom: 2px;
-    opacity: .8;
-    transition: 1s ease-in-out all;
-    -webkit-transition: 500ms ease-in-out all;
-    -moz-transition: 1s ease-in-out all;
-    -o-transition: 1s ease-in-out all;
     background-color: var(--black-secondary);
-}
-
-#content_02_temporada_01 .card_video_youtube:hover {
-
-    opacity: 1;
+    border-bottom: 4px solid var(--grey-ccc);
 }
 
 #content_02_temporada_01 .card_ncap_youtube {
@@ -118,7 +106,6 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    border-top: 4px solid var(--grey-ccc);
 }
 
 .card_video_youtube iframe {
@@ -126,15 +113,18 @@
     position: relative;
     height: 100%;
     width: 100%;
-
+    opacity: .8;
+    transition: 1s ease-in-out all;
+    -webkit-transition: 500ms ease-in-out all;
+    -moz-transition: 1s ease-in-out all;
+    -o-transition: 1s ease-in-out all;
 }
 
 .card_video_youtube:hover iframe {
 
     position: relative;
-    height: 100%;
-    width: 100%;
-
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 #content_02_temporada_01 .card_ncap_youtube {
@@ -281,8 +271,8 @@
     z-index: 90;
 }
 
-.appear_div_temp {
-
+/* .appear_div_temp {
+    
     opacity: 1;
     visibility: visible;
     animation-name: con1;
@@ -291,4 +281,4 @@
     animation-fill-mode: backwards;
     animation-delay: 100ms;
     animation-timing-function: ease;
-}
+} */

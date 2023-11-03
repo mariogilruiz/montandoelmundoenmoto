@@ -40,6 +40,7 @@
     display: grid;
     grid-template-columns: 20% 80%;
     width: 90%;
+    max-width: 1200px;
     height: 600px;
     border-radius: 5px;
     align-items: center;
@@ -127,6 +128,33 @@
     overflow: hidden;
 }
 
+.img_galery {
+
+    position: absolute;
+    object-fit: cover;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+/* ampliar la imagen al tamaño original */
+
+.ampliado {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: zoom-out;
+}
+
+/* -------- */
+
 .appear_card_galery {
 
     opacity: 1;
@@ -166,7 +194,8 @@
     text-transform: uppercase;
 }
 
-.slider__item {
+.slider__item,
+.slider__item_FR {
 
     position: absolute;
     width: 100%;
@@ -174,42 +203,35 @@
     left: -100vw;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-size: cover;
     background-position: center center;
     border-radius: 0px 5px 5px 0px;
-}
 
-.slider__item:nth-child(1) {
-
-    background-image: url(../images/foto-subida-paso-estelvio-en-moto.webp);
-}
-
-.slider__item:nth-child(2) {
-
-    background-image: url(../images/foto-subida-paso-estelvio-en-moto.webp);
-}
-
-.slider__item:nth-child(3) {
-
-    background-image: url(../images/foto-subida-paso-estelvio-en-moto.webp);
 }
 
 .slider__text {
-
-    font-size: 3rem;
+    position: relative;
+    font-size: 3vw;
     text-align: center;
     color: #fff;
+    z-index: 999;
 }
 
-.slider__text p:first-child {
+/* .slider__text p:first-child {
 
-    font-size: 6rem;
-}
+    --descomentar para manejar los <p> que podemos añadir a la tarjerta--
+
+    font-size: 2vw;
+} */
 
 .slider__text p {
 
     line-height: 5rem;
+    background-color: rgb(43, 43, 43, .7);
+    padding: 0 3vw;
+    border-radius: 5px;
+    margin-top: -10px;
 }
 
 .slider__arrows {
@@ -224,6 +246,8 @@
 }
 
 .slider__arrows--left,
+.slider__arrows--left_FR,
+.slider__arrows--right_FR,
 .slider__arrows--right {
 
     color: var(--orange-primary);
@@ -234,13 +258,21 @@
     transition: transform .5s, opacity .5s;
 }
 
-.slider__arrows--left:hover {
+.slider__arrows--left,
+.slider__arrows--left_FR {
+
+    margin-left: -3px;
+}
+
+.slider__arrows--left:hover,
+.slider__arrows--left_FR:hover {
 
     opacity: .6;
     transform: translateX(-5px);
 }
 
-.slider__arrows--right:hover {
+.slider__arrows--right:hover,
+.slider__arrows--right_FR:hover {
 
     opacity: .6;
     transform: translateX(5px);
