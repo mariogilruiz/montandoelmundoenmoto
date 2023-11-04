@@ -66,7 +66,7 @@
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 200px 500px 500px 500px;
-    backdrop-filter: blur(4px);
+    background-color: rgb(43, 43, 43, .3);
     border-radius: 5px;
     font-family: var(--font-text-light);
     color: var(--black-secondary);
