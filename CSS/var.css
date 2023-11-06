@@ -9,19 +9,19 @@
     --font-text: "nunito-sans", Arial, Helvetica, sans-serif;
     --font-text-light: "nunito-light";
     --font-text-italic: "nunito-italic", Arial, Helvetica, sans-serif;
-    --font-footer: "roboto";
-    --font-digital: "digiti";
-    --font-digital_b: "digiti_b";
-    --font-japan: "japan";
-    --font-Windsong: "Windsong";
-    --font-greatVibes: "greatVibes";
-    --font-login: "roboto-bold";
-    --font-alexBrush: "alexBrush";
-    --font-icons: "icons";
-    --font-true: "true";
-    --font-marker: "marker";
-    --font-banks20: "banks20";
-    --font-tiza: "blacboard";
+    --font-footer: "roboto", Arial, Helvetica, sans-serif;
+    --font-digital: "digiti", Arial, Helvetica, sans-serif;
+    --font-digital_b: "digiti_b", Arial, Helvetica, sans-serif;
+    --font-japan: "japan", Arial, Helvetica, sans-serif;
+    --font-Windsong: "Windsong", Arial, Helvetica, sans-serif;
+    --font-greatVibes: "greatVibes", Arial, Helvetica, sans-serif;
+    --font-login: "roboto-bold", Arial, Helvetica, sans-serif;
+    --font-alexBrush: "alexBrush", Arial, Helvetica, sans-serif;
+    --font-icons: "icons", Arial, Helvetica, sans-serif;
+    --font-true: "true", Arial, Helvetica, sans-serif;
+    --font-marker: "marker", Arial, Helvetica, sans-serif;
+    --font-banks20: "banks20", Arial, Helvetica, sans-serif;
+    --font-tiza: "blacboard", Arial, Helvetica, sans-serif;
 
 
     /* colors-------------------- */
