@@ -195,7 +195,12 @@
 }
 
 .slider__item,
-.slider__item_FR {
+.slider__item_FR,
+.slider__item_SLV,
+.slider__item_IT,
+.slider__item_ALB,
+.slider__item_ALP,
+.slider__item_CRC {
 
     position: absolute;
     width: 100%;
@@ -248,7 +253,17 @@
 .slider__arrows--left,
 .slider__arrows--left_FR,
 .slider__arrows--right_FR,
-.slider__arrows--right {
+.slider__arrows--right,
+.slider__arrows--left_ALP,
+.slider__arrows--right_ALP,
+.slider__arrows--left_ALB,
+.slider__arrows--right_ALB,
+.slider__arrows--left_CRC,
+.slider__arrows--right_CRC,
+.slider__arrows--left_SLV,
+.slider__arrows--right_SLV,
+.slider__arrows--left_IT,
+.slider__arrows--right_IT {
 
     color: var(--orange-primary);
     text-shadow: 1px 1px #666;
@@ -259,20 +274,35 @@
 }
 
 .slider__arrows--left,
-.slider__arrows--left_FR {
+.slider__arrows--left_FR,
+.slider__arrows--left_ALB,
+.slider__arrows--left_ALP,
+.slider__arrows--left_CRC,
+.slider__arrows--left_SLV,
+.slider__arrows--left_IT {
 
     margin-left: -3px;
 }
 
 .slider__arrows--left:hover,
-.slider__arrows--left_FR:hover {
+.slider__arrows--left_FR:hover,
+.slider__arrows--left_ALB:hover,
+.slider__arrows--left_ALP:hover,
+.slider__arrows--left_CRC:hover,
+.slider__arrows--left_SLV:hover,
+.slider__arrows--left_IT:hover {
 
     opacity: .6;
     transform: translateX(-5px);
 }
 
 .slider__arrows--right:hover,
-.slider__arrows--right_FR:hover {
+.slider__arrows--right_FR:hover,
+.slider__arrows--right_ALP:hover,
+.slider__arrows--right_ALB:hover,
+.slider__arrows--right_CRC:hover,
+.slider__arrows--right_SLV:hover,
+.slider__arrows--right_IT:hover {
 
     opacity: .6;
     transform: translateX(5px);
