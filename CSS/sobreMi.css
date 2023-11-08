@@ -12,6 +12,7 @@
     position: relative;
     justify-items: center;
     place-content: center;
+    overflow: hidden;
     background-image: url(/images/back_about_me_free_live_free_ride.webp);
     background-size: cover;
     background-image: center center;
@@ -21,7 +22,47 @@
     height: calc(100vh - 200px);
     width: 100%;
     z-index: 90;
+    animation: zoom_auto 30s alternate infinite;
+    -webkit-animation: zoom_auto 30s alternate infinite;
+    margin-top: 20px;
 }
+
+/* #inital_max_about img {
+
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    animation: zoom_auto 5s alternate infinite;
+} */
+
+@keyframes zoom_auto {
+
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+
+        transform: scale(1);
+    }
+
+}
+
+@-webkit-keyframes zoom_auto {
+
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+
+        transform: scale(1);
+    }
+
+}
+
+
 
 #pag-02_max_about {
 
