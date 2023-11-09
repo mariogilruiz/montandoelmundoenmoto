@@ -13,7 +13,7 @@
     justify-items: center;
     place-content: center;
     overflow: hidden;
-    background-image: url(/images/back_about_me_free_live_free_ride.webp);
+
     background-size: cover;
     background-image: center center;
     background-position: top right;
@@ -39,14 +39,15 @@
 @keyframes zoom_auto {
 
     from {
+        background-image: url(/images/back_about_me_free_live_free_ride.webp);
         transform: scale(1.2);
     }
 
     to {
 
         transform: scale(1);
+        background-image: url(/images/foto-subida-paso-estelvio-en-moto_B&W.webp);
     }
-
 }
 
 @-webkit-keyframes zoom_auto {
@@ -59,10 +60,7 @@
 
         transform: scale(1);
     }
-
 }
-
-
 
 #pag-02_max_about {
 

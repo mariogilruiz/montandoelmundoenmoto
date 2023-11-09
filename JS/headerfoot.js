@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     texts[currentIndex].classList.add("visibility");
 
-    setInterval(rotateText, 5000);
+    setInterval(rotateText, 10000);
 });
 
 //scrollY position

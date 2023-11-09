@@ -6,48 +6,59 @@
     grid-template-rows: 60% 40%;
     height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    animation: back-bw 5s alternate infinite;
-    -webkit-animation: back-bw 5s alternate infinite;
     overflow: hidden;
     justify-items: center;
     place-content: center;
     text-align: center;
     z-index: 90;
+}
+
+.container {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.zoom-background {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
+
+.zoom-background img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: background-image 1s ease-in-out;
+}
+
 
 #initial_max img {
 
     position: absolute;
+    margin-top: 30px;
     left: 0px;
     bottom: -2px;
     height: 150px;
     width: 100%;
 }
 
-@keyframes back-bw {
+#img_zoom_ramdon img {
 
-    from {
-        background-image: url(/images/foto-subida-paso-estelvio-en-moto.webp);
-    }
-
-    to {
-        background-image: url(/images/foto-subida-paso-estelvio-en-moto_B&W.webp);
-    }
-}
-
-@-webkit-keyframes back-bw {
-
-    from {
-        background-image: url(/images/foto-subida-paso-estelvio-en-moto.webp);
-    }
-
-    to {
-        background-image: url(/images/foto-subida-paso-estelvio-en-moto_B&W.webp);
-    }
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 #initial_max #hideOnScroll {
@@ -64,7 +75,6 @@
     animation-iteration-count: 1;
 }
 
-
 @keyframes h2_initial {
 
     from {
@@ -78,6 +88,18 @@
     }
 }
 
+@-webkit-keyframes h2_initial {
+
+    from {
+
+        transform: scale(.5) rotateX(180deg);
+    }
+
+    to {
+
+        transform: scale(1) rotateX(0deg);
+    }
+}
 
 #initial_max h2 {
 
@@ -97,7 +119,6 @@
 #initial_max #hideOnScroll span {
 
     font-family: var(--font-marker);
-
 }
 
 #initial_max #hideOnScroll span:first-child {
@@ -108,7 +129,6 @@
 #initial_max #hideOnScroll span:last-child {
 
     padding-right: 15px;
-
 }
 
 #initial_max .random_text {
@@ -143,13 +163,11 @@
     transform: rotateX(0deg);
 }
 
-
 #initial_max .hidden {
 
     opacity: 0;
     transition: 1s ease;
     transform: scale(0) rotateX(180deg);
-
 }
 
 #initial_max .hidden_back {
@@ -157,4 +175,16 @@
     opacity: 1;
     transition: 1s ease;
     transform: scale(1) rotateX(0deg);
+}
+
+.hidden_hoome {
+
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hidden_home_back {
+
+    opacity: 1;
+
 }
