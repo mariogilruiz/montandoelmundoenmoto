@@ -67,40 +67,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//  const imageNames = ["img_01.webp", "img_02.jpg", "img_03.webp"];
+// logica para slider home- se repiten imagenes 
 
-const backgroundDiv = document.getElementById("background-div");
-const imageNames = ["img_01.webp", "img_03.webp", "img_02.jpg", "img_04.jpg"];
-let currentIndex = 0;
-const intervalTime = 10000; // Intervalo de cambio de imagen en milisegundos
+var imagenes = [
+    "/images/slider_home/imagen1.webp",
+    "/images/slider_home/imagen2.webp",
+    "/images/slider_home/imagen3.webp",
+    "/images/slider_home/imagen4.webp"
+];
+var contador = 0;
+const _zoom = document.getElementById("background-div");
 
-function changeImageWithZoom() {
-    const nextImage = imageNames[currentIndex];
 
-    // Desactivar la transición temporalmente
-    backgroundDiv.style.transition = "none";
+function moveRight() {
+    document.Imagen.src = imagenes[contador];
+    contador = (contador + 1) % imagenes.length;
+    const $imagen = $(document.Imagen);
 
-    // Forzar un nuevo frame antes de cambiar la imagen y aplicar la escala final
+
+    _zoom.classList.remove("_zoom");
+
     requestAnimationFrame(() => {
-        backgroundDiv.style.backgroundImage = `url("images/${nextImage}")`;
-        backgroundDiv.style.transform = "scale(1.1)";
-
-        // Forzar un nuevo frame antes de aplicar la escala inicial y activar la transición
-        requestAnimationFrame(() => {
-            backgroundDiv.style.transition = `transform ${intervalTime / 1000}s ease-in-out`;  // Reactivar la transición
-            backgroundDiv.style.transform = "scale(1)";
-        });
+        setTimeout(() => {
+            _zoom.classList.add("_zoom");
+        }, 0);
     });
 
-    currentIndex = (currentIndex + 1) % imageNames.length;
+
 }
 
-setInterval(() => {
-    changeImageWithZoom();
-}, intervalTime);
+moveRight();
 
-// Cambiar la imagen al cargar la página
-changeImageWithZoom();
+setInterval(moveRight, 10000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
