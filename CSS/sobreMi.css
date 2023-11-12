@@ -6,6 +6,12 @@
     width: 100%;
 }
 
+#web_about a {
+
+    color: var(--green-primary-);
+}
+
+
 #inital_max_about {
 
     display: grid;
@@ -13,7 +19,7 @@
     justify-items: center;
     place-content: center;
     overflow: hidden;
-
+    background-image: url(/images/back_about_me_free_live_free_ride.webp);
     background-size: cover;
     background-image: center center;
     background-position: top right;
@@ -22,42 +28,29 @@
     height: calc(100vh - 200px);
     width: 100%;
     z-index: 90;
-    animation: zoom_auto 30s alternate infinite;
-    -webkit-animation: zoom_auto 30s alternate infinite;
-    margin-top: 20px;
+    /* animation: zoom_auto 20s alternate linear infinite;
+    -webkit-animation: zoom_auto 20s alternate linear infinite; */
+    /* margin-top: 15px; */
 }
-
-/* #inital_max_about img {
-
-    position: absolute;
-    object-fit: cover;
-    height: 100vh;
-    width: 100vw;
-    animation: zoom_auto 5s alternate infinite;
-} */
 
 @keyframes zoom_auto {
 
     from {
-        background-image: url(/images/back_about_me_free_live_free_ride.webp);
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     to {
-
         transform: scale(1);
-        background-image: url(/images/foto-subida-paso-estelvio-en-moto_B&W.webp);
     }
 }
 
 @-webkit-keyframes zoom_auto {
 
     from {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     to {
-
         transform: scale(1);
     }
 }
@@ -74,12 +67,6 @@
     z-index: 90;
     justify-items: center;
 }
-
-/* #h3_descript_page {
-
-    border-bottom: 1px solid grey;
-    padding-bottom: 9px;
-} */
 
 #max_content_02_about {
 
@@ -126,11 +113,12 @@
 #content_02_about_01 h4 {
     display: block;
     margin: 0px 30px 20px 30px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 2.6rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
     text-align: center;
     box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: var(--font-bttn-fuell);
 }
 
 #content_02_about_02,
@@ -149,12 +137,14 @@
 #content_02_about_01,
 #content_02_about_03 {
 
+    display: flex;
     background-color: var(--white);
 }
 
 #content_02_about_02,
 #content_02_about_04 {
 
+    display: flex;
     background-color: var(--grey-f3);
 }
 
@@ -162,7 +152,7 @@
 #content_02_about_03_content,
 #content_02_about_04_content {
 
-    height: 500px;
+    height: 100%;
     width: 90%;
     position: relative;
     display: flex;
@@ -171,7 +161,6 @@
     align-items: center;
 }
 
-#content_02_about_02 img,
 #content_02_about_03 img,
 #content_02_about_04 img {
 
@@ -183,6 +172,31 @@
 #content_02_about_04 p,
 #content_02_about_03 p {
 
-    text-align: start;
+    text-align: justify;
     margin: 40px;
+}
+
+#slider_sobremi_01 {
+
+    display: flex;
+    float: left;
+    height: 400px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#slider_sobremi_01 img {
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#content_02_article {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
 }

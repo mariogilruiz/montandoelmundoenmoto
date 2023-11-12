@@ -31,12 +31,15 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    transition: all 1s ease-in-out;
+
 
 }
 
 ._zoom {
     animation: zoom 11000 linear alternate;
     -webkit-animation: zoom 11000ms linear alternate;
+
 }
 
 @keyframes zoom {
@@ -130,8 +133,11 @@
 #initial_max h2 {
 
     position: relative;
-    font-family: var(--font-draw);
-    font-size: 7.5rem;
+    font-family: var(--font-home);
+    /* font-family: "Eds-Market-Regular-Slant"; */
+    /* font-family: "Eds-Market-Bold"; */
+    letter-spacing: 2px;
+    font-size: 7rem;
     color: var(--white);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
     padding-right: 5px;
@@ -142,10 +148,10 @@
     padding-left: 5px;
 }
 
-#initial_max #hideOnScroll span {
+/* #initial_max #hideOnScroll span {
 
     font-family: var(--font-marker);
-}
+} */
 
 #initial_max #hideOnScroll span:first-child {
 

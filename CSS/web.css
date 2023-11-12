@@ -207,7 +207,7 @@ body {
 
     position: absolute;
     display: flex;
-    top: -35px;
+    top: -69px;
     height: 120px;
     width: 100%;
     justify-content: center;
@@ -220,7 +220,8 @@ body {
     width: 100%;
     animation: 500ms giro_li 300ms ease 1;
     text-align: center;
-    font-family: var(--font-true);
+    font-family: var(--font-home);
+    letter-spacing: 2px;
     font-size: 5rem;
     color: var(--white);
     text-transform: uppercase;

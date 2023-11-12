@@ -41,6 +41,7 @@
 
 
 
+
 }
 
 #pag_03_max #content_03 #card_03_01 {
@@ -52,7 +53,6 @@
     justify-content: center;
     align-items: center;
     margin-right: 40px;
-
 }
 
 #pag_03_max #content_03 #card_03_01 img {
@@ -64,26 +64,23 @@
     -webkit-transition: 300ms ease-in-out all;
     -moz-transition: 300ms ease-in-out all;
     -o-transition: 300ms ease-in-out all;
-
 }
 
 #pag_03_max #content_03 #card_03_01:hover img {
 
     transform: scale(1.1);
-
 }
 
 #pag_03_max #content_03 #h2_03 {
 
     display: grid;
     grid-area: h;
-    font-family: var(--font-true);
+    font-family: var(--font-home);
     font-size: 55px;
     color: var(--orange-primary);
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
-
 }
 
 #pag_03_max #content_03 #bttn_03 {
@@ -96,8 +93,6 @@
     grid-area: b;
     justify-content: space-between;
     margin-top: 20px;
-
-
 }
 
 #pag_03_max #content_03 #bttn_03 button:first-child {
@@ -212,13 +207,18 @@
     padding: 20px 30px 10px 30px;
     text-align: center;
     overflow-y: scroll;
+    display: block;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
 }
 
 #pag_03_max #content_03 #text_03 p {
 
     font-family: var(--font-text-italic);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
+
 
 }

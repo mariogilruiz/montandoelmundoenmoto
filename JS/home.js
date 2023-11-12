@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("container");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 900) {
+        if (window.scrollY > 1700) {
             elementToHide.classList.add("hidden_hoome");
             elementToHide.classList.remove("hidden_home_back");
 
@@ -98,7 +98,7 @@ function moveRight() {
                 { scale: 1.1 },
                 {
                     scale: 1,
-                    duration: 11.5, // Duración del zoom in en segundos
+                    duration: 15, // Duración del zoom in en segundos
                     ease: "linear"
                 }
             );
