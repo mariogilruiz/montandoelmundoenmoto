@@ -124,11 +124,13 @@
 }
 
 #content_02_about_01 h4 {
-
-    margin: 30px 30px 20px 30px;
+    display: block;
+    margin: 0px 30px 20px 30px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.6rem;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 #content_02_about_02,

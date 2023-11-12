@@ -98,7 +98,7 @@ function moveRight() {
                 { scale: 1.1 },
                 {
                     scale: 1,
-                    duration: 11, // Duración del zoom in en segundos
+                    duration: 11.5, // Duración del zoom in en segundos
                     ease: "linear"
                 }
             );
