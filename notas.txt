@@ -1,3 +1,11 @@
 - fotos paginas web
 ------ filtro usado en photoshop = cinematografico2 : 12 .
 ------ no se toca nada mas 
+
+
+
+- Por hacer
+------ transiciones slider initial
+------ slider sobre mi con flecha de atras y delante
+------ mejorar letra proncipal ?
+

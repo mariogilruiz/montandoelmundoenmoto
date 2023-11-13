@@ -31,12 +31,15 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    transition: all 1s ease-in-out;
-
-
+    transition: all 10s ease-in-out;
 }
 
-._zoom {
+/* #background-div {
+
+    transition: all 10s ease-in-out;
+} */
+
+/* ._zoom {
     animation: zoom 11000 linear alternate;
     -webkit-animation: zoom 11000ms linear alternate;
 
@@ -62,13 +65,14 @@
     to {
         transform: scale(1);
     }
-}
+} */
 
 .zoom-background img {
 
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 #initial_max>img {
@@ -137,7 +141,7 @@
     /* font-family: "Eds-Market-Regular-Slant"; */
     /* font-family: "Eds-Market-Bold"; */
     letter-spacing: 2px;
-    font-size: 7rem;
+    font-size: 8rem;
     color: var(--white);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
     padding-right: 5px;

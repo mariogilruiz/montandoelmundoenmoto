@@ -77,28 +77,21 @@ var imagenes = [
 ];
 
 var contador = 0;
-const _zoom = document.getElementById("background-div");
 
 function moveRight() {
     document.Imagen.src = imagenes[contador];
     contador = (contador + 1) % imagenes.length;
     const $imagen = $(document.Imagen);
 
-    // Eliminar la clase _zoom
-    // _zoom.classList.remove("_zoom");
-
-    // Añadir la clase _zoom después de 10 milisegundos
     requestAnimationFrame(() => {
         setTimeout(() => {
-            // _zoom.classList.add("_zoom");
 
-            // Utilizar GSAP para aplicar el efecto de zoom in
             gsap.fromTo(
                 $imagen,
                 { scale: 1.1 },
                 {
                     scale: 1,
-                    duration: 15, // Duración del zoom in en segundos
+                    duration: 11,
                     ease: "linear"
                 }
             );
@@ -108,7 +101,6 @@ function moveRight() {
 
 moveRight();
 
-// Establecer el intervalo para llamar a moveRight cada 10 segundos
 setInterval(moveRight, 10000);
 
 
