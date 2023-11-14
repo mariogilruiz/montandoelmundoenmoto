@@ -144,3 +144,15 @@
     padding-right: 40px;
     text-align: justify;
 }
+
+.show_country_rout {
+
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.hiddecountry_rout {
+
+    transition: opacity 2s ease;
+    opacity: 0;
+}

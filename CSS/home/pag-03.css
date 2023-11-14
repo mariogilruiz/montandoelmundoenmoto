@@ -204,13 +204,14 @@
 #pag_03_max #content_03 #text_03 {
 
     grid-area: t;
-    padding: 20px 30px 10px 30px;
+    padding: 50px 30px 10px 30px;
     text-align: center;
     overflow-y: scroll;
     display: block;
     justify-content: center;
     display: flex;
-    align-items: center;
+    align-items: start;
+
 
 }
 

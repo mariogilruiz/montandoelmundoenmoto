@@ -28,32 +28,9 @@
     height: calc(100vh - 200px);
     width: 100%;
     z-index: 90;
-    /* animation: zoom_auto 20s alternate linear infinite;
-    -webkit-animation: zoom_auto 20s alternate linear infinite; */
-    /* margin-top: 15px; */
+
 }
 
-@keyframes zoom_auto {
-
-    from {
-        transform: scale(1.1);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-@-webkit-keyframes zoom_auto {
-
-    from {
-        transform: scale(1.1);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
 
 #pag-02_max_about {
 
@@ -111,6 +88,7 @@
 }
 
 #content_02_about_01 h4 {
+
     display: block;
     margin: 0px 30px 20px 30px;
     font-size: 1.7rem;
@@ -120,6 +98,102 @@
     text-transform: uppercase;
     font-family: var(--font-bttn-fuell);
 }
+
+/* comienzo slider */
+
+.slider-container {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#slider {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out all;
+}
+
+#slider img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slider-info {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator-container {
+    display: flex;
+    gap: 5px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: gray;
+    /* Puedes ajustar el color activo según tus preferencias */
+}
+
+.slider-container button {
+
+    position: absolute;
+    top: 190px;
+    transform: translateY(-50%);
+    font-size: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+}
+
+.slider-container .prev:hover {
+
+    left: -1px;
+}
+
+.slider-container .next:hover {
+
+    right: 1px;
+}
+
+.prev {
+
+    left: 10px;
+    transition: ease 300ms;
+}
+
+.prev:hover {
+
+    opacity: .6;
+}
+
+.next {
+
+    right: 10px;
+    transition: ease 300ms;
+}
+
+.next:hover {
+
+    opacity: .6;
+}
+
+/* fin slider */
 
 #content_02_about_02,
 #content_02_about_03,
