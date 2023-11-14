@@ -151,20 +151,20 @@ function card_galery_IT() {
 
 //ampliar imagen
 
-const image = document.querySelector('.slider__item img');
-let ampliado = false;
+// const image = document.querySelector('.slider__item img');
+// let ampliado = false;
 
-image.addEventListener('click', () => {
-    if (ampliado) {
-        image.classList.remove('ampliado');
-        image.classList.add('img_galery');
-    } else {
-        image.classList.remove('img_galery');
-        image.classList.add('ampliado');
-    }
+// image.addEventListener('click', () => {
+//     if (ampliado) {
+//         image.classList.remove('ampliado');
+//         image.classList.add('img_galery');
+//     } else {
+//         image.classList.remove('img_galery');
+//         image.classList.add('ampliado');
+//     }
 
-    ampliado = !ampliado;
-});
+//     ampliado = !ampliado;
+// });
 
 
 

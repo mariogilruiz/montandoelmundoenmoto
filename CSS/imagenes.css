@@ -132,7 +132,7 @@
 
     position: absolute;
     object-fit: cover;
-    cursor: pointer;
+    /* cursor: pointer; */
     height: 100%;
     width: 100%;
     left: 0;
@@ -184,7 +184,7 @@
 
 /* referente al slider */
 
-.slider {
+/* .slider {
 
     font-family: var(--font-text);
     width: 100%;
@@ -222,13 +222,6 @@
     color: #fff;
     z-index: 999;
 }
-
-/* .slider__text p:first-child {
-
-    --descomentar para manejar los <p> que podemos añadir a la tarjerta--
-
-    font-size: 2vw;
-} */
 
 .slider__text p {
 
@@ -306,4 +299,97 @@
 
     opacity: .6;
     transform: translateX(5px);
+} */
+
+.slider_alpes_images {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease-in-out all;
+}
+
+.img_imagenes_galery {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-info_images {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    /* transform: translateX(-50%); */
+    display: flex;
+    transition: 300ms ease all;
+
+}
+
+.indicator-container_images {
+    display: flex;
+    gap: 5px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: var(--orange-primary);
+    transition: 300ms ease;
+    /* Puedes ajustar el color activo según tus preferencias */
+}
+
+.slider button {
+
+    position: absolute;
+    top: 240px;
+    /* transform: translateY(-50%); */
+    font-size: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    opacity: .6;
+}
+
+.slider .prev:hover {
+
+    left: -1px;
+}
+
+.slider .next:hover {
+
+    right: 1px;
+}
+
+.slider .prev {
+
+    left: 10px;
+    transition: ease 300ms;
+    z-index: 999;
+}
+
+.slider .prev:hover {
+
+    opacity: .6;
+}
+
+.slider .next {
+
+    right: 10px;
+    transition: ease 300ms;
+    z-index: 999;
+
+
+}
+
+.slider .next:hover {
+
+    opacity: 1;
 }

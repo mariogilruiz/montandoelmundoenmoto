@@ -171,24 +171,24 @@
     right: 1px;
 }
 
-.prev {
+.slider-container .prev {
 
     left: 10px;
     transition: ease 300ms;
 }
 
-.prev:hover {
+.slider-container .prev:hover {
 
     opacity: .6;
 }
 
-.next {
+.slider-container .next {
 
     right: 10px;
     transition: ease 300ms;
 }
 
-.next:hover {
+.slider-container .next:hover {
 
     opacity: .6;
 }

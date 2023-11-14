@@ -1,63 +1,71 @@
-//------------SLIDER ESPAÑA ----------------
+// Cambios en la función createSlider
+function createSlider(sliderId, infoContainerId) {
+    let currentSlide = 0;
+    const slides = document.getElementById(sliderId).children;
+    const totalSlides = slides.length;
+    const indicatorContainer = document.getElementById(infoContainerId);
 
-// Selectors
-const sliderItems = document.querySelectorAll('.slider__item');
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
 
-const btnNext = document.querySelector('.slider__arrows--right');
-const btnPrev = document.querySelector('.slider__arrows--left');
+        for (let i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none';
+        }
 
+        slides[currentSlide].style.display = 'block';
+        updateSlideIndicators();
+    }
 
-const Slider = {
-    currentItem: 0,
+    function updateSlideIndicators() {
+        indicatorContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === currentSlide) {
+                indicator.classList.add('active');
+            }
+            indicatorContainer.appendChild(indicator);
+        }
+    }
 
-    init: () => {
-        Slider.in(Slider.currentItem);
-    },
+    function nextSlide_ESP() {
+        showSlide(currentSlide + 1);
+    }
 
-    in: (index) => {
-        const item = sliderItems[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
+    function prevSlide_ESP() {
+        showSlide(currentSlide - 1);
+    }
 
-        TweenMax.set(item, { scale: .99 });
-        TweenMax.set(item, { left: '-100vw' });
+    // Mostrar la primera imagen al cargar la página
+    showSlide(currentSlide);
 
-        timeline
-            .to(item, .2, { left: 0, delay: .3 })
-            .to(item, .2, { scale: 1 })
-            .staggerFrom(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeOut }, 0.2)
-    },
+    // Auto avanzar cada 10 segundos
+    // setInterval(nextSlide, 10000);
 
-    out: (index, nextIndex) => {
-        const item = sliderItems[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
-        timeline
-            .staggerTo(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeIn }, '-0.5')
-            .to(item, .2, { scale: .99 })
-            .to(item, .2, { left: '100vw' })
-            .call(Slider.in, [nextIndex], this, '-=.3')
-            .set(texts, { clearProps: 'all' })
-    },
-
-    next: () => {
-        const next = Slider.currentItem !== sliderItems.length - 1 ? Slider.currentItem + 1 : 0;
-        Slider.out(Slider.currentItem, next);
-        Slider.currentItem = next;
-    },
-
-    prev: () => {
-        const prev = Slider.currentItem > 0 ? Slider.currentItem - 1 : sliderItems.length - 1;
-        Slider.out(Slider.currentItem, prev);
-        Slider.currentItem = prev;
-    },
+    // Devolver las funciones para que estén disponibles externamente
+    return {
+        nextSlide_ESP,
+        prevSlide_ESP
+    };
 }
 
-// Events
-btnNext.addEventListener('click', Slider.next);
-btnPrev.addEventListener('click', Slider.prev);
+// Llamada a la función para el slider "slider_alpes"
+const españaSlider = createSlider('slider_españa', 'slider-info_españa');
 
-Slider.init();
+function nextSlide_ESP() {
+    españaSlider.nextSlide_ESP();
+}
+
+function prevSlide_ESP() {
+    españaSlider.prevSlide_ESP();
+}
+
 
 
 

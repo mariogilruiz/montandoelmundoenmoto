@@ -1,56 +1,70 @@
-const sliderItems_ALP = document.querySelectorAll('.slider__item_ALP');
+// Cambios en la función createSlider
+function createSlider(sliderId, infoContainerId) {
+    let currentSlide = 0;
+    const slides = document.getElementById(sliderId).children;
+    const totalSlides = slides.length;
+    const indicatorContainer = document.getElementById(infoContainerId);
 
-const btnNext_ALP = document.querySelector('.slider__arrows--right_ALP');
-const btnPrev_ALP = document.querySelector('.slider__arrows--left_ALP');
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
 
-const Slider_ALP = {
-    currentItem: 0,
+        for (let i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none';
+        }
 
-    init: () => {
-        Slider_ALP.in(Slider_ALP.currentItem);
-    },
+        slides[currentSlide].style.display = 'block';
+        updateSlideIndicators();
+    }
 
-    in: (index) => {
-        const item = sliderItems_ALP[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
+    function updateSlideIndicators() {
+        indicatorContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === currentSlide) {
+                indicator.classList.add('active');
+            }
+            indicatorContainer.appendChild(indicator);
+        }
+    }
 
-        TweenMax.set(item, { scale: .99 });
-        TweenMax.set(item, { left: '-100vw' });
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
 
-        timeline
-            .to(item, .2, { left: 0, delay: .3 })
-            .to(item, .2, { scale: 1 })
-            .staggerFrom(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeOut }, 0.2)
-    },
+    function prevSlide() {
+        showSlide(currentSlide - 1);
+    }
 
-    out: (index, nextIndex) => {
-        const item = sliderItems_ALP[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
-        timeline
-            .staggerTo(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeIn }, '-0.5')
-            .to(item, .2, { scale: .99 })
-            .to(item, .2, { left: '100vw' })
-            .call(Slider_ALP.in, [nextIndex], this, '-=.3')
-            .set(texts, { clearProps: 'all' })
-    },
+    // Mostrar la primera imagen al cargar la página
+    showSlide(currentSlide);
 
-    next: () => {
-        const next = Slider_ALP.currentItem !== sliderItems_ALP.length - 1 ? Slider_ALP.currentItem + 1 : 0;
-        Slider_ALP.out(Slider_ALP.currentItem, next);
-        Slider_ALP.currentItem = next;
-    },
+    // Auto avanzar cada 10 segundos
+    // setInterval(nextSlide, 10000);
 
-    prev: () => {
-        const prev = Slider_ALP.currentItem > 0 ? Slider_ALP.currentItem - 1 : sliderItems_ALP.length - 1;
-        Slider_ALP.out(Slider_ALP.currentItem, prev);
-        Slider_ALP.currentItem = prev;
-    },
+    // Devolver las funciones para que estén disponibles externamente
+    return {
+        nextSlide,
+        prevSlide
+    };
 }
 
-// Events
-btnNext_ALP.addEventListener('click', Slider_ALP.next);
-btnPrev_ALP.addEventListener('click', Slider_ALP.prev);
+// Llamada a la función para el slider "slider_alpes"
+const alpesSlider = createSlider('slider_alpes', 'slider-info_alpes');
 
-Slider_ALP.init();
+
+// Ahora, las funciones nextSlide y prevSlide estarán disponibles en el ámbito global
+function nextSlide() {
+    alpesSlider.nextSlide();
+}
+
+function prevSlide() {
+    alpesSlider.prevSlide();
+}
+
