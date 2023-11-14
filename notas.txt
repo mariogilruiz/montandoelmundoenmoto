@@ -7,5 +7,7 @@
 - Por hacer
 ------ transiciones slider initial
 ------ slider sobre mi con flecha de atras y delante
------- mejorar letra proncipal ?
+------ corregir letra ultima h2 footer
+------ poner € y Litros en digitos de fuel y que sume uno tmab en el digito de sumar litros
+------ hacer efecto aparacion div en page rutas
 

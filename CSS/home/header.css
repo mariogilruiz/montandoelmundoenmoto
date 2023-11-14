@@ -562,16 +562,6 @@ header #menu_plus nav ul li a:hover {
 
 }
 
-@keyframes giro_li {
-    from {
-        transform: rotateX(0deg);
-    }
-
-    to {
-        transform: rotateX(360deg);
-    }
-}
-
 header #menu_plus nav ul li a {
 
     color: var(--white);

@@ -207,7 +207,7 @@ body {
 
     position: absolute;
     display: flex;
-    top: -69px;
+    top: -58px;
     height: 120px;
     width: 100%;
     justify-content: center;
@@ -218,7 +218,8 @@ body {
     position: absolute;
     height: 70px;
     width: 100%;
-    animation: 500ms giro_li 300ms ease 1;
+    animation: 300ms giro_li 300ms ease 1;
+    -webkit-animation: 300ms giro_li 300ms ease 1;
     text-align: center;
     font-family: var(--font-home);
     letter-spacing: 2px;
@@ -235,19 +236,42 @@ body {
     height: 70px;
     width: 400px;
     animation: 500ms giro_li 300ms ease 1;
+    -webkit-animation: 500ms giro_li 300ms ease 1;
     z-index: 100;
 }
+
+@keyframes giro_li {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@-webkit-keyframes giro_li {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+
 
 .h3_descript_page {
 
     display: flex;
     height: 80px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 60px;
     justify-content: center;
     align-items: center;
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--black-secondary);
     margin-bottom: 20px;
 }

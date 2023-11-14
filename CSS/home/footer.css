@@ -60,12 +60,14 @@
 
     position: relative;
     display: flex;
-    font-family: var(--font-true);
+    font-family: var(--font-home);
     color: var(--white);
     font-size: 3rem;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
+    padding-right: 2px;
+
 }
 
 .bttn_f {

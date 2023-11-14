@@ -7,7 +7,7 @@
     --font-primary: "carter-one", Arial, Helvetica, sans-serif;
     --font-social: "montserrat-thin", Arial, Helvetica, sans-serif;
     --font-text: "nunito-sans", Arial, Helvetica, sans-serif;
-    --font-text-light: "nunito-light";
+    --font-text-light: "nunito-light", Arial, Helvetica, sans-serif;
     --font-text-italic: "nunito-italic", Arial, Helvetica, sans-serif;
     --font-footer: "roboto", Arial, Helvetica, sans-serif;
     --font-digital: "digiti", Arial, Helvetica, sans-serif;
@@ -23,9 +23,9 @@
     --font-banks20: "banks20", Arial, Helvetica, sans-serif;
     --font-tiza: "blacboard", Arial, Helvetica, sans-serif;
     --font-draw: "draw", Arial, Helvetica, sans-serif;
+    --font-home: "balloon", Arial, Helvetica, sans-serif;
     /* --font-home: "eds-market-bold-slant", sans-serif; */
     /* --font-home: "reklame-script", sans-serif; */
-    --font-home: "balloon-d", sans-serif;
     /* --font-home: "catseye", sans-serif; */
 
 

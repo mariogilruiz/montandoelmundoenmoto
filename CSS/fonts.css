@@ -127,4 +127,7 @@
     src: url(/fonts/FFF_Tusj.ttf);
 }
 
-/* @import url("https://use.typekit.net/wcr1jqv.css"); */
+@font-face {
+    font-family: "balloon";
+    src: url(/fonts/BalloonExtraBoldBT.ttf);
+}
