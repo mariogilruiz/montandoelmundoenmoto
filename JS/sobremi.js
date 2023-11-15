@@ -70,13 +70,17 @@ function showSlide(index) {
 }
 
 function updateSlideIndicators() {
-    indicatorContainer.innerHTML = ''; // Limpiar indicadores antes de actualizar
+    indicatorContainer.innerHTML = '';
     for (let i = 0; i < totalSlides; i++) {
         const indicator = document.createElement('div');
         indicator.classList.add('indicator');
         if (i === currentSlide) {
             indicator.classList.add('active');
         }
+        // Agregar un evento de clic para cambiar la diapositiva
+        indicator.addEventListener('click', function () {
+            showSlide(i);
+        });
         indicatorContainer.appendChild(indicator);
     }
 }

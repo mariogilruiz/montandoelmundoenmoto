@@ -1,56 +1,65 @@
-const sliderItems_SLV = document.querySelectorAll('.slider__item_SLV');
+// Cambios en la función createSlider
+function createSlider(sliderId, infoContainerId) {
+    let currentSlide = 0;
+    const slides = document.getElementById(sliderId).children;
+    const totalSlides = slides.length;
+    const indicatorContainer = document.getElementById(infoContainerId);
 
-const btnNext_SLV = document.querySelector('.slider__arrows--right_SLV');
-const btnPrev_SLV = document.querySelector('.slider__arrows--left_SLV');
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
 
-const Slider_SLV = {
-    currentItem: 0,
+        for (let i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none';
+        }
 
-    init: () => {
-        Slider_SLV.in(Slider_SLV.currentItem);
-    },
+        slides[currentSlide].style.display = 'block';
+        updateSlideIndicators();
+    }
 
-    in: (index) => {
-        const item = sliderItems_SLV[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
+    function updateSlideIndicators() {
+        indicatorContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === currentSlide) {
+                indicator.classList.add('active');
+            }
+            indicatorContainer.appendChild(indicator);
+        }
+    }
 
-        TweenMax.set(item, { scale: .99 });
-        TweenMax.set(item, { left: '-100vw' });
+    function nextSlide_SLV() {
+        showSlide(currentSlide + 1);
+    }
 
-        timeline
-            .to(item, .2, { left: 0, delay: .3 })
-            .to(item, .2, { scale: 1 })
-            .staggerFrom(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeOut }, 0.2)
-    },
+    function prevSlide_SLV() {
+        showSlide(currentSlide - 1);
+    }
 
-    out: (index, nextIndex) => {
-        const item = sliderItems_SLV[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
-        timeline
-            .staggerTo(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeIn }, '-0.5')
-            .to(item, .2, { scale: .99 })
-            .to(item, .2, { left: '100vw' })
-            .call(Slider_SLV.in, [nextIndex], this, '-=.3')
-            .set(texts, { clearProps: 'all' })
-    },
+    showSlide(currentSlide);
 
-    next: () => {
-        const next = Slider_SLV.currentItem !== sliderItems_SLV.length - 1 ? Slider_SLV.currentItem + 1 : 0;
-        Slider_SLV.out(Slider_SLV.currentItem, next);
-        Slider_SLV.currentItem = next;
-    },
+    // Auto avanzar cada 10 segundos
+    // setInterval(nextSlide, 10000);
 
-    prev: () => {
-        const prev = Slider_SLV.currentItem > 0 ? Slider_SLV.currentItem - 1 : sliderItems_SLV.length - 1;
-        Slider_SLV.out(Slider_SLV.currentItem, prev);
-        Slider_SLV.currentItem = prev;
-    },
+    return {
+        nextSlide_SLV,
+        prevSlide_SLV
+    };
 }
 
-// Events
-btnNext_SLV.addEventListener('click', Slider_SLV.next);
-btnPrev_SLV.addEventListener('click', Slider_SLV.prev);
+// Llamada a la función para el slider
+const esloveniaSlider = createSlider('slider_eslovenia', 'slider-info_eslovenia');
 
-Slider_SLV.init();
+function nextSlide_SLV() {
+    esloveniaSlider.nextSlide_SLV();
+}
+
+function prevSlide_SLV() {
+    esloveniaSlider.prevSlide_SLV();
+}

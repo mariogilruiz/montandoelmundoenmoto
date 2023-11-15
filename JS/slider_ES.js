@@ -1,4 +1,4 @@
-// Cambios en la función createSlider
+// Modificación para permitir la selección de fotos desde los indicadores
 function createSlider(sliderId, infoContainerId) {
     let currentSlide = 0;
     const slides = document.getElementById(sliderId).children;
@@ -30,6 +30,10 @@ function createSlider(sliderId, infoContainerId) {
             if (i === currentSlide) {
                 indicator.classList.add('active');
             }
+            // Agregar un evento de clic para cambiar la diapositiva
+            indicator.addEventListener('click', function () {
+                showSlide(i);
+            });
             indicatorContainer.appendChild(indicator);
         }
     }
@@ -65,7 +69,3 @@ function nextSlide_ESP() {
 function prevSlide_ESP() {
     españaSlider.prevSlide_ESP();
 }
-
-
-
-

@@ -74,13 +74,12 @@
     position: absolute;
     color: var(--white);
     width: 100%;
-
     text-align: center;
     align-items: center;
-    transition: 300ms all ease;
-    -webkit-transition: 300ms all ease;
-    -moz-transition: 300ms all ease;
-    -o-transition: 300ms all ease;
+    transition: 100ms all ease;
+    -webkit-transition: 500ms all ease;
+    -moz-transition: 500ms all ease;
+    -o-transition: 500ms all ease;
 
 }
 
@@ -104,8 +103,10 @@
 #pag-02_max #content_02 #card_02_05:hover p,
 #pag-02_max #content_02 #card_02_06:hover p {
 
-    transform: translateY(160%);
-    opacity: .8;
+    /* transform: translateY(160%); */
+    opacity: 0;
+    animation: giro_li 300ms linear 1;
+    transform: scale(.5);
 
 }
 

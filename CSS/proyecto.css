@@ -29,7 +29,7 @@
 #cloud_01 {
 
     position: fixed;
-    top: -150px;
+    top: -100px;
     left: -500px;
     animation: cloud 80s linear infinite alternate;
     -webkit-animation: cloud 80s linear infinite alternate;
@@ -37,7 +37,7 @@
 }
 
 #cloud_01 img {
-    height: 500px;
+    height: 60vh;
 }
 
 @keyframes cloud {
@@ -53,18 +53,18 @@
 
 #cloud_02 {
 
-    height: 200px;
+
     position: fixed;
-    top: 300px;
-    right: -300px;
-    animation: cloud2 80s linear infinite alternate;
-    -webkit-animation: cloud2 80s linear infinite alternate;
+    bottom: -220px;
+    right: -700px;
+    animation: cloud2 100s linear infinite alternate;
+    -webkit-animation: cloud2 100s linear infinite alternate;
     opacity: .8;
 }
 
 #cloud_02 img {
 
-    height: 300px;
+    height: 100vh;
     transform: rotate(180deg);
 
 }

@@ -92,7 +92,7 @@
     transform: scale(0.98);
 }
 
-.bttn_f:hover span {
+.bttn_f:hover a {
 
     animation: 500ms plus linear infinite;
     -webkit-animation: 500ms plus linear infinite;

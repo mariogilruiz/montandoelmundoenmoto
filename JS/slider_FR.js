@@ -61,5 +61,5 @@ function nextSlide_FR() {
 }
 
 function prevSlide_FR() {
-    españaSlider.prevSlide_FR();
+    franciaSlider.prevSlide_FR();
 }

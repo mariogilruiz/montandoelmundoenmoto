@@ -1,56 +1,64 @@
-const sliderItems_IT = document.querySelectorAll('.slider__item_IT');
+function createSlider(sliderId, infoContainerId) {
+    let currentSlide = 0;
+    const slides = document.getElementById(sliderId).children;
+    const totalSlides = slides.length;
+    const indicatorContainer = document.getElementById(infoContainerId);
 
-const btnNext_IT = document.querySelector('.slider__arrows--right_IT');
-const btnPrev_IT = document.querySelector('.slider__arrows--left_IT');
+    function showSlide(index) {
+        if (index < 0) {
+            currentSlide = totalSlides - 1;
+        } else if (index >= totalSlides) {
+            currentSlide = 0;
+        } else {
+            currentSlide = index;
+        }
 
-const Slider_IT = {
-    currentItem: 0,
+        for (let i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none';
+        }
 
-    init: () => {
-        Slider_IT.in(Slider_IT.currentItem);
-    },
+        slides[currentSlide].style.display = 'block';
+        updateSlideIndicators();
+    }
 
-    in: (index) => {
-        const item = sliderItems_IT[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
+    function updateSlideIndicators() {
+        indicatorContainer.innerHTML = '';
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === currentSlide) {
+                indicator.classList.add('active');
+            }
+            // Agregar un evento de clic para cambiar la diapositiva
+            indicator.addEventListener('click', function () {
+                showSlide(i);
+            });
+            indicatorContainer.appendChild(indicator);
+        }
+    }
 
-        TweenMax.set(item, { scale: .99 });
-        TweenMax.set(item, { left: '-100vw' });
+    function nextSlide_IT() {
+        showSlide(currentSlide + 1);
+    }
 
-        timeline
-            .to(item, .2, { left: 0, delay: .3 })
-            .to(item, .2, { scale: 1 })
-            .staggerFrom(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeOut }, 0.2)
-    },
+    function prevSlide_IT() {
+        showSlide(currentSlide - 1);
+    }
 
-    out: (index, nextIndex) => {
-        const item = sliderItems_IT[index];
-        const texts = item.querySelectorAll('p')
-        const timeline = new TimelineMax();
-        timeline
-            .staggerTo(texts, .2, { y: 300, autoAlpha: 0, ease: Back.easeIn }, '-0.5')
-            .to(item, .2, { scale: .99 })
-            .to(item, .2, { left: '100vw' })
-            .call(Slider_IT.in, [nextIndex], this, '-=.3')
-            .set(texts, { clearProps: 'all' })
-    },
+    showSlide(currentSlide);
 
-    next: () => {
-        const next = Slider_IT.currentItem !== sliderItems_IT.length - 1 ? Slider_IT.currentItem + 1 : 0;
-        Slider_IT.out(Slider_IT.currentItem, next);
-        Slider_IT.currentItem = next;
-    },
-
-    prev: () => {
-        const prev = Slider_IT.currentItem > 0 ? Slider_IT.currentItem - 1 : sliderItems_IT.length - 1;
-        Slider_IT.out(Slider_IT.currentItem, prev);
-        Slider_IT.currentItem = prev;
-    },
+    return {
+        nextSlide_IT,
+        prevSlide_IT
+    };
 }
 
-// Events
-btnNext_IT.addEventListener('click', Slider_IT.next);
-btnPrev_IT.addEventListener('click', Slider_IT.prev);
+const italiaSlider = createSlider('slider_italia', 'slider-info_italia');
 
-Slider_IT.init();
+function nextSlide_IT() {
+    italiaSlider.nextSlide_IT();
+}
+
+function prevSlide_IT() {
+    italiaSlider.prevSlide_IT();
+}

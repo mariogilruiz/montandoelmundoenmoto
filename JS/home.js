@@ -92,7 +92,7 @@ function moveRight() {
                 {
                     scale: 1,
                     duration: 11,
-                    ease: "linear"
+                    ease: "ease-in-out"
                 }
             );
         }, 0);
