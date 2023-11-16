@@ -55,6 +55,11 @@
     margin-left: 60px;
 }
 
+#footer_XS #content_f_XS #h2_f_XS p {
+
+    padding-right: 3px;
+}
+
 #footer_XS #content_f_XS #h2_f_XS a {
 
     color: var(--white);

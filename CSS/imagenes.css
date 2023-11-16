@@ -184,122 +184,6 @@
 
 /* referente al slider */
 
-/* .slider {
-
-    font-family: var(--font-text);
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-}
-
-.slider__item,
-.slider__item_FR,
-.slider__item_SLV,
-.slider__item_IT,
-.slider__item_ALB,
-.slider__item_ALP,
-.slider__item_CRC {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: -100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 0px 5px 5px 0px;
-
-}
-
-.slider__text {
-    position: relative;
-    font-size: 3vw;
-    text-align: center;
-    color: #fff;
-    z-index: 999;
-}
-
-.slider__text p {
-
-    line-height: 5rem;
-    background-color: rgb(43, 43, 43, .7);
-    padding: 0 3vw;
-    border-radius: 5px;
-    margin-top: -10px;
-}
-
-.slider__arrows {
-
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.slider__arrows--left,
-.slider__arrows--left_FR,
-.slider__arrows--right_FR,
-.slider__arrows--right,
-.slider__arrows--left_ALP,
-.slider__arrows--right_ALP,
-.slider__arrows--left_ALB,
-.slider__arrows--right_ALB,
-.slider__arrows--left_CRC,
-.slider__arrows--right_CRC,
-.slider__arrows--left_SLV,
-.slider__arrows--right_SLV,
-.slider__arrows--left_IT,
-.slider__arrows--right_IT {
-
-    color: var(--orange-primary);
-    text-shadow: 1px 1px #666;
-    font-size: 3.5rem;
-    padding: 0 2rem;
-    cursor: pointer;
-    transition: transform .5s, opacity .5s;
-}
-
-.slider__arrows--left,
-.slider__arrows--left_FR,
-.slider__arrows--left_ALB,
-.slider__arrows--left_ALP,
-.slider__arrows--left_CRC,
-.slider__arrows--left_SLV,
-.slider__arrows--left_IT {
-
-    margin-left: -3px;
-}
-
-.slider__arrows--left:hover,
-.slider__arrows--left_FR:hover,
-.slider__arrows--left_ALB:hover,
-.slider__arrows--left_ALP:hover,
-.slider__arrows--left_CRC:hover,
-.slider__arrows--left_SLV:hover,
-.slider__arrows--left_IT:hover {
-
-    opacity: .6;
-    transform: translateX(-5px);
-}
-
-.slider__arrows--right:hover,
-.slider__arrows--right_FR:hover,
-.slider__arrows--right_ALP:hover,
-.slider__arrows--right_ALB:hover,
-.slider__arrows--right_CRC:hover,
-.slider__arrows--right_SLV:hover,
-.slider__arrows--right_IT:hover {
-
-    opacity: .6;
-    transform: translateX(5px);
-} */
 
 .slider_alpes_images {
 
@@ -331,15 +215,15 @@
     gap: 5px;
 }
 
-.indicator {
+#web_imagenes .indicator {
     width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.indicator.active {
+#web_imagenes .indicator.active {
     background-color: var(--orange-primary);
     transition: 300ms ease;
     /* Puedes ajustar el color activo según tus preferencias */

@@ -56,6 +56,11 @@
     border-right: 2px solid rgb(0, 0, 0, .5);
 }
 
+#h2_f p {
+
+    padding-right: 3px;
+}
+
 .h2_f {
 
     position: relative;

@@ -48,7 +48,7 @@
                 </span>
             </button>
             <nav id="nav_chek" class="hidden_bttn_fuel">
-                <button type="button" id="span_bttn_fuel" onclick="bttn_fuel_span()" class="">
+                <button type="button" id="span_bttn_fuel" onclick="bttn_fuel_span()">
                     <span id="x">
                         <p>X</p>
                     </span>
@@ -67,8 +67,9 @@
                         <button id="sumar" onclick="sumarUno()">+</button>
                     </div>
                     <div id="check_total">
-                        <span id="total">0.00</span>
-                        <button id="repostar">refuel</button>
+                        <span id="total">1.85</span>
+                        <button id="repostar"><img src="/images/icon_euro.png"
+                                alt="donar dinero a mario de free live free ride"></button>
                     </div>
                 </div>
             </nav>
@@ -98,30 +99,42 @@
 
     <!-- funcion sumar y resta un litro al total del repostaje se añade aqui para evitar el error NaN, 
                 ya que al estar en archivos enlazados y no poner enlazar en el mismo HTML de header porque al usar 
-                la funcion de JQUERY da error. -->
+                la funcion de JS da error. -->
+
     <script>
 
-        let total = 0;
-
-        function sumarUno() {
-            total = Number(total) + 1.85;
-            actualizarTotal();
-        }
-
         function restarUno() {
-            if (total > 2) {
-                total = Number(total) - 1.85;
-                actualizarTotal();
+            var litroElement = document.getElementById("litro");
+            var totalElement = document.getElementById("total");
+
+            var litroValor = parseInt(litroElement.innerText);
+            var totalValor = parseFloat(totalElement.innerText);
+
+            if (litroValor > 1) {
+                litroValor--;
+                totalValor -= 1.85;
+
+                litroElement.innerText = litroValor;
+                totalElement.innerText = totalValor.toFixed(2);
             }
         }
 
-        function actualizarTotal() {
-            const totalElement = document.getElementById("total");
-            totalElement.textContent = total;
-            totalElement.textContent = total.toFixed(2);
+        function sumarUno() {
+            var litroElement = document.getElementById("litro");
+            var totalElement = document.getElementById("total");
+
+            var litroValor = parseInt(litroElement.innerText);
+            var totalValor = parseFloat(totalElement.innerText);
+
+            litroValor++;
+            totalValor += 1.85;
+
+            litroElement.innerText = litroValor;
+            totalElement.innerText = totalValor.toFixed(2);
         }
 
     </script>
+
 </body>
 
 </html>

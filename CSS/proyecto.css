@@ -34,6 +34,8 @@
     animation: cloud 80s linear infinite alternate;
     -webkit-animation: cloud 80s linear infinite alternate;
     opacity: .7;
+    z-index: 50;
+
 }
 
 #cloud_01 img {
@@ -60,12 +62,13 @@
     animation: cloud2 100s linear infinite alternate;
     -webkit-animation: cloud2 100s linear infinite alternate;
     opacity: .8;
+
 }
 
 #cloud_02 img {
-
     height: 100vh;
     transform: rotate(180deg);
+
 
 }
 

@@ -29,10 +29,6 @@ function createSlider(sliderId, infoContainerId) {
             if (i === currentSlide) {
                 indicator.classList.add('active');
             }
-            // Agregar un evento de clic para cambiar la diapositiva
-            indicator.addEventListener('click', function () {
-                showSlide(i);
-            });
             indicatorContainer.appendChild(indicator);
         }
     }

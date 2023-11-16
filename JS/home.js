@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// logica para slider home- se repiten imagenes 
+// logica para slider home" mejorar transiciones"
 
 var imagenes = [
     "/images/slider_home/imagen1.webp",
@@ -105,11 +105,60 @@ setInterval(moveRight, 10000);
 
 
 
+// animacion texto maquina page-03
 
 
+function animacion() {
+    let textoAnimacion = [
+        ["a", "n", "i", "m", "a", "s", " ", "?"],
+        ["a", "p", "u", "n", "t", "a", "s", " ", "?"],
+        ["u", "n", "e", "s", " ", "?",],
+    ];
+
+    let letraContador = -1;
+    let nivelArray = 0;
+
+    const contenedorAnimacion = document.querySelector(".animation_machine_text");
+
+    function pintarTexto() {
+        letraContador++;
+        contenedorAnimacion.textContent += textoAnimacion[nivelArray][letraContador];
+
+        if (letraContador === textoAnimacion[nivelArray].length - 1) {
+            clearInterval(intervalo);
+
+            setTimeout(() => {
+
+                intervalo = setInterval(() => {
+                    contenedorAnimacion.textContent = "";
+                    letraContador--;
+                    textoAnimacion[nivelArray].pop();
+
+                    textoAnimacion[nivelArray].forEach((elemento) => {
+                        contenedorAnimacion.textContent += elemento;
+                    });
+
+                    if (letraContador < 0) {
+                        clearInterval(intervalo);
+                        nivelArray++;
+                        intervalo = setInterval(pintarTexto, 150);
 
 
+                        if (nivelArray > textoAnimacion.length - 1) {
+                            clearInterval(intervalo);
+                            nivelArray = 0;
+                            animacion();
+                        }
+                    }
 
+                }, 150);
+
+            }, 1000);
+        }
+    }
+    let intervalo = setInterval(pintarTexto, 150);
+}
+window.addEventListener("load", animacion);
 
 
 

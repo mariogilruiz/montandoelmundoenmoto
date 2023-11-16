@@ -87,16 +87,20 @@ body {
     transition: opacity 0.5s, visibility 0.5s;
 }
 
-.hidden_pageY {
+/* .hidden_pageY {
 
-    transform: translateY(100%);
+    transform: translateY(-239vh);
+    opacity: 0.8;
+
 }
 
 .show_page {
 
     transform: translateY(0);
+    opacity: 1;
 
-}
+
+} */
 
 .hidden_galery {
 
@@ -189,17 +193,6 @@ body {
     animation-iteration-count: 1;
 }
 
-.apper_text_pages_route {
-
-    opacity: 1;
-    visibility: visible;
-    animation-name: con2;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 200ms;
-}
-
-/* clases comunes de las paginas  */
 
 .spacer_page {
 
