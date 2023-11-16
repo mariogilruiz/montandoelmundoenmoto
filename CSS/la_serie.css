@@ -85,7 +85,7 @@
 
     width: 1000px;
     padding-right: 80px;
-    padding-left: 80px;
+    padding-left: 10px;
     transition: 200ms ease;
 }
 
@@ -93,11 +93,12 @@
 
     position: absolute;
     top: 150px;
-    right: 150px;
-    height: 250px;
-    width: 250px;
+    right: 100px;
+    height: 450px;
+    width: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 #map #map_selection img {
@@ -119,7 +120,7 @@
 .session_selection {
 
     display: flex;
-    width: 250px;
+    width: 100%;
     margin-bottom: 30px;
     height: 70px;
 }
@@ -128,6 +129,12 @@
 
     height: 100%;
     width: 100%;
+}
+
+#selection_session_2 {
+
+    border-radius: 5px;
+
 }
 
 .session_selection_session {
@@ -141,7 +148,7 @@
     background-color: hsl(208, 100%, 97%, 0);
     /* border: .5px solid var(--black-secondary); */
     border: 0px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     background-color: var(--white-e9);
     font-family: var(--font-text);
     font-size: 1.5rem;
@@ -245,4 +252,47 @@
     100% {
         transform: translateX(0%);
     }
+}
+
+/* funcion contadaor dias  */
+
+.counter-container {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* float: left; */
+    /* margin: 50px; */
+    /* align-items: start; */
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 10px;
+}
+
+.counter {
+
+    padding-right: 9px;
+
+}
+
+.contador_orden {
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-home);
+    color: var(--orange-primary);
+    font-size: 2rem;
+
+}
+
+.contador_orden p {
+
+    font-family: var(--font-text-italic);
+    font-weight: bolder;
+    font-size: 1rem;
+
 }
