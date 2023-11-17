@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// logica para slider home" mejorar transiciones"
+// logica para slider
 
 var imagenes = [
     "/images/slider_home/imagen1.webp",
@@ -79,29 +79,41 @@ var imagenes = [
 var contador = 0;
 
 function moveRight() {
-    document.Imagen.src = imagenes[contador];
-    contador = (contador + 1) % imagenes.length;
     const $imagen = $(document.Imagen);
+    const $destello = $('.destello');
 
-    requestAnimationFrame(() => {
-        setTimeout(() => {
+    document.Imagen.src = imagenes[contador];
 
-            gsap.fromTo(
-                $imagen,
-                { scale: 1.1 },
-                {
-                    scale: 1,
-                    duration: 11,
-                    ease: "ease-in-out"
+    contador = (contador + 1) % imagenes.length;
+
+    $destello.css('opacity', 0);
+
+    $imagen.on('load', function () {
+        gsap.fromTo(
+            $imagen,
+            { scale: 1.1 },
+            {
+                scale: 1,
+                duration: 10,
+                ease: "ease-in-out",
+                onStart: function () {
+                    // Muestra el destello 
+                    gsap.to($destello, { opacity: 1, duration: 0.5, ease: "ease-in-out" });
+                },
+                onComplete: function () {
+                    // Oculta el destello
+                    gsap.to($destello, { opacity: 0, duration: 0.5, ease: "ease-in-out" });
                 }
-            );
-        }, 0);
+            }
+        );
     });
 }
 
 moveRight();
 
 setInterval(moveRight, 10000);
+
+
 
 
 
