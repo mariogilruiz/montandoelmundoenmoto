@@ -1,11 +1,11 @@
 .body_sessions {
 
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    /* background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
     background-position: center center;
-    background-size: 100%;
+    background-size: 100%; */
     min-height: 750px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .web_sessions {

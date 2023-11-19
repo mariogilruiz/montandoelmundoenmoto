@@ -131,3 +131,8 @@
     font-family: "balloon";
     src: url(/fonts/BalloonExtraBoldBT.ttf);
 }
+
+@font-face {
+    font-family: "nunito-bold";
+    src: url(/fonts/NunitoSans_10pt-Black.ttf);
+}

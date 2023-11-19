@@ -5,6 +5,7 @@
 
 
 - Por hacer
------- transiciones slider initial 
-
+---- paginas de cokkie
+--------------- fqas
+--------------- aviso legal
 

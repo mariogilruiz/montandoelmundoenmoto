@@ -38,10 +38,6 @@
         "f f f f t t t t";
     place-content: center;
     justify-content: space-between;
-
-
-
-
 }
 
 #pag_03_max #content_03 #card_03_01 {
@@ -83,7 +79,7 @@
     justify-content: center;
 }
 
-#pag_03_max #content_03 #bttn_03 {
+#pag_03_max #content_03 .bttn_03 {
 
     display: grid;
     grid-template-columns: repeat(3, 30%);

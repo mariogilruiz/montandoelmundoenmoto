@@ -36,7 +36,7 @@
     display: grid;
     position: relative;
     height: 2000px;
-    width: 100%;
+    width: 90%;
     /* justify-items: center; */
     place-content: center center;
 }

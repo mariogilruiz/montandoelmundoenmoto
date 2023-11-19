@@ -1,0 +1,73 @@
+#web_temporada_2 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    min-height: 600px;
+}
+
+#inital_max_temporada_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#initial_content_temporada_2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 1200px;
+    height: 50vh;
+    overflow: hidden;
+    background-color: var(--black-opacity);
+    /* border: 2px solid black; */
+    margin-top: 100px;
+
+}
+
+#animation_machine_t2 {
+    font-family: var(--font-text-bold);
+    font-size: 7vw;
+    font-weight: bolder;
+
+}
+
+#animation_machine_barra_t2 {
+    width: 5px;
+    height: 90px;
+    margin: 8px;
+    transform: rotate(0deg);
+
+}
+
+#text_03_animation_machine_temporada2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+
+
+}
+
+#web_temporada_2 .social_t2 {
+
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 55px;
+    height: 55px;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 50px 20px;
+}

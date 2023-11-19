@@ -9,6 +9,8 @@
     --font-text: "nunito-sans", Arial, Helvetica, sans-serif;
     --font-text-light: "nunito-light", Arial, Helvetica, sans-serif;
     --font-text-italic: "nunito-italic", Arial, Helvetica, sans-serif;
+    --font-text-bold: "nunito-bold", Arial, Helvetica, sans-serif;
+
     --font-footer: "roboto", Arial, Helvetica, sans-serif;
     --font-digital: "digiti", Arial, Helvetica, sans-serif;
     --font-digital_b: "digiti_b", Arial, Helvetica, sans-serif;
@@ -50,5 +52,6 @@
     --ing-primary: radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%);
     --ing-secondary: rgb(40, 90, 235);
     --black-secondary: rgb(43, 43, 43);
+    --black-opacity: rgb(43, 43, 43, .3);
 
 }
