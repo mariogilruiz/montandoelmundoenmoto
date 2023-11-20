@@ -129,7 +129,7 @@
 
 #initial_max .random_text {
 
-    width: 100vw;
+    width: 90vw;
     max-width: 1200px;
     height: 50vh;
     overflow: hidden;
@@ -159,6 +159,7 @@
 #initial_max .h2_center {
     justify-content: center;
     text-align: center;
+
 
 }
 

@@ -18,11 +18,11 @@
 
 }
 
-@media (max-width:1090px) {
+@media (max-width:1270px) {
 
     #web #initial_max #hideOnScroll h2 {
 
-        font-size: 6rem;
+        font-size: 9.2vw;
     }
 }
 
@@ -130,10 +130,6 @@
 
 @media (max-width:873px) {
 
-    #web #initial_max #hideOnScroll h2 {
-
-        font-size: 5rem;
-    }
 
     #web #content_ph p {
 
@@ -141,7 +137,7 @@
         line-height: 50px;
     }
 
-    .bttn_social {
+    #web .bttn_social {
 
         font-family: var(--font-icons);
         font-size: 2.2rem;
@@ -254,6 +250,11 @@
 
 
 @media (max-width:768px) {
+
+    #web #initial_max #hideOnScroll h2 {
+
+        font-size: 8.5vw;
+    }
 
     #pag-02_max #content_02 {
 
@@ -405,13 +406,7 @@
     }
 }
 
-@media (max-width:727px) {
 
-    #web #initial_max #hideOnScroll h2 {
-        font-size: 4rem;
-    }
-
-}
 
 @media (max-width:698px) {
 
@@ -435,7 +430,7 @@
 @media (max-width:644px) {
 
     #header_max {
-        background-color: var(--blue-primary);
+        /* background-color: var(--blue-primary); */
         grid-template-rows: 30 80px;
         grid-template-columns: 1fr 80px 80px 80px 100px;
         grid-template-areas:
@@ -445,8 +440,13 @@
     }
 
     header #bttn_h {
-        margin-top: -1.5px;
-        margin-left: -5px;
+        border-radius: 0;
+
+    }
+
+    header #bttn_sesion {
+
+        border-radius: 0;
     }
 
     header #logo_h img {
@@ -464,10 +464,7 @@
 
 @media (max-width:584px) {
 
-    #web #initial_max #hideOnScroll h2 {
 
-        font-size: 3rem;
-    }
 
     #inital_max_recover #h2_c__i_s h2 {
 
@@ -488,15 +485,15 @@
 
     #header_max {
 
-        background-color: var(--blue-primary);
+        /* background-color: var(--blue-primary); */
         grid-template-rows: 30px 80px;
-        grid-template-columns: 1fr 0px 0px 60px 100px;
+        grid-template-columns: 1fr 0px 0px 80px 100px;
         grid-template-areas:
             "bn bn bn bn bn "
-
             "logo home session bttn menu ";
         text-transform: uppercase;
     }
+
 
     header #logo_h {
 
@@ -507,6 +504,10 @@
     header #bttn_home #bttn_h_h,
     header #bttn_sesion {
         display: none;
+        z-index: -10;
+
+
+
     }
 
     header #logo_h img {
@@ -519,13 +520,19 @@
         height: 70px;
         width: 60px;
         padding-left: 4px;
-        margin-top: 3px;
+        margin-top: 5px;
+        z-index: 999;
+
+        background-color: rgb(0, 0, 0, 0);
     }
+
+
 
     header #bttn_h #bttn_fuel {
 
         height: 60px;
         width: 60px;
+        background-color: rgb(0, 0, 0, 0);
     }
 
     header #bttn_h #icon_fuel {
@@ -534,12 +541,22 @@
         transition: 500ms ease;
         transition-delay: 300ms;
         margin-left: -50px;
+
     }
 
     header #bttn_h #bttn_fuel span img {
 
         width: 45px;
         margin-left: 5px;
+
+    }
+
+    #pag_03_max #content_03 #text_03_animation_machine h4 {
+        font-size: 1.3rem;
+    }
+
+    .animation_machine_text {
+        font-size: 1.3rem;
     }
 
     #inital_max_recover #h2_c__i_s {
@@ -635,9 +652,7 @@
         margin-top: 0px;
     }
 
-    #web #initial_max #hideOnScroll h2 {
-        font-size: 9.7vw;
-    }
+
 
     #footer_max #content_f #h2_f p {
 
@@ -730,9 +745,7 @@
 
     #inital_max_session {
 
-        min-height: 750px;
-        max-height: 750px;
-        grid-template-rows: 100px 50% 20%;
+        height: 750px;
     }
 
     #inital_max_session #h2_c__i_s,
@@ -792,6 +805,11 @@
 
 @media (max-width:420px) {
 
+    #web #initial_max #hideOnScroll h2 {
+
+        font-size: 8vw;
+    }
+
     #pag_03_max #content_03 #h2_03 {
 
         font-size: 12vw;
@@ -828,6 +846,12 @@
 }
 
 @media (max-width:350px) {
+
+    #pag_03_max #content_03 #text_03 {
+
+        overflow-y: scroll;
+
+    }
 
     header #logo_h img {
 

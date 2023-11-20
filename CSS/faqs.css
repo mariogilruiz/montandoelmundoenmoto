@@ -1,0 +1,72 @@
+#web_faqs {
+    display: grid;
+    grid-template-rows: 2100px 101px;
+    grid-template-columns: 100%;
+    box-sizing: border-box;
+}
+
+#inital_max_faqs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2100px;
+    width: 100%;
+    grid-template-columns: 100%;
+    place-content: start;
+    overflow: hidden;
+    z-index: 90;
+    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center center;
+}
+
+#web_faqs #spacer_galery_header {
+    height: 100px;
+    width: 100%;
+}
+
+#max_content_faqs {
+    display: grid;
+    position: relative;
+    height: 2000px;
+    width: 90%;
+    place-content: center center;
+}
+
+#content_faqs {
+    display: flex;
+    flex-direction: column;
+    height: 1800px;
+    width: 90vw;
+    max-width: 1200px;
+    background-color: rgb(43, 43, 43, .3);
+    border-radius: 5px;
+    font-family: var(--font-text-light);
+    color: var(--black-secondary);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    /* border-top: 20px solid var(--black-secondary); */
+    transition: 1000ms ease-in-out;
+}
+
+#content_faqs_01,
+#content_faqs_02,
+#content_faqs_03,
+#content_faqs_04 {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+#content_faqs_01,
+#content_faqs_03 {
+    background-color: var(--white);
+}
+
+#content_faqs_02,
+#content_faqs_05 {
+    background-color: var(--grey-f3);
+}

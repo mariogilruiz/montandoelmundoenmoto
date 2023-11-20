@@ -1,5 +1,4 @@
 #web_aviso_legal {
-
     display: grid;
     grid-template-rows: 2100px 101px;
     grid-template-columns: 100%;
@@ -7,7 +6,6 @@
 }
 
 #inital_max_aviso_legal {
-
     position: relative;
     display: flex;
     flex-direction: column;
@@ -26,23 +24,19 @@
 }
 
 #web_aviso_legal #spacer_galery_header {
-
     height: 100px;
     width: 100%;
 }
 
 #max_content_aviso_legal {
-
     display: grid;
     position: relative;
     height: 2000px;
     width: 90%;
-    /* justify-items: center; */
     place-content: center center;
 }
 
 #content_aviso_legal {
-
     display: flex;
     flex-direction: column;
     height: 1800px;
@@ -63,22 +57,16 @@
 #content_aviso_legal_03,
 #content_aviso_legal_04 {
     display: flex;
-
     width: 100%;
     height: 400px;
 }
 
 #content_aviso_legal_01,
 #content_aviso_legal_03 {
-
-
     background-color: var(--white);
-
 }
 
 #content_aviso_legal_02,
 #content_aviso_legal_05 {
-
     background-color: var(--grey-f3);
-
 }

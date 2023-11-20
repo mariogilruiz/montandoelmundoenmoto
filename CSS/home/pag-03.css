@@ -203,7 +203,7 @@
     grid-area: t;
     padding: 50px 30px 10px 30px;
     text-align: center;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     display: block;
     justify-content: start;
     display: flex;

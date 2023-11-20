@@ -63,8 +63,19 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.scrollY > 2137) {
             hiddenDivph.classList.add("apper_ph");
         }
+
+        if (window.innerWidth <= 768) {
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 2035) {
+                    hiddenDivph.classList.add("apper_ph");
+                }
+
+            });
+
+        }
     });
 });
+
 
 
 // logica para slider
@@ -114,11 +125,7 @@ moveRight();
 setInterval(moveRight, 10000);
 
 
-
-
-
 // animacion texto maquina page-03
-
 
 function animacion() {
     let textoAnimacion = [
