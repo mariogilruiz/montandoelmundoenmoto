@@ -201,6 +201,7 @@ body {
     height: 120px;
     width: 70vw;
     z-index: 80;
+    max-width: 1000px;
 }
 
 .description_02_page {

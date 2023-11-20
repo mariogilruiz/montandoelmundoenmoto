@@ -5,7 +5,7 @@
 
 
 - Por hacer
----- paginas de cokkie
---------------- fqas
---------------- aviso legal
+----responsive footerxs
+----quitar background fixed en movil
+
 

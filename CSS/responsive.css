@@ -253,8 +253,10 @@
 
     #web #initial_max #hideOnScroll h2 {
 
-        font-size: 8.5vw;
+        font-size: 10vw;
+
     }
+
 
     #pag-02_max #content_02 {
 
@@ -673,14 +675,23 @@
 
     #web {
 
-        grid-template-rows: 85vh 768px 20px 850px 250px 250px;
+        grid-template-rows: 98vh 768px 20px 850px 250px 250px;
     }
 
     #initial_max,
     #initial_max #hideOnScroll {
 
-        height: 85vh;
+        height: 98vh;
     }
+
+
+
+    #initial_max #background-div img {
+
+        height: 82vh;
+        margin-top: 100px;
+    }
+
 
     #web_proyecto,
     #web_imagenes,
@@ -807,7 +818,7 @@
 
     #web #initial_max #hideOnScroll h2 {
 
-        font-size: 8vw;
+        font-size: 11vw;
     }
 
     #pag_03_max #content_03 #h2_03 {

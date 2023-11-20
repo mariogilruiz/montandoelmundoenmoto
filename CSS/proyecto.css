@@ -1,5 +1,4 @@
 #web_proyecto {
-
     display: grid;
     grid-template-rows: calc(100vh - 200px) 2180px 102px;
     grid-template-columns: 100%;
@@ -7,14 +6,12 @@
 }
 
 #inital_max_proyecto {
-
     display: grid;
     position: relative;
     justify-items: center;
     place-content: center;
     background-size: cover;
-    background-image: center center;
-    background-position: top right;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: calc(100vh - 200px);
@@ -27,19 +24,18 @@
 }
 
 #cloud_01 {
-
     position: fixed;
-    top: -100px;
-    left: -500px;
+    top: 0px;
+    left: -200px;
     animation: cloud 80s linear infinite alternate;
     -webkit-animation: cloud 80s linear infinite alternate;
     opacity: .7;
     z-index: 50;
-
 }
 
 #cloud_01 img {
-    height: 60vh;
+    height: 50vh;
+    max-height: 250px;
 }
 
 @keyframes cloud {
@@ -49,27 +45,34 @@
     }
 
     to {
-        transform: translateX(140vw);
+        transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes cloud {
+
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
     }
 }
 
 #cloud_02 {
-
-
     position: fixed;
-    bottom: -220px;
-    right: -700px;
+    bottom: 0px;
+    right: -400px;
     animation: cloud2 100s linear infinite alternate;
     -webkit-animation: cloud2 100s linear infinite alternate;
     opacity: .8;
-
 }
 
 #cloud_02 img {
-    height: 100vh;
+    height: 80vh;
     transform: rotate(180deg);
-
-
+    max-height: 450px;
 }
 
 @keyframes cloud2 {
@@ -79,12 +82,22 @@
     }
 
     to {
-        transform: translateX(-120vw);
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes cloud2 {
+
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }
 
 #pag-02_max_proyecto {
-
     position: relative;
     display: grid;
     background-color: var(--white-e9);
@@ -97,12 +110,10 @@
 }
 
 #h3_descript_page {
-
     margin-left: -95px;
 }
 
 #recycle_02 {
-
     position: absolute;
     z-index: 90;
     animation: recycle_02 5s alternate linear infinite;
@@ -113,41 +124,35 @@
 
     from {
         opacity: .1;
-
     }
 
     to {
         opacity: 0;
     }
-
 }
 
 @-webkit-keyframes recycle_02 {
 
     from {
         opacity: .1;
-
     }
 
     to {
         opacity: 0;
     }
-
 }
 
 #recycle_01 img {
-
     height: 100px;
     margin-right: 20px;
 }
 
 #recycle_02 img {
-
     width: 80vw;
+    max-width: 1200px;
 }
 
 #max_content_02_proyecto {
-
     display: grid;
     height: 2000px;
     width: 100%;
@@ -163,11 +168,10 @@
 }
 
 #content_02_proyecto {
-
     display: grid;
     max-width: 1200px;
     height: 1700px;
-    width: 100%;
+    width: 90%;
     grid-template-columns: 100%;
     grid-template-rows: 200px 500px 500px 500px;
     background-color: rgb(43, 43, 43, .3);
@@ -179,18 +183,15 @@
 }
 
 #content_02_proyecto_01 {
-
     display: flex;
     height: 200px;
     width: 100%;
     align-items: center;
     justify-content: center;
     border-top: 20px solid var(--black-secondary);
-
 }
 
 #content_02_proyecto_01 h4 {
-
     margin: 30px 30px 20px 30px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -200,7 +201,6 @@
 #content_02_proyecto_02,
 #content_02_proyecto_03,
 #content_02_proyecto_04 {
-
     height: 500px;
     width: 100%;
     position: relative;
@@ -212,20 +212,17 @@
 
 #content_02_proyecto_01,
 #content_02_proyecto_03 {
-
     background-color: var(--white);
 }
 
 #content_02_proyecto_02,
 #content_02_proyecto_04 {
-
     background-color: var(--grey-f3);
 }
 
 #content_02_proyecto_02_content,
 #content_02_proyecto_03_content,
 #content_02_proyecto_04_content {
-
     height: 500px;
     width: 90%;
     position: relative;
@@ -238,7 +235,6 @@
 #content_02_proyecto_02 img,
 #content_02_proyecto_03 img,
 #content_02_proyecto_04 img {
-
     height: 400px;
     border-radius: 5px;
 }
@@ -246,7 +242,6 @@
 #content_02_proyecto_02 p,
 #content_02_proyecto_04 p,
 #content_02_proyecto_03 p {
-
     text-align: start;
     margin: 40px;
 }

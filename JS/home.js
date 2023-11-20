@@ -56,25 +56,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const hiddenDivph = document.getElementById("content_ph");
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 2137) {
-            hiddenDivph.classList.add("apper_ph");
-        }
+// codigo para que al finalizar el div añade la clase 
 
-        if (window.innerWidth <= 768) {
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 2035) {
-                    hiddenDivph.classList.add("apper_ph");
-                }
 
-            });
+function detectarScrollAlFinal() {
+    var miDiv = document.getElementById('content_ph');
+    var alturaDelDiv = miDiv.offsetHeight;
+    var alturaDeLaVentana = window.innerHeight;
+    var posicionDelDiv = miDiv.getBoundingClientRect().top;
 
-        }
-    });
+    if (alturaDeLaVentana >= posicionDelDiv + alturaDelDiv) {
+
+        miDiv.classList.add('apper_ph');
+    }
+}
+
+
+window.addEventListener('scroll', function () {
+    detectarScrollAlFinal();
 });
+
+// Llamar a la función al cargar la página para verificar si el contenido inicial ya está al final
+detectarScrollAlFinal();
 
 
 
@@ -108,11 +112,9 @@ function moveRight() {
                 duration: 10,
                 ease: "ease-in-out",
                 onStart: function () {
-                    // Muestra el destello 
                     gsap.to($destello, { opacity: 1, duration: 0.5, ease: "ease-in-out" });
                 },
                 onComplete: function () {
-                    // Oculta el destello
                     gsap.to($destello, { opacity: 0, duration: 0.5, ease: "ease-in-out" });
                 }
             }
@@ -161,7 +163,6 @@ function animacion() {
                         clearInterval(intervalo);
                         nivelArray++;
                         intervalo = setInterval(pintarTexto, 150);
-
 
                         if (nivelArray > textoAnimacion.length - 1) {
                             clearInterval(intervalo);
