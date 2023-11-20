@@ -11,7 +11,60 @@
     place-content: center;
     text-align: center;
     z-index: 90;
+
 }
+
+#animation_pixel {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 80;
+
+}
+
+#animation_pixel img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: pixel 10s linear infinite;
+    /* -webkit-animation: pixel 40s linear infinite; */
+}
+
+@keyframes pixel {
+    from {
+        transform: translateY(500%);
+        opacity: 1;
+
+    }
+
+    /* 50% {
+        opacity: 1;
+    } */
+
+    to {
+        transform: translateY(0%);
+        opacity: 0.5;
+
+    }
+}
+
+/* @-webkit-keyframes pixel {
+
+    from {
+        background-image: url(/images/pixel_1_free_live_free_ride.png);
+
+    }
+
+    to {
+        background-image: url(/images/pixel_2_free_live_free_ride.png);
+
+
+    }
+} */
 
 .container {
 
@@ -50,6 +103,7 @@
     bottom: -2px;
     height: 150px;
     width: 100%;
+    z-index: 80;
 }
 
 #img_zoom_ramdon img {
