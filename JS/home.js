@@ -82,7 +82,53 @@ detectarScrollAlFinal();
 
 
 
-// logica para slider
+// logica para slider video //
+
+// var videos = [
+//     "/videos/slider_home/video1.mp4",
+//     "/videos/slider_home/video1.mp4",
+//     "/videos/slider_home/video1.mp4",
+//     "/videos/slider_home/video1.mp4"
+// ];
+
+// var contador = 0;
+
+// function moveRight() {
+//     const $video = $('#video-slider');
+//     const $destello = $('.destello');
+
+//     $video.attr('src', videos[contador]);
+//     $video[0].play(); // Inicia la reproducción automáticamente
+
+//     contador = (contador + 1) % videos.length;
+
+//     $destello.css('opacity', 0);
+
+//     $video.on('loadedmetadata', function () {
+//         // Tu código de zoom y destello aquí, si es necesario
+//     });
+
+//     // Detecta cuando el video actual ha terminado y pasa al siguiente
+//     $video.on('ended', function () {
+//         moveRight();
+//     });
+// }
+
+// // Llamada inicial para el primer video
+// moveRight();
+
+// // Configura el intervalo para cambiar de video cada 10 segundos
+// setInterval(moveRight, 10000);
+
+
+
+
+
+
+
+
+
+//descomentar para hacer slider de imagenes en vez de videos//
 
 var imagenes = [
     "/images/slider_home/imagen1.webp",

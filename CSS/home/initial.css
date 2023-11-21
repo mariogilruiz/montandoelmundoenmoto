@@ -25,47 +25,6 @@
 
 }
 
-#animation_pixel img {
-
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    animation: pixel 10s linear infinite;
-    /* -webkit-animation: pixel 40s linear infinite; */
-}
-
-@keyframes pixel {
-    from {
-        transform: translateY(500%);
-        opacity: 1;
-
-    }
-
-    /* 50% {
-        opacity: 1;
-    } */
-
-    to {
-        transform: translateY(0%);
-        opacity: 0.5;
-
-    }
-}
-
-/* @-webkit-keyframes pixel {
-
-    from {
-        background-image: url(/images/pixel_1_free_live_free_ride.png);
-
-    }
-
-    to {
-        background-image: url(/images/pixel_2_free_live_free_ride.png);
-
-
-    }
-} */
-
 .container {
 
     position: relative;
@@ -86,6 +45,9 @@
     background-attachment: fixed;
     transition: all 10s ease-in-out;
 }
+
+/* cabiar img/video */
+
 
 .zoom-background img {
 
@@ -156,12 +118,14 @@
     }
 }
 
-#web #initial_max #hideOnScroll h2 {
+#web #initial_max #hideOnScroll h1,
+h2 {
 
     position: relative;
     font-family: var(--font-home);
     letter-spacing: 2px;
     font-size: 7.5rem;
+    padding-left: 5px;
 
     color: var(--white);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
@@ -169,12 +133,15 @@
 
 }
 
-#initial_max h2:first-child {
+#initial_max .text:last-child h2 {
 
-    padding-left: 5px;
+    color: var(--green-primary-);
+    font-size: 6.5rem;
+
+
 }
 
-#initial_max #hideOnScroll span:first-child {
+/* #initial_max #hideOnScroll span:first-child {
 
     padding-left: 15px;
 }
@@ -182,13 +149,20 @@
 #initial_max #hideOnScroll span:last-child {
 
     padding-right: 15px;
+    color: var(--green-primary-);
 }
+
+#initial_max #hideOnScroll span h2 {
+
+
+    color: var(--green-primary-);
+} */
 
 #initial_max .random_text {
 
     width: 90vw;
     max-width: 1200px;
-    height: 50vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
 }

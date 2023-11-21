@@ -17,11 +17,6 @@
 
 }
 
-#h2_03 a {
-
-    color: var(--green-primary-);
-}
-
 #pag-02_max #content_02 {
 
     position: relative;
@@ -74,7 +69,7 @@
 
 }
 
-#pag-02_max #content_02 p {
+#pag-02_max #content_02 h3 {
 
     position: absolute;
     color: var(--white);
@@ -101,12 +96,12 @@
 
 }
 
-#pag-02_max #content_02 #card_02_01:hover p,
-#pag-02_max #content_02 #card_02_02:hover p,
-#pag-02_max #content_02 #card_02_03:hover p,
-#pag-02_max #content_02 #card_02_04:hover p,
-#pag-02_max #content_02 #card_02_05:hover p,
-#pag-02_max #content_02 #card_02_06:hover p {
+#pag-02_max #content_02 #card_02_01:hover h3,
+#pag-02_max #content_02 #card_02_02:hover h3,
+#pag-02_max #content_02 #card_02_03:hover h3,
+#pag-02_max #content_02 #card_02_04:hover h3,
+#pag-02_max #content_02 #card_02_05:hover h3,
+#pag-02_max #content_02 #card_02_06:hover h3 {
 
     /* transform: translateY(160%); */
     opacity: 0;

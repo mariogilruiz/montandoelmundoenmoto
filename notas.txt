@@ -5,6 +5,9 @@
 
 
 - Por hacer
+---- poner bien h1 h2 h1 h3 (todas tiene que tenr h1 h2 h3 para SEO es muy importante para google meter seo en los encabezados), paginas nutirdas de texto para SEO vale mas el seo que la estetica.
+---- poner los alt
+---- imagen fondo renderizarla
 ----responsive footerxs
 ----quitar background fixed en movil
 

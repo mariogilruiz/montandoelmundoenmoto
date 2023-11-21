@@ -71,12 +71,16 @@
 
     display: grid;
     grid-area: h;
-    font-family: var(--font-home);
-    font-size: 55px;
-    color: var(--orange-primary);
+
+    font-size: 3rem;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
+}
+
+#h2_03 a {
+    font-family: var(--font-home);
+    color: var(--green-primary-);
 }
 
 #pag_03_max #content_03 .bttn_03 {
@@ -223,7 +227,7 @@
     margin-left: 75%;
 }
 
-#pag_03_max #content_03 #text_03_animation_machine h4 {
+#pag_03_max #content_03 #text_03_animation_machine p {
 
     font-family: var(--font-text-italic);
     font-size: 1.7rem;
