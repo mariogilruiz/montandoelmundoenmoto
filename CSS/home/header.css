@@ -566,25 +566,25 @@ header #menu_plus nav {
     z-index: 0;
 }
 
+header #menu_plus nav ul li a {
+    transition: 300ms ease;
+}
+
 header #menu_plus nav ul li a:hover {
-
     color: var(--orange-primary);
-
+    transform: scale(1.2, 1.2);
 }
 
 header #menu_plus nav ul li a {
-
     color: var(--white);
     display: block;
 }
 
 header #menu_plus nav ul li:first-child {
-
     margin-top: 85px;
 }
 
 header #menu_plus nav ul li:last-child {
-
     margin-bottom: 50px;
 }
 

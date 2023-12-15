@@ -20,31 +20,8 @@ $(function () {
     $("#footer_XS").load("../pages/footerXS.html");
 });
 
-// text ramdon
 
-document.addEventListener("DOMContentLoaded", function () {
-    const texts = document.querySelectorAll(".text");
-    let currentIndex = 0;
-
-    function rotateText() {
-        texts[currentIndex].classList.remove("visibility");
-        currentIndex = (currentIndex + 1) % texts.length;
-        texts[currentIndex].classList.add("visibility");
-    }
-
-    texts[currentIndex].classList.add("visibility");
-
-    setInterval(rotateText, 10000);
-});
-
-//scrollY position
-
-window.onscroll = function () {
-    var y = window.scrollY;
-    console.log(y);
-};
-
-//header&banner_home effect
+// Esconde el banner del DOM cuanco scroll Y es mayor de 30 y sino lo muestra
 
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
@@ -81,7 +58,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
-//animation onclick menu plus
+//animation onclick menu navegacion
 
 document.getElementById("bttn_p").onclick = function () { nav_plus_hidden() };
 
@@ -96,7 +73,7 @@ function nav_plus_hidden() {
     document.getElementById("bttn_sesion").classList.toggle("hidden_bttn_header");
 }
 
-//animation onclick boton fuell open
+//animation onclick API donacion de combustible
 
 document.getElementById("nav_chek").onclick = function () { bttn_fuel_hidden() };
 

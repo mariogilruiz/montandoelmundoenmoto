@@ -1,4 +1,5 @@
-// ---------maps
+// Pintar los paises de colores
+
 document.getElementById("tienda_01").onmouseover = function () { sesion_01() };
 document.getElementById("AL").setAttribute("fill", "red");
 
@@ -35,7 +36,7 @@ function sesion_01_out() {
 
 }
 
-// efecto posicon actual aparce y desaparece con hover en el pais segun su ID
+// Efecto posicon actual aparce y desaparece con hover en el pais segun su ID
 
 document.getElementById("AL").onmouseover = function () { location_today() };
 
@@ -56,7 +57,7 @@ function location_today_of() {
 }
 
 
-//-------- effect text 
+// Muestra el texto 
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDivph = document.getElementById("p_descript_la_serie_p");
@@ -70,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// afecto aparacion mapa_svg
+// Muestra el mapa_svg
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("europe_svg");
@@ -82,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// afecto aparacion selctores map
+// Muestra el div con los selectores de temporadas
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("map_selection");
@@ -95,10 +96,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//contador de todo
 
 
-
+// Funcion del contador una vez sea añadida la clase que muestra el div que contiene la funcion 
 
 var countStarted = false;
 

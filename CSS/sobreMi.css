@@ -32,6 +32,8 @@
 }
 
 
+
+
 #pag-02_max_about {
 
     position: relative;
@@ -87,7 +89,7 @@
     border-top: 20px solid var(--black-secondary);
 }
 
-#content_02_about_01 h4 {
+#content_02_about_01 h2 {
 
     display: block;
     margin: 0px 30px 20px 30px;
@@ -97,6 +99,8 @@
     box-sizing: border-box;
     text-transform: uppercase;
     font-family: var(--font-bttn-fuell);
+    color: var(--black-secondary);
+    text-shadow: none;
 }
 
 /* comienzo slider */

@@ -56,24 +56,26 @@
     border-right: 2px solid rgb(0, 0, 0, .5);
 }
 
-#h2_f p {
+#h2_f h2 {
 
     padding-right: 3px;
+    font-family: var(--font-home);
+    color: var(--white);
+    font-size: 3rem;
 }
 
 .h2_f {
 
     position: relative;
     display: flex;
-    font-family: var(--font-home);
-    color: var(--white);
-    font-size: 3rem;
+
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
     padding-right: 2px;
 
 }
+
 
 .bttn_f {
 

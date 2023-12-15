@@ -1,4 +1,4 @@
-//h2 hidden 
+//oculta el H2/H1 de la pagina inicial para no verse en la parte del footer
 
 document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("hideOnScroll");
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//home hidden
+//oculta el back de la pagina inicial para no ver afectado el footer debido al Z-index
 
 document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("container");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 1700) {
+        if (window.scrollY > 2000) {
             elementToHide.classList.add("hidden_hoome");
             elementToHide.classList.remove("hidden_home_back");
 
@@ -33,8 +33,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// text ramdon
 
-// div effect --- HOME
+document.addEventListener("DOMContentLoaded", function () {
+    const texts = document.querySelectorAll(".text");
+    let currentIndex = 0;
+
+    function rotateText() {
+        texts[currentIndex].classList.remove("visibility");
+        currentIndex = (currentIndex + 1) % texts.length;
+        texts[currentIndex].classList.add("visibility");
+    }
+
+    texts[currentIndex].classList.add("visibility");
+
+    setInterval(rotateText, 10000);
+});
+
+//scrollY position en consola
+
+window.onscroll = function () {
+    var y = window.scrollY;
+    console.log(y);
+};
+
+
+// efecto aparacion div banner transparente
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDiv = document.getElementById("banner_fuel_home_content_content");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 900) {
+            hiddenDiv.classList.add("appear");
+        }
+    });
+});
+
+
+// Efecto aparacion div pag-02 home
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("content_02");
@@ -46,11 +83,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// Efecto aparacion div pag-03 home
+
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv03 = document.getElementById("content_03");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 920) {
+        if (window.scrollY > 1400) {
             hiddenDiv03.classList.add("appear");
         }
     });
@@ -82,7 +122,7 @@ detectarScrollAlFinal();
 
 
 
-// logica para slider video //
+// descomentar para haer logica para slider de video //
 
 // var videos = [
 //     "/videos/slider_home/video1.mp4",
@@ -122,13 +162,7 @@ detectarScrollAlFinal();
 
 
 
-
-
-
-
-
-
-//descomentar para hacer slider de imagenes en vez de videos//
+//Logica del slider de la pagina inicial//
 
 var imagenes = [
     "/images/slider_home/imagen1.webp",
@@ -156,7 +190,7 @@ function moveRight() {
             {
                 scale: 1,
                 duration: 10,
-                ease: "ease-in-out",
+                ease: "ease-out",
                 onStart: function () {
                     gsap.to($destello, { opacity: 1, duration: 0.5, ease: "ease-in-out" });
                 },
