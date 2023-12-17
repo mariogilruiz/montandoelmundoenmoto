@@ -1,14 +1,32 @@
-- fotos paginas web
+- fotos paginas web:
+
 ------ filtro usado en photoshop = cinematografico2 : 12 .
 ------ no se toca nada mas 
 
 
 
-- Por hacer
+- Por hacer:
+------------- FRONT
+
 ---- poner bien h1 h2 h1 h3 (todas tiene que tenr h1 h2 h3 para SEO es muy importante para google meter seo en los encabezados), paginas nutirdas de texto para SEO vale mas el seo que la estetica.
 ---- poner los alt
 ---- imagen fondo renderizarla
-----responsive footerxs
-----quitar background fixed en movil
+---- responsive footerxs y lo qie falte
+---- quitar background fixed en movil
+---- poner paginas de mi proyecto que salga un cuadro y diga proximamente
+---- rendereizar imagens y llenar galerias 
+---- hacer efecto de caida en los texto de rutas en articulos
+---- poner alto automatico en varias secciones como rutas y algunos mas
+---- hacer video de que llevo 
+---- hacer video de temporada 1
+---- subir los videos a youtube y enlazarlos para que no se cargen direcatmente
+---- pagina 404 foto de prada
+--- dar alguna vuelta al div de texto de donacion en el home
+
+--------------- BACK
+
+--- modulo de registro
+--- modulo de pago de combustible
+--- pagina 404
 
 
