@@ -13,7 +13,7 @@
 ---- imagen fondo renderizarla
 ---- responsive footerxs y lo qie falte
 ---- quitar background fixed en movil
----- poner paginas de mi proyecto que salga un cuadro y diga proximamente
+---- poner paginas de mi proyecto y materiales y que salga un cuadro y diga proximamente
 ---- rendereizar imagens y llenar galerias 
 ---- hacer efecto de caida en los texto de rutas en articulos
 ---- poner alto automatico en varias secciones como rutas y algunos mas

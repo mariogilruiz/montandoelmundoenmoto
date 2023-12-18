@@ -108,5 +108,3 @@ function bttn_fuel_span() {
 
 
 
-
-

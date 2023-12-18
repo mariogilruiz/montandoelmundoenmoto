@@ -72,6 +72,7 @@
 #pag-02_max #content_02 h3 {
 
     position: absolute;
+    /* font-size: 3rem; */
     color: var(--white);
     width: 100%;
     text-align: center;
