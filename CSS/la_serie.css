@@ -9,7 +9,6 @@
 }
 
 #inital_max_la_serie {
-
     display: grid;
     position: relative;
     justify-items: center;
@@ -30,6 +29,29 @@
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
+}
+
+.video--link--youtube {
+    position: absolute;
+    display: block;
+    font-family: var(--font-text);
+    color: var(--black-secondary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px;
+    z-index: 10;
+    right: 0px;
+    /* top: 34vh; */
+    top: calc(50vh - 120px);
+    background-color: var(--black-opacity);
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.video--link--youtube:hover {
+    color: var(--white);
+
 }
 
 #pag-02_max_la_serie {
