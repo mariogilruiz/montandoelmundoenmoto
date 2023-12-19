@@ -139,8 +139,11 @@ body {
 }
 
 #phrase_home p {
+    /* background-color: rgb(0, 0, 0, .3);
+    border-radius: 5px; */
     font-size: 3.6rem;
     font-family: var(--font-alexBrush);
+    text-shadow: 0px 0px 15px #013d40;
     color: var(--white);
     font-weight: normal;
     line-height: 80px;
@@ -191,7 +194,6 @@ body {
 }
 
 .appear {
-
     opacity: 1;
     visibility: visible;
     animation-name: con1;
@@ -213,7 +215,6 @@ body {
 }
 
 .appear_slow {
-
     opacity: 1;
     visibility: visible;
     animation-name: con1;
@@ -225,7 +226,6 @@ body {
 }
 
 .apper_ph {
-
     opacity: 1;
     visibility: visible;
     animation-name: con2;
@@ -246,12 +246,10 @@ body {
 }
 
 #AL {
-
     cursor: pointer;
 }
 
 .apper_text_pages {
-
     opacity: 1;
     visibility: visible;
     animation-name: con2;
@@ -259,9 +257,7 @@ body {
     animation-iteration-count: 1;
 }
 
-
 .spacer_page {
-
     position: absolute;
     top: -68px;
     height: 120px;
@@ -271,7 +267,6 @@ body {
 }
 
 .description_02_page {
-
     display: grid;
     place-content: center;
     justify-items: center;
@@ -281,11 +276,9 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 160px 200px;
     background-color: var(--white-e9);
-
 }
 
 .h2_descript_page {
-
     position: absolute;
     display: flex;
     top: -58px;
@@ -295,7 +288,6 @@ body {
 }
 
 .h2_pages {
-
     position: absolute;
     height: 70px;
     width: 100%;
@@ -311,14 +303,18 @@ body {
 }
 
 .h2_logo_pages {
-
     position: absolute;
-    top: -42px;
-    height: 70px;
-    width: 400px;
+    top: -86px;
+
     animation: 500ms giro_li 300ms ease 1;
     -webkit-animation: 500ms giro_li 300ms ease 1;
     z-index: 100;
+}
+
+.h2_logo_pages img {
+
+    height: 70px;
+    width: 400px;
 }
 
 @keyframes giro_li {
@@ -341,10 +337,7 @@ body {
     }
 }
 
-
-
 .h3_descript_page h2 {
-
     display: flex;
     height: 80px;
     width: 100%;
@@ -389,7 +382,10 @@ body {
     z-index: 9999;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .4s;
+    transition: opacity .4s .6s;
+    --transform: translateY(-100vh);
+    --transition: transform 800ms;
+
 }
 
 #modal .modal_container {
@@ -407,7 +403,14 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    transform: var(--transform);
+    transition: var(--transition);
+
 }
+
+/* #modal .modal_container-show {
+    transform: translateY(0px);
+} */
 
 #modal .modal_container a {
     font-size: 30px;
@@ -436,8 +439,9 @@ body {
 }
 
 .modal--show {
-
     opacity: 1;
     pointer-events: unset;
     transition: opacity .4s;
+    --transform: translateY(0);
+    --transition: transform 800ms 200ms;
 }

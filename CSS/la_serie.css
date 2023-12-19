@@ -1,7 +1,7 @@
 #web_la_serie {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 1200px 101px;
+    grid-template-rows: calc(100vh - 200px) 1290px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -41,8 +41,12 @@
     height: 1200px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 800px;
+    grid-template-rows: 490px 800px;
     z-index: 90;
+}
+
+#web_la_serie .p_descript_page {
+    height: 290px;
 }
 
 #max_content_02_la_serie {
@@ -52,7 +56,7 @@
     margin-left: 2px;
     height: 800px;
     width: 102vw;
-    background-image: url(/images/back_la_serie_Web_free_live_free_ride.jpeg);
+    background-image: url(/images/back_la_serie_Web_free_live_free_ride.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

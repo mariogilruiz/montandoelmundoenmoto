@@ -120,26 +120,26 @@
 
 #web #initial_max #hideOnScroll h1,
 h2 {
-
     position: relative;
     font-family: var(--font-home);
     letter-spacing: 2px;
     font-size: 7.5rem;
     padding-left: 5px;
-
     color: var(--white);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
     padding-right: 5px;
-
 }
 
-#initial_max .text:last-child h2 {
-
-    color: var(--green-primary-);
-    font-size: 6.5rem;
-
-
+#initial_max .orange {
+    flex-direction: column;
+    margin-top: -50px;
 }
+
+#initial_max .orange h2:last-child {
+    color: var(--orange-primary);
+}
+
+
 
 /* #initial_max #hideOnScroll span:first-child {
 

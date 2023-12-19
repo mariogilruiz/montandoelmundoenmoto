@@ -265,24 +265,32 @@ window.addEventListener("load", animacion);
 
 const openmodalMaterial = document.querySelector('.material--modal');
 const openmodalProyecto = document.querySelector('.proyecto--modal');
-const modal = document.querySelector('.modal');
-const closemodal = document.querySelector('.modal_close');
 
+
+const modal = document.querySelector('.modal');
+// const modalContainer = document.querySelector('.modal_container');
+
+const closemodal = document.querySelector('.modal_close');
 
 openmodalMaterial.addEventListener('click', (e) => {
     e.preventDefault();
     modal.classList.add('modal--show');
+    // modalContainer.classList.add('modal_container-show');
+
 });
 
 openmodalProyecto.addEventListener('click', (e) => {
     e.preventDefault();
     modal.classList.add('modal--show');
+    // modalContainer.classList.add('modal_container-show');
 });
 
 closemodal.addEventListener('click', (e) => {
     e.preventDefault();
     modal.classList.remove('modal--show');
+    // modalContainer.classList.remove('modal_container-show');
 });
+
 
 
 

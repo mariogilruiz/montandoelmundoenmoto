@@ -58,6 +58,15 @@
     transition: 1000ms ease-in-out;
 }
 
+#content_rutas h2 {
+
+    font-family: var(--font-text);
+    color: var(--black-secondary);
+    font-size: 3.3rem;
+    font-weight: bolder;
+    text-shadow: none;
+}
+
 #h4_rutas {
 
     position: relative;
@@ -78,7 +87,7 @@
 .country_rutas_google {
 
     display: flex;
-    height: 150px;
+    height: 220px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -87,7 +96,7 @@
     font-weight: 900;
 }
 
-.country_rutas_google img {
+.country_rutas_google h2 img {
 
     margin-right: 15px;
     border: 1px solid black;
@@ -124,7 +133,6 @@
 }
 
 .iframe_maps_google {
-
     height: 80%;
     width: 80%;
     border: 0px;
@@ -134,10 +142,27 @@
 .content_google_maps {
 
     display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     justify-content: start;
-    align-items: center;
+
+
+}
+
+.content_google_maps h3 {
+    display: block;
+    width: 93.5%;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    line-height: 2rem;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 10px solid var(--black-secondary);
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .content_google_maps p {
