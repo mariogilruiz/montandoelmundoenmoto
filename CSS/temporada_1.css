@@ -1,7 +1,7 @@
 #web_temporada_01 {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 3800px 200px 102px;
+    grid-template-rows: calc(100vh - 200px) 4000px 200px 102px;
     grid-template-columns: 100%;
     width: 100%;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
@@ -15,9 +15,9 @@
 
     display: grid;
     position: relative;
-    background-image: url(../images/back_temporada_1_free_live_free_ride.webp);
     background-size: cover;
     background-position: center center;
+    background-color: black;
     background-attachment: fixed;
     z-index: 90;
     justify-items: center;
@@ -37,22 +37,22 @@
     background-attachment: fixed;
     height: 4000px;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 3400px;
+    grid-template-rows: 500px 3400px;
 }
 
 #max_content_02_temporada_01 {
 
     display: grid;
-    height: 3400px !important;
+    height: 3600px !important;
     width: 100%;
     background-attachment: fixed;
     background-image: url(/images/La_serie/Sin\ título-3.jpeg);
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;
-    justify-items: center;
-    justify-content: center;
-    place-content: center;
+    /* justify-items: center;
+    justify-content: center; */
+    place-content: start center;
     overflow: hidden;
 }
 
@@ -65,8 +65,9 @@
     row-gap: 40px;
     height: 3200px;
     width: 100%;
-    justify-items: center;
-    place-content: center;
+    /* justify-items: center;
+    place-content: center; */
+    margin-top: 150px;
     overflow: hidden;
     border-radius: 5px;
 }
@@ -94,15 +95,21 @@
     flex-direction: column;
 }
 
+#web_temporada_01 .p_descript_page {
+    height: 300px;
+}
+
 #web_temporada_01 .description_02_page {
-    height: 450px;
+    height: 400px;
 }
 
 #web_temporada_01 .h3_descript_page h2 img {
 
-    height: 70px;
-    width: 400px;
+    height: 100px;
+    width: 600px;
     margin-top: 10px;
+    opacity: 0;
+
 }
 
 #web_temporada_01 .p_descript_page h3 {

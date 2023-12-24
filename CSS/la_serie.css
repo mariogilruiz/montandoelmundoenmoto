@@ -11,20 +11,17 @@
 #inital_max_la_serie {
     display: grid;
     position: relative;
-    justify-items: center;
-    place-content: center;
+
+    background-color: black;
     height: 1200px;
     width: 100%;
     z-index: 90;
 }
 
-#inital_max_la_serie video {
+.video_back_serie {
 
-    position: absolute;
-    min-width: 100vw;
-    min-height: 100vh;
-    height: auto;
-    width: auto;
+    height: calc(100vh - 200px);
+    width: 100%;
     object-fit: cover;
     /* top: 50%;
     left: 50%;
