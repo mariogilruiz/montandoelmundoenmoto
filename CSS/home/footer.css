@@ -62,6 +62,8 @@
     font-family: var(--font-home);
     color: var(--white);
     font-size: 3rem;
+    text-shadow: 0px 0px 5px gray;
+
 }
 
 .h2_f {

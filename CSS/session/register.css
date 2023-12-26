@@ -1,5 +1,6 @@
 #inital_max_register {
-    display: flex;
+
+
     position: relative;
     display: grid;
     justify-items: center;
@@ -18,7 +19,8 @@
     height: 100%;
     width: 100%;
     justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
 }
 
 #inital_max_register h2 {
@@ -27,6 +29,8 @@
     font-size: 4rem;
     text-transform: uppercase;
     color: var(--black-secondary);
+    text-shadow: none;
+
 }
 
 #inital_max_register a {

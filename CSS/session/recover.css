@@ -3,13 +3,15 @@
     position: relative;
     display: grid;
     justify-items: center;
+    place-content: center;
     height: 100vh;
     min-height: 750px;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 150px 20% 50%;
-    align-items: start;
+    /* align-items: start; */
     font-family: var(--font-login);
+
 }
 
 #inital_max_recover #h2_c__i_s {
@@ -18,7 +20,9 @@
     height: 100%;
     width: 100%;
     justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 #inital_max_recover h2 {
@@ -27,6 +31,7 @@
     font-size: 4rem;
     text-transform: uppercase;
     color: var(--black-secondary);
+    text-shadow: none;
 }
 
 #inital_max_recover #login {
@@ -84,11 +89,15 @@ input[type="email"]:focus {
 
     margin-top: 30px;
     margin-bottom: 10px;
+
 }
 
 #inital_max_recover #login form p:first-child {
 
     line-height: 30px;
+    display: block;
+
+
 }
 
 #inital_max_recover #login form p {
@@ -100,7 +109,7 @@ input[type="email"]:focus {
 
     display: flex;
     height: 50px;
-    width: 501px;
+    width: 500px;
     align-items: center;
     justify-content: center;
 }

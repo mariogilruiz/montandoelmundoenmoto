@@ -1,7 +1,7 @@
 #web_la_serie {
 
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 1290px 101px;
+    grid-template-rows: calc(100vh - 100px) 1450px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -10,17 +10,25 @@
 
 #inital_max_la_serie {
     display: grid;
-    position: relative;
-
-    background-color: black;
+    position: fixed;
     height: 1200px;
     width: 100%;
     z-index: 90;
+
+}
+
+.spacer_la_serie {
+    position: absolute;
+    top: -120px;
+    height: 120px;
+    width: 100vw;
+    z-index: 80;
+    opacity: 1;
+
 }
 
 .video_back_serie {
-
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     width: 100%;
     object-fit: cover;
     /* top: 50%;
@@ -39,7 +47,7 @@
     z-index: 10;
     right: 0px;
     /* top: 34vh; */
-    top: calc(50vh - 120px);
+    top: calc(50vh - 70px);
     background-color: var(--black-opacity);
     border-radius: 5px 0px 0px 5px;
     cursor: pointer;
@@ -48,16 +56,35 @@
 
 .video--link--youtube:hover {
     color: var(--white);
+}
 
+#pag-02_max_la_serie .h2_descript_page {
+    background-color: var(--white-e9);
+    top: 0px;
+}
+
+#pag-02_max_la_serie .h2_logo_pages {
+    top: -20px;
+}
+
+#pag-02_max_la_serie .h3_descript_page h2 {
+    font-family: var(--font-home);
+    margin-top: 90px;
+    opacity: 0;
 }
 
 #pag-02_max_la_serie {
 
     position: relative;
     display: grid;
-    background-color: var(--white-e9);
+    background-image: url(/images/back_web_free_live_free_ride.webp);
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: var(--white-e9); */
     justify-items: center;
-    height: 1200px;
+    height: 1450px;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 490px 800px;
@@ -65,7 +92,17 @@
 }
 
 #web_la_serie .p_descript_page {
-    height: 290px;
+    height: 320px;
+    border-top: 20px solid var(--black-secondary);
+    background-color: var(--white-e9);
+    border-radius: 5px;
+
+}
+
+#web_la_serie #content_02_la_serie {
+
+    /* background-color: var(--black-opacity); */
+    width: 102vw;
 }
 
 #max_content_02_la_serie {
@@ -73,14 +110,16 @@
     position: relative;
     display: grid;
     margin-left: 2px;
-    height: 800px;
+    height: 1000px;
     width: 102vw;
-    background-image: url(/images/back_la_serie_Web_free_live_free_ride.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    /* background-image: url(/images/back_web_free_live_free_ride.webp);
     background-size: cover;
+    background-image: center center;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     justify-items: center;
-    place-content: center;
+    place-content: center; */
     /* border-top: .5px solid grey; */
     /* border-bottom: .5px solid grey; */
     overflow: hidden;
@@ -92,7 +131,7 @@
     position: relative;
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
-    height: 800px;
+    height: 1000px;
     width: 100vw;
     max-width: 1500px;
     place-content: center start;
@@ -115,16 +154,32 @@
 #map #map_selection {
 
     position: absolute;
-    top: 150px;
+    top: 350px;
     right: 100px;
-    height: 450px;
+    height: 250px;
     width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* background-color: var(--black-secondary); */
+    padding: 40px 20px 40px 40px;
+    border-radius: 5px;
 }
 
-#map #map_selection img {
+
+#position_today {
+
+    position: absolute;
+    top: 400px;
+    height: 100px;
+    width: 220px;
+    background-color: var(--black-secondary);
+    padding-top: 50px;
+    border-radius: 5px;
+
+}
+
+#position_today img {
 
     position: absolute;
     height: 40px;
@@ -132,19 +187,19 @@
     transform: rotate(-20deg);
 }
 
-#map #map_selection #position_today p {
+#position_today p {
 
     text-align: center;
     font-size: 1.2rem;
     font-family: var(--font-text-italic);
-    color: var(--black-secondary);
+    color: var(--white);
+    margin-left: 50px;
 }
 
 .session_selection {
 
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
     height: 70px;
 }
 
@@ -155,7 +210,6 @@
 }
 
 #selection_session_2 {
-
     border-radius: 5px;
 
 }
@@ -189,7 +243,7 @@
 
 .session_selection #tienda_01::after {
 
-    content: "Temporada 1";
+    content: "Objetivo 1";
     transition: 200ms ease;
 }
 
@@ -201,7 +255,7 @@
 
 .session_selection #tienda_02::after {
 
-    content: "Temporada 2";
+    content: "Objetivo 2";
 }
 
 .session_selection #tienda_02:hover::after {
@@ -288,7 +342,7 @@
     justify-content: center;
     height: 60px;
     width: 100%;
-    background-color: #ccc;
+    background-color: var(--grey-ccc);
     border-radius: 0px 0px 5px 5px;
     padding-bottom: 10px;
 }

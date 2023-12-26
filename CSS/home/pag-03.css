@@ -6,7 +6,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 850px;
     justify-items: center;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;
@@ -206,7 +206,7 @@
     flex-direction: column;
     grid-area: t;
     padding: 50px 30px 10px 30px;
-    text-align: center;
+    text-align: justify;
     /* overflow-y: scroll; */
     display: block;
     justify-content: start;

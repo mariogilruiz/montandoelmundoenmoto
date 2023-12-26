@@ -130,6 +130,17 @@ header #bttn_home #bttn_h_h {
     background-color: rgb(0, 0, 0, 0);
 }
 
+header #bttn_home #bttn_h_h img {
+
+    height: 60px;
+}
+
+header #bttn_home #bttn_h_h:hover img {
+
+    animation: icons_animation 300ms alternate 2;
+
+}
+
 header #bttn_h_h:active,
 #bttn_sesion_buttom:active,
 #bttn_fuel:active {
@@ -167,8 +178,16 @@ header #bttn_sesion #bttn_sesion_buttom {
 
 header #bttn_sesion #bttn_sesion_buttom img {
 
-    height: 50px;
+    height: 53px;
 }
+
+header #bttn_sesion #bttn_sesion_buttom:hover img {
+
+    height: 50px;
+    animation: icons_animation 300ms alternate 2;
+
+}
+
 
 header #bttn_h {
 

@@ -21,7 +21,7 @@
     place-content: start;
     overflow: hidden;
     z-index: 90;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: 100%;
@@ -39,7 +39,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 20% 80%;
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     height: 600px;
     border-radius: 5px;
@@ -60,6 +60,14 @@
     z-index: 80;
     background-color: var(--white-e9);
 }
+
+/* .slider {
+
+    justify-content: center;
+    align-items: center;
+    place-content: center center;
+    align-content: center;
+} */
 
 .bttn_galery {
 

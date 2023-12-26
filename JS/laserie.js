@@ -1,3 +1,22 @@
+//oculta el video del inicio cuando baje al footer
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elementToHide = document.getElementById("video_back_serie");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 690) {
+            elementToHide.classList.add("hidden_hoome");
+            elementToHide.classList.remove("hidden_home_back");
+
+        } else {
+            elementToHide.classList.remove("hidden_hoome");
+            elementToHide.classList.add("hidden_home_back");
+        }
+    });
+});
+
+
+
 // Pintar los paises de colores
 
 document.getElementById("tienda_01").onmouseover = function () { sesion_01() };
@@ -23,14 +42,14 @@ document.getElementById("tienda_01").onmouseout = function () { sesion_01_out() 
 
 function sesion_01_out() {
 
-    document.getElementById("AL").setAttribute("fill", "#ececec");
-    document.getElementById("ES").setAttribute("fill", "#ececec");
-    document.getElementById("FR").setAttribute("fill", "#ececec");
-    document.getElementById("IT").setAttribute("fill", "#ececec");
-    document.getElementById("SI").setAttribute("fill", "#ececec");
-    document.getElementById("HR").setAttribute("fill", "#ececec");
-    document.getElementById("ME").setAttribute("fill", "#ececec");
-    document.getElementById("AD").setAttribute("fill", "#ececec");
+    document.getElementById("AL").setAttribute("fill", "#2B2B2B");
+    document.getElementById("ES").setAttribute("fill", "#2B2B2B");
+    document.getElementById("FR").setAttribute("fill", "#2B2B2B");
+    document.getElementById("IT").setAttribute("fill", "#2B2B2B");
+    document.getElementById("SI").setAttribute("fill", "#2B2B2B");
+    document.getElementById("HR").setAttribute("fill", "#2B2B2B");
+    document.getElementById("ME").setAttribute("fill", "#2B2B2B");
+    document.getElementById("AD").setAttribute("fill", "#2B2B2B");
     document.getElementById("AL").setAttribute("fill", "red");
 
 
@@ -42,7 +61,7 @@ document.getElementById("AL").onmouseover = function () { location_today() };
 
 function location_today() {
 
-    document.getElementById("position_today").classList.add("appear_map_selecction");
+    document.getElementById("position_today").classList.add("appear_map");
 
 }
 
@@ -52,7 +71,7 @@ document.getElementById("AL").onmouseout = function () { location_today_of() };
 
 function location_today_of() {
 
-    document.getElementById("position_today").classList.remove("appear_map_selecction");
+    document.getElementById("position_today").classList.remove("appear_map");
 
 }
 

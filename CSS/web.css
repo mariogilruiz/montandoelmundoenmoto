@@ -16,7 +16,7 @@ body {
 
     margin: 0;
     padding: 0;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: 100%;
@@ -91,15 +91,18 @@ body {
     height: 100%;
     width: 50%;
     text-align: center;
+    align-items: center;
 
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 h3 {
+    display: block;
     font-size: 2.2rem;
     font-family: var(--font-text);
     color: var(--white);
     text-shadow: none;
-    padding: 50px 0px;
+    margin: 20px;
+
 }
 
 #spacer_02 {
@@ -275,7 +278,7 @@ body {
     max-width: 1200px;
     grid-template-columns: 100%;
     grid-template-rows: 160px 200px;
-    background-color: var(--white-e9);
+
 }
 
 .h2_descript_page {

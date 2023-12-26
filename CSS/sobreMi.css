@@ -32,8 +32,6 @@
 }
 
 
-
-
 #pag-02_max_about {
 
     position: relative;
@@ -54,7 +52,7 @@
     width: 100%;
     justify-items: center;
     align-items: center;
-    background-image: url(/images/La_serie/Sin\ título-3.jpeg);
+    background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: 100%;
@@ -68,7 +66,7 @@
     display: grid;
     max-width: 1200px;
     height: 1700px;
-    width: 100%;
+    width: 95%;
     grid-template-columns: 100%;
     grid-template-rows: 200px 500px 500px 500px;
     background-color: rgb(43, 43, 43, .3);
