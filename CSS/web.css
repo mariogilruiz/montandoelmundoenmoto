@@ -74,7 +74,8 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    justify-content: space-between;
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01 {
@@ -92,6 +93,7 @@ body {
     width: 50%;
     text-align: center;
     align-items: center;
+    max-width: 700px;
 
 }
 
@@ -294,8 +296,8 @@ body {
     position: absolute;
     height: 70px;
     width: 100%;
-    animation: 300ms giro_li 300ms ease 1;
-    -webkit-animation: 300ms giro_li 300ms ease 1;
+    /* animation: 300ms giro_li 300ms ease 1;
+    -webkit-animation: 300ms giro_li 300ms ease 1; */
     text-align: center;
     font-family: var(--font-home);
     letter-spacing: 2px;
@@ -308,7 +310,6 @@ body {
 .h2_logo_pages {
     position: absolute;
     top: -86px;
-
     animation: 500ms giro_li 300ms ease 1;
     -webkit-animation: 500ms giro_li 300ms ease 1;
     z-index: 100;

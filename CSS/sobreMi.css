@@ -1,16 +1,24 @@
 #web_about {
-
     display: grid;
-    grid-template-rows: calc(100vh - 200px) 2180px 102px;
+    grid-template-rows: calc(100vh - 170px) 800px 2300px 101px;
     grid-template-columns: 100%;
     width: 100%;
 }
 
 #web_about a {
-
     color: var(--green-primary-);
 }
 
+.hidden_X_right {
+
+    transform: translateX(110vw);
+    transition: 800ms ease all;
+}
+
+.appear_X_right {
+
+    transform: translateX(0);
+}
 
 #inital_max_about {
 
@@ -19,28 +27,205 @@
     justify-items: center;
     place-content: center;
     overflow: hidden;
-    background-image: url(/images/back_about_me_free_live_free_ride.webp);
+    background-image: url(/images/back_sobre_mi_montandoelmundoenmoto.webp);
     background-size: cover;
-    background-image: center center;
-    background-position: top right;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 170px);
     width: 100%;
     z-index: 90;
+}
+
+#web_about .h2_descript_page h2 {
+    font-size: 5rem;
+    text-shadow: none;
+    position: fixed;
+    top: calc(50vh - 120px);
+    animation: text_type_page 1s alternate 1;
+    -webkit-animation: text_type_page 1s alternate 1;
+}
+
+@keyframes text_type_page {
+    from {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes text_type_page {
+    from {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#web_about #pag-01_max_about {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px;
+    justify-items: center;
+}
+
+#web_about #text_description_initial_pages {
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 90%;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+}
+
+#text_description_initial_pages h3 {
+
+    font-family: var(--font-text-light);
+    font-size: 2rem;
+    text-align: center;
 
 }
 
+#web_about #description_02_page {
+    display: flex;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+#description_02_page_content {
+    height: 80%;
+    position: relative;
+    display: flex;
+    max-width: none;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.banner_pages {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 25%;
+    cursor: pointer;
+    transition: 300ms ease all;
+    text-align: center;
+}
+
+.banner_pages img {
+    position: relative;
+    object-fit: cover;
+    height: auto;
+    width: 50%;
+    transition: 300ms ease all;
+}
+
+#banner_01 img {
+    width: 51%;
+}
+
+#banner_02 img {
+    width: 40%;
+}
+
+.banner_pages:hover img {
+    animation: icons_animation 300ms alternate 2;
+}
+
+.banner_pages a {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_pages h3 {
+    position: absolute;
+    color: white;
+    font-family: var(--font-social);
+    font-size: 2rem;
+    font-weight: bolder;
+    bottom: 20px;
+    right: 30px;
+}
+
+.banner_pages:hover {
+    transform: scale(1.1);
+    height: 115%;
+    border-radius: 5px;
+}
+
+#banner_01 {
+    background: var(--youtube-primary);
+}
+
+#banner_01:hover {
+    background: #282828;
+    border: 1px solid var(--black-secondary);
+}
+
+#banner_02 {
+    background: var(--ing-primary);
+}
+
+
+#banner_02:hover {
+    background: rgb(40, 90, 235);
+}
+
+#banner_03 {
+    background: var(--face-primary);
+}
+
+#banner_03:hover {
+    background: #263951;
+}
+
+#banner_04 {
+    background: var(--tktk-primary);
+}
+
+#banner_04:hover {
+    background: var(--tktk-secondary);
+}
+
+.spacer_la_serie_180 {
+    position: absolute;
+    top: 0px;
+    height: 150px;
+    width: 100vw;
+    z-index: 80;
+    transform: rotateX(180deg);
+}
+
+/* max_about - es donde hay que aumentar el height para que se ve el footer  */
 
 #pag-02_max_about {
 
     position: relative;
     display: grid;
     background-color: var(--white-e9);
-    height: 2180px;
+    height: 2880px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 180px 2000px;
+    grid-template-rows: 180px 2700px;
     z-index: 90;
     justify-items: center;
 }
@@ -48,7 +233,7 @@
 #max_content_02_about {
 
     display: grid;
-    height: 2000px;
+    height: 2401px;
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -65,10 +250,10 @@
 
     display: grid;
     max-width: 1200px;
-    height: 1700px;
+    height: 2100px;
     width: 95%;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 500px 500px 500px;
+    grid-template-rows: 100px 300px 500px 500px 500px 100px 100px;
     background-color: rgb(43, 43, 43, .3);
     border-radius: 5px;
     font-family: var(--font-text-light);
@@ -77,28 +262,94 @@
     line-height: 1.7rem;
 }
 
-#content_02_about_01 {
+#content_02_about_Prologo,
+#content_02_about_capo_01 {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    background-color: var(--blue-primary);
+    color: var(--white-e9);
+
+}
+
+.index_cap_blog_h2 {
 
     display: flex;
+    height: 100px;
+    width: 25%;
+    background-color: var(--orange-primary);
+    font-size: 3rem;
+    text-shadow: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    opacity: 0;
+    font-family: var(--font-text);
+}
+
+.index_cap_blog_h2_name {
+    display: flex;
+    font-size: 3rem;
+    text-shadow: none;
+    justify-content: center;
+    width: 75%;
+    opacity: 0;
+}
+
+#h4_content_02_about_container {
+
+    position: relative;
+    display: flex;
     height: 200px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+}
+
+#content_02_about_01 {
+    position: relative;
+    display: flex;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-content: center;
-    border-top: 20px solid var(--black-secondary);
+    overflow: hidden;
 }
 
 #content_02_about_01 h2 {
 
     display: block;
-    margin: 0px 30px 20px 30px;
     font-size: 1.7rem;
     line-height: 2.2rem;
     text-align: center;
-    box-sizing: border-box;
     text-transform: uppercase;
     font-family: var(--font-bttn-fuell);
     color: var(--black-secondary);
     text-shadow: none;
+}
+
+.comming {
+    position: relative;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#comming .animation_machine_text {
+
+    font-family: var(--font-text);
+    font-weight: bolder;
+}
+
+#comming .animation_machine_barra {
+
+    transform: rotate(0deg);
 }
 
 /* comienzo slider */

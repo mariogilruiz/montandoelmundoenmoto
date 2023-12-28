@@ -1,7 +1,7 @@
 #web_la_serie {
 
     display: grid;
-    grid-template-rows: calc(100vh - 100px) 1450px 101px;
+    grid-template-rows: calc(100vh - 100px) 1530px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -19,11 +19,10 @@
 
 .spacer_la_serie {
     position: absolute;
-    top: -120px;
-    height: 120px;
+    top: -150px;
+    height: 150px;
     width: 100vw;
     z-index: 80;
-    opacity: 1;
 
 }
 
@@ -59,43 +58,69 @@
 }
 
 #pag-02_max_la_serie .h2_descript_page {
-    background-color: var(--white-e9);
-    top: 0px;
+    /* background-image: url(/images/back_web_free_live_free_ride.webp);
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: 100%; */
+    top: 16px;
+    /* background-attachment: fixed; */
+
+    width: 50%;
+    height: 150px;
+    border-radius: 5px;
+    background-color: var(--black-opacity);
 }
 
 #pag-02_max_la_serie .h2_logo_pages {
-    top: -20px;
+    top: 30px;
+}
+
+#pag-02_max_la_serie .h2_logo_pages img {
+
+    height: 90px;
+    width: 250px;
+
 }
 
 #pag-02_max_la_serie .h3_descript_page h2 {
     font-family: var(--font-home);
-    margin-top: 90px;
-    opacity: 0;
+    margin-top: -10px;
+    opacity: 1;
+    color: var(--white);
+    font-size: 2.5rem;
 }
+
+#web_la_serie .h2_logo_la_serie img {
+    height: 120px;
+    width: auto;
+}
+
 
 #pag-02_max_la_serie {
 
     position: relative;
     display: grid;
-    background-image: url(/images/back_web_free_live_free_ride.webp);
-    background-size: cover;
+    /* background-image: url(/images/back_web_free_live_free_ride.webp); */
+    /* background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* background-color: var(--white-e9); */
+    background-attachment: fixed; */
+    background-color: var(--white-e9);
     justify-items: center;
     height: 1450px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 490px 800px;
+    grid-template-rows: 530px 800px;
     z-index: 90;
+
 }
 
 #web_la_serie .p_descript_page {
-    height: 320px;
+    height: 350px;
     border-top: 20px solid var(--black-secondary);
-    background-color: var(--white-e9);
+    /* background-color: var(--black-opacity); */
     border-radius: 5px;
+    font-weight: 400;
 
 }
 
@@ -112,14 +137,14 @@
     margin-left: 2px;
     height: 1000px;
     width: 102vw;
-    /* background-image: url(/images/back_web_free_live_free_ride.webp);
+    background-image: url(/images/back_web_free_live_free_ride.webp);
     background-size: cover;
     background-image: center center;
     background-position: top right;
     background-repeat: no-repeat;
     background-attachment: fixed;
     justify-items: center;
-    place-content: center; */
+    place-content: center;
     /* border-top: .5px solid grey; */
     /* border-bottom: .5px solid grey; */
     overflow: hidden;
@@ -154,14 +179,14 @@
 #map #map_selection {
 
     position: absolute;
-    top: 350px;
+    top: 170px;
     right: 100px;
     height: 250px;
     width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: var(--black-secondary); */
+    background-color: var(--black-opacity);
     padding: 40px 20px 40px 40px;
     border-radius: 5px;
 }
@@ -170,7 +195,7 @@
 #position_today {
 
     position: absolute;
-    top: 400px;
+    top: 170px;
     height: 100px;
     width: 220px;
     background-color: var(--black-secondary);

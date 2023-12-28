@@ -1,10 +1,41 @@
+//scrollY position en consola
+
+window.onscroll = function () {
+    var y = window.scrollY;
+    console.log(y);
+};
+
+
 // -------- efecto texto inicial de las pages comunes aparareciendo desde eje Y 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDivph = document.getElementById("index_cap_blog_h2");
+    const hiddenDivph2 = document.getElementById("index_cap_blog_h2_name");
+
+
+    setTimeout(() => {
+
+    }, 1000);
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 790) {
+
+            hiddenDivph2.classList.add("appear_map");
+            setTimeout(() => {
+                hiddenDivph.classList.add("appear_map");
+            }, 1000);
+
+
+        }
+    });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDivph = document.getElementById("h4_content_02_about");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 170) {
+        if (window.scrollY > 1000) {
             hiddenDivph.classList.add("apper_text_pages");
         }
     });
@@ -17,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenDivph = document.getElementById("content_02_about_02");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 1250) {
             hiddenDivph.classList.add("appear_slow");
         }
     });
@@ -27,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenDivph = document.getElementById("content_02_about_03");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 800) {
+        if (window.scrollY > 1750) {
             hiddenDivph.classList.add("appear_slow");
         }
     });
@@ -37,8 +68,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenDivph = document.getElementById("content_02_about_04");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 1200) {
+        if (window.scrollY > 2250) {
             hiddenDivph.classList.add("appear_slow");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDivph = document.getElementById("index_cap_blog_h2_01");
+    const hiddenDivph2 = document.getElementById("index_cap_blog_h2_name_01");
+
+
+    setTimeout(() => {
+
+    }, 1000);
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 2750) {
+
+            hiddenDivph2.classList.add("appear_map");
+            setTimeout(() => {
+                hiddenDivph.classList.add("appear_map");
+            }, 1000);
+
+
         }
     });
 });
@@ -100,4 +153,92 @@ showSlide(currentSlide);
 setInterval(nextSlide, 10000);
 
 
+//------ efecto aparacion de los h2 desde el eje X
 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const hiddenDivph = document.getElementById("el_mundo");
+
+//     window.addEventListener("scroll", function () {
+//         if (window.scrollY > 90) {
+//             hiddenDivph.classList.add("appear_X_right");
+//         }
+//     });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const hiddenDivph = document.getElementById("en_moto");
+
+//     window.addEventListener("scroll", function () {
+//         if (window.scrollY > 250) {
+//             hiddenDivph.classList.add("appear_X_right");
+//         }
+//     });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const hiddenDivph = document.getElementById("con_mario");
+
+//     window.addEventListener("scroll", function () {
+//         if (window.scrollY > 400) {
+//             hiddenDivph.classList.add("appear_X_right");
+//         }
+//     });
+// });
+
+
+// efecto amquina escribir de proxiamante
+
+
+// animacion texto maquina page-03
+
+
+function animacion() {
+    let textoAnimacion = [
+        ["P", "R", "O", "X", "I", "M", "A", "M", "E", "N", "T", "E", " ", ".", ".", "."]
+    ];
+
+    let letraContador = -1;
+    let nivelArray = 0;
+
+    const contenedorAnimacion = document.querySelector(".animation_machine_text");
+
+    function pintarTexto() {
+        letraContador++;
+        contenedorAnimacion.textContent += textoAnimacion[nivelArray][letraContador];
+
+        if (letraContador === textoAnimacion[nivelArray].length - 1) {
+            clearInterval(intervalo);
+
+            setTimeout(() => {
+
+                intervalo = setInterval(() => {
+                    contenedorAnimacion.textContent = "";
+                    letraContador--;
+                    textoAnimacion[nivelArray].pop();
+
+                    textoAnimacion[nivelArray].forEach((elemento) => {
+                        contenedorAnimacion.textContent += elemento;
+                    });
+
+                    if (letraContador < 0) {
+                        clearInterval(intervalo);
+                        nivelArray++;
+                        intervalo = setInterval(pintarTexto, 150);
+
+
+                        if (nivelArray > textoAnimacion.length - 1) {
+                            clearInterval(intervalo);
+                            nivelArray = 0;
+                            animacion();
+                        }
+                    }
+
+                }, 150);
+
+            }, 1000);
+        }
+    }
+    let intervalo = setInterval(pintarTexto, 150);
+}
+window.addEventListener("load", animacion);
