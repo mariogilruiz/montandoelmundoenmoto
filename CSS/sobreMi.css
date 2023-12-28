@@ -9,11 +9,11 @@
     color: var(--green-primary-);
 }
 
-.hidden_X_right {
+/* .hidden_X_right {
 
     transform: translateX(110vw);
     transition: 800ms ease all;
-}
+} */
 
 .appear_X_right {
 

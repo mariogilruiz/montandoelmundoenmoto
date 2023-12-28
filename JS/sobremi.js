@@ -195,7 +195,11 @@ setInterval(nextSlide, 10000);
 
 function animacion() {
     let textoAnimacion = [
-        ["P", "R", "O", "X", "I", "M", "A", "M", "E", "N", "T", "E", " ", ".", ".", "."]
+        ["P", "R", "O", "X", "I", "M", "A", "M", "E", "N", "T", "E", " ", ".", ".", "."],
+        ["I", "R", "É", " ", "", "E", "S", "C", "R", "I", "B", "I", "E", "N", "D", "O"],
+        ["+", " ", "H", "I", "S", "T", "O", "R", "I", "A",],
+        ["+", " ", "A", "V", "E", "N", "T", "U", "R", "A", "S"]
+
     ];
 
     let letraContador = -1;

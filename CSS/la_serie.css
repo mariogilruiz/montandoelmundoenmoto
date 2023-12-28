@@ -1,7 +1,6 @@
 #web_la_serie {
-
     display: grid;
-    grid-template-rows: calc(100vh - 100px) 1530px 101px;
+    grid-template-rows: calc(100vh - 170px) 2000px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -11,10 +10,18 @@
 #inital_max_la_serie {
     display: grid;
     position: fixed;
-    height: 1200px;
+    height: calc(100vh - 170px);
     width: 100%;
     z-index: 90;
+}
 
+#web_la_serie .h2_descript_page h2 {
+    font-size: 5rem;
+    text-shadow: none;
+    position: fixed;
+    top: calc(50vh - 120px);
+    animation: text_type_page 1s alternate 1;
+    -webkit-animation: text_type_page 1s alternate 1;
 }
 
 .spacer_la_serie {
@@ -23,16 +30,12 @@
     height: 150px;
     width: 100vw;
     z-index: 80;
-
 }
 
 .video_back_serie {
     height: calc(100vh - 100px);
     width: 100%;
     object-fit: cover;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .video--link--youtube {
@@ -45,7 +48,6 @@
     padding: 20px;
     z-index: 10;
     right: 0px;
-    /* top: 34vh; */
     top: calc(50vh - 70px);
     background-color: var(--black-opacity);
     border-radius: 5px 0px 0px 5px;
@@ -57,29 +59,64 @@
     color: var(--white);
 }
 
-#pag-02_max_la_serie .h2_descript_page {
-    /* background-image: url(/images/back_web_free_live_free_ride.webp);
-    background-repeat: repeat-y;
-    background-position: center center;
-    background-size: 100%; */
-    top: 16px;
-    /* background-attachment: fixed; */
-
-    width: 50%;
-    height: 150px;
-    border-radius: 5px;
-    background-color: var(--black-opacity);
+#pag-02_max_la_serie {
+    position: relative;
+    display: grid;
+    background-color: var(--white-e9);
+    justify-items: center;
+    height: 2000px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 800px 800px;
+    z-index: 90;
 }
 
-#pag-02_max_la_serie .h2_logo_pages {
-    top: 30px;
+#pag-02_max_la_serie a {
+    color: var(--green-primary-);
 }
 
-#pag-02_max_la_serie .h2_logo_pages img {
+/* #pag-02_max_la_serie .p_descript_page {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    border-top: 0px solid var(--black-secondary);
+    border-radius: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--font-text-italic);
+    font-size: 1.2rem;
+    font-weight: 300;
+    overflow: hidden;
+} */
 
-    height: 90px;
-    width: 250px;
+#web_la_serie .description_02_page {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    height: 800px;
+    max-width: none;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 200px;
 
+}
+
+#web_la_serie #text_description_initial_laserie {
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 90%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+
+}
+
+#web_la_serie #text_description_initial_laserie h3 {
+    font-family: var(--font-text-light);
+    font-size: 2rem;
+    text-align: center;
 }
 
 #pag-02_max_la_serie .h3_descript_page h2 {
@@ -95,43 +132,17 @@
     width: auto;
 }
 
-
-#pag-02_max_la_serie {
-
-    position: relative;
-    display: grid;
-    /* background-image: url(/images/back_web_free_live_free_ride.webp); */
-    /* background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    background-color: var(--white-e9);
-    justify-items: center;
-    height: 1450px;
-    width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 530px 800px;
-    z-index: 90;
-
-}
-
 #web_la_serie .p_descript_page {
     height: 350px;
-    border-top: 20px solid var(--black-secondary);
-    /* background-color: var(--black-opacity); */
     border-radius: 5px;
     font-weight: 400;
-
 }
 
 #web_la_serie #content_02_la_serie {
-
-    /* background-color: var(--black-opacity); */
     width: 102vw;
 }
 
 #max_content_02_la_serie {
-
     position: relative;
     display: grid;
     margin-left: 2px;
@@ -145,14 +156,11 @@
     background-attachment: fixed;
     justify-items: center;
     place-content: center;
-    /* border-top: .5px solid grey; */
-    /* border-bottom: .5px solid grey; */
     overflow: hidden;
     z-index: 50;
 }
 
 #map {
-
     position: relative;
     display: grid;
     /* grid-template-columns: 1fr 1fr; */
