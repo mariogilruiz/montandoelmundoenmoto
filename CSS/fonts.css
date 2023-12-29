@@ -136,3 +136,8 @@
     font-family: "nunito-bold";
     src: url(/fonts/NunitoSans_10pt-Black.ttf);
 }
+
+@font-face {
+    font-family: "rust-g";
+    src: url(/fonts/IntroRustG-Base2Line.otf);
+}

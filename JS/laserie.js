@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const elementToHide = document.getElementById("video_back_serie");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 690) {
+        if (window.scrollY > 1900) {
             elementToHide.classList.add("hidden_hoome");
             elementToHide.classList.remove("hidden_home_back");
 
@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+//scrollY position en consola
+
+window.onscroll = function () {
+    var y = window.scrollY;
+    console.log(y);
+};
 
 
 
@@ -88,9 +96,19 @@ function location_today_of() {
 //     });
 // });
 
+// Muestra el  h2_baneer_youyube_laSerie
 
+document.addEventListener("DOMContentLoaded", function () {
+    const hiddenDiv = document.getElementById("h2_baneer_youyube_laSerie");
 
-// Muestra el mapa_svg
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 640) {
+            hiddenDiv.classList.add("appear_Y_slow");
+        }
+    });
+});
+
+// Muestra el mapa_svg  h2_baneer_youyube_laSerie
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("europe_svg");

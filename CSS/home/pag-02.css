@@ -71,6 +71,7 @@
     position: absolute;
     /* font-size: 3rem; */
     color: var(--white);
+    font-family: var(--font-home-2);
     width: 100%;
     text-align: center;
     align-items: center;

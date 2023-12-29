@@ -1,6 +1,6 @@
 #web_la_serie {
     display: grid;
-    grid-template-rows: calc(100vh - 170px) 2000px 101px;
+    grid-template-rows: calc(100vh - 170px) 2400px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -18,8 +18,9 @@
 #web_la_serie .h2_descript_page h2 {
     font-size: 5rem;
     text-shadow: none;
+    width: auto;
     position: fixed;
-    top: calc(50vh - 120px);
+    top: calc(50vh - 150px);
     animation: text_type_page 1s alternate 1;
     -webkit-animation: text_type_page 1s alternate 1;
 }
@@ -48,7 +49,7 @@
     padding: 20px;
     z-index: 10;
     right: 0px;
-    top: calc(50vh - 70px);
+    top: calc(50vh - 140px);
     background-color: var(--black-opacity);
     border-radius: 5px 0px 0px 5px;
     cursor: pointer;
@@ -64,40 +65,32 @@
     display: grid;
     background-color: var(--white-e9);
     justify-items: center;
-    height: 2000px;
+    height: 2400px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 850px 800px;
+    grid-template-rows: 1250px 800px;
     z-index: 90;
 }
+
+#web_la_serie #text_description_initial_laserie h3 {
+    font-family: var(--font-text-light);
+    font-size: 2rem;
+    text-align: center;
+}
+
 
 #pag-02_max_la_serie a {
     color: var(--green-primary-);
 }
 
-/* #pag-02_max_la_serie .p_descript_page {
-    display: flex;
-    height: 200px;
-    width: 100%;
-    border-top: 0px solid var(--black-secondary);
-    border-radius: 0px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-family: var(--font-text-italic);
-    font-size: 1.2rem;
-    font-weight: 300;
-    overflow: hidden;
-} */
-
 #web_la_serie .description_02_page {
     display: grid;
     place-content: center;
-    justify-items: center;
-    height: 850px;
+    /* justify-items: start; */
+    height: 1350px;
     max-width: none;
     grid-template-columns: 100%;
-    grid-template-rows: 500px 350px;
+    grid-template-rows: 500px 300px 100px 450px;
 
 }
 
@@ -110,43 +103,159 @@
     justify-content: center;
     align-items: start;
     margin-top: 30px;
-
 }
 
 #banner_initial_laserie {
     position: relative;
     display: flex;
     width: 100%;
-    height: 350px;
-    background-color: #17BD20;
+    height: 300px;
 }
 
-#web_la_serie #text_description_initial_laserie h3 {
-    font-family: var(--font-text-light);
-    font-size: 2rem;
-    text-align: center;
+#banner_youtube_back {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 75%;
+    background-image: url(/images/back_banner_youtube_laSerie.webp);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
-
-/* #pag-02_max_la_serie .h3_descript_page h2 {
+#banner_youtube_back h2 {
     font-family: var(--font-home);
-    margin-top: -10px;
-    opacity: 1;
-    color: var(--white);
-    font-size: 2.5rem;
-} */
-
-/* #web_la_serie .h2_logo_la_serie img {
-    height: 120px;
+    font-size: 5.5rem;
+    height: auto;
     width: auto;
+}
+
+#banner_blog {
+    position: relative;
+    background-color: var(--blue-secondary);
+    z-index: 90;
+
+}
+
+#banner_initial_laserie #banner_01::after {
+
+    content: "Súbe";
+    position: absolute;
+    color: white;
+    font-family: var(--font-social);
+    font-size: 2rem;
+    font-weight: bolder;
+    bottom: 20px;
+    transition: 300ms ease all;
+    right: 30px;
+}
+
+#banner_initial_laserie #banner_01:hover::after {
+
+    content: "que te llevo";
+    position: absolute;
+    color: white;
+    font-family: var(--font-social);
+    font-size: 2rem;
+    font-weight: bolder;
+    bottom: 20px;
+    right: 30px;
+    transition: 300ms ease all;
+
+}
+
+#banner_flfr_flash {
+
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    opacity: .9;
+    height: 100px;
+    width: 100%;
+    transition: 300ms ease all;
+}
+
+
+
+
+#banner_flfr_flash_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 300ms ease all;
+}
+
+#banner_flfr_flash_content:hover {
+    background-color: #bc6317;
+}
+
+/* #banner_flfr_flash img {
+
+    height: 50px;
+    width: 250px;
 } */
 
-/* #web_la_serie .p_descript_page {
-    height: 350px;
+#text_youtube_banner_laSerie {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    height: 300px;
+    width: 100%;
+    /* background-color: aqua; */
+
+}
+
+#banner_initial_laserie #banner_01 {
+    position: relative;
+    z-index: 2;
+}
+
+#text_youtube_banner_laSerie_content {
+
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-ccc);
+}
+
+#text_youtube_banner_laSerie_content p {
+    display: block;
+    font-family: var(--font-text-italic);
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 20px;
+    font-weight: 300;
+    width: 40%;
+
+}
+
+
+#text_youtube_banner_laSerie_content button {
+
+    background-color: var(--white-e9);
+    border: none;
+    width: 150px;
+    height: 40px;
     border-radius: 5px;
-    font-weight: 400;
-} */
+    font-family: var(--font-text-italic);
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* -----------------siguiente container------------------ */
 
 #web_la_serie #content_02_la_serie {
     width: 102vw;
@@ -156,14 +265,13 @@
     position: relative;
     display: grid;
     margin-left: 2px;
-    height: 1000px;
+    height: 1150px;
     width: 102vw;
     background-image: url(/images/back_web_free_live_free_ride.webp);
-    background-size: cover;
-    background-image: center center;
-    background-position: top right;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
+    background-size: 100%;
+    background-position: center center;
     justify-items: center;
     place-content: center;
     overflow: hidden;
@@ -173,10 +281,10 @@
 #map {
     position: relative;
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     height: 1000px;
     width: 100vw;
     max-width: 1500px;
+    margin-top: 100px;
     place-content: center start;
 }
 
@@ -340,6 +448,9 @@
     animation-fill-mode: backwards;
     animation-delay: 100ms;
     animation-timing-function: ease;
+    -webkit-animation-name: con_map 400ms 100ms backwards ease 1;
+
+
 }
 
 @keyframes con_map {
@@ -352,6 +463,17 @@
     }
 }
 
+@-webkit-keyframes con_map {
+    0% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
 .appear_map_selecction {
 
     opacity: 1;
@@ -362,9 +484,34 @@
     animation-fill-mode: backwards;
     animation-delay: 100ms;
     animation-timing-function: ease;
+    -webkit-animation-name: con_map_selecction 400ms 100ms backwards ease 1;
+}
+
+
+.appear_Y_slow {
+    opacity: 1;
+    visibility: visible;
+    animation-name: con_map_selecction;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 100ms;
+    animation-timing-function: ease;
+    -webkit-animation-name: con_map_selecction 1s 100ms backwards ease 1;
+
 }
 
 @keyframes con_map_selecction {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes con_map_selecction {
     0% {
         transform: translateX(300%);
     }
@@ -403,7 +550,7 @@
     align-items: end;
     height: 100%;
     width: 100%;
-    font-family: var(--font-home);
+    font-family: var(--font-home-2);
     color: var(--orange-primary);
     font-size: 2rem;
 

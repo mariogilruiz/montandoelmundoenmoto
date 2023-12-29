@@ -122,6 +122,8 @@
 #web #initial_max #hideOnScroll h1,
 h2 {
     position: relative;
+    /* height: auto;
+    width: auto; */
     font-family: var(--font-home);
     letter-spacing: 2px;
     font-size: 7.5rem;

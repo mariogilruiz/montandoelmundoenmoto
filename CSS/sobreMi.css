@@ -169,7 +169,7 @@
 }
 
 .banner_pages:hover {
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
     height: 115%;
     border-radius: 5px;
 }
@@ -299,6 +299,7 @@
     justify-content: center;
     width: 75%;
     opacity: 0;
+    font-family: var(--font-home-2);
 }
 
 #h4_content_02_about_container {
