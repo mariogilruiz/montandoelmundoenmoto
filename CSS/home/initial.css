@@ -55,6 +55,7 @@
     height: 100%;
     object-fit: cover;
 
+
 }
 
 #initial_max>img {
@@ -221,4 +222,17 @@ h2 {
 
     opacity: 1;
 
+}
+
+
+/* efecto flash */
+
+#miElemento {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+    /* Inicia oculto */
+    transition: opacity 1500ms ease;
+    z-index: 100;
 }

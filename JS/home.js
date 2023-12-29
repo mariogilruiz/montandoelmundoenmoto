@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     texts[currentIndex].classList.add("visibility");
 
-    setInterval(rotateText, 10000);
+    setInterval(rotateText, 12000);
 });
 
 //scrollY position en consola
@@ -173,38 +173,91 @@ var imagenes = [
 
 var contador = 0;
 
-function moveRight() {
-    const $imagen = $(document.Imagen);
-    const $destello = $('.destello');
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtén el elemento
+    var miElemento = document.getElementById("miElemento");
 
-    document.Imagen.src = imagenes[contador];
+    // Función para realizar el destello
+    function destellar() {
+        // Ajusta la opacidad para mostrar el destello de manera suave
+        miElemento.style.opacity = "1";
 
-    contador = (contador + 1) % imagenes.length;
+        // Restaura la opacidad después de 300 ms
+        setTimeout(function () {
+            miElemento.style.opacity = "0";
+        }, 400);
+    }
 
-    $destello.css('opacity', 0);
+    // Función moveRight
+    function moveRight() {
+        const $imagen = $(document.Imagen);
 
-    $imagen.on('load', function () {
-        gsap.fromTo(
-            $imagen,
-            { scale: 1.1 },
-            {
-                scale: 1,
-                duration: 10,
-                ease: "ease-out",
-                onStart: function () {
-                    gsap.to($destello, { opacity: 1, duration: 0.5, ease: "ease-in-out" });
-                },
-                onComplete: function () {
-                    gsap.to($destello, { opacity: 0, duration: 0.5, ease: "ease-in-out" });
+
+        document.Imagen.src = imagenes[contador];
+
+        contador = (contador + 1) % imagenes.length;
+
+
+
+        $imagen.on('load', function () {
+            gsap.fromTo(
+                $imagen,
+                { scale: 1 },
+                {
+                    scale: 1.1,
+                    duration: 12,
+                    ease: "ease-in-out",
+
                 }
-            }
-        );
-    });
-}
+            );
+        });
+    }
 
-moveRight();
+    // Llama a ambas funciones una vez que la página se carga
+    destellar();
+    moveRight();
 
-setInterval(moveRight, 10000);
+    // Configura el intervalo para ejecutar ambas funciones cada 10 segundos
+    setInterval(function () {
+        destellar();
+        moveRight();
+    }, 12000);
+});
+
+// funcion slider indiviual sin destello
+
+// function moveRight() {
+//     const $imagen = $(document.Imagen);
+//     const $destello = $('.destello');
+
+//     document.Imagen.src = imagenes[contador];
+
+//     contador = (contador + 1) % imagenes.length;
+
+//     $destello.css('opacity', 0);
+
+//     $imagen.on('load', function () {
+//         gsap.fromTo(
+//             $imagen,
+//             { scale: 1.1 },
+//             {
+//                 scale: 1,
+//                 duration: 10,
+//                 ease: "ease-out",
+//                 onStart: function () {
+//                     gsap.to($destello, { opacity: 1, duration: 0.5, ease: "ease-in-out" });
+//                 },
+//                 onComplete: function () {
+//                     gsap.to($destello, { opacity: 0, duration: 0.5, ease: "ease-in-out" });
+//                 }
+//             }
+//         );
+//     });
+// }
+
+// moveRight();
+
+// setInterval(moveRight, 10000);
 
 
 // animacion texto maquina page-03
@@ -293,6 +346,29 @@ closemodal.addEventListener('click', (e) => {
 
 
 
+//efecto flash individual
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Obtén el elemento
+//     var miElemento = document.getElementById("miElemento");
+
+//     // Función para realizar el destello
+//     function destellar() {
+//         // Ajusta la opacidad para mostrar el destello de manera suave
+//         miElemento.style.opacity = "1";
+
+//         // Restaura la opacidad después de 300 ms
+//         setTimeout(function () {
+//             miElemento.style.opacity = "0";
+//         }, 200);
+//     }
+
+//     // Llama a la función destellar una vez que la página se carga
+//     destellar();
+
+//     // Configura el intervalo para ejecutar la función cada 10 segundos
+//     setInterval(destellar, 10000);
+// });
 
 
 
