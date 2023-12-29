@@ -1,9 +1,11 @@
 #web_about {
     display: grid;
-    grid-template-rows: calc(100vh - 170px) 800px 2300px 101px;
+    grid-template-rows: calc(100vh - 170px) 800px 2600px;
     grid-template-columns: 100%;
     width: 100%;
 }
+
+/* con el ultimo valor del grid-template-rows, se controla la aparicion del div "importante no tener el background-color acrivado del contanainer max" */
 
 #web_about a {
     color: var(--green-primary-);
@@ -221,7 +223,7 @@
 
     position: relative;
     display: grid;
-    background-color: var(--white-e9);
+    /* background-color: var(--white-e9); */
     height: 2880px;
     width: 100%;
     grid-template-columns: 100%;
