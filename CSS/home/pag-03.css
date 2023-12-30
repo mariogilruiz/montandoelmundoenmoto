@@ -4,7 +4,7 @@
     display: grid;
     /* background-color: var(--grey-ccc); */
     grid-template-columns: 100%;
-    grid-template-rows: 850px;
+    grid-template-rows: 960px;
     justify-items: center;
     background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
@@ -23,10 +23,9 @@
 
     display: grid;
     max-width: 1200px;
-    height: 850px;
-    width: 100% - 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: 960px;
+    width: 100%;
+
     grid-template-columns: repeat(8, 12%);
     grid-template-rows: repeat(6, 100px);
     grid-template-areas:

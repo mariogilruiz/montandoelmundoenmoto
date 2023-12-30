@@ -30,7 +30,7 @@ body {
 #web {
 
     display: grid;
-    grid-template-rows: 100vh 768px 50px 400px 50px 850px 250px 250px;
+    grid-template-rows: 100vh 850px 100px 350px 50px 960px 250px 250px;
     grid-template-columns: 100%;
 }
 
@@ -38,7 +38,7 @@ body {
 
     position: relative;
     display: grid;
-    height: 50px;
+    height: 100px;
     width: 100%;
     z-index: 90;
     background-color: var(--white-e9);
@@ -48,16 +48,16 @@ body {
 
     position: relative;
     display: flex;
-    height: 400px;
+    height: 350px;
     width: 100%;
     z-index: 95;
     box-sizing: border-box;
-    border: 25px solid var(--white-e9);
+    /* border: 25px solid var(--white-e9); */
     /* text-align: center;
     align-items: center;
     justify-content: center; */
-    outline: 20px solid var(--white-e9);
-    border-radius: 35px;
+    /* outline: 20px solid var(--white-e9);
+    border-radius: 35px; */
 }
 
 #banner_fuel_home_max #banner_fuel_home_content {
@@ -65,8 +65,10 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 0, 0, .7);
+    /* background-color: var(--grey-ccc); */
     justify-content: center;
+
+
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_content {
@@ -75,7 +77,8 @@ body {
     height: 100%;
     width: 100%;
     /* max-width: 1200px; */
-    justify-content: space-between;
+    justify-content: center;
+    background-color: var(--grey-ccc);
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01 {
@@ -83,28 +86,64 @@ body {
     position: relative;
     display: flex;
     height: 100%;
-    width: 50%;
+    width: 25%;
+}
+
+#banner_fuel_home_max .banner_pages {
+    /* width: 95.3%; */
+    width: 100%;
+}
+
+#banner_donacion button {
+    position: relative;
+    display: block;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #bab5b4;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+#banner_donacion button:active {
+    box-shadow: inset 0px 0px 0px black;
+    transform: scale(1);
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 {
     position: relative;
     display: flex;
     height: 100%;
-    width: 50%;
+    width: 75%;
     text-align: center;
     align-items: center;
-    max-width: 700px;
+    /* max-width: 700px; */
+    box-sizing: border-box;
+    /* background-color: var(--black-secondary); */
+    z-index: 3;
+    overflow: hidden;
+}
+
+#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 video {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 h3 {
     display: block;
-    font-size: 2.2rem;
-    font-family: var(--font-text);
     color: var(--white);
-    text-shadow: none;
-    margin: 20px;
-
+    text-shadow: 0px 0px 9px black;
+    background-color: var(--black-opacity);
+    padding: 15%;
+    font-family: var(--font-text-light);
+    font-size: 2rem;
+    z-index: 1;
 }
 
 #spacer_02 {

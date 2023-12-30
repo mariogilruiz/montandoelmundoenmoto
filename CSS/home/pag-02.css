@@ -4,7 +4,7 @@
     /* background-color: rgb(198, 195, 35); */
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-    height: 768px;
+    height: 850px;
     width: 100%;
     background-image: url(/images/back_home_initial_montando_el_munod_en_moto.png);
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     max-width: 1200px;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: 280px 280px;
-    height: 768px;
+    height: 850px;
     width: 100%;
     /* row-gap: 5px;
     column-gap: 5px; */

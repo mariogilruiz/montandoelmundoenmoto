@@ -61,10 +61,10 @@ window.onscroll = function () {
 // efecto aparacion div banner transparente
 
 document.addEventListener("DOMContentLoaded", function () {
-    const hiddenDiv = document.getElementById("banner_fuel_home_content_content");
+    const hiddenDiv = document.getElementById("banner_fuel_home_content_02_h3");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 900) {
+        if (window.scrollY > 1000) {
             hiddenDiv.classList.add("appear");
         }
     });
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv03 = document.getElementById("content_03");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 1400) {
+        if (window.scrollY > 1500) {
             hiddenDiv03.classList.add("appear");
         }
     });
