@@ -15,14 +15,54 @@
     z-index: 90;
 }
 
-#web_la_serie .h2_descript_page h2 {
+#web_la_serie .h2_descript_page h3 {
     font-size: 5rem;
     text-shadow: none;
     width: auto;
     position: fixed;
     top: calc(50vh - 150px);
-    animation: text_type_page 1s alternate 1;
-    -webkit-animation: text_type_page 1s alternate 1;
+    animation: text_type_page 1s 6s alternate 1;
+    -webkit-animation: text_type_page 1s 6s alternate 1;
+}
+
+#web_la_serie .h2_descript_page h2 {
+
+    height: 130px;
+    width: 450px;
+
+
+}
+
+#web_la_serie .h2_descript_page img {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    top: calc(50vh - 160px);
+
+}
+
+#web_la_serie .scale_logo_FLFR {
+    animation: scale_logo_FLFR 5s ease 1;
+
+    opacity: .8;
+}
+
+@keyframes scale_logo_FLFR {
+
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .8;
+    }
+
 }
 
 .spacer_la_serie {
@@ -127,11 +167,15 @@
 }
 
 #banner_youtube_back h2 {
+    position: absolute;
     font-family: var(--font-home);
     font-size: 5.5rem;
     height: auto;
     width: auto;
+    text-shadow: none;
 }
+
+
 
 #banner_blog {
     position: relative;
@@ -179,9 +223,6 @@
     transition: 300ms ease all;
 }
 
-
-
-
 #banner_flfr_flash_content {
     display: flex;
     justify-content: center;
@@ -190,11 +231,24 @@
     height: 100%;
     width: 100%;
     transition: 300ms ease all;
+    background-color: #bc6317;
+    animation: efecto_banner_laSerie 1s alternate infinite;
 }
 
-#banner_flfr_flash_content:hover {
-    background-color: #bc6317;
+@keyframes efecto_banner_laSerie {
+
+    from {
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
+/* #banner_flfr_flash_content:hover {
+    
+} */
 
 /* #banner_flfr_flash img {
 
@@ -242,17 +296,22 @@
 
 #text_youtube_banner_laSerie_content button {
 
-    background-color: var(--white-e9);
+    background-color: var(--orange-primary);
     border: none;
-    width: 150px;
-    height: 40px;
+    width: 170px;
+    height: 50px;
     border-radius: 5px;
     font-family: var(--font-text-italic);
     font-size: 1.1rem;
+    margin-left: 30%;
+    margin-top: 20px;
 }
 
+#text_youtube_banner_laSerie_content button a {
 
-
+    color: var(--white-e9);
+    font-size: 1.2rem;
+}
 
 
 /* -----------------siguiente container------------------ */
@@ -308,7 +367,7 @@
     top: 170px;
     right: 100px;
     height: 250px;
-    width: 350px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -321,7 +380,7 @@
 #position_today {
 
     position: absolute;
-    top: 170px;
+    top: 350px;
     height: 100px;
     width: 220px;
     background-color: var(--black-secondary);

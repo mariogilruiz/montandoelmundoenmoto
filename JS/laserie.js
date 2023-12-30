@@ -108,31 +108,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Muestra el mapa_svg  h2_baneer_youyube_laSerie
+// Muestra el mapa
 
 document.addEventListener("DOMContentLoaded", function () {
     const hiddenDiv = document.getElementById("europe_svg");
+    const hiddenDiv2 = document.getElementById("map_selection");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 700) {
+        if (window.scrollY > 1350) {
             hiddenDiv.classList.add("appear_map");
+            hiddenDiv2.classList.add("appear_map_selecction");
         }
     });
 });
-
-// Muestra el div con los selectores de temporadas
-
-document.addEventListener("DOMContentLoaded", function () {
-    const hiddenDiv = document.getElementById("map_selection");
-
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 700) {
-            hiddenDiv.classList.add("appear_map_selecction");
-        }
-    });
-});
-
-
 
 
 // Funcion del contador una vez sea añadida la clase que muestra el div que contiene la funcion 
