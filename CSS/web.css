@@ -79,7 +79,6 @@ body {
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01 {
-
     position: relative;
     display: flex;
     width: 25%;
@@ -88,7 +87,6 @@ body {
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01:hover {
-
     height: 115%;
 }
 
@@ -119,7 +117,9 @@ body {
     height: 100%;
     width: 75%;
     text-align: center;
+    justify-content: center;
     align-items: center;
+    justify-items: center;
     /* max-width: 700px; */
     box-sizing: border-box;
     background-color: var(--white-e9);
@@ -127,34 +127,41 @@ body {
     overflow: hidden;
 }
 
+#banner_fuel_home_content_02_content_h3 {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: ease 300ms all;
+}
+
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 video {
     position: absolute;
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    opacity: .2;
+    opacity: .1;
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 h3 {
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
     color: var(--black-secondary);
-    /* text-shadow: 0px 0px 2px black; */
-    padding: 15%;
     font-family: var(--font-text-light);
-    background-color: var(--black-opacity);
-
+    height: 90%;
+    width: 90%;
     font-size: 2rem;
     z-index: 1;
     transition: ease 300ms all;
-}
-
-#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 h3:hover {
-
-    /* background-color: rgb(188, 99, 23, .5); */
-    background-color: rgb(2, 87, 106, .8);
-
 
 }
+
 
 #spacer_02 {
     position: relative;
@@ -193,8 +200,6 @@ body {
 }
 
 #phrase_home p {
-    /* background-color: rgb(0, 0, 0, .3);
-    border-radius: 5px; */
     font-size: 3.6rem;
     font-family: var(--font-alexBrush);
     text-shadow: 0px 0px 15px #013d40;
@@ -210,21 +215,6 @@ body {
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
 }
-
-/* .hidden_pageY {
-
-    transform: translateY(-239vh);
-    opacity: 0.8;
-
-}
-
-.show_page {
-
-    transform: translateY(0);
-    opacity: 1;
-
-
-} */
 
 .hidden_galery {
     opacity: 0;
