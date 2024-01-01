@@ -70,6 +70,14 @@ body {
     border-bottom: 1px solid var(--green-seconday);
 }
 
+#phrase_home .spacer_la_serie_180 {
+
+    height: 10px;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+}
+
 #phrase_home #content_ph {
     display: flex;
     width: 100%;
