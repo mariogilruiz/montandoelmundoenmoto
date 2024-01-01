@@ -26,11 +26,8 @@
 }
 
 #web_la_serie .h2_descript_page h2 {
-
     height: 130px;
     width: 450px;
-
-
 }
 
 #web_la_serie .h2_descript_page img {
@@ -43,7 +40,6 @@
 
 #web_la_serie .scale_logo_FLFR {
     animation: scale_logo_FLFR 5s ease 1;
-
     opacity: .8;
 }
 
@@ -290,6 +286,7 @@
     margin: 20px;
     font-weight: 300;
     width: 40%;
+    max-width: 450px;
 
 }
 

@@ -19,7 +19,7 @@
     position: relative;
     display: grid;
     max-width: 1200px;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 280px 280px;
     height: 850px;
     width: 100%;
@@ -59,7 +59,7 @@
 
 #pag-02_max #content_02 .card_02:hover {
     background-color: rgb(2, 87, 106, .8);
-    transform: scale(105%);
+    transform: scale(105%, 105%);
     border: 2px solid white;
     /* border-radius: 100px; */
     justify-items: center;
@@ -140,4 +140,140 @@
 #pag-02_max #content_02 .card_02:hover img {
     opacity: 1;
     animation: icons_animation 300ms alternate 2;
+}
+
+/* ------ banner donacion */
+
+
+#banner_fuel_home_max {
+
+    position: relative;
+    display: flex;
+    height: 450px;
+    width: 100%;
+    z-index: 95;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-e9);
+
+    /* border: 25px solid var(--white-e9); */
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+    /* outline: 20px solid var(--white-e9);
+    border-radius: 35px; */
+}
+
+#banner_fuel_home_max #banner_fuel_home_content {
+    position: relative;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#banner_fuel_home_max #banner_fuel_home_content video {
+    position: absolute;
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    opacity: .1;
+
+}
+
+#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_content {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01 {
+    position: relative;
+    display: flex;
+    width: 25%;
+    height: 100%;
+    z-index: 5;
+}
+
+#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01:hover {
+    height: 115%;
+}
+
+#banner_fuel_home_max .banner_pages {
+    /* width: 95.3%; */
+    width: 100%;
+}
+
+#banner_donacion button {
+    position: relative;
+    display: block;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #bab5b4;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#banner_donacion button:active {
+    box-shadow: inset 0px 0px 0px black;
+    transform: scale(1);
+}
+
+#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* max-width: 700px; */
+    box-sizing: border-box;
+
+    /* z-index: 3; */
+    overflow: hidden;
+}
+
+#banner_fuel_home_content_02_content_h3 {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: ease 300ms all;
+}
+
+/* #banner_fuel_home_max video {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: .1;
+} */
+
+#banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_02 h3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: var(--black-secondary);
+    font-family: var(--font-text-light);
+    height: 90%;
+    width: 90%;
+    font-size: 2rem;
+    z-index: 1;
+    transition: ease 300ms all;
+
 }

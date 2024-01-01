@@ -1,5 +1,4 @@
 #pag_03_max {
-
     position: relative;
     display: grid;
     /* background-color: var(--grey-ccc); */
@@ -16,11 +15,9 @@
     justify-content: center;
     z-index: 90;
     overflow-y: clip;
-
 }
 
 #pag_03_max #content_03 {
-
     display: grid;
     max-width: 1200px;
     height: 960px;
@@ -36,11 +33,9 @@
         "f f f f t t t t";
     place-content: center;
     justify-content: space-between;
-
 }
 
 #pag_03_max #content_03 #card_03_01 {
-
     display: flex;
     grid-area: f;
     overflow: hidden;
@@ -51,7 +46,6 @@
 }
 
 #pag_03_max #content_03 #card_03_01 img {
-
     object-fit: cover;
     height: 700px;
     width: 100%;
@@ -62,12 +56,10 @@
 }
 
 #pag_03_max #content_03 #card_03_01:hover img {
-
     transform: scale(1.1);
 }
 
 #pag_03_max #content_03 #h2_03 {
-
     display: grid;
     grid-area: h;
     font-size: 3rem;
@@ -82,37 +74,24 @@
 }
 
 #pag_03_max #content_03 .bttn_03 {
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100%;
     height: 100%;
     width: 100%;
     grid-area: b;
-    justify-content: space-between;
-
+    justify-content: center;
+    justify-items: center;
 }
 
-/* #pag_03_max #content_03 #bttn_03 button:first-child {
-
-    margin-left: 2px;
-} */
-
-/* #pag_03_max #content_03 #bttn_03 button:last-child {
-
-    margin-right: 2px;
-} */
-
 #content_03 button:active {
-
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.95);
 }
 
 .bttn_social {
-
+    position: relative;
     border: 0px;
-    /* border-radius: 5px; */
     font-family: var(--font-social);
     text-transform: uppercase;
     font-size: 18px;
@@ -126,61 +105,71 @@
     transition: ease 300ms all;
 }
 
-.bttn_social:hover {
+.bttn_03 a {
+    transition: ease 300ms all;
+    height: 100%;
+    width: 100%;
+}
+
+.bttn_03 a:hover {
     transform: scale(1.1, 1.1);
+    border-radius: 5px;
+    height: 115%;
+}
+
+.bttn_03 a:hover:last-child {
+    width: 95%;
+    transition: 300ms ease all;
+    margin-right: 7px;
+
+}
+
+.bttn_03 a:hover:first-child {
+    width: 95%;
+    transition: 300ms ease all;
+    margin-left: 7px;
 }
 
 .bbtn_you {
-
+    position: relative;
     background-color: var(--youtube-primary);
     box-sizing: border-box;
     border-radius: 5px 0px 0px 5px;
-
 }
 
 .bbtn_you:hover {
-
     background: rgb(234, 234, 234);
     color: var(--black);
     font-weight: 900;
-
-
 }
 
 .bbtn_you::after {
-
     content: "youtube";
-
 }
 
 .bbtn_you:hover::after {
-
     content: "suscribirme";
 }
 
 .bbtn_ing {
-
+    position: relative;
     background: var(--ing-primary);
-
 }
 
 .bbtn_ing:hover {
-
     background: var(--ing-secondary);
 }
 
 .bbtn_ing::after {
-
     content: "instagram";
-
 }
 
 .bbtn_ing:hover::after {
-
     content: "seguir";
 }
 
 .bbtn_tktk {
+    position: relative;
     background-color: var(--tktk-primary);
 }
 
@@ -197,6 +186,7 @@
 }
 
 .bbtn_face {
+    position: relative;
     background-color: var(--face-primary);
     border-radius: 0px 5px 5px 0px;
 }
@@ -217,21 +207,17 @@
     display: flex;
     flex-direction: column;
     grid-area: t;
-    /* padding: 50px 30px 10px 30px; */
     margin-top: 70px;
     height: 100%;
     width: 100%;
     text-align: justify;
-    /* overflow-y: scroll; */
     display: block;
     justify-content: start;
     align-items: center;
     display: flex;
-
 }
 
 #pag_03_max #content_03 #text_03_animation_machine {
-
     grid-area: t;
     margin-top: 15px;
     display: flex;
@@ -240,19 +226,15 @@
     width: 100%;
     height: 30px;
     justify-content: center;
-
 }
 
 #pag_03_max #content_03 #text_03_animation_machine p {
-
     font-family: var(--font-text-italic);
     font-size: 1.7rem;
     font-weight: 300;
-
 }
 
 #pag_03_max #content_03 #text_03 p {
-
     font-family: var(--font-text-italic);
     font-size: 1.6rem;
     font-weight: 300;
@@ -262,7 +244,6 @@
 }
 
 .animation_machine_barra {
-
     display: flex;
     width: 1px;
     height: 30px;
@@ -271,7 +252,6 @@
     margin-left: 10px;
     animation: barra 1s ease infinite;
     -webkit-animation: barra 500ms ease infinite;
-
 }
 
 @-webkit-keyframes barra {
@@ -279,7 +259,6 @@
     50% {
         display: none;
     }
-
 }
 
 @keyframes barra {
@@ -291,12 +270,19 @@
 }
 
 .animation_machine_text {
-
     display: flex;
     font-family: var(--font-text-italic);
     font-size: 1.7rem;
     font-weight: 300;
     padding-right: 1px;
     margin-left: -10px;
+}
+
+.reverse {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    transform: scaleX(-1);
+    bottom: 0px;
 
 }
