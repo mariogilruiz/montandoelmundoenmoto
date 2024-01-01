@@ -1,0 +1,144 @@
+/* -------------------pag_04------------------ */
+
+#pag_04_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+    align-items: center;
+    justify-content: center;
+}
+
+#pag_04_container h3 {
+    display: block;
+    height: 50px;
+    width: 90%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#pag_04_content {
+    position: relative;
+    display: flex;
+    /* background-color: rgb(198, 99, 23, .1); */
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#pag_04_content img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    object-fit: cover;
+
+    transition: 500ms 300ms ease all;
+}
+
+#pag_04_content #icon_youyube {
+
+    height: 100%;
+    width: auto;
+
+
+}
+
+#pag_04_content a {
+    position: relative;
+    z-index: 8;
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+
+}
+
+
+.icon_youyube:hover img {
+    opacity: 0;
+}
+
+/* #pag_04_content:hover #icon_youyube {
+    transform: translateX(8000px);
+} */
+
+#pag_04_content iframe {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    width: 1060px;
+    display: none;
+
+
+}
+
+
+
+/* -------------------pag_05------------------ */
+
+
+#pag_05-container {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#pag_05-container h3 {
+    display: block;
+    height: 50px;
+    width: 90%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#pag_05-content {
+
+    position: relative;
+    display: flex;
+
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#banner_blog-pag-05 {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 60%;
+    background-color: var(--blue-primary);
+    border-top: 50px solid var(--orange-primary);
+    border-radius: 5px;
+    margin-top: -75px;
+}
+
+.spacer_la_serie_180 {
+
+    height: 10px;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+}
