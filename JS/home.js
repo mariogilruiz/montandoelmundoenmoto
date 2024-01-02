@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     texts[currentIndex].classList.add("visibility");
 
-    setInterval(rotateText, 12000);
+    setInterval(rotateText, 5000);
 });
 
 //scrollY position en consola
@@ -56,7 +56,6 @@ window.onscroll = function () {
     var y = window.scrollY;
     console.log(y);
 };
-
 
 // efecto aparacion div banner transparente
 
@@ -69,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
 // Efecto aparacion div pag-02 home
 
@@ -99,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // codigo para que al finalizar el div añade la clase 
 
-
 function detectarScrollAlFinal() {
     var miDiv = document.getElementById('content_ph');
     var alturaDelDiv = miDiv.offsetHeight;
@@ -119,8 +116,6 @@ window.addEventListener('scroll', function () {
 
 // Llamar a la función al cargar la página para verificar si el contenido inicial ya está al final
 detectarScrollAlFinal();
-
-
 
 // descomentar para haer logica para slider de video //
 
@@ -160,8 +155,6 @@ detectarScrollAlFinal();
 // // Configura el intervalo para cambiar de video cada 10 segundos
 // setInterval(moveRight, 10000);
 
-
-
 //Logica del slider de la pagina inicial//
 
 var imagenes = [
@@ -180,32 +173,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Función para realizar el destello
     function destellar() {
         // Ajusta la opacidad para mostrar el destello de manera suave
-        miElemento.style.opacity = "1";
+        miElemento.style.opacity = "300";
 
         // Restaura la opacidad después de 300 ms
         setTimeout(function () {
             miElemento.style.opacity = "0";
-        }, 400);
+        }, 300);
     }
 
     // Función moveRight
     function moveRight() {
         const $imagen = $(document.Imagen);
 
-
         document.Imagen.src = imagenes[contador];
-
         contador = (contador + 1) % imagenes.length;
-
-
 
         $imagen.on('load', function () {
             gsap.fromTo(
                 $imagen,
-                { scale: 1 },
+                { scale: 1.1 },
                 {
-                    scale: 1.1,
-                    duration: 12,
+                    scale: 1,
+                    duration: 1,
                     ease: "ease-in-out",
 
                 }
@@ -221,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         destellar();
         moveRight();
-    }, 12000);
+    }, 5000);
 });
 
 // funcion slider indiviual sin destello

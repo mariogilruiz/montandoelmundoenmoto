@@ -11,6 +11,7 @@
     place-content: center;
     text-align: center;
     z-index: 90;
+    background-color: black;
 
 }
 
@@ -48,18 +49,13 @@
 
 /* cabiar img/video */
 
-
 .zoom-background img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-
 }
 
 #initial_max>img {
-
     position: absolute;
     margin-top: 30px;
     left: 0px;
@@ -70,7 +66,6 @@
 }
 
 #img_zoom_ramdon img {
-
     position: absolute;
     object-fit: cover;
     top: 0px;
@@ -79,7 +74,6 @@
 }
 
 #initial_max #hideOnScroll {
-
     display: grid;
     position: fixed;
     width: 100%;
@@ -142,8 +136,6 @@ h2 {
     color: var(--orange-primary);
 }
 
-
-
 /* #initial_max #hideOnScroll span:first-child {
 
     padding-left: 15px;
@@ -162,7 +154,6 @@ h2 {
 } */
 
 #initial_max .random_text {
-
     width: 90vw;
     max-width: 1200px;
     height: 70vh;
@@ -173,7 +164,6 @@ h2 {
 
 
 #initial_max .text {
-
     position: absolute;
     top: 0;
     left: 0;
@@ -189,42 +179,32 @@ h2 {
     transform-style: preserve-3d;
     -webkit-transition: 500ms all ease-in-out;
     transition: opacity 0 ease 9.5s;
-
 }
 
-
-
-
 #initial_max .visibility {
-
     opacity: 1;
     transform: rotateX(0deg);
 }
 
 #initial_max .hidden {
-
     opacity: 0;
     transition: 1s ease;
     transform: scale(0) rotateX(180deg);
 }
 
 #initial_max .hidden_back {
-
     opacity: 1;
     transition: 1s ease;
     transform: scale(1) rotateX(0deg);
 }
 
 .hidden_hoome {
-
     opacity: 0;
     transform: scale(0);
 }
 
 .hidden_home_back {
-
     opacity: 1;
-
 }
 
 /* efecto flash */
@@ -232,9 +212,10 @@ h2 {
 #miElemento {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(254, 254, 254, .8);
     opacity: 0;
     /* Inicia oculto */
-    transition: opacity 1500ms ease;
+    transition: 300ms ease all;
+    transition: opacity 600ms ease;
     z-index: 100;
 }

@@ -594,13 +594,10 @@
 }
 
 .counter {
-
     padding-right: 9px;
-
 }
 
 .contador_orden {
-
     display: flex;
     justify-content: center;
     align-items: end;
@@ -609,13 +606,13 @@
     font-family: var(--font-home-2);
     color: var(--orange-primary);
     font-size: 2rem;
-
 }
 
 .contador_orden p {
-
     font-family: var(--font-text-italic);
     font-weight: bolder;
     font-size: 1rem;
-
 }
+
+
+/* poner un div al final como en el footer de la home con el separador con enlace al uktimo capitulo  */
