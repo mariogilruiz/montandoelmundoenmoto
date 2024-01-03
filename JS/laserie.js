@@ -15,6 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//logo se oculta tras un delay
+
+function agregarClaseConDelay() {
+    // Obtener el elemento con el id scale_logo_FLFR
+    const elemento = document.getElementById('logo-laSerie');
+    const elemento2 = document.getElementById('laSerie_h3');
+
+    // Añadir la clase con un delay de 10 segundos
+    setTimeout(function () {
+        elemento.classList.add('logo_out');
+        elemento2.classList.add('serieH3_appear');
+    }, 5000);
+}
+
+// Llamar a la función tan pronto como se analice el script
+agregarClaseConDelay();
 
 //scrollY position en consola
 

@@ -1,6 +1,6 @@
 #web_la_serie {
     display: grid;
-    grid-template-rows: calc(100vh - 170px) 2400px 101px;
+    grid-template-rows: calc(100vh - 170px) 2400px 600px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -13,17 +13,45 @@
     height: calc(100vh - 170px);
     width: 100%;
     z-index: 90;
+    background-color: var(--white-e9);
 }
 
-#web_la_serie .h2_descript_page h3 {
-    font-size: 5rem;
+#laSerie_h3 {
+
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: text_type_page 2s alternate 1;
+    -webkit-animation: text_type_page 2s alternate 1;
+    top: calc(50vh - 10px);
+    opacity: .8;
+    transition: 1s ease all;
+}
+
+.serieH3_appear {
+    transform: translateY(-113px);
+}
+
+#h2_pages {
+    font-size: 6rem;
     text-shadow: none;
     width: auto;
     position: fixed;
-    top: calc(50vh - 150px);
-    animation: text_type_page 1s 6s alternate 1;
-    -webkit-animation: text_type_page 1s 6s alternate 1;
 }
+
+#logo-laSerie {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease all;
+}
+
 
 #web_la_serie .h2_descript_page h2 {
     height: 130px;
@@ -39,8 +67,9 @@
 }
 
 #web_la_serie .scale_logo_FLFR {
-    animation: scale_logo_FLFR 5s ease 1;
+    animation: scale_logo_FLFR 3s ease 1;
     opacity: .8;
+
 }
 
 @keyframes scale_logo_FLFR {
@@ -59,6 +88,12 @@
         opacity: .8;
     }
 
+}
+
+.logo_out {
+
+    transform: translateY(-100vh);
+    opacity: 0;
 }
 
 .spacer_la_serie {
@@ -135,6 +170,7 @@
     display: flex;
     height: 400px;
     width: 90%;
+    max-width: 1400px;
     /* background-color: aqua; */
     justify-content: center;
     align-items: start;
@@ -160,15 +196,17 @@
     justify-content: center;
     align-items: center;
 
+
 }
 
 #banner_youtube_back h2 {
     position: absolute;
     font-family: var(--font-home);
-    font-size: 5.5rem;
+    font-size: 5.5vw;
     height: auto;
     width: auto;
     text-shadow: none;
+    opacity: .8;
 }
 
 
@@ -306,8 +344,11 @@
 
 #text_youtube_banner_laSerie_content button a {
 
-    color: var(--white-e9);
+    color: var(--white);
     font-size: 1.2rem;
+    font-family: var(--font-social);
+    font-weight: bold;
+
 }
 
 
@@ -321,7 +362,7 @@
     position: relative;
     display: grid;
     margin-left: 2px;
-    height: 1150px;
+    height: 1050px;
     width: 102vw;
     background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
@@ -368,39 +409,82 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--black-opacity);
+    background-color: rgb(0, 0, 0, .1);
     padding: 40px 20px 40px 40px;
     border-radius: 5px;
+    box-shadow: 0px 0px 3px grey;
+    /* background-image: url(/images/back_web_color_free_live_free_ride.webp);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center center; */
 }
 
 
 #position_today {
 
     position: absolute;
-    top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60vh;
     height: 100px;
-    width: 220px;
-    background-color: var(--black-secondary);
-    padding-top: 50px;
+    width: 320px;
+    background-color: rgb(0, 0, 0, .1);
+    box-shadow: 0px 0px 3px grey;
+    padding: 20px;
     border-radius: 5px;
+    margin-left: -10px;
+    z-index: 99;
+
+
+}
+
+#position_today span {
+    background-color: var(--white-e9);
+    outline: 5px solid var(--grey-ccc);
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+
 
 }
 
 #position_today img {
-
     position: absolute;
     height: 40px;
-    left: 15px;
+    left: 45px;
     transform: rotate(-20deg);
+}
+
+#position_today span p:first-child {
+    font-size: 1.2rem;
+    padding-right: 30px;
+    font-family: var(--font-home);
+    color: var(--green-primary-);
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+
+#position_today span p:last-child {
+
+    font-size: 1.3rem;
+    font-family: var(--font-text);
+    font-weight: bolder;
+    padding-right: 30px;
+    color: var(--black-secondary);
+    text-transform: uppercase;
+
 }
 
 #position_today p {
 
     text-align: center;
-    font-size: 1.2rem;
-    font-family: var(--font-text-italic);
-    color: var(--white);
-    margin-left: 50px;
+    /* font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: var(--font-text-light);
+    color: var(--black-secondary); */
+    margin-left: 60px;
 }
 
 .session_selection {
@@ -429,15 +513,15 @@
     height: 100%;
     width: 100%;
     cursor: pointer;
-    background-color: hsl(208, 100%, 97%, 0);
+    /* background-color: hsl(208, 100%, 97%, 0); */
     /* border: .5px solid var(--black-secondary); */
     border: 0px;
     border-radius: 5px 5px 0px 0px;
     background-color: var(--white-e9);
-    font-family: var(--font-text);
-    font-size: 1.5rem;
-    color: var(--black-secondary);
-    font-weight: bold;
+    font-family: var(--font-home);
+    font-size: 1.8rem;
+    color: var(--green-primary-);
+    font-weight: bolder;
     padding-left: 70px;
     transition: 200ms ease;
 }
@@ -491,8 +575,23 @@
 
 .session_selection #tienda_02:hover #_02_ramdon {
 
-    background-color: #17BD20;
+
+    animation: ambar 300ms alternate infinite;
 }
+
+@keyframes ambar {
+
+    from {
+
+        background-color: #bc6317;
+    }
+
+    to {
+
+        background-color: var(--white-e9);
+    }
+}
+
 
 .appear_map {
 
@@ -505,8 +604,6 @@
     animation-delay: 100ms;
     animation-timing-function: ease;
     -webkit-animation-name: con_map 400ms 100ms backwards ease 1;
-
-
 }
 
 @keyframes con_map {
@@ -543,7 +640,6 @@
     -webkit-animation-name: con_map_selecction 400ms 100ms backwards ease 1;
 }
 
-
 .appear_Y_slow {
     opacity: 1;
     visibility: visible;
@@ -554,7 +650,6 @@
     animation-delay: 100ms;
     animation-timing-function: ease;
     -webkit-animation-name: con_map_selecction 1s 100ms backwards ease 1;
-
 }
 
 @keyframes con_map_selecction {
@@ -603,16 +698,107 @@
     align-items: end;
     height: 100%;
     width: 100%;
-    font-family: var(--font-home-2);
-    color: var(--orange-primary);
+    font-weight: bolder;
+    font-family: var(--font-primary);
+    color: var(--black-secondary);
     font-size: 2rem;
 }
 
 .contador_orden p {
-    font-family: var(--font-text-italic);
+    font-family: var(--font-primary);
     font-weight: bolder;
     font-size: 1rem;
 }
 
-
 /* poner un div al final como en el footer de la home con el separador con enlace al uktimo capitulo  */
+
+#final-pag-laSeire_container {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 90;
+    background-color: var(--white-e9);
+    justify-content: center;
+    align-items: start;
+
+}
+
+#final-pag-laSeire_container .spacer_la_serie_180 {
+    height: 10px;
+    width: 100%;
+    top: 600px;
+    z-index: 999;
+}
+
+
+#final-pag-laSeire_container .reverse {
+
+    bottom: 700px;
+}
+
+#final-pag-laSeire_content {
+    position: relative;
+    display: flex;
+    height: 60%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#final-pag-laSeire_content_01 {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 50%;
+
+}
+
+#final-pag-laSeire_content_02 {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+
+}
+
+#final-pag-laSeire_content_02_text {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+#final-pag-laSeire_content_02_text h3 {
+
+    margin-bottom: 30px;
+    font-family: var(--font-home);
+    color: var(--green-primary-);
+    font-size: 2rem;
+}
+
+#final-pag-laSeire_content_02_text p {
+
+    font-family: var(--font-text-italic);
+    font-size: 1.6rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+#final-pag-laSeire_content_01 iframe {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+}

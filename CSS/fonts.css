@@ -127,17 +127,27 @@
     src: url(/fonts/FFF_Tusj.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: "balloon";
     src: url(/fonts/BalloonExtraBoldBT.ttf);
-}
+} */
 
 @font-face {
     font-family: "nunito-bold";
     src: url(/fonts/NunitoSans_10pt-Black.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: "rust-g";
     src: url(/fonts/IntroRustG-Base2Line.woff);
+} */
+
+@font-face {
+    font-family: "rust-g";
+    src: url(/fonts/Rust\ never\ sleeps.ttf);
+}
+
+@font-face {
+    font-family: "balloon";
+    src: url(/fonts/Rust\ never\ sleeps.ttf);
 }

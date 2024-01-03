@@ -1,7 +1,7 @@
 #web_temporada_01 {
 
     display: grid;
-    grid-template-rows: calc(100vh - 100px) 4000px 200px 102px;
+    grid-template-rows: calc(100vh - 170px) 4000px 200px 102px;
     grid-template-columns: 100%;
     width: 100%;
 }
@@ -12,7 +12,7 @@
     position: relative;
     background-size: cover;
     background-position: center center;
-    background-color: black;
+    background-color: var(--white-e9);
     background-attachment: fixed;
     z-index: 90;
     justify-items: center;
@@ -21,6 +21,42 @@
     grid-template-columns: 100%;
     place-content: center;
 }
+
+#temporada1_h3 {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: text_type_page 3s alternate 1;
+    -webkit-animation: text_type_page 3s alternate 1;
+    top: calc(50vh - 123px);
+    opacity: .8;
+    transition: 1s ease all;
+}
+
+#text_description_initial_temporada1 {
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 90%;
+    max-width: 1400px;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+
+}
+
+
+#text_description_initial_temporada1 h3 {
+    font-family: var(--font-text-light);
+    font-size: 2rem;
+    text-align: center;
+
+}
+
 
 #pag-02_max_temporada_01 {
 
@@ -34,6 +70,17 @@
     grid-template-columns: 100%;
     grid-template-rows: 500px 3400px;
 }
+
+#web_temporada_01 .description_02_page {
+    display: grid;
+    place-content: center;
+    /* justify-items: start; */
+    height: 360px;
+    max-width: none;
+    /* grid-template-columns: 100%;
+    grid-template-rows: 500px 300px 100px 450px; */
+}
+
 
 #max_content_02_temporada_01 {
 
@@ -86,32 +133,6 @@
     background-color: var(--black-secondary);
 }
 
-#web_temporada_01 .p_descript_page {
-
-    flex-direction: column;
-}
-
-#web_temporada_01 .p_descript_page {
-    height: 300px;
-}
-
-#web_temporada_01 .description_02_page {
-    height: 400px;
-}
-
-#web_temporada_01 .h3_descript_page h2 img {
-
-    height: 100px;
-    width: 600px;
-    margin-top: 10px;
-    opacity: 0;
-
-}
-
-#web_temporada_01 .p_descript_page h3 {
-
-    margin-bottom: 10px;
-}
 
 #content_02_temporada_01 .card_video_youtube {
 

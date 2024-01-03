@@ -295,7 +295,6 @@ body {
     display: flex;
     height: 200px;
     width: 100%;
-    border-top: 20px solid var(--black-secondary);
     border-radius: 5px 5px 0px 0px;
     align-items: center;
     text-align: center;

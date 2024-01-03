@@ -39,10 +39,11 @@
 }
 
 #web_about .h2_descript_page h2 {
-    font-size: 5rem;
+    font-size: 6rem;
+    opacity: .8;
     text-shadow: none;
     position: fixed;
-    top: calc(50vh - 120px);
+    top: calc(50vh - 150px);
     animation: text_type_page 1s alternate 1;
     -webkit-animation: text_type_page 1s alternate 1;
 }
@@ -55,7 +56,7 @@
 
     to {
         transform: translateY(0);
-        opacity: 1;
+        opacity: .8;
     }
 }
 
@@ -67,7 +68,7 @@
 
     to {
         transform: translateY(0);
-        opacity: 1;
+        opacity: .8;
     }
 }
 
@@ -88,6 +89,7 @@
     display: flex;
     height: 400px;
     width: 90%;
+    max-width: 1400px;
     justify-content: center;
     align-items: start;
     margin-top: 30px;
@@ -273,7 +275,7 @@
     justify-content: start;
     box-sizing: border-box;
     background-color: var(--blue-primary);
-    color: var(--white-e9);
+    color: var(--white);
 
 }
 
@@ -294,7 +296,7 @@
 
 .index_cap_blog_h2_name {
     display: flex;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: none;
     justify-content: center;
     width: 75%;
