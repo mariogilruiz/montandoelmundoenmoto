@@ -8,11 +8,10 @@
     width: 100%;
     overflow: hidden;
     justify-items: center;
-    place-content: center;
+    justify-content: center;
     text-align: center;
     z-index: 90;
     background-color: black;
-
 }
 
 #animation_pixel {
@@ -85,6 +84,7 @@
     animation-duration: 500ms;
     animation-timing-function: ease;
     animation-iteration-count: 1;
+    opacity: .92;
 }
 
 @keyframes h2_initial {
@@ -122,7 +122,7 @@ h2 {
     letter-spacing: 2px;
     font-size: 7.5rem;
     padding-left: 5px;
-    color: var(--white);
+    color: var(--white-e9);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
     padding-right: 5px;
 }
@@ -154,12 +154,15 @@ h2 {
 } */
 
 #initial_max .random_text {
+    position: relative;
+    display: flex;
     width: 90vw;
     max-width: 1200px;
     height: 70vh;
     overflow: hidden;
     position: relative;
-    opacity: .92;
+
+
 }
 
 

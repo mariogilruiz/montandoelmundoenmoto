@@ -149,7 +149,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: auto;
     width: 100%;
     margin-top: 10%;
     max-width: 1000px;
@@ -188,16 +188,20 @@
     justify-content: center;
     align-items: center;
 
+    margin-top: 60px;
     transition: 300ms ease all;
     cursor: pointer
 }
 
 #pag_05-content_02 button a {
-
+    display: block;
     color: var(--white);
-    font-size: 1.2rem;
-    ;
-    font-family: var(--font-text);
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-social);
+
 }
 
 #pag_05-content_02 button:hover {

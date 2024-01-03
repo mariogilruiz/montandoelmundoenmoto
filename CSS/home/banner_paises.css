@@ -1,0 +1,57 @@
+#banner_paises-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+#banner_paises-container h3 {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    margin-bottom: -60px;
+    text-align: center;
+}
+
+#banner_paises-content {
+
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 20%);
+    height: 90%;
+    width: 100%;
+    max-width: 1200px;
+    /* background-color: blue; */
+    place-content: center center;
+
+
+}
+
+.paises_home {
+    display: flex;
+    position: relative;
+    height: 95%;
+    width: 95%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.paises_home img {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    height: 90%;
+    width: auto;
+}

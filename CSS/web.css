@@ -30,6 +30,7 @@ body {
     display: grid;
     grid-template-rows: 100vh 850px 100px 450px 50px 960px 850px 950px 500px 250px 250px;
     grid-template-columns: 100%;
+    background-color: var(--white-e9);
 }
 
 #spacer_01 {
