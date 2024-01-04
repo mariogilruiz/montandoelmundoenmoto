@@ -49,14 +49,14 @@
     object-fit: cover;
     height: 700px;
     width: 100%;
-    transition: 300ms ease-in-out all;
-    -webkit-transition: 300ms ease-in-out all;
-    -moz-transition: 300ms ease-in-out all;
-    -o-transition: 300ms ease-in-out all;
+    transition: 1s ease-in-out all;
+    -webkit-transition: 1s ease-in-out all;
+    -moz-transition: 1s ease-in-out all;
+    -o-transition: 1s ease-in-out all;
 }
 
 #pag_03_max #content_03 #card_03_01:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
 }
 
 #pag_03_max #content_03 #h2_03 {

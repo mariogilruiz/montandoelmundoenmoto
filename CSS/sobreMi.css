@@ -39,8 +39,8 @@
 }
 
 #web_about .h2_descript_page h2 {
-    font-size: 6rem;
-    opacity: .8;
+    font-size: 5rem;
+    opacity: .92;
     text-shadow: none;
     position: fixed;
     top: calc(50vh - 150px);

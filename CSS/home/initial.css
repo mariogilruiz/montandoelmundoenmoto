@@ -120,9 +120,9 @@ h2 {
     width: auto; */
     font-family: var(--font-home);
     letter-spacing: 2px;
-    font-size: 7.5rem;
+    font-size: 5.5rem;
     padding-left: 5px;
-    color: var(--white-e9);
+    color: var(--white);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
     padding-right: 5px;
 }
@@ -153,20 +153,17 @@ h2 {
     color: var(--green-primary-);
 } */
 
-#initial_max .random_text {
+.random_text {
     position: relative;
     display: flex;
     width: 90vw;
     max-width: 1200px;
     height: 70vh;
     overflow: hidden;
-    position: relative;
-
-
 }
 
 
-#initial_max .text {
+.text {
     position: absolute;
     top: 0;
     left: 0;
@@ -184,18 +181,18 @@ h2 {
     transition: opacity 0 ease 9.5s;
 }
 
-#initial_max .visibility {
+.visibility {
     opacity: 1;
     transform: rotateX(0deg);
 }
 
-#initial_max .hidden {
+.hidden {
     opacity: 0;
     transition: 1s ease;
     transform: scale(0) rotateX(180deg);
 }
 
-#initial_max .hidden_back {
+.hidden_back {
     opacity: 1;
     transition: 1s ease;
     transform: scale(1) rotateX(0deg);

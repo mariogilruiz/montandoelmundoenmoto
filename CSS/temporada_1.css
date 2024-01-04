@@ -1,9 +1,14 @@
 #web_temporada_01 {
 
     display: grid;
-    grid-template-rows: calc(100vh - 170px) 4000px 200px 102px;
+    grid-template-rows: calc(100vh - 170px) auto 102px;
     grid-template-columns: 100%;
     width: 100%;
+}
+
+#text_description_initial_temporada1 a {
+
+    color: var(--green-primary-);
 }
 
 #inital_max_temporada_01 {
@@ -32,21 +37,20 @@
     animation: text_type_page 3s alternate 1;
     -webkit-animation: text_type_page 3s alternate 1;
     top: calc(50vh - 123px);
-    opacity: .8;
+    opacity: .92;
     transition: 1s ease all;
 }
 
 #text_description_initial_temporada1 {
     position: relative;
     display: flex;
-    height: 400px;
+    height: 550px;
     width: 90%;
     max-width: 1400px;
     /* background-color: aqua; */
     justify-content: center;
     align-items: start;
     margin-top: 30px;
-
 }
 
 
@@ -66,37 +70,94 @@
     background-color: var(--white-e9);
     justify-items: center;
     background-attachment: fixed;
-    height: 4000px;
+    height: auto;
     grid-template-columns: 100%;
-    grid-template-rows: 500px 3400px;
+    grid-template-rows: 1200px 3400px;
 }
 
+/* -----div inicial----- */
+
+
 #web_temporada_01 .description_02_page {
-    display: grid;
-    place-content: center;
-    /* justify-items: start; */
-    height: 360px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 960px;
     max-width: none;
-    /* grid-template-columns: 100%;
-    grid-template-rows: 500px 300px 100px 450px; */
+    align-items: center;
+    justify-content: start;
+
+}
+
+#banner_initial_temporada1 {
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+
+/* ---text ramdon---- */
+
+#text_random_banner-temporada1 {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/back_text_ramdon_objetivo_1_free_live_free_ride.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner_initial_temporada1 h2 {
+    position: relative;
+    /* height: auto;
+    width: auto; */
+    font-family: var(--font-home);
+    letter-spacing: 2px;
+    font-size: 4rem;
+    padding-left: 0px;
+    color: var(--white);
+    opacity: .92;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0, .5);
+    padding-right: 0px;
+}
+
+#banner_initial_temporada1 .random_text {
+
+    width: 100vw;
+    height: 300px;
+    /* margin-left: -180px; */
+
+}
+
+#banner_initial_temporada1 .banner_pages {
+
+    z-index: 3;
 }
 
 
 #max_content_02_temporada_01 {
 
     display: grid;
-    height: 3600px !important;
+    height: 3400px !important;
     width: 100%;
     background-attachment: fixed;
     background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
     background-position: center center;
     background-size: 100%;
-    /* justify-items: center;
-    justify-content: center; */
     place-content: start center;
     overflow: hidden;
 }
+
+#max_content_02_temporada_01 .spacer_la_serie_180 {
+
+    top: auto;
+}
+
 
 #content_02_temporada_01 {
 
@@ -177,7 +238,16 @@
     background-color: rgb(0, 0, 0, .3);
 }
 
-#web_temporada_01 #social_temporada_01_max {
+#web_temporada_01 #spacer_02_temporada_01 {
+
+    position: relative;
+    display: grid;
+    height: 60px;
+    width: 100%;
+    z-index: 90;
+}
+
+/* #web_temporada_01 #social_temporada_01_max {
 
     display: grid;
     position: relative;
@@ -305,16 +375,9 @@
 
     box-shadow: inset 0px 0px 4px black;
     transform: scale(0.95);
-}
+} */
 
-#web_temporada_01 #spacer_02_temporada_01 {
 
-    position: relative;
-    display: grid;
-    height: 60px;
-    width: 100%;
-    z-index: 90;
-}
 
 /* .appear_div_temp {
     

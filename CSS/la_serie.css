@@ -27,7 +27,7 @@
     animation: text_type_page 2s alternate 1;
     -webkit-animation: text_type_page 2s alternate 1;
     top: calc(50vh - 10px);
-    opacity: .8;
+    opacity: .92;
     transition: 1s ease all;
 }
 
@@ -36,7 +36,7 @@
 }
 
 #h2_pages {
-    font-size: 6rem;
+    font-size: 5rem;
     text-shadow: none;
     width: auto;
     position: fixed;
@@ -48,21 +48,15 @@
     height: 100%;
     width: 100%;
     justify-content: center;
-    align-items: center;
     transition: 1s ease all;
-}
-
-
-#web_la_serie .h2_descript_page h2 {
-    height: 130px;
-    width: 450px;
+    top: calc(50vh - 160px);
 }
 
 #web_la_serie .h2_descript_page img {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 90%;
-    top: calc(50vh - 160px);
+
 
 }
 
@@ -195,8 +189,6 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
-
-
 }
 
 #banner_youtube_back h2 {
@@ -206,10 +198,9 @@
     height: auto;
     width: auto;
     text-shadow: none;
-    opacity: .8;
+    opacity: .92;
+    color: var(--white);
 }
-
-
 
 #banner_blog {
     position: relative;
