@@ -6,10 +6,10 @@
     grid-template-rows: 100%;
     height: 850px;
     width: 100%;
-    background-image: url(/images/back_home_initial_montando_el_munod_en_moto.png);
+    /* background-image: url(/images/back_home_initial_montando_el_munod_en_moto.png);
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: cover;
+    background-size: cover; */
     justify-items: center;
     z-index: 99;
     background-color: var(--white-e9);
@@ -17,59 +17,31 @@
 
 #pag-02_max #content_02 {
     position: relative;
-    display: grid;
-    max-width: 1200px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 280px 280px;
+    display: flex;
+
     height: 850px;
     width: 100%;
-    /* row-gap: 5px;
-    column-gap: 5px; */
-    place-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #pag-02_max #content_02 a {
-
     display: flex;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 600px;
     justify-content: center;
     align-items: center;
     transition: 1s all ease;
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     -o-transition: 1s all ease;
-
 }
 
 #pag-02_max #content_02 a:hover {
-
     transform: scale(1.1, 1.1);
     z-index: 3;
-}
-
-#pag-02_max #content_02 a:hover #card_02_02,
-#pag-02_max #content_02 a:hover #card_02_06 {
-    margin-right: 5px;
-}
-
-
-#pag-02_max #content_02 a:hover #card_02_03,
-#pag-02_max #content_02 a:hover #card_02_04 {
-    margin-left: 5px;
-}
-
-#pag-02_max #card_02_03,
-#pag-02_max #card_02_04,
-#pag-02_max #card_02_02,
-#pag-02_max #card_02_01,
-#pag-02_max #card_02_06,
-#pag-02_max #card_02_05 {
-    transition: 300ms all ease;
-    -webkit-transition: 300ms all ease;
-    -moz-transition: 300ms all ease;
-    -o-transition: 300ms all ease;
 }
 
 #pag-02_max #content_02 .card_02 {
@@ -77,21 +49,29 @@
     display: flex;
     position: relative;
     display: grid;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-color: rgb(0, 0, 0, .2);
-    box-shadow: 0px 0px 3px grey;
+    /* background-color: rgb(23, 160, 189, .8);  */
+    /* box-shadow: 0px 0px 3px grey; */
     font-family: var(--font-home);
     letter-spacing: 2px;
     font-weight: bolder;
     font-size: 2rem;
-    height: 92%;
-    width: 92%;
+    height: 100%;
+    width: 100%;
     justify-items: center;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    /* justify-content: center; */
     text-transform: none;
     cursor: pointer;
     box-sizing: border-box;
+    text-transform: uppercase;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+
+
 
 }
 
@@ -100,31 +80,27 @@
 }
 
 #pag-02_max #content_02 .card_02:hover {
-    /* background-color: rgb(2, 87, 106, .8); */
-    background-color: rgb(188, 99, 23, .8);
-    /* transform: scale(105%, 105%); */
 
-    /* border: 2px solid white; */
-    /* border-radius: 100px; */
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(0, 0, 0, .1);
+    border-radius: 5px;
+
 }
 
 #pag-02_max #content_02 h3 {
     position: absolute;
     /* font-size: 3rem; */
-    color: var(--white);
+    color: var(--orange-primary);
     font-family: var(--font-home-2);
     width: 100%;
     text-align: center;
     align-items: center;
-    transition: 100ms all ease;
+    transition: 300ms all ease;
     -webkit-transition: 300ms all ease;
     -moz-transition: 300ms all ease;
     -o-transition: 300ms all ease;
     opacity: 1;
     word-wrap: break-word;
+    margin-bottom: 50px;
 
 }
 
@@ -139,6 +115,7 @@
     opacity: 0;
 }
 
+/* 
 #pag-02_max #card_02_04 img {
     height: 90%;
 }
@@ -164,7 +141,7 @@
 
 #pag-02_max #card_02_06 img {
     height: 75%;
-}
+} */
 
 @keyframes icons_animation {
 
@@ -180,7 +157,7 @@
 
 #pag-02_max #content_02 .card_02:hover:hover h3 {
     /* transform: translateY(160%); */
-    opacity: 0;
+    /* opacity: 0; */
     /* animation: giro_li 300ms linear 1; */
     transform: scale(.8);
 }

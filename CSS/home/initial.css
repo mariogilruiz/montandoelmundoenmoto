@@ -1,9 +1,6 @@
 #initial_max {
-
     position: relative;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 60% 40%;
+    display: flex;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -14,6 +11,14 @@
     background-color: black;
 }
 
+#initial_max h2 {
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 100px;
+}
+
 #animation_pixel {
     position: absolute;
     bottom: 0px;
@@ -22,11 +27,9 @@
     width: 100%;
     object-fit: cover;
     z-index: 80;
-
 }
 
 .container {
-
     position: relative;
     width: 100%;
     height: 100vh;
@@ -61,7 +64,7 @@
     bottom: -2px;
     height: 150px;
     width: 100%;
-    z-index: 80;
+    z-index: 104;
 }
 
 #img_zoom_ramdon img {
@@ -78,13 +81,13 @@
     width: 100%;
     max-width: 1200px;
     height: 100vh;
-    place-content: center;
-    /* margin-top: 180px; */
+    place-content: center center;
+    margin-top: -80px;
     animation-name: h2_initial;
     animation-duration: 500ms;
     animation-timing-function: ease;
     animation-iteration-count: 1;
-    opacity: .92;
+    opacity: .95;
 }
 
 @keyframes h2_initial {
@@ -125,12 +128,22 @@ h2 {
     color: var(--white);
     text-shadow: 0px 4px 1px rgb(0, 0, 0, .5);
     padding-right: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
 }
 
 #initial_max .orange {
+
     flex-direction: column;
-    margin-top: -50px;
+    justify-content: center;
+
 }
+
+
+/* #initial_max .orange h2:first-child {
+    padding-top: 50px;
+} */
 
 #initial_max .orange h2:last-child {
     color: var(--orange-primary);
@@ -154,14 +167,16 @@ h2 {
 } */
 
 .random_text {
+    flex-direction: column;
     position: relative;
     display: flex;
     width: 90vw;
     max-width: 1200px;
-    height: 70vh;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
-
 
 .text {
     position: absolute;
@@ -210,6 +225,7 @@ h2 {
 /* efecto flash */
 
 #miElemento {
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: rgb(254, 254, 254, .8);

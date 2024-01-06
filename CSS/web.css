@@ -28,7 +28,7 @@ body {
 #web {
 
     display: grid;
-    grid-template-rows: 100vh 850px 100px 450px 50px 960px 850px 950px 500px 250px 250px;
+    grid-template-rows: 100vh 850px 100px 450px 50px 960px 850px 400px 700px 500px 300px 250px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 }
@@ -373,15 +373,23 @@ body {
 }
 
 #modal .modal_container h4 {
-    font-size: 45px;
-    font-family: var(--font-text);
+    font-size: 40px;
+    font-family: var(--font-home);
     font-weight: bolder;
     margin-bottom: 20px;
+    color: var(--green-primary-);
+    text-transform: uppercase;
+    padding: 5px;
+
 }
 
 #modal .modal_container p {
+    display: block;
+    width: 71%;
+    height: auto;
     font-size: 25px;
     font-family: var(--font-text);
+    text-align: justify;
 }
 
 .modal--show {

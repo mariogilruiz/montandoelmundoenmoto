@@ -21,6 +21,7 @@
     color: var(--green-primary-);
     margin-bottom: 50px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #pag_04_container h3 a {
@@ -87,28 +88,17 @@
     width: 100%;
     background-color: var(--white-e9);
     z-index: 90;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     justify-items: center;
-}
-
-#pag_05-container h3 {
-    display: block;
-    height: auto;
-    width: 95%;
-    font-family: var(--font-home-2);
-    font-size: 2rem;
-    color: var(--green-primary-);
-    margin-bottom: 50px;
-    text-align: center;
 }
 
 #pag_05-content {
     position: relative;
     display: flex;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     justify-content: center;
     align-items: start;
     justify-items: center;
@@ -119,77 +109,55 @@
     display: flex;
     height: 100%;
     width: 100%;
-    /* grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%; */
-    border-radius: 5px 0px 0px 5px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.pag_05-img {
+#pag_05-content_02 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+}
+
+#pag_05_blog {
     display: flex;
     position: relative;
-    height: 50%;
-    width: 50%;
-    overflow: hidden;
-
-
+    height: 70%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .2);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: end;
 }
 
-.pag_05-img img {
+#pag_05_blog img {
     position: relative;
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: 4s ease all;
     opacity: .8;
-    /* border: 2px solid black; */
 }
 
-.pag_05-img img:hover {
+#pag_05_blog img:hover {
     transform: scale(1.4, 1.4);
     border-radius: 5px;
     opacity: 1;
 }
 
-#pag_05-img_01 {
-
-    order: 1;
-}
-
-#pag_05-img_02 {
-    order: 2;
-}
-
-#pag_05-img_03 {
-    order: 3;
-}
-
-#pag_05-img_04 {
-    order: 4;
-}
-
-
-#pag_05-content_02 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    margin-top: 10%;
-    max-width: 1000px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 1%;
-}
-
 #pag_05-content_02-text {
     position: relative;
     display: flex;
-    height: 50%;
-    width: 80%;
+    flex-direction: column;
+    height: 70%;
+    width: 90%;
     justify-content: center;
     align-items: center;
-    justify-items: center;
+
 }
 
 #pag_05-content_02-text p {
@@ -198,36 +166,58 @@
     font-weight: 300;
     text-align: justify;
     height: 100%;
-    width: 80%;
+    width: 100%;
 }
 
-#pag_05-content_02 button {
+#pag_05-container h3 {
+    display: block;
+    height: auto;
+    width: 100%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bttn_a-web {
     position: relative;
-    background-color: var(--orange-primary);
+    background-color: var(--marron-primary);
     display: flex;
     height: 50px;
-    width: 50%;
+    width: 250px;
     border-radius: 5px;
     border: 0px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
     transition: 300ms ease all;
-    cursor: pointer
+    -webkit-transition: 300ms ease all;
+    cursor: pointer;
+    margin-bottom: 30px;
+    justify-items: center;
+    justify-content: center;
 }
 
-#pag_05-content_02 button a {
-    display: block;
+.bttn_a-web:hover {
+    transform: scale(1.1);
+}
+
+.bttn_a-web:hover h2 {
+    transform: scale(.8);
+}
+
+#pag_05-container .bttn_a-web h2 {
+    font-family: var(--font-social);
     color: var(--white);
-    font-size: 1.8rem;
-    line-height: 3.1rem;
+    font-size: 1.2rem;
+    line-height: .5rem;
+    position: absolute;
     height: 100%;
     width: 100%;
-    font-family: var(--font-social);
-
-}
-
-#pag_05-content_02 button:hover {
-
-    transform: scale(1.1);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    text-shadow: none;
 }

@@ -142,9 +142,41 @@
     src: url(/fonts/IntroRustG-Base2Line.woff);
 } */
 
+/* @font-face {
+    font-family: "rust-g";
+    src: url(/fonts/Urzeit-Personal_Use.ttf);
+} */
+
+/* @font-face {
+    font-family: "rust-g";
+    src: local("Urzeit-Personal_Use"),
+        local("Urzeit-Personal_Use"),
+        url(/fonts/Urzeit-Personal_Use.ttf);
+    font-weight: bold;
+} */
+
+/* @font-face {
+    font-family: "rust-g";
+    src: local("EVER LOOSER"),
+        local("EVER LOOSER"),
+        url(/fonts/EVER\ LOOSER.ttf);
+    font-weight: bold;
+} */
+
+/* @font-face {
+    font-family: "rust-g";
+    src: local("Retro Team"),
+        local("Retro Team"),
+        url(/fonts/Retro\ Team.otf);
+    font-weight: bold;
+} */
+
 @font-face {
     font-family: "rust-g";
-    src: url(/fonts/Rust\ never\ sleeps.ttf);
+    src: local("Knewave-Regular"),
+        local("Knewave-Regular"),
+        url(/fonts/Knewave-Regular.ttf);
+    font-weight: bold;
 }
 
 /* @font-face {

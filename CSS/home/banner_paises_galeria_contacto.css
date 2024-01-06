@@ -1,0 +1,206 @@
+#banner_paises-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+#banner_paises-container h3 {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    margin-bottom: -60px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#banner_paises-content {
+
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 20%);
+    height: 90%;
+    width: 100%;
+    max-width: 1200px;
+    /* background-color: blue; */
+    place-content: center center;
+}
+
+.paises_home {
+    display: flex;
+    position: relative;
+    height: 95%;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+.paises_home img {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    height: 90%;
+    width: auto;
+}
+
+/* -------galeria------- */
+
+
+#banner_galeria-home {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+}
+
+#galeria-home_content {
+    display: flex;
+    position: relative;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .1);
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria-home_div {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#banner_galeria-home .bttn_a-web {
+    position: absolute;
+    z-index: 100;
+    margin-top: 100px;
+    background-color: var(--blue-bttn);
+}
+
+#banner_galeria-home .bttn_a-web h2 {
+    font-family: var(--font-social);
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: .5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    text-shadow: none;
+}
+
+#galeria-home_content h3 {
+    position: absolute;
+    display: block;
+    height: auto;
+    width: 100%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -50px;
+}
+
+
+/* -------contacto-------- */
+
+
+#banner_contacto-home {
+
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white-e9);
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/back_text_ramdon_objetivo_1_free_live_free_ride.webp);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+#banner_contacto-home_content {
+    display: flex;
+    position: relative;
+    /* flex-direction: column; */
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgb(0, 0, 0, .1);
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contacto-home_content_01 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+#contacto-home_content_02 {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+#banner_contacto-home_content .bttn_a-web h2 {
+    font-family: var(--font-social);
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: .5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    text-shadow: none;
+}
+
+#banner_contacto-home_content .bttn_a-web {
+    position: relative;
+    z-index: 100;
+    background-color: var(--rojo-primary);
+    width: 400px;
+    /* border: 1px solid var(--rojo-primary); */
+}
+
+#banner_contacto-home_content h3 {
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+
+}

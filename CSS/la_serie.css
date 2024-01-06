@@ -33,6 +33,7 @@
 
 .serieH3_appear {
     transform: translateY(-113px);
+    -webkit-transform: translateY(-113px);
 }
 
 #h2_pages {
@@ -49,6 +50,7 @@
     width: 100%;
     justify-content: center;
     transition: 1s ease all;
+    -webkit-transition: 1s ease all;
     top: calc(50vh - 160px);
 }
 
@@ -56,12 +58,11 @@
     position: relative;
     height: 100%;
     width: 90%;
-
-
 }
 
 #web_la_serie .scale_logo_FLFR {
     animation: scale_logo_FLFR 3s ease 1;
+    -webkit-animation: scale_logo_FLFR 3s ease 1;
     opacity: .8;
 
 }
@@ -84,9 +85,28 @@
 
 }
 
+@-webkit-keyframes scale_logo_FLFR {
+
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: .8;
+    }
+
+}
+
 .logo_out {
 
     transform: translateY(-100vh);
+    -webkit-transform: translateY(-100vh);
     opacity: 0;
 }
 
@@ -119,6 +139,7 @@
     border-radius: 5px 0px 0px 5px;
     cursor: pointer;
     transition: 300ms ease;
+    -webkit-transition: 300ms ease;
 }
 
 .video--link--youtube:hover {
@@ -141,11 +162,12 @@
     font-family: var(--font-text-light);
     font-size: 2rem;
     text-align: center;
+    color: var(--black-secondary);
 }
 
 
 #pag-02_max_la_serie a {
-    color: var(--green-primary-);
+    color: var(--green-primary);
 }
 
 #web_la_serie .description_02_page {
@@ -204,7 +226,7 @@
 
 #banner_blog {
     position: relative;
-    background-color: var(--blue-secondary);
+    background-color: var(--blue-primary);
     z-index: 90;
 
 }
@@ -271,6 +293,17 @@
     }
 }
 
+@-webkit-keyframes efecto_banner_laSerie {
+
+    from {
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* #banner_flfr_flash_content:hover {
     
 } */
@@ -316,6 +349,8 @@
     font-weight: 300;
     width: 40%;
     max-width: 450px;
+    color: var(--black-secondary);
+
 
 }
 
@@ -515,6 +550,8 @@
     font-weight: bolder;
     padding-left: 70px;
     transition: 200ms ease;
+    text-transform: uppercase;
+
 }
 
 .session_selection #tienda_02:active span,
@@ -582,6 +619,20 @@
         background-color: var(--white-e9);
     }
 }
+
+@-webkit-keyframes ambar {
+
+    from {
+
+        background-color: #bc6317;
+    }
+
+    to {
+
+        background-color: var(--white-e9);
+    }
+}
+
 
 
 .appear_map {
@@ -690,13 +741,13 @@
     height: 100%;
     width: 100%;
     font-weight: bolder;
-    font-family: var(--font-primary);
+    font-family: var(--font-home);
     color: var(--black-secondary);
     font-size: 2rem;
 }
 
 .contador_orden p {
-    font-family: var(--font-primary);
+    font-family: var(--font-home);
     font-weight: bolder;
     font-size: 1rem;
 }
@@ -776,6 +827,9 @@
     font-family: var(--font-home);
     color: var(--green-primary-);
     font-size: 2rem;
+    text-transform: uppercase;
+
+
 }
 
 #final-pag-laSeire_content_02_text p {
@@ -784,6 +838,8 @@
     font-size: 1.6rem;
     text-align: justify;
     font-weight: 300;
+    color: var(--black-secondary);
+
 }
 
 #final-pag-laSeire_content_01 iframe {

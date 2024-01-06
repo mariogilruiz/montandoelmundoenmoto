@@ -39,12 +39,16 @@
     --black: #000;
     --grey-ccc: #ccc;
     --grey-f3: #f3f3f3;
-    --blue-primary: rgb(4, 156, 189);
+    --blue-primary: #17A0BD;
     --blue-secondary: #02576a;
-    --green-primary-: #86BD2A;
+    /* --green-primary-: #86BD2A; */
+    --green-primary-: #bc6317;
     --green-seconday: #6b795f;
     --orange-primary: #bc6317;
-    --orage-secondary: #8f4b11;
+    --orange-secondary: #BD7E17;
+    --marron-primary: #68492F;
+    --blue-bttn: #2B263D;
+    --rojo-primary: #BD2A17;
     --orange_banner: #EBA55E;
     --youtube-primary: rgb(191, 8, 17);
     --youtube-secondary: rgb(234, 234, 234);
