@@ -321,7 +321,6 @@
     height: 300px;
     width: 100%;
     /* background-color: aqua; */
-
 }
 
 #banner_initial_laserie #banner_01 {
@@ -330,7 +329,6 @@
 }
 
 #text_youtube_banner_laSerie_content {
-
     display: flex;
     position: relative;
     height: 100%;
@@ -350,31 +348,33 @@
     width: 40%;
     max-width: 450px;
     color: var(--black-secondary);
-
-
 }
 
-
-#text_youtube_banner_laSerie_content button {
-
-    background-color: var(--orange-primary);
-    border: none;
-    width: 170px;
-    height: 50px;
+#text_youtube_banner_laSerie_content a {
+    color: var(--black-secondary);
+    background-color: transparent;
+    border: 1px solid var(--orange-primary);
     border-radius: 5px;
     font-family: var(--font-text-italic);
-    font-size: 1.1rem;
-    margin-left: 30%;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    align-items: center;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    box-sizing: border-box;
 }
 
-#text_youtube_banner_laSerie_content button a {
+#text_youtube_banner_laSerie_content a:hover {
 
-    color: var(--white);
-    font-size: 1.2rem;
-    font-family: var(--font-social);
-    font-weight: bold;
-
+    background-color: var(--orange-primary);
+    color: white;
 }
 
 
@@ -412,13 +412,11 @@
 }
 
 #map_map {
-
     height: 100%;
     width: 100%;
 }
 
 #map_map #europe_svg {
-
     width: 1000px;
     padding-right: 80px;
     padding-left: 10px;
@@ -426,7 +424,6 @@
 }
 
 #map #map_selection {
-
     position: absolute;
     top: 170px;
     right: 100px;
@@ -446,9 +443,7 @@
     background-position: center center; */
 }
 
-
 #position_today {
-
     position: absolute;
     display: flex;
     justify-content: center;
@@ -462,8 +457,6 @@
     border-radius: 5px;
     margin-left: -10px;
     z-index: 99;
-
-
 }
 
 #position_today span {
@@ -471,8 +464,6 @@
     outline: 5px solid var(--grey-ccc);
     padding: 10px;
     border-radius: 0px 5px 5px 0px;
-
-
 }
 
 #position_today img {
@@ -489,22 +480,18 @@
     color: var(--green-primary-);
     margin-bottom: 5px;
     margin-top: 5px;
-
 }
 
 #position_today span p:last-child {
-
     font-size: 1.3rem;
     font-family: var(--font-text);
     font-weight: bolder;
     padding-right: 30px;
     color: var(--black-secondary);
     text-transform: uppercase;
-
 }
 
 #position_today p {
-
     text-align: center;
     /* font-size: 1.2rem;
     font-weight: bolder;
@@ -514,25 +501,21 @@
 }
 
 .session_selection {
-
     display: flex;
     width: 100%;
     height: 70px;
 }
 
 .session_selection a {
-
     height: 100%;
     width: 100%;
 }
 
 #selection_session_2 {
     border-radius: 5px;
-
 }
 
 .session_selection_session {
-
     display: flex;
     align-items: center;
     justify-content: start;
@@ -551,7 +534,6 @@
     padding-left: 70px;
     transition: 200ms ease;
     text-transform: uppercase;
-
 }
 
 .session_selection #tienda_02:active span,
@@ -562,7 +544,7 @@
 
 .session_selection #tienda_01::after {
 
-    content: "Objetivo 1";
+    content: "Objetivo 0";
     transition: 200ms ease;
 }
 
@@ -574,7 +556,7 @@
 
 .session_selection #tienda_02::after {
 
-    content: "Objetivo 2";
+    content: "Objetivo 1";
 }
 
 .session_selection #tienda_02:hover::after {
@@ -633,8 +615,6 @@
     }
 }
 
-
-
 .appear_map {
 
     opacity: 1;
@@ -668,9 +648,7 @@
     }
 }
 
-
 .appear_map_selecction {
-
     opacity: 1;
     visibility: visible;
     animation-name: con_map_selecction;
@@ -835,7 +813,7 @@
 #final-pag-laSeire_content_02_text p {
 
     font-family: var(--font-text-italic);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: justify;
     font-weight: 300;
     color: var(--black-secondary);

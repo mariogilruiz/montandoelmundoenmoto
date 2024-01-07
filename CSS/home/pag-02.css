@@ -18,12 +18,10 @@
 #pag-02_max #content_02 {
     position: relative;
     display: flex;
-
     height: 850px;
     width: 100%;
     justify-content: center;
     align-items: center;
-
 }
 
 #pag-02_max #content_02 a {
@@ -45,7 +43,6 @@
 }
 
 #pag-02_max #content_02 .card_02 {
-
     display: flex;
     position: relative;
     display: grid;
@@ -70,9 +67,6 @@
     -webkit-transition: 1s all ease;
     -moz-transition: 1s all ease;
     -o-transition: 1s all ease;
-
-
-
 }
 
 #pag-02_max #content_02 a:active {
@@ -80,10 +74,8 @@
 }
 
 #pag-02_max #content_02 .card_02:hover {
-
     background-color: rgb(0, 0, 0, .1);
     border-radius: 5px;
-
 }
 
 #pag-02_max #content_02 h3 {
@@ -101,7 +93,6 @@
     opacity: 1;
     word-wrap: break-word;
     margin-bottom: 50px;
-
 }
 
 #pag-02_max #content_02 img {
@@ -136,7 +127,6 @@
 #pag-02_max #card_02_03 img {
     margin-bottom: 10px;
     transition: 1s all ease;
-
 }
 
 #pag-02_max #card_02_06 img {
@@ -144,7 +134,6 @@
 } */
 
 @keyframes icons_animation {
-
     from {
         transform: scale(0.95);
     }
@@ -152,7 +141,6 @@
     to {
         transform: scale(2);
     }
-
 }
 
 #pag-02_max #content_02 .card_02:hover:hover h3 {
@@ -169,7 +157,6 @@
 
 /* ------ banner donacion */
 
-
 #banner_fuel_home_max {
 
     position: relative;
@@ -181,7 +168,6 @@
     justify-content: center;
     align-items: center;
     background-color: var(--white-e9);
-
     /* border: 25px solid var(--white-e9); */
     /* text-align: center;
     align-items: center;
@@ -190,6 +176,70 @@
     border-radius: 35px; */
 }
 
+.bttn_cicle {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: 999;
+    border-radius: 999px;
+    font-family: var(--font-social);
+    color: var(--white);
+    background-color: var(--blue-mail);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: bold;
+    border: 1px solid white;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    text-shadow: none;
+}
+
+
+.bttn_cicle:hover {
+
+    animation: bttn-circle 300ms ease infinite;
+}
+
+
+@-webkit-keyframes bttn-circle {
+
+    0% {
+
+        transform: scale(1.1);
+    }
+
+    90% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bttn-circle {
+
+    0% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
 #banner_fuel_home_max #banner_fuel_home_content {
     position: relative;
     display: flex;
@@ -197,16 +247,30 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-
 }
 
-#banner_fuel_home_max #banner_fuel_home_content video {
+#banner_fuel_home_max video {
     position: absolute;
     width: 100%;
-    height: 55vh;
+    height: 100%;
     object-fit: cover;
     opacity: .1;
+}
 
+#banner_fuel_home_max h2 {
+    display: block;
+    height: 50px;
+    width: 90%;
+    font-family: var(--font-home-2);
+    font-size: 2rem;
+    color: var(--green-primary-);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+#banner_fuel_home_max h2 a {
+    color: var(--green-primary-);
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_content {
@@ -222,12 +286,12 @@
     position: relative;
     display: flex;
     width: 25%;
-    height: 100%;
+    height: 85%;
     z-index: 5;
 }
 
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01:hover {
-    height: 115%;
+    height: 100%;
 }
 
 #banner_fuel_home_max .banner_pages {
@@ -263,13 +327,17 @@
     justify-items: center;
     /* max-width: 700px; */
     box-sizing: border-box;
-
     /* z-index: 3; */
-    overflow: hidden;
+
+}
+
+#banner_donacion #bttn_fuel img {
+    width: 45%;
 }
 
 #banner_fuel_home_content_02_content_h3 {
     display: flex;
+    flex-direction: column;
     position: relative;
     height: 100%;
     width: 100%;
@@ -297,8 +365,7 @@
     font-family: var(--font-text-light);
     height: 90%;
     width: 90%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     z-index: 1;
     transition: ease 300ms all;
-
 }

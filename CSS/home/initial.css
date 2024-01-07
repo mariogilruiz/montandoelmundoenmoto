@@ -82,7 +82,7 @@
     max-width: 1200px;
     height: 100vh;
     place-content: center center;
-    margin-top: -80px;
+    margin-top: -40px;
     animation-name: h2_initial;
     animation-duration: 500ms;
     animation-timing-function: ease;

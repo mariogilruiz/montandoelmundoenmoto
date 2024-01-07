@@ -28,7 +28,7 @@ body {
 #web {
 
     display: grid;
-    grid-template-rows: 100vh 850px 100px 450px 50px 960px 850px 400px 700px 500px 300px 250px 250px;
+    grid-template-rows: 100vh 850px 100px 450px 50px 960px 850px 400px 700px 500px 250px 250px;
     grid-template-columns: 100%;
     background-color: var(--white-e9);
 }
@@ -36,12 +36,32 @@ body {
 #spacer_01 {
 
     position: relative;
-    display: grid;
+    display: flex;
     height: 100px;
     width: 100%;
     z-index: 90;
     background-color: var(--white-e9);
+    align-items: center;
+
 }
+
+#spacer_01 .bttn_a-web h2 {
+    font-family: var(--font-social);
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: .5rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+    text-shadow: none;
+}
+
 
 #spacer_02 {
     position: relative;

@@ -179,6 +179,14 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "introrust";
+    src: local("IntroRustG-Base2Line"),
+        local("IntroRustG-Base2Line"),
+        url(/fonts/IntroRustG-Base2Line.otf);
+
+}
+
 /* @font-face {
     font-family: "balloon";
     src: url(/fonts/Rust\ never\ sleeps.ttf);

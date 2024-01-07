@@ -26,6 +26,7 @@
     --font-draw: "draw", Arial, Helvetica, sans-serif;
     --font-home: "rust-g", Arial, Helvetica, sans-serif;
     --font-home-2: "rust-g", Arial, Helvetica, sans-serif;
+    --font-banner-flfr: "introrust", Arial, Helvetica, sans-serif;
     /* --font-rust: "rust-g", Arial, Helvetica, sans-serif; */
     /* --font-home: "eds-market-bold-slant", sans-serif; */
     /* --font-home: "reklame-script", sans-serif; */
@@ -41,6 +42,7 @@
     --grey-f3: #f3f3f3;
     --blue-primary: #17A0BD;
     --blue-secondary: #02576a;
+    --blue-mail: #176BBD;
     /* --green-primary-: #86BD2A; */
     --green-primary-: #bc6317;
     --green-seconday: #6b795f;
