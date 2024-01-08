@@ -1,6 +1,6 @@
 #web_la_serie {
     display: grid;
-    grid-template-rows: calc(100vh - 170px) 2400px 600px 101px;
+    grid-template-rows: calc(100vh - 170px) 2300px 600px 101px;
     grid-template-columns: 100%;
     width: 100%;
     margin: 0;
@@ -125,7 +125,7 @@
 }
 
 .video--link--youtube {
-    position: absolute;
+    position: fixed;
     display: block;
     font-family: var(--font-text);
     color: var(--black-secondary);
@@ -382,13 +382,17 @@
 
 #web_la_serie #content_02_la_serie {
     width: 102vw;
+    height: 100%;
+    display: flex;
+    position: relative;
+    margin-top: -100px;
 }
 
 #max_content_02_la_serie {
     position: relative;
     display: grid;
     margin-left: 2px;
-    height: 1050px;
+    height: 950px;
     width: 102vw;
     background-image: url(/images/back_web_free_live_free_ride.webp);
     background-repeat: repeat-y;
