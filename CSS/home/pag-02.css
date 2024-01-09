@@ -158,7 +158,6 @@
 /* ------ banner donacion */
 
 #banner_fuel_home_max {
-
     position: relative;
     display: flex;
     height: 450px;
@@ -206,7 +205,6 @@
     animation: bttn-circle 300ms ease infinite;
 }
 
-
 @-webkit-keyframes bttn-circle {
 
     0% {
@@ -237,8 +235,6 @@
         transform: scale(1.1);
     }
 }
-
-
 
 #banner_fuel_home_max #banner_fuel_home_content {
     position: relative;
@@ -285,7 +281,7 @@
 #banner_fuel_home_max #banner_fuel_home_content #banner_fuel_home_content_01 {
     position: relative;
     display: flex;
-    width: 25%;
+    width: 17%;
     height: 85%;
     z-index: 5;
 }
@@ -295,7 +291,6 @@
 }
 
 #banner_fuel_home_max .banner_pages {
-    /* width: 95.3%; */
     width: 100%;
 }
 
@@ -320,15 +315,12 @@
     position: relative;
     display: flex;
     height: 100%;
-    width: 75%;
+    width: 83%;
     text-align: center;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    /* max-width: 700px; */
     box-sizing: border-box;
-    /* z-index: 3; */
-
 }
 
 #banner_donacion #bttn_fuel img {

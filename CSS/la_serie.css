@@ -37,10 +37,14 @@
 }
 
 #h2_pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 5rem;
     text-shadow: none;
     width: auto;
     position: fixed;
+    z-index: 4;
 }
 
 #logo-laSerie {
