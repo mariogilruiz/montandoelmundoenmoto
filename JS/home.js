@@ -360,6 +360,33 @@ closemodal.addEventListener('click', (e) => {
 // });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var textos = ['Países visitados hasta la fecha', 'LO MEJOR ESTá POR LLEGAR', 'PRóXIMAMENTE MÁS AVENTURAS'];
+    var indice = 0;
+    var textoElement = document.getElementById('cambioTexto');
+
+    // Función para cambiar el texto con efecto
+    function cambiarTexto() {
+        textoElement.style.opacity = 0;
+        textoElement.style.transform = 'translateY(20px)';
+        setTimeout(function () {
+            textoElement.textContent = textos[indice];
+            textoElement.style.opacity = 1;
+            textoElement.style.transform = 'translateY(0)';
+            indice = (indice + 1) % textos.length;
+        }, 500);
+    }
+
+    // Cargar el primer texto al principio
+    cambiarTexto();
+
+    // Cambiar el texto cada 5 segundos
+    setInterval(cambiarTexto, 5000);
+});
+
+
+
+
 
 
 

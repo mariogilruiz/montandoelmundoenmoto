@@ -1,6 +1,6 @@
 #web_about {
     display: grid;
-    grid-template-rows: calc(100vh - 170px) 800px 2600px;
+    grid-template-rows: calc(100vh - 170px) 3400px 601px;
     grid-template-columns: 100%;
     width: 100%;
 }
@@ -228,7 +228,7 @@
     position: relative;
     display: grid;
     /* background-color: var(--white-e9); */
-    height: 2880px;
+    height: 3000px;
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 180px 2700px;
@@ -239,7 +239,7 @@
 #max_content_02_about {
 
     display: grid;
-    height: 2401px;
+    height: 2600px;
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -533,4 +533,17 @@
     align-items: center;
     height: 100%;
     width: 50%;
+}
+
+#banner-footer-sobremi {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: var(--white-e9);
+    z-index: 90;
+}
+
+#banner-footer-sobremi .reverse {
+    top: -150px;
 }

@@ -20,83 +20,70 @@
         </header>
         <section>
             <div id="inital_max_imagenes">
-                <div id="spacer_galery_header"></div>
-                <div id="selector_galery">
-                    <div id="selector_galery_place">
+                <div id="selector_galery_place">
+                    <div id="selector_galery_place-content01">
+                        <h2>seleccione galería de imágenes por país o lugar de interés</h2>
+                    </div>
+                    <div id="selector_galery_place-content02">
                         <button id="selector_galery_ES" class="bttn_galery" onclick="card_galery_ES()">
                             <span>
-                                <h2><img src="../images/espana.png" alt="españa en moto"></h2>
+                                <img src="../images/espana.png" alt="españa en moto">
                             </span>
-                            <h3>España</h3>
+                            <h2>España</h2>
                         </button>
                         <button id="selector_galery_02_FR" class="bttn_galery" onclick="card_galery_FR()">
                             <span>
-                                <h2> <img src="../images/francia.png" alt="francia en moto"></h2>
+                                <img src="../images/francia.png" alt="francia en moto">
                             </span>
-                            <h3>Francia</h3>
+                            <h2>Francia</h2>
                         </button>
                         <button id="selector_galery_03_alpes" class="bttn_galery" onclick="card_galery_alpes()">
                             <span>
-                                <h2> <img src="../images/alpes.png" alt="los alpes en moto"></h2>
+                                <img src="../images/alpes.png" alt="los alpes en moto">
                             </span>
-                            <h3>Alpes</h3>
+                            <h2>Alpes</h2>
                         </button>
                         <button id="selector_galery_04_SLV" class="bttn_galery" onclick="card_galery_SLV()">
                             <span>
-                                <h2> <img src="../images/eslovenia.png" alt="eslovenia en moto"></h2>
+                                <img src="../images/eslovenia.png" alt="eslovenia en moto">
                             </span>
-                            <h3>Eslovenia</h3>
+                            <h2>Eslovenia</h2>
                         </button>
                         <button id="selector_galery_05_CRC" class="bttn_galery" onclick="card_galery_CRC()">
                             <span>
-                                <h2><img src="../images/croacia.png" alt="croacia en moto"></h2>
+                                <img src="../images/croacia.png" alt="croacia en moto">
                             </span>
-                            <h3>Croacia</h3>
+                            <h2>Croacia</h2>
                         </button>
                         <button id="selector_galery_05_ALB" class="bttn_galery" onclick="card_galery_ALB()">
                             <span>
-                                <h2> <img src="../images/albania.png" alt="albania en moto"></h2>
+                                <img src="../images/albania.png" alt="albania en moto">
                             </span>
-                            <h3>Albania</h3>
+                            <h2>Albania</h2>
                         </button>
                         <button id="selector_galery_06_IT" class="bttn_galery" onclick="card_galery_IT()">
                             <span>
-                                <h2><img src="../images/italia.png" alt="italia en moto"></h2>
+                                <img src="../images/italia.png" alt="italia en moto">
                             </span>
-                            <h3>Italia</h3>
+                            <h2>Italia</h2>
                         </button>
                     </div>
-                    <div id="selector_galery_galery">
-                        <div id="content_images_01_ES" class="content_images_galery hidden_galery">
-                            <div class="slider">
-                                <div class="slider">
-                                    <div id="slider_españa" class="slider_images">
-                                        <img class="img_imagenes_galery"
-                                            src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
-                                        <img class="img_imagenes_galery"
-                                            src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
-                                        <img class="img_imagenes_galery"
-                                            src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 3">
-                                        <img class="img_imagenes_galery"
-                                            src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
-                                        <!-- Agregar más imágenes  -->
-                                    </div>
 
-                                    <div id="slider-info_españa" class="indicator-container_images slider-info_images">
-                                    </div>
 
-                                    <button class="prev" onclick="prevSlide_ESP()">
-                                        <img src="../images/icon_back_card.png">
-                                    </button>
-                                    <button class="next" onclick="nextSlide_ESP()">
-                                        <img src="../images/icon_next_card.png">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="content_images_02_FR" class="content_images_galery hidden_galery">
+                </div>
+                <img class="spacer_la_serie_180" src="/images/separacion_initial_viajar_en_moto_por_el_mundo.png"
+                    alt="montando el mundo en moto">
+            </div>
+
+        </section>
+        <section>
+            <div id="selector_galery">
+                <div id="selector_galery_galery">
+                    <img src="/images/logo_negro_secondary_free_live_free_ride.png" alt="">
+                    <div id="content_images_01_ES" class="content_images_galery hidden_galery">
+                        <div class="slider">
                             <div class="slider">
-                                <div id="slider_francia" class="slider_images">
+                                <div id="slider_españa" class="slider_images">
                                     <img class="img_imagenes_galery"
                                         src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
                                     <img class="img_imagenes_galery"
@@ -108,144 +95,177 @@
                                     <!-- Agregar más imágenes  -->
                                 </div>
 
-                                <div id="slider-info_francia" class="indicator-container_images slider-info_images">
+                                <div id="slider-info_españa" class="indicator-container_images slider-info_images">
                                 </div>
 
-                                <button class="prev" onclick="prevSlide_FR()">
+                                <button class="prev" onclick="prevSlide_ESP()">
                                     <img src="../images/icon_back_card.png">
                                 </button>
-                                <button class="next" onclick="nextSlide_FR()">
+                                <button class="next" onclick="nextSlide_ESP()">
                                     <img src="../images/icon_next_card.png">
                                 </button>
                             </div>
                         </div>
-                        <div id="content_images_03_alpes" class="content_images_galery hidden_galery">
-                            <div class="slider">
-                                <div id="slider_alpes" class="slider_images">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 3">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
-                                    <!-- Agregar más imágenes  -->
-                                </div>
-
-                                <div id="slider-info_alpes" class="indicator-container_images slider-info_images"></div>
-
-                                <button class="prev" onclick="prevSlide()">
-                                    <img src="../images/icon_back_card.png">
-                                </button>
-                                <button class="next" onclick="nextSlide()">
-                                    <img src="../images/icon_next_card.png">
-                                </button>
+                    </div>
+                    <div id="content_images_02_FR" class="content_images_galery hidden_galery">
+                        <div class="slider">
+                            <div id="slider_francia" class="slider_images">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 1">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 3">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
+                                <!-- Agregar más imágenes  -->
                             </div>
+
+                            <div id="slider-info_francia" class="indicator-container_images slider-info_images">
+                            </div>
+
+                            <button class="prev" onclick="prevSlide_FR()">
+                                <img src="../images/icon_back_card.png">
+                            </button>
+                            <button class="next" onclick="nextSlide_FR()">
+                                <img src="../images/icon_next_card.png">
+                            </button>
                         </div>
-                        <div id="content_images_04_SLV" class="content_images_galery hidden_galery">
-                            <div class="slider">
-                                <div id="slider_eslovenia" class="slider_images">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 3">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
-                                    <!-- Agregar más imágenes  -->
-                                </div>
-
-                                <div id="slider-info_eslovenia" class="indicator-container_images slider-info_images">
-                                </div>
-
-                                <button class="prev" onclick="prevSlide_SLV()">
-                                    <img src="../images/icon_back_card.png">
-                                </button>
-                                <button class="next" onclick="nextSlide_SLV()">
-                                    <img src="../images/icon_next_card.png">
-                                </button>
+                    </div>
+                    <div id="content_images_03_alpes" class="content_images_galery hidden_galery">
+                        <div class="slider">
+                            <div id="slider_alpes" class="slider_images">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 1">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 3">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
+                                <!-- Agregar más imágenes  -->
                             </div>
+
+                            <div id="slider-info_alpes" class="indicator-container_images slider-info_images"></div>
+
+                            <button class="prev" onclick="prevSlide()">
+                                <img src="../images/icon_back_card.png">
+                            </button>
+                            <button class="next" onclick="nextSlide()">
+                                <img src="../images/icon_next_card.png">
+                            </button>
                         </div>
-                        <div id="content_images_05_CRC" class="content_images_galery hidden_galery">
-                            <div class="slider">
-                                <div id="slider_croacia" class="slider_images">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 3">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
-                                    <!-- Agregar más imágenes  -->
-                                </div>
-
-                                <div id="slider-info_croacia" class="indicator-container_images slider-info_images">
-                                </div>
-
-                                <button class="prev" onclick="prevSlide_CRC()">
-                                    <img src="../images/icon_back_card.png">
-                                </button>
-                                <button class="next" onclick="nextSlide_CRC()">
-                                    <img src="../images/icon_next_card.png">
-                                </button>
+                    </div>
+                    <div id="content_images_04_SLV" class="content_images_galery hidden_galery">
+                        <div class="slider">
+                            <div id="slider_eslovenia" class="slider_images">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 1">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 3">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
+                                <!-- Agregar más imágenes  -->
                             </div>
+
+                            <div id="slider-info_eslovenia" class="indicator-container_images slider-info_images">
+                            </div>
+
+                            <button class="prev" onclick="prevSlide_SLV()">
+                                <img src="../images/icon_back_card.png">
+                            </button>
+                            <button class="next" onclick="nextSlide_SLV()">
+                                <img src="../images/icon_next_card.png">
+                            </button>
                         </div>
-                        <div id="content_images_06_ALB" class="content_images_galery hidden_galery">
-                            <div class="slider">
-                                <div id="slider_albania" class="slider_images">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 3">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
-                                    <!-- Agregar más imágenes  -->
-                                </div>
-
-                                <div id="slider-info_albania" class="indicator-container_images slider-info_images">
-                                </div>
-
-                                <button class="prev" onclick="prevSlide_ALB()">
-                                    <img src="../images/icon_back_card.png">
-                                </button>
-                                <button class="next" onclick="nextSlide_ALB()">
-                                    <img src="../images/icon_next_card.png">
-                                </button>
+                    </div>
+                    <div id="content_images_05_CRC" class="content_images_galery hidden_galery">
+                        <div class="slider">
+                            <div id="slider_croacia" class="slider_images">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 1">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 3">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
+                                <!-- Agregar más imágenes  -->
                             </div>
+
+                            <div id="slider-info_croacia" class="indicator-container_images slider-info_images">
+                            </div>
+
+                            <button class="prev" onclick="prevSlide_CRC()">
+                                <img src="../images/icon_back_card.png">
+                            </button>
+                            <button class="next" onclick="nextSlide_CRC()">
+                                <img src="../images/icon_next_card.png">
+                            </button>
                         </div>
-                        <div id="content_images_07_IT" class="content_images_galery hidden_galery">
-                            <div class="slider">
-                                <div id="slider_italia" class="slider_images">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 1">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto.webp" alt="Imagen 3">
-                                    <img class="img_imagenes_galery"
-                                        src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
-                                    <!-- Agregar más imágenes  -->
-                                </div>
-
-                                <div id="slider-info_italia" class="indicator-container_images slider-info_images">
-                                </div>
-
-                                <button class="prev" onclick="prevSlide_IT()">
-                                    <img src="../images/icon_back_card.png">
-                                </button>
-                                <button class="next" onclick="nextSlide_IT()">
-                                    <img src="../images/icon_next_card.png">
-                                </button>
+                    </div>
+                    <div id="content_images_06_ALB" class="content_images_galery hidden_galery">
+                        <div class="slider">
+                            <div id="slider_albania" class="slider_images">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 1">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 3">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
+                                <!-- Agregar más imágenes  -->
                             </div>
+
+                            <div id="slider-info_albania" class="indicator-container_images slider-info_images">
+                            </div>
+
+                            <button class="prev" onclick="prevSlide_ALB()">
+                                <img src="../images/icon_back_card.png">
+                            </button>
+                            <button class="next" onclick="nextSlide_ALB()">
+                                <img src="../images/icon_next_card.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div id="content_images_07_IT" class="content_images_galery hidden_galery">
+                        <div class="slider">
+                            <div id="slider_italia" class="slider_images">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 1">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 2">
+                                <img class="img_imagenes_galery" src="/images/foto-subida-paso-estelvio-en-moto.webp"
+                                    alt="Imagen 3">
+                                <img class="img_imagenes_galery"
+                                    src="/images/foto-subida-paso-estelvio-en-moto_B&W.webp" alt="Imagen 4">
+                                <!-- Agregar más imágenes  -->
+                            </div>
+
+                            <div id="slider-info_italia" class="indicator-container_images slider-info_images">
+                            </div>
+
+                            <button class="prev" onclick="prevSlide_IT()">
+                                <img src="../images/icon_back_card.png">
+                            </button>
+                            <button class="next" onclick="nextSlide_IT()">
+                                <img src="../images/icon_next_card.png">
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <div id="ver-footer">
+            <img id="separator_banner_pag-04" class="reverse"
+                src="/images/separacion_initial_viajar_en_moto_por_el_mundo.png" alt="montando el mundo en moto">
+            <img class="separador-footer" src="/images/separacion_final_homel_viajar_en_moto_por_el_mundo.png"
+                alt="montando el mundo en moto">
+        </div>
+        <section>
         </section>
         <footer id="footer_XS">
         </footer>
